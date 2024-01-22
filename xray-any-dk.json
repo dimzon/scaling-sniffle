@@ -1,35 +1,36 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "46.29.235.165",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "pWLQleVxjJLMHkJHCVnNPQ",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "grpc",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "grpcSettings": {
+                "serviceName": "443trojan"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/pWLQleVxjJLMHkJHCVnNPQ@46.29.235.165:443?type=grpc&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&alpn=h2%2Chttp%2F1.1&serviceName=443trojan&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%A9%F0%9F%87%B0%20DK%20%7C%20grpc%3A443%20%4046.29.235.165%20%7C%20Global%20Internet%20Solutions%20LLC%20%7C%204636f",
@@ -38,12 +39,122 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
+            "ch": true,
+            "ip": "46.29.235.165",
+            "suffix": "\ud83c\udde9\ud83c\uddf0 DK | 46.29.235.165 | Global Internet Solutions LLC",
+            "cc": "DK",
+            "port": 443,
+            "sni": "cdn-19.gsmxreality.com",
+            "exit_ip": "46.29.235.165",
+            "exit_isp": "Global Internet Solutions LLC",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "46.29.235.165",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "pWLQleVxjJLMHkJHCVnNPQ",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "443trojan"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cdn-19.gsmxreality.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/pWLQleVxjJLMHkJHCVnNPQ@46.29.235.165:443?type=grpc&sni=cdn-19.gsmxreality.com&alpn=h2%2Chttp%2F1.1&serviceName=443trojan&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A9%F0%9F%87%B0%20DK%20%7C%20grpc%3A443%20%4046.29.235.165%20%7C%20Global%20Internet%20Solutions%20LLC%20%7C%20aa1f0",
+        "##__key": "ZYcjlwxw2rlB5PCoPn4XAWfrhsA",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
             "ch": false,
             "ip": "46.29.235.165",
             "suffix": "\ud83c\udde9\ud83c\uddf0 DK | 46.29.235.165 | Global Internet Solutions LLC",
             "cc": "DK",
             "port": 443,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "sni": "cdn-19.gsmxreality.com",
+            "exit_ip": "46.29.235.165",
+            "exit_isp": "Global Internet Solutions LLC",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "pWLQleVxjJLMHkJHCVnNPQ",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "443trojan"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cdn-19.gsmxreality.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/pWLQleVxjJLMHkJHCVnNPQ@speed.cloudflare.com:443?type=grpc&sni=cdn-19.gsmxreality.com&alpn=h2%2Chttp%2F1.1&serviceName=443trojan&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A9%F0%9F%87%B0%20DK%20%7C%20grpc%3A443%20%4046.29.235.165%20%7C%20Global%20Internet%20Solutions%20LLC%20%7C%20c8102",
+        "##__key": "vqae6Rf2yJdfUPRVUl674ewwUDc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\udde9\ud83c\uddf0 DK | 46.29.235.165 | Global Internet Solutions LLC",
+            "cc": "DK",
+            "port": 443,
+            "sni": "cdn-19.gsmxreality.com",
             "exit_ip": "46.29.235.165",
             "exit_isp": "Global Internet Solutions LLC",
             "f_any": true,
@@ -54,16 +165,190 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "46.29.235.79",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "qG9K8AGnn9XH5jUqeFu96g",
+                    "port": 2083
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "vk.com",
+                "headers": {
+                    "Host": "vk.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/qG9K8AGnn9XH5jUqeFu96g@46.29.235.79:2083?type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=vk.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%A9%F0%9F%87%B0%20DK%20%7C%20ws%3A2083%20%4046.29.235.79%20%7C%20Global%20Internet%20Solutions%20LLC%20%7C%20ed86f",
+        "##__key": "eoFQ2fRp0hAuZd4d7nu33HqL2ls",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "46.29.235.79",
+            "suffix": "\ud83c\udde9\ud83c\uddf0 DK | 46.29.235.79 | Global Internet Solutions LLC",
+            "cc": "DK",
+            "port": 2083,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "46.29.235.79",
+            "exit_isp": "Global Internet Solutions LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "46.29.235.79",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "qG9K8AGnn9XH5jUqeFu96g",
+                    "port": 2083
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "cdn13.cdn2cdn.com",
+                "headers": {
+                    "Host": "cdn13.cdn2cdn.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cdn13.cdn2cdn.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/qG9K8AGnn9XH5jUqeFu96g@46.29.235.79:2083?type=ws&sni=cdn13.cdn2cdn.com&host=cdn13.cdn2cdn.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%A9%F0%9F%87%B0%20DK%20%7C%20ws%3A2083%20%4046.29.235.79%20%7C%20Global%20Internet%20Solutions%20LLC%20%7C%20b72db",
+        "##__key": "vmeAp5EJ7x2wa1lhQSYQpbA5MBM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "46.29.235.79",
+            "suffix": "\ud83c\udde9\ud83c\uddf0 DK | 46.29.235.79 | Global Internet Solutions LLC",
+            "cc": "DK",
+            "port": 2083,
+            "sni": "cdn13.cdn2cdn.com",
+            "exit_ip": "46.29.235.79",
+            "exit_isp": "Global Internet Solutions LLC",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "qG9K8AGnn9XH5jUqeFu96g",
+                    "port": 2083
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "cdn13.cdn2cdn.com",
+                "headers": {
+                    "Host": "cdn13.cdn2cdn.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cdn13.cdn2cdn.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/qG9K8AGnn9XH5jUqeFu96g@speed.cloudflare.com:2083?type=ws&sni=cdn13.cdn2cdn.com&host=cdn13.cdn2cdn.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%A9%F0%9F%87%B0%20DK%20%7C%20ws%3A2083%20%4046.29.235.79%20%7C%20Global%20Internet%20Solutions%20LLC%20%7C%202fff0",
+        "##__key": "6wJJa5kHJVBzbdVcC5q6MmKN5XY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\udde9\ud83c\uddf0 DK | 46.29.235.79 | Global Internet Solutions LLC",
+            "cc": "DK",
+            "port": 2083,
+            "sni": "cdn13.cdn2cdn.com",
+            "exit_ip": "46.29.235.79",
+            "exit_isp": "Global Internet Solutions LLC",
+            "f_any": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
                     "address": "176.120.64.12",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "f2823d10-2fa8-4064-ab49-bf69250ee309",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -78,10 +363,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },

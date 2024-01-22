@@ -1,35 +1,36 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "88.151.192.22",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "HMVstCsys1X3_ygf9GxCkw",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "grpc",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "grpcSettings": {
+                "serviceName": "443trojan"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/HMVstCsys1X3_ygf9GxCkw@88.151.192.22:443?type=grpc&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&alpn=h2%2Chttp%2F1.1&serviceName=443trojan&allowInsecure=1&mode=gun&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BA%F0%9F%87%A6%20UA%20%7C%20grpc%3A443%20%4088.151.192.22%20%7C%20FOP%20%22Reznichenko%20Sergey%20Mykolayovich%22%20%2F%20Global%20Internet%20Solutions%20LLC%20%7C%200da13",
@@ -55,16 +56,126 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "88.151.192.22",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "HMVstCsys1X3_ygf9GxCkw",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "443trojan"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cdn-20.gsmxreality.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/HMVstCsys1X3_ygf9GxCkw@88.151.192.22:443?type=grpc&sni=cdn-20.gsmxreality.com&alpn=h2%2Chttp%2F1.1&serviceName=443trojan&mode=gun&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BA%F0%9F%87%A6%20UA%20%7C%20grpc%3A443%20%4088.151.192.22%20%7C%20FOP%20%22Reznichenko%20Sergey%20Mykolayovich%22%20%2F%20Global%20Internet%20Solutions%20LLC%20%7C%204b717",
+        "##__key": "KGJbtdA8pgG7x2hY6w7U9uDozVI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "88.151.192.22",
+            "suffix": "\ud83c\uddfa\ud83c\udde6 UA | 88.151.192.22 | FOP \"Reznichenko Sergey Mykolayovich\" \/ Global Internet Solutions LLC",
+            "cc": "UA",
+            "port": 443,
+            "sni": "cdn-20.gsmxreality.com",
+            "exit_ip": "88.151.192.22",
+            "exit_isp": "FOP \"Reznichenko Sergey Mykolayovich\" \/ Global Internet Solutions LLC",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "HMVstCsys1X3_ygf9GxCkw",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "443trojan"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cdn-20.gsmxreality.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/HMVstCsys1X3_ygf9GxCkw@speed.cloudflare.com:443?type=grpc&sni=cdn-20.gsmxreality.com&alpn=h2%2Chttp%2F1.1&serviceName=443trojan&mode=gun&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BA%F0%9F%87%A6%20UA%20%7C%20grpc%3A443%20%4088.151.192.22%20%7C%20FOP%20%22Reznichenko%20Sergey%20Mykolayovich%22%20%2F%20Global%20Internet%20Solutions%20LLC%20%7C%2098347",
+        "##__key": "To5eMxB56CwYAyftLIRhNYAYSig",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddfa\ud83c\udde6 UA | 88.151.192.22 | FOP \"Reznichenko Sergey Mykolayovich\" \/ Global Internet Solutions LLC",
+            "cc": "UA",
+            "port": 443,
+            "sni": "cdn-20.gsmxreality.com",
+            "exit_ip": "88.151.192.22",
+            "exit_isp": "FOP \"Reznichenko Sergey Mykolayovich\" \/ Global Internet Solutions LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "45.137.155.195",
-                    "port": 55600,
+                    "address": "speed.cloudflare.com",
+                    "port": 8880,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "569d7c58-4927-48c9-a2fb-8f95af11fd52",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -80,26 +191,26 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "ukr.mobilesell.shop",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "ukr.mobilesell.shop"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI0NS4xMzcuMTU1LjE5NSIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI0OWM3NmJjZi0zYTU4LTQzZGYtYjFkNC0yYmZmZTljYTAzYjUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRlNiBVQSB8IHRjcDo0NDMgQDQ1LjEzNy4xNTUuMTk1IHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgOWFiMGUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "6m8fKXnjGrM6lV9TWuw7QZrQE4Y",
+        "##__uri": "vless:\/\/569d7c58-4927-48c9-a2fb-8f95af11fd52@speed.cloudflare.com:8880?type=ws&host=ukr.mobilesell.shop&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%BA%F0%9F%87%A6%20UA%20%7C%20ws%3A8880%20%40130.0.239.213%20%7C%20UK-3NT%20%2F%20IROKO%20Networks%20Corporation%20%7C%208f8c3",
+        "##__key": "BRgWaeS0yo6gZDl76THXI7CI3ok",
         "##__insecure": false,
         "##__flags": {
-            "cf": false,
+            "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "45.137.155.195",
-            "suffix": "\ud83c\uddfa\ud83c\udde6 UA | 45.137.155.195 | Stark Industries Solutions LTD",
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddfa\ud83c\udde6 UA | 130.0.239.213 | UK-3NT \/ IROKO Networks Corporation",
             "cc": "UA",
-            "port": 443,
-            "sni": "45.137.155.195",
-            "exit_ip": "45.137.155.195",
-            "exit_isp": "Stark Industries Solutions LTD",
+            "port": 8880,
+            "sni": "ukr.mobilesell.shop",
+            "exit_ip": "130.0.239.213",
+            "exit_isp": "UK-3NT \/ IROKO Networks Corporation",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,

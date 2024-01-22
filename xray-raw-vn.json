@@ -1,84 +1,34 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
-                {
-                    "address": "103.143.209.202",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "trojan:\/\/6ab41f79-9296-40fa-b4df-eb982b33d109@vm02.nguyendinhnghi.id.vn:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.143.209.202%20%7C%20Branch%20of%20N%20Support%20Joint%20Stock%20Company%20%7C%200d09a",
-        "##__key": "kt0j0FU0gwGW5PGaQfdRuznGoPw",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "103.143.209.202",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.143.209.202 | Branch of N Support Joint Stock Company",
-            "cc": "VN",
-            "port": 443,
-            "sni": "dl.aw.freefiremobile.com",
-            "exit_ip": "103.143.209.202",
-            "exit_isp": "Branch of N Support Joint Stock Company"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "103.174.73.134",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "vMbujq85mD",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/vMbujq85mD@103.174.73.134:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.174.73.134%20%7C%20HIEUPHONG%20%2F%20Hieu%20Phong%20TRADING%20CONSTRUCTION%20COMPANY%20LIMITED%20%7C%206f231",
@@ -87,12 +37,12 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "103.174.73.134",
             "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.174.73.134 | HIEUPHONG \/ Hieu Phong TRADING CONSTRUCTION COMPANY LIMITED",
             "cc": "VN",
             "port": 443,
-            "sni": "dl.kgvn.garenanow.com",
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
             "exit_ip": "103.174.73.134",
             "exit_isp": "HIEUPHONG \/ Hieu Phong TRADING CONSTRUCTION COMPANY LIMITED"
         }
@@ -103,11 +53,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "103.197.184.41",
-                    "port": 55600,
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "39b9d574-5800-4576-af02-f2da2f6d70f3",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -116,6 +66,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -123,11 +74,401 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/ry8odYmv\/",
+                "host": "vn.sxmzkfyy.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "vn.sxmzkfyy.com"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "vn.sxmzkfyy.com",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2bi5zeG16a2Z5eS5jb20iLCJpZCI6IjM5YjlkNTc0LTU4MDAtNDU3Ni1hZjAyLWYyZGEyZjZkNzBmMyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvcnk4b2RZbXZcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGZiXHVkODNjXHVkZGYzIFZOIHwgd3M6NDQzIEAxMDMuMjQ1LjIzNy4yNTQgfCBMUCBURUNITk9MT0dZIEVMRUNUUk9OSUMgQ09NTUVSQ0UgQ09NUEFOWSBMSU1JVEVEIHwgODAxOGUiLCJzY3kiOiJhdXRvIiwic25pIjoidm4uc3htemtmeXkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "NZftUGLcPk43VXsdVb4cRH0A3O8",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.245.237.254 | LP TECHNOLOGY ELECTRONIC COMMERCE COMPANY LIMITED",
+            "cc": "VN",
+            "port": 443,
+            "sni": "vn.sxmzkfyy.com",
+            "exit_ip": "103.245.237.254",
+            "exit_isp": "LP TECHNOLOGY ELECTRONIC COMMERCE COMPANY LIMITED"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.62.22",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.62.22:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.62.22%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%20d5b2d",
+        "##__key": "92vt77rSdm46SEW5n2e9uYeQD7s",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "103.154.62.22",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.62.22 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "103.154.62.22",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.62.22",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "lienquan.garena.vn",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.62.22:443?type=tcp&sni=lienquan.garena.vn&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.62.22%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%205b9ed",
+        "##__key": "EfQpJtkVfnVMvFGYq7e4YHE1irw",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.154.62.22",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.62.22 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "103.154.62.22",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.62.23",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.62.23:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.62.23%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%2034dd2",
+        "##__key": "UwwYlFBd2Iha6u5kAr9DbrMLCf0",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "103.154.62.23",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.62.23 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "103.154.62.23",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.62.23",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "lienquan.garena.vn",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.62.23:443?type=tcp&sni=lienquan.garena.vn&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.62.23%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%20b5496",
+        "##__key": "WSHotrEO8zpEHzKaBMTN83vqUOE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.154.62.23",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.62.23 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "103.154.62.23",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.63.16",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.63.16:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.63.16%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%20f2cbe",
+        "##__key": "xRRZNcoHf7kYdKs4swmZ35Pplfg",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "103.154.63.16",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.63.16 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "vk.com",
+            "exit_ip": "103.154.63.16",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.63.16",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.63.16:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.63.16%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%202f9d9",
+        "##__key": "yAs9AmRTs2Bf56XZBHmp3mbP9VU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.154.63.16",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.63.16 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "",
+            "exit_ip": "103.154.63.16",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.154.63.16",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "5bae27f5-3b8e-48f3-b91f-30fc680ea78f",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "lienquan.garena.vn",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/5bae27f5-3b8e-48f3-b91f-30fc680ea78f@103.154.63.16:443?type=tcp&sni=lienquan.garena.vn&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.154.63.16%20%7C%20Suncloud%20Technology%20Infrastructure%20Joint%20Stock%20Company%20%7C%20acc57",
+        "##__key": "PoNH0Uec6625SASJUQ0xpYkVdFY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.154.63.16",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.154.63.16 | Suncloud Technology Infrastructure Joint Stock Company",
+            "cc": "VN",
+            "port": 443,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "103.154.63.16",
+            "exit_isp": "Suncloud Technology Infrastructure Joint Stock Company"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "103.197.184.41",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa@hanoi4.speed4g.click:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.197.184.41%20%7C%20Tothost%20Solutions%20and%20Technologies%20Company%20Limited%20%7C%206e97a",
@@ -141,140 +482,137 @@
             "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.197.184.41 | Tothost Solutions and Technologies Company Limited",
             "cc": "VN",
             "port": 443,
-            "sni": "vk.com",
+            "sni": "viber.com",
             "exit_ip": "103.197.184.41",
             "exit_isp": "Tothost Solutions and Technologies Company Limited"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "42.96.11.242",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "address": "103.197.184.41",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "dl.kgvn.garenanow.com",
+                "show": true
             }
         },
-        "##__uri": "trojan:\/\/eb9e8a52-0fec-4a10-8d16-af3b32874933@antiddos5.5gtocdocao.com:443?type=tcp&sni=lienquan.garena.vn&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%4042.96.11.242%20%7C%20Vietserver%20Services%20Technology%20Company%20Limited%20%7C%20be788",
-        "##__key": "2DG2iIf4kni7LVNZs5o9kKhlDb8",
+        "##__uri": "trojan:\/\/b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa@hanoi4.speed4g.click:443?type=tcp&sni=dl.kgvn.garenanow.com&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.197.184.41%20%7C%20Tothost%20Solutions%20and%20Technologies%20Company%20Limited%20%7C%208e8ad",
+        "##__key": "hABG1f2etBNAXEjIUKlAOso5vBw",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "42.96.11.242",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 42.96.11.242 | Vietserver Services Technology Company Limited",
+            "ip": "103.197.184.41",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.197.184.41 | Tothost Solutions and Technologies Company Limited",
             "cc": "VN",
             "port": 443,
-            "sni": "lienquan.garena.vn",
-            "exit_ip": "42.96.11.242",
-            "exit_isp": "Vietserver Services Technology Company Limited"
+            "sni": "dl.kgvn.garenanow.com",
+            "exit_ip": "103.197.184.41",
+            "exit_isp": "Tothost Solutions and Technologies Company Limited"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "115.79.238.34",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "address": "103.197.184.41",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "hanoi4.speed4g.click",
+                "show": true
             }
         },
-        "##__uri": "trojan:\/\/fbccfed7-1aeb-416a-a4fd-7af1747f9f3b@skyht2.vpndata.vn:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40171.232.53.147%20%7C%20Viettel%20Corporation%20%2F%20VIETEL%20%7C%2096bc1",
-        "##__key": "BLawnUyyb3e3SQ3FCP3bOIQ46Y8",
-        "##__insecure": true,
+        "##__uri": "trojan:\/\/b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa@hanoi4.speed4g.click:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.197.184.41%20%7C%20Tothost%20Solutions%20and%20Technologies%20Company%20Limited%20%7C%2070f7f",
+        "##__key": "wZy5nYryYw0PK6cRubh6Yf4yakw",
+        "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
-            "ip": "115.79.238.34",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 171.232.53.147 | Viettel Corporation \/ VIETEL",
+            "ch": false,
+            "ip": "103.197.184.41",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.197.184.41 | Tothost Solutions and Technologies Company Limited",
             "cc": "VN",
             "port": 443,
-            "sni": "lienquan.garena.vn",
-            "exit_ip": "171.232.53.147",
-            "exit_isp": "Viettel Corporation \/ VIETEL"
+            "sni": "hanoi4.speed4g.click",
+            "exit_ip": "103.197.184.41",
+            "exit_isp": "Tothost Solutions and Technologies Company Limited"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "103.77.243.83",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/c95357eb-2869-4511-8940-f0dc5e1ec9b1@hanoi4.5gsieutocdo.com:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20tcp%3A443%20%40103.77.243.83%20%7C%20Vpsmmo%20Company%20Limited%20%7C%20b84b4",
@@ -288,7 +626,7 @@
             "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.77.243.83 | Vpsmmo Company Limited",
             "cc": "VN",
             "port": 443,
-            "sni": "vk.com",
+            "sni": "dl.kgvn.garenanow.com",
             "exit_ip": "103.77.243.83",
             "exit_isp": "Vpsmmo Company Limited"
         }
@@ -299,109 +637,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "103.106.104.102",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/96a2b3b1-0cc6-4447-8513-528306db0ade@vn01.meoovpn.net:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20ws%3A80%20%40103.106.104.102%20%7C%20Codetay%20Software%20Limited%20Liability%20Company%20%7C%20dc005",
-        "##__key": "vvefFVQCxc4SqvZfbi3tsrtCGzM",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "103.106.104.102",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.106.104.102 | Codetay Software Limited Liability Company",
-            "cc": "VN",
-            "port": 80,
-            "sni": "dl.aw.freefiremobile.com",
-            "exit_ip": "103.106.104.102",
-            "exit_isp": "Codetay Software Limited Liability Company"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "103.14.49.166",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/96a2b3b1-0cc6-4447-8513-528306db0ade@103.14.49.166:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%BB%F0%9F%87%B3%20VN%20%7C%20ws%3A80%20%40103.14.49.166%20%7C%20Fute%20Commercial%20and%20Services%20Company%20Limited%20%7C%20be103",
-        "##__key": "HN2UnAVZxs2bjxmd8FEFRbpPZBQ",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "103.14.49.166",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.14.49.166 | Fute Commercial and Services Company Limited",
-            "cc": "VN",
-            "port": 80,
-            "sni": "dl.aw.freefiremobile.com",
-            "exit_ip": "103.14.49.166",
-            "exit_isp": "Fute Commercial and Services Company Limited"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "103.187.4.46",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "67d5296e-a2ee-4a9f-89e6-365da540c55d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -417,10 +657,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/4gchill.com",
+                "host": "dl.ks.freefiremobile.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "dl.ks.freefiremobile.com"
                 }
             }
         },
@@ -446,11 +686,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "103.118.29.229",
-                    "port": 55600,
+                    "address": "103.75.185.130",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "8a2a7b92-b65d-4155-91fc-7b7be52ca598",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -466,27 +706,27 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/mang5g.me",
+                "host": "free.mang5g.me",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "free.mang5g.me"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIzc2FvLjVndG9jZG9jYW8uY29tIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6ImxpZW5xdWFuLmdhcmVuYS52biIsImlkIjoiZWI5ZThhNTItMGZlYy00YTEwLThkMTYtYWYzYjMyODc0OTMzIiwibmV0Ijoid3MiLCJwYXRoIjoiXC81Z3RvY2RvY2FvLmNvbSIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmYlx1ZDgzY1x1ZGRmMyBWTiB8IHdzOjgwIEAxMDMuMTE4LjI5LjIyOSB8IElkYXRhIFRlY2hub2xvZ3kgU29sdXRpb25zIENvbXBhbnkgTGltaXRlZCB8IGYzMDM4Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "Pxp47zdc2CCSXh075JuaHwH54Es",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuNzUuMTg1LjEzMCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVlLm1hbmc1Zy5tZSIsImlkIjoiOGEyYTdiOTItYjY1ZC00MTU1LTkxZmMtN2I3YmU1MmNhNTk4IiwibmV0Ijoid3MiLCJwYXRoIjoiXC9tYW5nNWcubWUiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTAzLjc1LjE4NS4xMzAgfCBJbmV0IHNvZnR3YXJlIG9uZSBtZW1iZXIgY29tcGFueSBsaW1pdGVkIHwgZmE3MTQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "nXLjZ9Zrp8vH4f8P3lM5inORQVQ",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "103.118.29.229",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.118.29.229 | Idata Technology Solutions Company Limited",
+            "ip": "103.75.185.130",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.75.185.130 | Inet software one member company limited",
             "cc": "VN",
             "port": 80,
-            "sni": "lienquan.garena.vn",
-            "exit_ip": "103.118.29.229",
-            "exit_isp": "Idata Technology Solutions Company Limited"
+            "sni": "free.mang5g.me",
+            "exit_ip": "103.75.185.130",
+            "exit_isp": "Inet software one member company limited"
         }
     },
     {
@@ -496,10 +736,10 @@
             "vnext": [
                 {
                     "address": "103.75.185.221",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "9e5999ba-870a-46b1-8500-37c640371ec6",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -515,10 +755,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/bs",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
@@ -545,10 +785,10 @@
             "vnext": [
                 {
                     "address": "103.75.185.226",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "9e5999ba-870a-46b1-8500-37c640371ec6",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -564,10 +804,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/bs",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
@@ -594,10 +834,10 @@
             "vnext": [
                 {
                     "address": "103.27.237.185",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "67d5296e-a2ee-4a9f-89e6-365da540c55d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -613,10 +853,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/4gchill.com",
+                "host": "dl.ks.freefiremobile.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "dl.ks.freefiremobile.com"
                 }
             }
         },
@@ -642,11 +882,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "103.101.162.241",
-                    "port": 55600,
+                    "address": "103.27.237.185",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "67d5296e-a2ee-4a9f-89e6-365da540c55d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -662,27 +902,27 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/4gchill.com",
+                "host": "vn2.4gchill.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "vn2.4gchill.com"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJobjIubWF4cHJvdnBuLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImIwMmEzMzMxLThmOWYtNGY0Yy1hMDQyLWExNjMyZWVkZjViYyIsIm5ldCI6IndzIiwicGF0aCI6IlwvbWF4cHJvdnBuLmNvbSIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmYlx1ZDgzY1x1ZGRmMyBWTiB8IHdzOjgwIEAxMDMuMTAxLjE2Mi4yNDEgfCBOaGFuSG9hIFNvZnR3YXJlIGNvbXBhbnkgXC8gV0FMTEUgfCA4MmFjNiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "Wxm3i5ReG2iLwO6dZcg72YOwwRc",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ2bjIuNGdjaGlsbC5jb20iLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiI2N2Q1Mjk2ZS1hMmVlLTRhOWYtODllNi0zNjVkYTU0MGM1NWQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLzRnY2hpbGwuY29tIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGZiXHVkODNjXHVkZGYzIFZOIHwgd3M6ODAgQDEwMy4yNy4yMzcuMTg1IHwgTG9uZyBWYW4gU3lzdGVtIFNvbHV0aW9uIHwgZmRlNDUiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjB9",
+        "##__key": "Ko1hBPg5vLtut9hZT4xc9UZHA6Q",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "103.101.162.241",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.101.162.241 | NhanHoa Software company \/ WALLE",
+            "ip": "103.27.237.185",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.27.237.185 | Long Van System Solution",
             "cc": "VN",
             "port": 80,
-            "sni": "hn2.maxprovpn.com",
-            "exit_ip": "103.101.162.241",
-            "exit_isp": "NhanHoa Software company \/ WALLE"
+            "sni": "vn2.4gchill.com",
+            "exit_ip": "103.27.237.185",
+            "exit_isp": "Long Van System Solution"
         }
     },
     {
@@ -692,10 +932,10 @@
             "vnext": [
                 {
                     "address": "103.154.62.226",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "67d5296e-a2ee-4a9f-89e6-365da540c55d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -711,10 +951,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/4gchill.com",
+                "host": "dl.ks.freefiremobile.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "dl.ks.freefiremobile.com"
                 }
             }
         },
@@ -740,11 +980,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "103.252.94.202",
-                    "port": 55600,
+                    "address": "103.197.184.41",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -760,15 +1000,162 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/speed4g.click",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJiczEubG9hZGluZ2lwLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJkbC5rZ3ZuLmdhcmVuYW5vdy5jb20iLCJpZCI6IjllNTk5OWJhLTg3MGEtNDZiMS04NTAwLTM3YzY0MDM3MWVjNiIsIm5ldCI6IndzIiwicGF0aCI6IlwvYnMiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTAzLjI1Mi45NC4yMDIgfCBWaWV0IERpZ2l0YWwgVGVjaG5vbG9neSBMaWFiaWxpdHkgQ29tcGFueSBcLyBIT0kgTE9DIFRyYWRlIFNlcnZpY2VzIENvbXBhbnkgTGltaXRlZCB8IGI3ZDVjIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "XbtNfSc2f0Bw3ZsFfwWZ10FWjz4",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJoYW5vaTQuc3BlZWQ0Zy5jbGljayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiJiMzc5ZmQ4ZS03NWM2LTRiZDYtOGE1Yi04OGYzZTY0YmIzZmEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3NwZWVkNGcuY2xpY2siLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTAzLjE5Ny4xODQuNDEgfCBUb3Rob3N0IFNvbHV0aW9ucyBhbmQgVGVjaG5vbG9naWVzIENvbXBhbnkgTGltaXRlZCB8IGI4YjZmIiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "yIyLKPlavkFqlTyfkrBsXfA2PKA",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.197.184.41",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.197.184.41 | Tothost Solutions and Technologies Company Limited",
+            "cc": "VN",
+            "port": 80,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "103.197.184.41",
+            "exit_isp": "Tothost Solutions and Technologies Company Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "115.74.28.240",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "fbccfed7-1aeb-416a-a4fd-7af1747f9f3b",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/VPNDATA.VPN",
+                "host": "skyht2.vpndata.vn",
+                "headers": {
+                    "Host": "skyht2.vpndata.vn"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJza3lodDIudnBuZGF0YS52biIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImZiY2NmZWQ3LTFhZWItNDE2YS1hNGZkLTdhZjE3NDdmOWYzYiIsIm5ldCI6IndzIiwicGF0aCI6IlwvVlBOREFUQS5WUE4iLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTE1Ljc0LjI3LjE5MiB8IFZJRVRFTHhkc2wgXC8geERTTCBTZXJ2aWNlcyB8IDgxODBjIiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "ok3Uov0zSX6dCDI4yn2PIQgx6I4",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "115.74.28.240",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 115.74.27.192 | VIETELxdsl \/ xDSL Services",
+            "cc": "VN",
+            "port": 80,
+            "sni": "skyht2.vpndata.vn",
+            "exit_ip": "115.74.27.192",
+            "exit_isp": "VIETELxdsl \/ xDSL Services"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "115.74.28.240",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "fbccfed7-1aeb-416a-a4fd-7af1747f9f3b",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/VPNDATA.VPN",
+                "host": "lienquan.garena.vn",
+                "headers": {
+                    "Host": "lienquan.garena.vn"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJza3lodDIudnBuZGF0YS52biIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJsaWVucXVhbi5nYXJlbmEudm4iLCJpZCI6ImZiY2NmZWQ3LTFhZWItNDE2YS1hNGZkLTdhZjE3NDdmOWYzYiIsIm5ldCI6IndzIiwicGF0aCI6IlwvVlBOREFUQS5WUE4iLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTE1Ljc0LjI3LjE5MiB8IFZJRVRFTHhkc2wgXC8geERTTCBTZXJ2aWNlcyB8IGQwMjVjIiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "EkMvIHEYjRsv2Dvx65Rdxh5wpug",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "115.74.28.240",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 115.74.27.192 | VIETELxdsl \/ xDSL Services",
+            "cc": "VN",
+            "port": 80,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "115.74.27.192",
+            "exit_isp": "VIETELxdsl \/ xDSL Services"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.252.94.202",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "9e5999ba-870a-46b1-8500-37c640371ec6",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/bs",
+                "host": "bs1.loadingip.com",
+                "headers": {
+                    "Host": "bs1.loadingip.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJiczEubG9hZGluZ2lwLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjllNTk5OWJhLTg3MGEtNDZiMS04NTAwLTM3YzY0MDM3MWVjNiIsIm5ldCI6IndzIiwicGF0aCI6IlwvYnMiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTAzLjI1Mi45NC4yMDIgfCBWaWV0IERpZ2l0YWwgVGVjaG5vbG9neSBMaWFiaWxpdHkgQ29tcGFueSBcLyBIT0kgTE9DIFRyYWRlIFNlcnZpY2VzIENvbXBhbnkgTGltaXRlZCB8IDYzZGFkIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "4Wgi8ivlOo3IQL3rSfdnaKvNp8w",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -778,7 +1165,7 @@
             "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.252.94.202 | Viet Digital Technology Liability Company \/ HOI LOC Trade Services Company Limited",
             "cc": "VN",
             "port": 80,
-            "sni": "dl.kgvn.garenanow.com",
+            "sni": "",
             "exit_ip": "103.252.94.202",
             "exit_isp": "Viet Digital Technology Liability Company \/ HOI LOC Trade Services Company Limited"
         }
@@ -789,60 +1176,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "103.252.94.224",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJiczIubG9hZGluZ2lwLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2aWJlci5jb20iLCJpZCI6IjUyNzhmNWQzLWYwMDEtNDQ1OS05NGI2LTdlMDkxNTIzODk5OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvYnMiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTAzLjI1Mi45NC4yMjQgfCBWaWV0IERpZ2l0YWwgVGVjaG5vbG9neSBMaWFiaWxpdHkgQ29tcGFueSBcLyBIT0kgTE9DIFRyYWRlIFNlcnZpY2VzIENvbXBhbnkgTGltaXRlZCB8IDVjY2ViIiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
-        "##__key": "108jd2AUogvcSUOivRxpCE9JqNQ",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "103.252.94.224",
-            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.252.94.224 | Viet Digital Technology Liability Company \/ HOI LOC Trade Services Company Limited",
-            "cc": "VN",
-            "port": 80,
-            "sni": "viber.com",
-            "exit_ip": "103.252.94.224",
-            "exit_isp": "Viet Digital Technology Liability Company \/ HOI LOC Trade Services Company Limited"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "125.212.231.79",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "bb4170c1-509b-4bb8-ac94-37f90f90b84d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -858,15 +1196,15 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/VPNDATA.xYx",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjUuMjEyLjIzMS43OSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImJiNDE3MGMxLTUwOWItNGJiOC1hYzk0LTM3ZjkwZjkwYjg0ZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvVlBOREFUQS54WXgiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTI1LjIxMi4yMzEuNzkgfCBWaWV0dGVsIENvcnBvcmF0aW9uIFwvIFZpZXR0ZWwgR3JvdXAgfCAwZGMzNyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "rdziGFE9ZfSKxmrnVBdo5nCGzCk",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjUuMjEyLjIzMS43OSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImJiNDE3MGMxLTUwOWItNGJiOC1hYzk0LTM3ZjkwZjkwYjg0ZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvVlBOREFUQS54WXgiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZmJcdWQ4M2NcdWRkZjMgVk4gfCB3czo4MCBAMTI1LjIxMi4yMzEuNzkgfCBWaWV0dGVsIENvcnBvcmF0aW9uIFwvIFZpZXR0ZWwgR3JvdXAgfCBkZDM5NSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "qvEIyMvePYCTUz1bM8W2mMFBxrU",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -876,9 +1214,58 @@
             "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 125.212.231.79 | Viettel Corporation \/ Viettel Group",
             "cc": "VN",
             "port": 80,
-            "sni": "125.212.231.79",
+            "sni": "",
             "exit_ip": "125.212.231.79",
             "exit_isp": "Viettel Corporation \/ Viettel Group"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.77.243.83",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/5gsieutocdo.club",
+                "host": "dl.kgvn.garenanow.com",
+                "headers": {
+                    "Host": "dl.kgvn.garenanow.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJoYW5vaTQuNWdzaWV1dG9jZG8uY29tIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6ImRsLmtndm4uZ2FyZW5hbm93LmNvbSIsImlkIjoiYzk1MzU3ZWItMjg2OS00NTExLTg5NDAtZjBkYzVlMWVjOWIxIiwibmV0Ijoid3MiLCJwYXRoIjoiXC81Z3NpZXV0b2Nkby5jbHViIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGZiXHVkODNjXHVkZGYzIFZOIHwgd3M6ODAgQDEwMy43Ny4yNDMuODMgfCBWcHNtbW8gQ29tcGFueSBMaW1pdGVkIHwgMDAwMGUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "3Tv1b0OAujuQ0lSrjcpgr7ia0iY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.77.243.83",
+            "suffix": "\ud83c\uddfb\ud83c\uddf3 VN | 103.77.243.83 | Vpsmmo Company Limited",
+            "cc": "VN",
+            "port": 80,
+            "sni": "dl.kgvn.garenanow.com",
+            "exit_ip": "103.77.243.83",
+            "exit_isp": "Vpsmmo Company Limited"
         }
     }
 ]

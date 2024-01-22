@@ -5,11 +5,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "172.233.83.6",
-                    "port": 55600,
+                    "address": "172.234.84.136",
+                    "port": 8443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "fa18e5a3-b725-41c8-9a31-d4628e19dc27",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -17,34 +17,35 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "jp-v2ray.ipracevpn.com",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/d2e1e357-d4b0-4b85-b59d-83094ff3e5f7@jp-full.privateip.net:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&flow=xtls-rprx-vision&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20tcp%3A443%20%40172.233.83.6%20%7C%20Akamai%20Technologies%2C%20Inc.%20%7C%2071f65",
-        "##__key": "0OPRB6uiYqnkOOxbFIXx3io88XA",
-        "##__insecure": true,
+        "##__uri": "vmess:\/\/eyJhZGQiOiJqcC12MnJheS5pcHJhY2V2cG4uY29tIiwiYWlkIjowLCJhbHBuIjoiaDIsaHR0cFwvMS4xIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJmYTE4ZTVhMy1iNzI1LTQxYzgtOWEzMS1kNDYyOGUxOWRjMjciLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6ODQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgdGNwOjg0NDMgQDE3Mi4yMzQuODQuMTM2IHwgQWthbWFpIFRlY2hub2xvZ2llcywgSW5jLiB8IGE3M2FmIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "Kwem7uRCj54QwbNcBUEzS8cFxUg",
+        "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
-            "ip": "172.233.83.6",
-            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 172.233.83.6 | Akamai Technologies, Inc.",
+            "ch": false,
+            "ip": "172.234.84.136",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 172.234.84.136 | Akamai Technologies, Inc.",
             "cc": "JP",
-            "port": 443,
-            "sni": "jp-full.privateip.net",
-            "exit_ip": "172.233.83.6",
+            "port": 8443,
+            "sni": "jp-v2ray.ipracevpn.com",
+            "exit_ip": "172.234.84.136",
             "exit_isp": "Akamai Technologies, Inc.",
             "f_any": true,
             "f_tracker": true,
@@ -54,129 +55,22 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
-                {
-                    "address": "18.180.193.232",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "trojan:\/\/94744160-abe9-44ca-b085-0f6994e1944e@a4.zgc.su:567?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20tcp%3A567%20%4018.180.193.232%20%7C%20Amazon%20Technologies%20Inc.%20%2F%20AWS%20EC2%20%28ap-northeast-1%29%20%7C%200ce79",
-        "##__key": "4prhiad5rgaK582nMB4NFXoBaTc",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "18.180.193.232",
-            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 18.180.193.232 | Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
-            "cc": "JP",
-            "port": 567,
-            "sni": "a4.zgc.su",
-            "exit_ip": "18.180.193.232",
-            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "52.195.13.70",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "trojan:\/\/94744160-abe9-44ca-b085-0f6994e1944e@a22.zgc.su:567?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20tcp%3A567%20%4052.195.13.70%20%7C%20Amazon%20Technologies%20Inc.%20%2F%20AWS%20EC2%20%28ap-northeast-1%29%20%7C%20bad51",
-        "##__key": "55bjMHSQmjbmVa8lZphahjQnluw",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "52.195.13.70",
-            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 52.195.13.70 | Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
-            "cc": "JP",
-            "port": 567,
-            "sni": "a22.zgc.su",
-            "exit_ip": "52.195.13.70",
-            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "178.157.94.133",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "4c5eefe8-f287-3813-8346-f2ce7de69bdb",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -184,11 +78,17 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/91838f3b905c42c7aa5b664b27d8193b",
+                "host": "vk.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "vk.com"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/4c5eefe8-f287-3813-8346-f2ce7de69bdb@178.157.94.133:443?type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=vk.com&path=%2F91838f3b905c42c7aa5b664b27d8193b&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20ws%3A443%20%40178.157.94.133%20%7C%20Datacamp%20Limited%20%2F%20Digital%20Virtualisation%20Solutions%20%7C%20bceac",
@@ -197,12 +97,70 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "178.157.94.133",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 178.157.94.133 | Datacamp Limited \/ Digital Virtualisation Solutions",
             "cc": "JP",
             "port": 443,
-            "sni": "vk.com",
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "178.157.94.133",
+            "exit_isp": "Datacamp Limited \/ Digital Virtualisation Solutions",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "4c5eefe8-f287-3813-8346-f2ce7de69bdb",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/91838f3b905c42c7aa5b664b27d8193b",
+                "host": "jp-ult.gobo.life",
+                "headers": {
+                    "Host": "jp-ult.gobo.life"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "jp-ult.gobo.life",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/4c5eefe8-f287-3813-8346-f2ce7de69bdb@speed.cloudflare.com:443?type=ws&sni=jp-ult.gobo.life&host=jp-ult.gobo.life&path=%2F91838f3b905c42c7aa5b664b27d8193b&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20ws%3A443%20%40178.157.94.133%20%7C%20Datacamp%20Limited%20%2F%20Digital%20Virtualisation%20Solutions%20%7C%20324ff",
+        "##__key": "GK7jWq1i7jVEMAvebz1yhdGtBu0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 178.157.94.133 | Datacamp Limited \/ Digital Virtualisation Solutions",
+            "cc": "JP",
+            "port": 443,
+            "sni": "jp-ult.gobo.life",
             "exit_ip": "178.157.94.133",
             "exit_isp": "Datacamp Limited \/ Digital Virtualisation Solutions",
             "f_any": true,
@@ -217,12 +175,132 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "185.172.113.182",
-                    "port": 55600,
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "de04add9-5c68-8bab-950c-08cd5320df18",
                             "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/argo-vmess?ed=2048",
+                "host": "jp.king361.cf",
+                "headers": {
+                    "Host": "jp.king361.cf"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "jp.king361.cf",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJqcC5raW5nMzYxLmNmIiwiaWQiOiJkZTA0YWRkOS01YzY4LThiYWItOTUwYy0wOGNkNTMyMGRmMTgiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2FyZ28tdm1lc3M\/ZWQ9MjA0OCIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgd3M6NDQzIEAxNDcuNzUuOTIuMTcgfCBFcXVpbml4IFNlcnZpY2VzLCBJbmMgfCAwYjRjZSIsInNjeSI6ImF1dG8iLCJzbmkiOiJqcC5raW5nMzYxLmNmIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "l4JADGIQKUYn5145tMjNQR0uGwE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 147.75.92.17 | Equinix Services, Inc",
+            "cc": "JP",
+            "port": 2087,
+            "sni": "jp.king361.cf",
+            "exit_ip": "147.75.92.17",
+            "exit_isp": "Equinix Services, Inc",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "212aea22-c90a-46be-bcfa-7c8ff78efa47",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "jp-01.snangua.com",
+                "headers": {
+                    "Host": "jp-01.snangua.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "jp-01.snangua.com",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJqcC0wMS5zbmFuZ3VhLmNvbSIsImlkIjoiMjEyYWVhMjItYzkwYS00NmJlLWJjZmEtN2M4ZmY3OGVmYTQ3IiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjQ0MyBAMTY0LjcwLjExNC4xNTUgfCBJbmZvU3BoZXJlIFwvIE5UVFBDIENvbW11bmljYXRpb25zLCBJbmMgfCA1MTkzNiIsInNjeSI6ImF1dG8iLCJzbmkiOiJqcC0wMS5zbmFuZ3VhLmNvbSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "7LIKk4GcVyFCPtDjCMGCm6gBmCY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 164.70.114.155 | InfoSphere \/ NTTPC Communications, Inc",
+            "cc": "JP",
+            "port": 8880,
+            "sni": "jp-01.snangua.com",
+            "exit_ip": "164.70.114.155",
+            "exit_isp": "InfoSphere \/ NTTPC Communications, Inc",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "172.234.88.113",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "96a2b3b1-0cc6-4447-8513-528306db0ade",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -237,12 +315,45 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vpnmeooai",
+                "host": "dl.aw.freefiremobile.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "dl.aw.freefiremobile.com"
                 }
             }
+        },
+        "##__uri": "vless:\/\/96a2b3b1-0cc6-4447-8513-528306db0ade@jp01.meoovpn.net:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20ws%3A80%20%40172.234.88.113%20%7C%20Akamai%20Technologies%2C%20Inc.%20%7C%20b1f75",
+        "##__key": "ghSExLMlZY5YLOKQc1sOPVWzBmY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "172.234.88.113",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 172.234.88.113 | Akamai Technologies, Inc.",
+            "cc": "JP",
+            "port": 80,
+            "sni": "dl.aw.freefiremobile.com",
+            "exit_ip": "172.234.88.113",
+            "exit_isp": "Akamai Technologies, Inc.",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "shadowsocks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "185.172.113.182",
+                    "port": 800,
+                    "password": "G!yBwPWH3Vao",
+                    "method": "chacha20-ietf-poly1305"
+                }
+            ]
         },
         "##__uri": "ss:\/\/Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@185.172.113.182:800#%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20tcp%3A800%20%40185.172.113.177%20%7C%20Datacamp%20Limited%20%2F%20Thomas%20Family%20Investments%20Limited%20%7C%20871eb",
         "##__key": "58SuSXbmxHb8IQWI2mbMU2pNtHo",
@@ -270,11 +381,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "152.69.197.60",
-                    "port": 55600,
+                    "address": "183.181.36.194",
+                    "port": 41597,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "4a6eaa2d-5603-4c05-d967-fb6f42250a5a",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -290,14 +401,59 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMTk3LjYwIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImFjOGUyNmZlLTgxNTAtNGI2MC1hZTY0LTgyZmM3N2ViYTJjZiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoxMDY5LCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHRjcDoxMDY5IEAxNTIuNjkuMTk3LjYwIHwgT3JhY2xlIENsb3VkIChhcC1vc2FrYS0xKSB8IGNhYTNlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxODMuMTgxLjM2LjE5NCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjRhNmVhYTJkLTU2MDMtNGMwNS1kOTY3LWZiNmY0MjI1MGE1YSIsIm5ldCI6IndzIiwicGF0aCI6IiIsInBvcnQiOjQxNTk3LCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjQxNTk3IEAxODMuMTgxLjM2LjE5NCB8IEZyZWVCaXQgQ28uLCBMdGQuIFwvIERyZWFtIFRyYWluIEludGVybmV0IHwgZWI0MDEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "VP5F2cvIUCJ0MF4vVJgeJveE80I",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "183.181.36.194",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 183.181.36.194 | FreeBit Co., Ltd. \/ Dream Train Internet",
+            "cc": "JP",
+            "port": 41597,
+            "sni": "",
+            "exit_ip": "183.181.36.194",
+            "exit_isp": "FreeBit Co., Ltd. \/ Dream Train Internet",
+            "f_any": true,
+            "f_tracker": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "152.69.197.60",
+                    "port": 1069,
+                    "users": [
+                        {
+                            "id": "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMTk3LjYwIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImFjOGUyNmZlLTgxNTAtNGI2MC1hZTY0LTgyZmM3N2ViYTJjZiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoxMDY5LCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHRjcDoxMDY5IEAxNTIuNjkuMTk3LjYwIHwgT3JhY2xlIENsb3VkIChhcC1vc2FrYS0xKSB8IGNhYTNlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
         "##__key": "5mJqVmgQTm1zPr0hEEQVp5zPYTE",
         "##__insecure": false,
         "##__flags": {
@@ -308,7 +464,7 @@
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.197.60 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
             "port": 1069,
-            "sni": "152.69.197.60",
+            "sni": "",
             "exit_ip": "152.69.197.60",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "f_any": true,
@@ -324,10 +480,10 @@
             "vnext": [
                 {
                     "address": "152.69.197.74",
-                    "port": 55600,
+                    "port": 12345,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "b8a6bf58-485a-4046-b386-b3661bf65eff",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -343,15 +499,15 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/bb",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMTk3Ljc0IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6InZpYmVyLmNvbSIsImlkIjoiYjhhNmJmNTgtNDg1YS00MDQ2LWIzODYtYjM2NjFiZjY1ZWZmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9iYiIsInBvcnQiOjEyMzQ1LCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjEyMzQ1IEAxNTIuNjkuMTk3Ljc0IHwgT3JhY2xlIENsb3VkIChhcC1vc2FrYS0xKSB8IDgyYTk0Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "W1NjDQpVSm1g6B0HVTQFWGmvO2g",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMTk3Ljc0IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IiIsImlkIjoiYjhhNmJmNTgtNDg1YS00MDQ2LWIzODYtYjM2NjFiZjY1ZWZmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9iYiIsInBvcnQiOjEyMzQ1LCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjEyMzQ1IEAxNTIuNjkuMTk3Ljc0IHwgT3JhY2xlIENsb3VkIChhcC1vc2FrYS0xKSB8IDI2MmE2Iiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "IBVCJSi96wEOnIzERximo9hXtNM",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -361,10 +517,58 @@
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.197.74 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
             "port": 12345,
-            "sni": "viber.com",
+            "sni": "",
             "exit_ip": "152.69.197.74",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
-            "f_any": true
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "138.2.44.211",
+                    "port": 20081,
+                    "users": [
+                        {
+                            "id": "593b8525-0c48-4b0f-d9af-2d73a9148973",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMzguMi40NC4yMTEiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNTkzYjg1MjUtMGM0OC00YjBmLWQ5YWYtMmQ3M2E5MTQ4OTczIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjIwMDgxLCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHRjcDoyMDA4MSBAMTM4LjIuNDQuMjExIHwgT3JhY2xlIENsb3VkIChhcC1vc2FrYS0xKSB8IDE1OWQ2Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "l0enWrRB6RddLAEKGl1gJoA7sR8",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "138.2.44.211",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 138.2.44.211 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "cc": "JP",
+            "port": 20081,
+            "sni": "",
+            "exit_ip": "138.2.44.211",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "f_any": true,
+            "f_facebook": true
         }
     },
     {
@@ -374,31 +578,25 @@
             "vnext": [
                 {
                     "address": "140.83.63.38",
-                    "port": 55600,
+                    "port": 24445,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "94c5ef37-4d82-49f9-c624-f01259374a17",
+                            "encryption": "aes-128-gcm"
                         }
                     ]
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
+            "wsSettings": null
         },
         "##__uri": "vmess:\/\/eyJhZGQiOiIxNDAuODMuNjMuMzgiLCJhaWQiOjY0LCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6Ijk0YzVlZjM3LTRkODItNDlmOS1jNjI0LWYwMTI1OTM3NGExNyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyNDQ0NSwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB0Y3A6MjQ0NDUgQDE0MC44My42My4zOCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCAwNzBjMCIsInNjeSI6ImFlcy0xMjgtZ2NtIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
         "##__key": "HdRXKoMqqKOxrug16apUnNx9j1s",
@@ -411,7 +609,54 @@
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 140.83.63.38 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
             "port": 24445,
-            "sni": "140.83.63.38",
+            "sni": "",
+            "exit_ip": "140.83.63.38",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "140.83.63.38",
+                    "port": 24445,
+                    "users": [
+                        {
+                            "id": "94c5ef37-4d82-49f9-c624-f01259374a17",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDAuODMuNjMuMzgiLCJhaWQiOjY0LCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6Ijk0YzVlZjM3LTRkODItNDlmOS1jNjI0LWYwMTI1OTM3NGExNyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyNDQ0NSwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB0Y3A6MjQ0NDUgQDE0MC44My42My4zOCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCBmMzkxZCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "BGqamuSDFSuS0IeJWQyi3ad4uJk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "140.83.63.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 140.83.63.38 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "cc": "JP",
+            "port": 24445,
+            "sni": "",
             "exit_ip": "140.83.63.38",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "f_any": true,

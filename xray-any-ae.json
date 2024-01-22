@@ -6,10 +6,10 @@
             "vnext": [
                 {
                     "address": "185.249.135.38",
-                    "port": 55600,
+                    "port": 3389,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "9c050a86-d612-48f1-ec32-e573df08a1b7",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -17,20 +17,36 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
             "tcpSettings": {
                 "header": {
-                    "type": "none"
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "internet.life.com.by"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
+            "wsSettings": null
         },
         "##__uri": "vmess:\/\/eyJhZGQiOiIxODUuMjQ5LjEzNS4zOCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6ImludGVybmV0LmxpZmUuY29tLmJ5IiwiaWQiOiI5YzA1MGE4Ni1kNjEyLTQ4ZjEtZWMzMi1lNTczZGYwOGExYjciLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiXC8iLCJwb3J0IjozMzg5LCJwcyI6Ilx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRlYSBBRSB8IHRjcDozMzg5IEAxODUuMjQ5LjEzNS4zOCB8IEctQ29yZSBMYWJzIFMuQS4gXC8gR0NMIHwgYjdkYWUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoyfQ==",
         "##__key": "6dWVnHbbRi5x947CAEcRhMATZSY",

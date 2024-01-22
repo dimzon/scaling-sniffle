@@ -5,11 +5,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "172.104.63.35",
-                    "port": 55600,
+                    "address": "139.144.120.190",
+                    "port": 8443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "3d5d110c-b9be-4ffd-92d5-ca7b8da3a7df",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -17,145 +17,478 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg2-v2ray.ipracevpn.com",
+                "show": true
             }
         },
-        "##__uri": "trojan:\/\/1bede996-c475-440b-a492-9cd57cbd3939@sg2-full.privateip.net:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40172.104.63.35%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%2001d1a",
-        "##__key": "jf39ibald1vjZ0pMtqtBpclt6EI",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "172.104.63.35",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 172.104.63.35 | Akamai Technologies \/ Linode",
-            "cc": "SG",
-            "port": 443,
-            "sni": "sg2-full.privateip.net",
-            "exit_ip": "172.104.63.35",
-            "exit_isp": "Akamai Technologies \/ Linode",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "172.104.182.182",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/4ebc6b52-af2f-4b10-ae8b-7d0b6d5e529f@sg3-full.privateip.net:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&flow=xtls-rprx-vision&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40172.104.182.182%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%200d1d5",
-        "##__key": "6toQH1m6K8QV738en9BwLF1X0h8",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "172.104.182.182",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 172.104.182.182 | Akamai Technologies \/ Linode",
-            "cc": "SG",
-            "port": 443,
-            "sni": "sg3-full.privateip.net",
-            "exit_ip": "172.104.182.182",
-            "exit_isp": "Akamai Technologies \/ Linode",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "13.250.101.88",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "trojan:\/\/94744160-abe9-44ca-b085-0f6994e1944e@13.250.101.88:567?type=tcp&sni=a31.zgc.su&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A567%20%4013.250.101.88%20%7C%20Amazon%20Technologies%20Inc.%20%2F%20AWS%20EC2%20%28ap-southeast-1%29%20%7C%20d7f17",
-        "##__key": "DiUiJKpEEWolaBif4cWgT5lc16k",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZzItdjJyYXkuaXByYWNldnBuLmNvbSIsImFpZCI6MCwiYWxwbiI6ImgyLGh0dHBcLzEuMSIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiM2Q1ZDExMGMtYjliZS00ZmZkLTkyZDUtY2E3YjhkYTNhN2RmIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjg0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHRjcDo4NDQzIEAxMzkuMTQ0LjEyMC4xOTAgfCBBa2FtYWkgVGVjaG5vbG9naWVzLCBJbmMuIFwvIExpbm9kZSB8IDkzZjhlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "TmVEtx5FSCi2ijApfSlGlEJkplA",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "13.250.101.88",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 13.250.101.88 | Amazon Technologies Inc. \/ AWS EC2 (ap-southeast-1)",
+            "ip": "139.144.120.190",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.144.120.190 | Akamai Technologies, Inc. \/ Linode",
             "cc": "SG",
-            "port": 567,
-            "sni": "a31.zgc.su",
-            "exit_ip": "13.250.101.88",
-            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (ap-southeast-1)",
+            "port": 8443,
+            "sni": "sg2-v2ray.ipracevpn.com",
+            "exit_ip": "139.144.120.190",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "170.187.227.191",
+                    "port": 8443,
+                    "users": [
+                        {
+                            "id": "bda051c3-4a04-4ab3-9e07-3077af5d36db",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg3-v2ray.ipracevpn.com",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZzMtdjJyYXkuaXByYWNldnBuLmNvbSIsImFpZCI6MCwiYWxwbiI6ImgyLGh0dHBcLzEuMSIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiYmRhMDUxYzMtNGEwNC00YWIzLTllMDctMzA3N2FmNWQzNmRiIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjg0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHRjcDo4NDQzIEAxNzAuMTg3LjIyNy4xOTEgfCBBa2FtYWkgVGVjaG5vbG9naWVzLCBJbmMuIFwvIExpbm9kZSB8IGRlOWM2Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "MOCRTLa4NcEwzc2CdgQv7MauZMM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "170.187.227.191",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 170.187.227.191 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "SG",
+            "port": 8443,
+            "sni": "sg3-v2ray.ipracevpn.com",
+            "exit_ip": "170.187.227.191",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "18.176.134.145",
+                    "port": 30201,
+                    "users": [
+                        {
+                            "id": "436502bd-03ca-3d8e-8a84-2e4cd029eaa6",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg01.tomoony.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJkaXIwMS5uZXRvcmlnaW5zMnUuc2l0ZSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNDM2NTAyYmQtMDNjYS0zZDhlLThhODQtMmU0Y2QwMjllYWE2IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjMwMjAxLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB0Y3A6MzAyMDEgQDEzOS4xNDQuMTIyLjE2MCB8IEFrYW1haSBUZWNobm9sb2dpZXMsIEluYy4gXC8gTGlub2RlIHwgNzk1YzYiLCJzY3kiOiJhdXRvIiwic25pIjoic2cwMS50b21vb255Lnh5eiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "WXvbAtZ9Df90mwhe84PaVjPuWVw",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "18.176.134.145",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.144.122.160 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "SG",
+            "port": 30201,
+            "sni": "sg01.tomoony.xyz",
+            "exit_ip": "139.144.122.160",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "139.162.33.216",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "9bbad013-78bd-4896-b9f7-707657e0b868",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/RACEVPN",
+                "host": "sg-full.privateip.net",
+                "headers": {
+                    "Host": "sg-full.privateip.net"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy1mdWxsLnByaXZhdGVpcC5uZXQiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjliYmFkMDEzLTc4YmQtNDg5Ni1iOWY3LTcwNzY1N2UwYjg2OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvUkFDRVZQTiIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6NDQzIEAxMzkuMTYyLjMzLjIxNiB8IEFrYW1haSBUZWNobm9sb2dpZXMsIEluYy4gXC8gTGlub2RlLCBMTEMgfCA1Y2MxMiIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "OROeSpjulPBrxSj9qWtu8BmdYyU",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "139.162.33.216",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.162.33.216 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-full.privateip.net",
+            "exit_ip": "139.162.33.216",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "139.162.33.216",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "42854e44-c8e7-4c56-99f7-f81f81e200ac",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-full.privateip.net",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/42854e44-c8e7-4c56-99f7-f81f81e200ac@sg-full.privateip.net:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40139.162.33.216%20%7C%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%2C%20LLC%20%7C%20d68d2",
+        "##__key": "k2JWBK4byZDaOXgmyy79H1c6Wmk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "139.162.33.216",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.162.33.216 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "cc": "SG",
+            "port": 443,
+            "sni": "",
+            "exit_ip": "139.162.33.216",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "9bbad013-78bd-4896-b9f7-707657e0b868",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/RACEVPN",
+                "host": "sg-full.privateip.net",
+                "headers": {
+                    "Host": "sg-full.privateip.net"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-full.privateip.net",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZy1mdWxsLnByaXZhdGVpcC5uZXQiLCJpZCI6IjliYmFkMDEzLTc4YmQtNDg5Ni1iOWY3LTcwNzY1N2UwYjg2OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvUkFDRVZQTiIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6NDQzIEAxMzkuMTYyLjMzLjIxNiB8IEFrYW1haSBUZWNobm9sb2dpZXMsIEluYy4gXC8gTGlub2RlLCBMTEMgfCA2MDFiYiIsInNjeSI6ImF1dG8iLCJzbmkiOiJzZy1mdWxsLnByaXZhdGVpcC5uZXQiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "z1Lu7cI95wC76CkZHmM3kip9AwI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.162.33.216 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-full.privateip.net",
+            "exit_ip": "139.162.33.216",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "154.26.131.140",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "3a419158-d69c-493e-9bd1-e253645f9403",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/websocket",
+                "host": "sg1-ctb-ws.xvless.xyz",
+                "headers": {
+                    "Host": "sg1-ctb-ws.xvless.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/3a419158-d69c-493e-9bd1-e253645f9403@sg1-ctb-ws.xvless.xyz:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&path=%2Fwebsocket&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40154.26.131.140%20%7C%20Cogent%20Communications%20%2F%20Contabo%20Asia%20Private%20LTD%20%7C%203d682",
+        "##__key": "vadts1Fj1oDqxyGnUz8j1KTpZEE",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "154.26.131.140",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 154.26.131.140 | Cogent Communications \/ Contabo Asia Private LTD",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg1-ctb-ws.xvless.xyz",
+            "exit_ip": "154.26.131.140",
+            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "3a419158-d69c-493e-9bd1-e253645f9403",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/websocket",
+                "host": "sg1-ctb-ws.xvless.xyz",
+                "headers": {
+                    "Host": "sg1-ctb-ws.xvless.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg1-ctb-ws.xvless.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/3a419158-d69c-493e-9bd1-e253645f9403@speed.cloudflare.com:443?security=tls&type=ws&sni=sg1-ctb-ws.xvless.xyz&host=sg1-ctb-ws.xvless.xyz&path=%2Fwebsocket&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40154.26.131.140%20%7C%20Cogent%20Communications%20%2F%20Contabo%20Asia%20Private%20LTD%20%7C%2093165",
+        "##__key": "HlBkRlTX7Zl7iJIGr4mIWunDS4o",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 154.26.131.140 | Cogent Communications \/ Contabo Asia Private LTD",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg1-ctb-ws.xvless.xyz",
+            "exit_ip": "154.26.131.140",
+            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "6bccc944-9630-4d74-b6bb-d6d676508dc6",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/6bccc944-9630-4d74-b6bb-d6d676508dc6@sg-v.sshmax.xyz:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40194.233.81.125%20%7C%20Contabo%20Asia%20Private%20Limited%20%7C%2094a85",
+        "##__key": "9FEZeVebZNMFWwhxrGMBCvkxoto",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true
         }
     },
     {
@@ -165,10 +498,10 @@
             "vnext": [
                 {
                     "address": "194.233.81.125",
-                    "port": 55600,
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "a147f1b3-d0d4-4ca8-9ce9-38d3c24d7950",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -177,6 +510,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -184,21 +518,142 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "sg-v.sshmax.xyz"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIxOTQuMjMzLjgxLjEyNSIsImlkIjoiMTNjYTQwODctNTBlOS00OTExLWI2ZWMtYTVlYWY0YjNjMDM5IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6NDQzIEAxOTQuMjMzLjgxLjEyNSB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCAxZDEwYiIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "bnv892DkBk8Ovcej88U4lR0xgG4",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImExNDdmMWIzLWQwZDQtNGNhOC05Y2U5LTM4ZDNjMjRkNzk1MCIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjQ0MyBAMTk0LjIzMy44MS4xMjUgfCBDb250YWJvIEFzaWEgUHJpdmF0ZSBMaW1pdGVkIHwgZGZjOWIiLCJzY3kiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "urvBYQQtP0ykZYjesmJnUDrPims",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": true,
             "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjRiMWJiZDUyLTIyODEtNDY5YS1hNTQ3LWEwYjQ2ZmVmNjY1MyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjQ0MyBAMTk0LjIzMy44MS4xMjUgfCBDb250YWJvIEFzaWEgUHJpdmF0ZSBMaW1pdGVkIHwgZTdhNGMiLCJzY3kiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "fH5K86s8Ve5nE4C2XCj22ko3eyU",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "6bccc944-9630-4d74-b6bb-d6d676508dc6",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-v.sshmax.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/6bccc944-9630-4d74-b6bb-d6d676508dc6@speed.cloudflare.com:443?security=tls&type=ws&sni=sg-v.sshmax.xyz&host=sg-v.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40194.233.81.125%20%7C%20Contabo%20Asia%20Private%20Limited%20%7C%202a5bb",
+        "##__key": "Ppf6r0RcX9hQKfDygTuyzVATAQY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
             "cc": "SG",
             "port": 443,
@@ -213,11 +668,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "194.233.95.180",
-                    "port": 55600,
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "a147f1b3-d0d4-4ca8-9ce9-38d3c24d7950",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -226,6 +681,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -233,15 +689,307 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "sg-v.sshmax.xyz"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-v.sshmax.xyz",
+                "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzaTRjby4wOXZwbi5jb20iLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiIwMzRmN2U4OC01NjFhLTRmYjktYjkxNy00YWIzMzQzYjY3NTUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzXC8iLCJwb3J0IjoyMDgzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czoyMDgzIEAxOTQuMjMzLjk1LjE4MCB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCBmNzU2YyIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "ajhxqNgizaYsL4uORYFD3K7nKyU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZy12LnNzaG1heC54eXoiLCJpZCI6ImExNDdmMWIzLWQwZDQtNGNhOC05Y2U5LTM4ZDNjMjRkNzk1MCIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjQ0MyBAMTk0LjIzMy44MS4xMjUgfCBDb250YWJvIEFzaWEgUHJpdmF0ZSBMaW1pdGVkIHwgM2YxMzMiLCJzY3kiOiJhdXRvIiwic25pIjoic2ctdi5zc2htYXgueHl6IiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "kjq5fYQkSbVEa07MAdqwM1tn4DY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-v.sshmax.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZy12LnNzaG1heC54eXoiLCJpZCI6IjRiMWJiZDUyLTIyODEtNDY5YS1hNTQ3LWEwYjQ2ZmVmNjY1MyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjQ0MyBAMTk0LjIzMy44MS4xMjUgfCBDb250YWJvIEFzaWEgUHJpdmF0ZSBMaW1pdGVkIHwgYTQ5NjEiLCJzY3kiOiJhdXRvIiwic25pIjoic2ctdi5zc2htYXgueHl6IiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "PZPPBT2sSyDPAaHk6Z8mxBXYrPU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "034f7e88-561a-4fb9-b917-4ab3343b6755",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess\/",
+                "host": "si4co.09vpn.com",
+                "headers": {
+                    "Host": "si4co.09vpn.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "si4co.09vpn.com",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzaTRjby4wOXZwbi5jb20iLCJpZCI6IjAzNGY3ZTg4LTU2MWEtNGZiOS1iOTE3LTRhYjMzNDNiNjc1NSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3NcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6NDQzIEAxOTQuMjMzLjk1LjE4MCB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCBkMzM2NyIsInNjeSI6ImF1dG8iLCJzbmkiOiJzaTRjby4wOXZwbi5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "RlIO83loJnBNXoSwSSWyAbhEoy0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.95.180 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "si4co.09vpn.com",
+            "exit_ip": "194.233.95.180",
+            "exit_isp": "Contabo Asia Private Limited",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 2083,
+                    "users": [
+                        {
+                            "id": "a147f1b3-d0d4-4ca8-9ce9-38d3c24d7950",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-v.sshmax.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImExNDdmMWIzLWQwZDQtNGNhOC05Y2U5LTM4ZDNjMjRkNzk1MCIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0IjoyMDgzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czoyMDgzIEAxOTQuMjMzLjgxLjEyNSB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCA0MmEyZSIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "HNvdiqvwkqcxz3LpgfuWIMGuHhQ",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 2083,
+                    "users": [
+                        {
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-v.sshmax.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjRiMWJiZDUyLTIyODEtNDY5YS1hNTQ3LWEwYjQ2ZmVmNjY1MyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0IjoyMDgzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czoyMDgzIEAxOTQuMjMzLjgxLjEyNSB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCA5N2ZhYiIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "RjnJYVw1mm0PwxGwQ7npPowl7bU",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.95.180",
+                    "port": 2083,
+                    "users": [
+                        {
+                            "id": "034f7e88-561a-4fb9-b917-4ab3343b6755",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess\/",
+                "host": "si4co.09vpn.com",
+                "headers": {
+                    "Host": "si4co.09vpn.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzaTRjby4wOXZwbi5jb20iLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjAzNGY3ZTg4LTU2MWEtNGZiOS1iOTE3LTRhYjMzNDNiNjc1NSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3NcLyIsInBvcnQiOjIwODMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjIwODMgQDE5NC4yMzMuOTUuMTgwIHwgQ29udGFibyBBc2lhIFByaXZhdGUgTGltaXRlZCB8IGJiYWI4Iiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "2neIPhdheiK33THLFKZhDrTcnco",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
@@ -266,11 +1014,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "104.248.152.19",
-                    "port": 55600,
+                    "address": "194.233.95.180",
+                    "port": 2083,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "034f7e88-561a-4fb9-b917-4ab3343b6755",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -279,6 +1027,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -286,27 +1035,34 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vmess\/",
+                "host": "si4co.09vpn.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "si4co.09vpn.com"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "si4co.09vpn.com",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/bbe06531-670e-48ff-be68-e46b1d6df8a5@104.248.152.19:443?security=tls&type=grpc&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&alpn=h2%2Chttp%2F1.1&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20grpc%3A443%20%40104.248.152.19%20%7C%20DigitalOcean%20%7C%20fcad1",
-        "##__key": "zdnaxfIsc1LTSfJHZ1SAcmX8E48",
-        "##__insecure": true,
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzaTRjby4wOXZwbi5jb20iLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiIwMzRmN2U4OC01NjFhLTRmYjktYjkxNy00YWIzMzQzYjY3NTUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzXC8iLCJwb3J0IjoyMDgzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czoyMDgzIEAxOTQuMjMzLjk1LjE4MCB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCA4MDc4YSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "h9CGrMNrL32WInLagUXMLjTBQG4",
+        "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
-            "ip": "104.248.152.19",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 104.248.152.19 | DigitalOcean, LLC",
+            "ch": false,
+            "ip": "194.233.95.180",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.95.180 | Contabo Asia Private Limited",
             "cc": "SG",
-            "port": 443,
-            "sni": "104.248.152.19",
-            "exit_ip": "104.248.152.19",
-            "exit_isp": "DigitalOcean, LLC",
+            "port": 80,
+            "sni": "si4co.09vpn.com",
+            "exit_ip": "194.233.95.180",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true,
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
@@ -319,11 +1075,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "128.199.245.155",
-                    "port": 55600,
+                    "address": "194.233.95.180",
+                    "port": 8443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "034f7e88-561a-4fb9-b917-4ab3343b6755",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -332,6 +1088,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -339,61 +1096,125 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vmess\/",
+                "host": "vk.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "vk.com"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/8b63d32e-5fe8-4c87-c505-f10952f6a43b@128.199.245.155:443?security=tls&type=grpc&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&alpn=h2%2Chttp%2F1.1&serviceName=Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20grpc%3A443%20%40128.199.245.155%20%7C%20DigitalOcean%20%7C%2097eda",
-        "##__key": "hSlH9f4eDem5OxWLg08QGRmltLU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzaTRjby4wOXZwbi5jb20iLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2ay5jb20iLCJpZCI6IjAzNGY3ZTg4LTU2MWEtNGZiOS1iOTE3LTRhYjMzNDNiNjc1NSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3NcLyIsInBvcnQiOjg0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjg0NDMgQDE5NC4yMzMuOTUuMTgwIHwgQ29udGFibyBBc2lhIFByaXZhdGUgTGltaXRlZCB8IDQ5NDlmIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "Ye11h1fBUCl4Dg1m2ex3UqfhAGQ",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
-            "ip": "128.199.245.155",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 128.199.245.155 | DigitalOcean, LLC",
+            "ch": false,
+            "ip": "194.233.95.180",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.95.180 | Contabo Asia Private Limited",
             "cc": "SG",
-            "port": 443,
-            "sni": "config-155.aryariemann.site",
-            "exit_ip": "128.199.245.155",
-            "exit_isp": "DigitalOcean, LLC",
-            "decdn": true
+            "port": 8443,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "194.233.95.180",
+            "exit_isp": "Contabo Asia Private Limited"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "137.184.248.66",
-                    "port": 55600,
+                    "address": "104.248.152.19",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "bbe06531-670e-48ff-be68-e46b1d6df8a5",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": ""
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/bbe06531-670e-48ff-be68-e46b1d6df8a5@104.248.152.19:443?security=tls&type=grpc&alpn=h2%2Chttp%2F1.1&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20grpc%3A443%20%40104.248.152.19%20%7C%20DigitalOcean%20%7C%2080208",
+        "##__key": "ayShG1VX1ZuWvv7e0epbeJPBrrA",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.248.152.19",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 104.248.152.19 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 443,
+            "sni": "",
+            "exit_ip": "104.248.152.19",
+            "exit_isp": "DigitalOcean, LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "137.184.248.66",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "04a2f006-d92f-4ff2-a244-2b689439accf",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "vless:\/\/04a2f006-d92f-4ff2-a244-2b689439accf@137.184.248.66:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&alpn=http%2F1.1%2Ch2&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40157.230.38.255%20%7C%20DigitalOcean%20%7C%20724b8",
@@ -418,16 +1239,17 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
                     "address": "188.166.231.248",
-                    "port": 55600,
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "0b2d005c-4dc6-4c9d-b223-aff22f7099dd",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -435,6 +1257,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -443,14 +1266,20 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "m.zoom.us",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "m.zoom.us"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/0b2d005c-4dc6-4c9d-b223-aff22f7099dd@free.ashvpnzcz.online:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=m.zoom.us&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40188.166.231.248%20%7C%20DigitalOcean%20%7C%209e84c",
-        "##__key": "p0eY0iu027aMfnTHpe2RcycDIvw",
+        "##__uri": "vless:\/\/0b2d005c-4dc6-4c9d-b223-aff22f7099dd@188.166.231.248:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=m.zoom.us&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40188.166.231.248%20%7C%20DigitalOcean%20%7C%2057859",
+        "##__key": "PYqfRMddkzq6eHsoXkqScK440m4",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
@@ -471,16 +1300,17 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "128.199.245.150",
-                    "port": 55600,
+                    "address": "188.166.231.248",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "0b2d005c-4dc6-4c9d-b223-aff22f7099dd",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -488,6 +1318,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -496,26 +1327,153 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "m.zoom.us",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "m.zoom.us"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "m.zoom.us",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/93f82910-7d7e-4acf-9ce2-c2f9d72063a5@128.199.245.150:2053?security=tls&type=ws&sni=config-150.aryariemann.site&host=config-150.aryariemann.site&path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A2053%20%40128.199.245.150%20%7C%20DigitalOcean%20%7C%205f3b8",
-        "##__key": "lQKd906UO906Cl3v20gtqYvgW4E",
+        "##__uri": "vless:\/\/0b2d005c-4dc6-4c9d-b223-aff22f7099dd@188.166.231.248:443?security=tls&type=ws&sni=m.zoom.us&host=m.zoom.us&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A443%20%40188.166.231.248%20%7C%20DigitalOcean%20%7C%205cd8c",
+        "##__key": "QmBPbPH7nhUtAq9QZylzw8CAaEY",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "128.199.245.150",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 128.199.245.150 | DigitalOcean, LLC",
+            "ip": "188.166.231.248",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 188.166.231.248 | DigitalOcean, LLC",
             "cc": "SG",
-            "port": 2053,
-            "sni": "config-150.aryariemann.site",
-            "exit_ip": "128.199.245.150",
+            "port": 443,
+            "sni": "m.zoom.us",
+            "exit_ip": "188.166.231.248",
             "exit_isp": "DigitalOcean, LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "188.166.231.248",
+                    "port": 8080,
+                    "users": [
+                        {
+                            "id": "142cab30-a43d-4506-80e7-285f9fac2331",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "m.netflix.com",
+                "headers": {
+                    "Host": "m.netflix.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "m.netflix.com",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/142cab30-a43d-4506-80e7-285f9fac2331@188.166.231.248:8080?security=tls&type=ws&sni=m.netflix.com&host=m.netflix.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A8080%20%40188.166.231.248%20%7C%20DigitalOcean%20%7C%2067a7d",
+        "##__key": "hJgQQvcjqBRgUei74t42SXAIaaM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "188.166.231.248",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 188.166.231.248 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 8080,
+            "sni": "m.netflix.com",
+            "exit_ip": "188.166.231.248",
+            "exit_isp": "DigitalOcean, LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.253.26.215",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "b72af6b0-b22f-11ee-b739-205c6d5f5d78",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/ias9t1hw",
+                "host": "sg-1.hihu.net",
+                "headers": {
+                    "Host": "sg-1.hihu.net"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMjUzLjI2LjIxNSIsImFpZCI6MCwiYWxsb3dJbnNlY3VyZSI6IjEiLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6InNnLTEuaGlodS5uZXQiLCJpZCI6ImI3MmFmNmIwLWIyMmYtMTFlZS1iNzM5LTIwNWM2ZDVmNWQ3OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvaWFzOXQxaHciLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjQ0MyBAMTAzLjI1My4yNi4yMTUgfCBIdXJyaWNhbmUgRWxlY3RyaWMgTExDIFwvIEFYR04gfCA3M2E1NiIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "UocKOFmCSSBxGmF9u3MSIgtAZ0U",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "103.253.26.215",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 103.253.26.215 | Hurricane Electric LLC \/ AXGN",
+            "cc": "SG",
+            "port": 443,
+            "sni": "sg-1.hihu.net",
+            "exit_ip": "103.253.26.215",
+            "exit_isp": "Hurricane Electric LLC \/ AXGN",
             "decdn": true
         }
     },
@@ -525,11 +1483,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "143.198.212.201",
-                    "port": 55600,
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "b72af6b0-b22f-11ee-b739-205c6d5f5d78",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -538,6 +1496,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -545,114 +1504,68 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/ias9t1hw",
+                "host": "sg-1.hihu.net",
                 "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/9e1f5664-43c7-468e-e949-3288ce12011b@143.198.212.201:2087?security=tls&type=grpc&sni=dns2.polproxy-moien.site&serviceName=%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C%40Polproxy%2C&mode=multi&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20grpc%3A2087%20%40143.198.212.201%20%7C%20DigitalOcean%20%7C%200480d",
-        "##__key": "AIyHdcyRfvoBfW7dX6fkT4PNsWk",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "143.198.212.201",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 143.198.212.201 | DigitalOcean, LLC",
-            "cc": "SG",
-            "port": 2087,
-            "sni": "dns2.polproxy-moien.site",
-            "exit_ip": "143.198.212.201",
-            "exit_isp": "DigitalOcean, LLC",
-            "decdn": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "128.199.245.153",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
+                    "Host": "sg-1.hihu.net"
                 }
             },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "sg-1.hihu.net",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/1049ced6-df01-469f-edf7-4e032652e483@128.199.245.153:8443?security=tls&type=ws&sni=config-153.aryariemann.site&host=config-153.aryariemann.site&path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A8443%20%40128.199.245.153%20%7C%20DigitalOcean%20%7C%20edc10",
-        "##__key": "Kelr8kFXHgaEspsU1ykcbuHwvxs",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZy0xLmhpaHUubmV0IiwiaWQiOiJiNzJhZjZiMC1iMjJmLTExZWUtYjczOS0yMDVjNmQ1ZjVkNzgiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2lhczl0MWh3IiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo0NDMgQDEwMy4yNTMuMjYuMjE1IHwgSHVycmljYW5lIEVsZWN0cmljIExMQyBcLyBBWEdOIHwgMWY0ZGQiLCJzY3kiOiJhdXRvIiwic25pIjoic2ctMS5oaWh1Lm5ldCIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "3QpOn1a8bMLy3tHAn7UtqKYekdk",
         "##__insecure": false,
         "##__flags": {
-            "cf": false,
+            "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "128.199.245.153",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 128.199.245.153 | DigitalOcean, LLC",
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 103.253.26.215 | Hurricane Electric LLC \/ AXGN",
             "cc": "SG",
-            "port": 8443,
-            "sni": "config-153.aryariemann.site",
-            "exit_ip": "128.199.245.153",
-            "exit_isp": "DigitalOcean, LLC",
-            "decdn": true
+            "port": 443,
+            "sni": "sg-1.hihu.net",
+            "exit_ip": "103.253.26.215",
+            "exit_isp": "Hurricane Electric LLC \/ AXGN"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "15.235.152.84",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "fbccfed7-1aeb-416a-a4fd-7af1747f9f3b",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "viber.com",
+                "show": true
             }
         },
-        "##__uri": "trojan:\/\/fbccfed7-1aeb-416a-a4fd-7af1747f9f3b@sg.vpndata.vn:443?type=tcp&sni=viber.com&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%4015.235.131.9%20%7C%20OVH%20Singapore%20PTE.%20LTD%20%2F%20httvserver%20%7C%20ca189",
+        "##__uri": "trojan:\/\/fbccfed7-1aeb-416a-a4fd-7af1747f9f3b@sg.vpndata.vn:443?type=tcp&sni=viber.com&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%4015.235.152.84%20%7C%20OVH%20Singapore%20PTE.%20LTD%20%7C%20ca189",
         "##__key": "9x1IRtrpEGJGM7chZEnwIjH6Ifg",
         "##__insecure": true,
         "##__flags": {
@@ -660,143 +1573,272 @@
             "gcore": false,
             "ch": false,
             "ip": "15.235.152.84",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 15.235.131.9 | OVH Singapore PTE. LTD \/ httvserver",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 15.235.152.84 | OVH SAS \/ OVH Singapore PTE. LTD",
             "cc": "SG",
             "port": 443,
             "sni": "viber.com",
+            "exit_ip": "15.235.152.84",
+            "exit_isp": "OVH SAS \/ OVH Singapore PTE. LTD"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "e778fdab-34ca-4ba2-a51f-f757d8ae1aa9",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/0TxtG?ed=2048",
+                "host": "ovh.kmoljklj.top",
+                "headers": {
+                    "Host": "ovh.kmoljklj.top"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "ovh.kmoljklj.top",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJvdmgua21vbGprbGoudG9wIiwiaWQiOiJlNzc4ZmRhYi0zNGNhLTRiYTItYTUxZi1mNzU3ZDhhZTFhYTkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLzBUeHRHP2VkPTIwNDgiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjQ0MyBANTEuNzkuMjQ5LjE1NyB8IE9WSCBTaW5nYXBvcmUgUFRFLiBMVEQgfCBkOGRjNCIsInNjeSI6ImF1dG8iLCJzbmkiOiJvdmgua21vbGprbGoudG9wIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "RUZIO2qMXQe0yZw152xu8byGACc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 51.79.249.157 | OVH SAS \/ OVH Singapore PTE. LTD",
+            "cc": "SG",
+            "port": 443,
+            "sni": "ovh.kmoljklj.top",
+            "exit_ip": "51.79.249.157",
+            "exit_isp": "OVH SAS \/ OVH Singapore PTE. LTD",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 2053,
+                    "users": [
+                        {
+                            "id": "e778fdab-34ca-4ba2-a51f-f757d8ae1aa9",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/ovh.kmoljklj.top\/0TxtG?ed=2048",
+                "host": "free.fnet00.workers.dev",
+                "headers": {
+                    "Host": "free.fnet00.workers.dev"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "free.fnet00.workers.dev",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVlLmZuZXQwMC53b3JrZXJzLmRldiIsImlkIjoiZTc3OGZkYWItMzRjYS00YmEyLWE1MWYtZjc1N2Q4YWUxYWE5IiwibmV0Ijoid3MiLCJwYXRoIjoiXC9vdmgua21vbGprbGoudG9wXC8wVHh0Rz9lZD0yMDQ4IiwicG9ydCI6MjA1MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6MjA1MyBANTEuNzkuMjQ5LjE1NyB8IE9WSCBTaW5nYXBvcmUgUFRFLiBMVEQgfCA2ZjQ0ZSIsInNjeSI6ImF1dG8iLCJzbmkiOiJmcmVlLmZuZXQwMC53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "lkW5dzK8TsJPGk67KI7tjylFGOA",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 51.79.249.157 | OVH SAS \/ OVH Singapore PTE. LTD",
+            "cc": "SG",
+            "port": 2087,
+            "sni": "free.fnet00.workers.dev",
+            "exit_ip": "51.79.249.157",
+            "exit_isp": "OVH SAS \/ OVH Singapore PTE. LTD",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 2053,
+                    "users": [
+                        {
+                            "id": "e778fdab-34ca-4ba2-a51f-f757d8ae1aa9",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/ovh.kmoljklj.top\/0TxtG?ed=2048",
+                "host": "freevpn878.hamidimorteza680.workers.dev",
+                "headers": {
+                    "Host": "freevpn878.hamidimorteza680.workers.dev"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "freevpn878.hamidimorteza680.workers.dev",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVldnBuODc4LmhhbWlkaW1vcnRlemE2ODAud29ya2Vycy5kZXYiLCJpZCI6ImU3NzhmZGFiLTM0Y2EtNGJhMi1hNTFmLWY3NTdkOGFlMWFhOSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvb3ZoLmttb2xqa2xqLnRvcFwvMFR4dEc\/ZWQ9MjA0OCIsInBvcnQiOjIwNTMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjIwNTMgQDUxLjc5LjI0OS4xNTcgfCBPVkggU2luZ2Fwb3JlIFBURS4gTFREIHwgN2Q4OWYiLCJzY3kiOiJhdXRvIiwic25pIjoiZnJlZXZwbjg3OC5oYW1pZGltb3J0ZXphNjgwLndvcmtlcnMuZGV2IiwidGxzIjoidGxzIiwidHlwZSI6InZtZXNzIiwidiI6Mn0=",
+        "##__key": "m3U7efwjNhn5Zh9UwbYvwo2hbMA",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 51.79.249.157 | OVH SAS \/ OVH Singapore PTE. LTD",
+            "cc": "SG",
+            "port": 2053,
+            "sni": "freevpn878.hamidimorteza680.workers.dev",
+            "exit_ip": "51.79.249.157",
+            "exit_isp": "OVH SAS \/ OVH Singapore PTE. LTD",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "15.235.152.84",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "fbccfed7-1aeb-416a-a4fd-7af1747f9f3b",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/fbccfed7-1aeb-416a-a4fd-7af1747f9f3b@sg.vpndata.vn:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%4015.235.131.9%20%7C%20OVH%20Singapore%20PTE.%20LTD%20%2F%20httvserver%20%7C%2095ffa",
+        "##__key": "4T5Pzi4yPICmQIfIv2mCiItTTkI",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "15.235.152.84",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 15.235.131.9 | OVH Singapore PTE. LTD \/ httvserver",
+            "cc": "SG",
+            "port": 443,
+            "sni": "vk.com",
             "exit_ip": "15.235.131.9",
             "exit_isp": "OVH Singapore PTE. LTD \/ httvserver"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
-                {
-                    "address": "139.180.137.151",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "trojan:\/\/a7e840da-c9a3-4808-bc68-19bbd2defeab@139.180.137.151:443?type=tcp&sni=lienquan.garena.vn&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40139.180.137.151%20%7C%20SGP%20VULTR%20%7C%20a829b",
-        "##__key": "eHY9aWzKnP8AgGqH5Nrt5pRKano",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "139.180.137.151",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.180.137.151 | SGP VULTR",
-            "cc": "SG",
-            "port": 443,
-            "sni": "lienquan.garena.vn",
-            "exit_ip": "139.180.137.151",
-            "exit_isp": "SGP VULTR"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "139.180.157.14",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "trojan:\/\/a7e840da-c9a3-4808-bc68-19bbd2defeab@139.180.157.14:443?type=tcp&sni=lienquan.garena.vn&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40139.180.157.14%20%7C%20SGP%20VULTR%20%7C%20f3fc3",
-        "##__key": "Nh3fUT3sC3K8olynN7Y5Xv32Zls",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "139.180.157.14",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.180.157.14 | SGP VULTR",
-            "cc": "SG",
-            "port": 443,
-            "sni": "lienquan.garena.vn",
-            "exit_ip": "139.180.157.14",
-            "exit_isp": "SGP VULTR"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "149.28.131.42",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "opentunnel.net-9singa34",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
             }
         },
         "##__uri": "trojan:\/\/opentunnel.net-9singa34@149.28.131.42:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40149.28.131.42%20%7C%20The%20Constant%20Company%20%2F%20Vultr%20Holdings%2C%20LLC%20%7C%205f9cc",
@@ -817,36 +1859,64 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "13.214.57.211",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "address": "149.28.131.42",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "opentunnel.net-9singa34",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "www.yahoo.com",
+                "show": true
             }
+        },
+        "##__uri": "trojan:\/\/opentunnel.net-9singa34@149.28.131.42:443?type=tcp&sni=www.yahoo.com&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A443%20%40149.28.131.42%20%7C%20The%20Constant%20Company%20%2F%20Vultr%20Holdings%2C%20LLC%20%7C%2040ca5",
+        "##__key": "SadTyt9vQl8xvRdoXrg8HfaX48Q",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "149.28.131.42",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 149.28.131.42 | The Constant Company \/ Vultr Holdings, LLC",
+            "cc": "SG",
+            "port": 443,
+            "sni": "www.yahoo.com",
+            "exit_ip": "149.28.131.42",
+            "exit_isp": "The Constant Company \/ Vultr Holdings, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "shadowsocks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "13.214.57.211",
+                    "port": 10240,
+                    "password": "18863c54-b3f2-4331-a341-f6acba4d7eb0",
+                    "method": "chacha20-ietf-poly1305"
+                }
+            ]
         },
         "##__uri": "ss:\/\/chacha20-ietf-poly1305:18863c54-b3f2-4331-a341-f6acba4d7eb0@13.214.57.211:10240#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A10240%20%4013.214.57.211%20%7C%20%3F%20%7C%20cccaf",
         "##__key": "BDxTFT08WdAwRdoIWFa1dsT37I8",
@@ -861,21 +1931,24 @@
             "port": 10240,
             "sni": "",
             "exit_ip": "13.214.57.211",
-            "exit_isp": "?"
+            "exit_isp": "?",
+            "f_any": true,
+            "f_facebook": true
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "192.53.113.30",
-                    "port": 55600,
+                    "address": "139.144.121.65",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "96a2b3b1-0cc6-4447-8513-528306db0ade",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -890,27 +1963,27 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vpnmeooai",
+                "host": "dl.aw.freefiremobile.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "dl.aw.freefiremobile.com"
                 }
             }
         },
-        "##__uri": "vless:\/\/96a2b3b1-0cc6-4447-8513-528306db0ade@192.53.113.30:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A80%20%40192.53.113.30%20%7C%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%2C%20LLC%20%7C%2016243",
-        "##__key": "SuDOhRJ8v9L2xZQudveAhVyz4mQ",
+        "##__uri": "vless:\/\/96a2b3b1-0cc6-4447-8513-528306db0ade@sg01.meoovpn.net:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A80%20%40139.144.121.65%20%7C%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%7C%2011dee",
+        "##__key": "LYvqvcj5cWzn4tBrAwvMbV13DBs",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "192.53.113.30",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 192.53.113.30 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "ip": "139.144.121.65",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.144.121.65 | Akamai Technologies, Inc. \/ Linode",
             "cc": "SG",
             "port": 80,
             "sni": "dl.aw.freefiremobile.com",
-            "exit_ip": "192.53.113.30",
-            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC",
+            "exit_ip": "139.144.121.65",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
@@ -923,11 +1996,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "47.236.10.43",
-                    "port": 55600,
+                    "address": "139.162.40.197",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "eb9e8a52-0fec-4a10-8d16-af3b32874933",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -943,12 +2016,92 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/5gtocdocao.com",
+                "host": "sing88.5gtocdocao.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "sing88.5gtocdocao.com"
                 }
             }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzaW5nODguNWd0b2Nkb2Nhby5jb20iLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiJlYjllOGE1Mi0wZmVjLTRhMTAtOGQxNi1hZjNiMzI4NzQ5MzMiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLzVndG9jZG9jYW8uY29tIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6ODAgQDEzOS4xNjIuNDAuMTk3IHwgQWthbWFpIFRlY2hub2xvZ2llcywgSW5jLiBcLyBMaW5vZGUsIExMQyB8IGVkY2M1Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "8b1031dJH7Zh5bFLYKc3qW3bZck",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "139.162.40.197",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.162.40.197 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sing88.5gtocdocao.com",
+            "exit_ip": "139.162.40.197",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "192.53.172.197",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "eb9e8a52-0fec-4a10-8d16-af3b32874933",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/5gtocdocao.com",
+                "host": "uc99.5gtocdocao.com",
+                "headers": {
+                    "Host": "uc99.5gtocdocao.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ1Yzk5LjVndG9jZG9jYW8uY29tIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IiIsImlkIjoiZWI5ZThhNTItMGZlYy00YTEwLThkMTYtYWYzYjMyODc0OTMzIiwibmV0Ijoid3MiLCJwYXRoIjoiXC81Z3RvY2RvY2FvLmNvbSIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjgwIEAxOTIuNTMuMTcyLjE5NyB8IEFrYW1haSBUZWNobm9sb2dpZXMsIEluYy4gXC8gTGlub2RlLCBMTEMgfCA2NjE2NSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "Z0R7J7ErEiv4rw5VYhD6bZs9SSk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "192.53.172.197",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 192.53.172.197 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "cc": "SG",
+            "port": 80,
+            "sni": "uc99.5gtocdocao.com",
+            "exit_ip": "192.53.172.197",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "47.236.10.43",
+                    "ota": false,
+                    "port": 1080
+                }
+            ]
         },
         "##__uri": "socks5:\/\/47.236.10.43:1080#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A1080%20%4047.236.10.43%20%7C%20Alibaba%20%28US%29%20Technology%20Co.%2C%20Ltd.%20%2F%20Alibaba.com%20LLC%20%7C%2048bdc",
         "##__key": "9NCeLfEA1ifSPmQS1kH7NiObRoU",
@@ -972,11 +2125,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "13.215.161.65",
-                    "port": 55600,
+                    "address": "139.180.157.14",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "a7e840da-c9a3-4808-bc68-19bbd2defeab",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -993,26 +2146,271 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJtbDIuMzMzMjEwLnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6Ijg5MmU0ZmYzLWY4YmItNDJhYy05YmQ1LWUxMDNmMjM1ZmM3OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6NDAwMDAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6NDAwMDAgQDEzLjIxNS4xNjEuNjUgfCBBbWF6b24gVGVjaG5vbG9naWVzIEluYy4gXC8gQVdTIEVDMiAoYXAtc291dGhlYXN0LTEpIHwgODIwYjciLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjB9",
-        "##__key": "5gbB9GZMxbihUhxbbvzLVshbxCk",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMzkuMTgwLjE1Ny4xNCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImE3ZTg0MGRhLWM5YTMtNDgwOC1iYzY4LTE5YmJkMmRlZmVhYiIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6ODAgQDEzOS4xODAuMTU3LjE0IHwgQ2hvb3BhIHwgMDA1NjciLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjB9",
+        "##__key": "1DfXvOW7aFZqRIu1eG0G0z2MomY",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "13.215.161.65",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 13.215.161.65 | Amazon Technologies Inc. \/ AWS EC2 (ap-southeast-1)",
+            "ip": "139.180.157.14",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.180.157.14 | Choopa",
             "cc": "SG",
-            "port": 40000,
-            "sni": "ml2.333210.xyz",
-            "exit_ip": "13.215.161.65",
-            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (ap-southeast-1)"
+            "port": 80,
+            "sni": "",
+            "exit_ip": "139.180.157.14",
+            "exit_isp": "Choopa"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "45.77.240.25",
+                    "port": 10067,
+                    "users": [
+                        {
+                            "id": "0a230213-edf7-44c0-9900-36bc7404d208",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/alexdevill",
+                "host": "ubetatta.alexdevil.help",
+                "headers": {
+                    "Host": "ubetatta.alexdevil.help"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ1YmV0YXR0YS5hbGV4ZGV2aWwuaGVscCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjBhMjMwMjEzLWVkZjctNDRjMC05OTAwLTM2YmM3NDA0ZDIwOCIsIm5ldCI6IndzIiwicGF0aCI6IlwvYWxleGRldmlsbCIsInBvcnQiOjEwMDY3LCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjEwMDY3IEA0NS43Ny4yNDAuMjUgfCBDaG9vcGEgXC8gVnVsdHIgSG9sZGluZ3MsIExMQyB8IDZhYTdlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "CcNSn1M0dIrH75P9Pjz3n10gEKs",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.77.240.25",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 45.77.240.25 | Choopa \/ Vultr Holdings, LLC",
+            "cc": "SG",
+            "port": 10067,
+            "sni": "",
+            "exit_ip": "45.77.240.25",
+            "exit_isp": "Choopa \/ Vultr Holdings, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "45.77.240.25",
+                    "port": 10067,
+                    "users": [
+                        {
+                            "id": "0a230213-edf7-44c0-9900-36bc7404d208",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/alexdevill",
+                "host": "m.zoom.us",
+                "headers": {
+                    "Host": "m.zoom.us"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ1YmV0YXR0YS5hbGV4ZGV2aWwuaGVscCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJtLnpvb20udXMiLCJpZCI6IjBhMjMwMjEzLWVkZjctNDRjMC05OTAwLTM2YmM3NDA0ZDIwOCIsIm5ldCI6IndzIiwicGF0aCI6IlwvYWxleGRldmlsbCIsInBvcnQiOjEwMDY3LCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjEwMDY3IEA0NS43Ny4yNDAuMjUgfCBDaG9vcGEgXC8gVnVsdHIgSG9sZGluZ3MsIExMQyB8IGJkODFjIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "ECiMSSOBcOSO4rt5q8gdyZD6wFM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.77.240.25",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 45.77.240.25 | Choopa \/ Vultr Holdings, LLC",
+            "cc": "SG",
+            "port": 10067,
+            "sni": "m.zoom.us",
+            "exit_ip": "45.77.240.25",
+            "exit_isp": "Choopa \/ Vultr Holdings, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "45.77.240.25",
+                    "port": 13851,
+                    "users": [
+                        {
+                            "id": "b7f80715-e15a-4816-ac55-712181089e04",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "ubetatta.alexdevil.help",
+                "headers": {
+                    "Host": "ubetatta.alexdevil.help"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ1YmV0YXR0YS5hbGV4ZGV2aWwuaGVscCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImI3ZjgwNzE1LWUxNWEtNDgxNi1hYzU1LTcxMjE4MTA4OWUwNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6MTM4NTEsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6MTM4NTEgQDQ1Ljc3LjI0MC4yNSB8IENob29wYSBcLyBWdWx0ciBIb2xkaW5ncywgTExDIHwgMzJkNGMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "hgclO1vQBLOjW8HibiuKyff02j0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.77.240.25",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 45.77.240.25 | Choopa \/ Vultr Holdings, LLC",
+            "cc": "SG",
+            "port": 13851,
+            "sni": "",
+            "exit_ip": "45.77.240.25",
+            "exit_isp": "Choopa \/ Vultr Holdings, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "45.77.240.25",
+                    "port": 13851,
+                    "users": [
+                        {
+                            "id": "b7f80715-e15a-4816-ac55-712181089e04",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "m.zoom.us",
+                "headers": {
+                    "Host": "m.zoom.us"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ1YmV0YXR0YS5hbGV4ZGV2aWwuaGVscCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJtLnpvb20udXMiLCJpZCI6ImI3ZjgwNzE1LWUxNWEtNDgxNi1hYzU1LTcxMjE4MTA4OWUwNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6MTM4NTEsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6MTM4NTEgQDQ1Ljc3LjI0MC4yNSB8IENob29wYSBcLyBWdWx0ciBIb2xkaW5ncywgTExDIHwgOTYxYmQiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjB9",
+        "##__key": "2DIIQLzjyw1mo46ke1ryfUDdaeQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.77.240.25",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 45.77.240.25 | Choopa \/ Vultr Holdings, LLC",
+            "cc": "SG",
+            "port": 13851,
+            "sni": "m.zoom.us",
+            "exit_ip": "45.77.240.25",
+            "exit_isp": "Choopa \/ Vultr Holdings, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "45.77.240.25",
+                    "port": 18407,
+                    "users": [
+                        {
+                            "id": "ae4ba1b1-8cbb-4c25-a981-3ba66e9ad4dc",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "ubetatta.alexdevil.help",
+                "headers": {
+                    "Host": "ubetatta.alexdevil.help"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ1YmV0YXR0YS5hbGV4ZGV2aWwuaGVscCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImFlNGJhMWIxLThjYmItNGMyNS1hOTgxLTNiYTY2ZTlhZDRkYyIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6MTg0MDcsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6MTg0MDcgQDQ1Ljc3LjI0MC4yNSB8IENob29wYSBcLyBWdWx0ciBIb2xkaW5ncywgTExDIHwgZjNlM2IiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "agraoCVsBf4UP566pRF4Yrxaphc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.77.240.25",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 45.77.240.25 | Choopa \/ Vultr Holdings, LLC",
+            "cc": "SG",
+            "port": 18407,
+            "sni": "",
+            "exit_ip": "45.77.240.25",
+            "exit_isp": "Choopa \/ Vultr Holdings, LLC"
         }
     },
     {
@@ -1022,10 +2420,10 @@
             "vnext": [
                 {
                     "address": "139.144.119.228",
-                    "port": 55600,
+                    "port": 99,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "befd085a-91f7-4608-bc45-f40c1ac2f4b7",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1041,15 +2439,15 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/v2ray",
+                "host": "praiman.game.jandaspeed.cloud",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "praiman.game.jandaspeed.cloud"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJwcmFpbWFuLmdhbWUuamFuZGFzcGVlZC5jbG91ZCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIxMzkuMTQ0LjExOS4yMjgiLCJpZCI6ImJlZmQwODVhLTkxZjctNDYwOC1iYzQ1LWY0MGMxYWMyZjRiNyIsIm5ldCI6IndzIiwicGF0aCI6IlwvdjJyYXkiLCJwb3J0Ijo5OSwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo5OSBAMTA0LjI4LjIyMi40NiB8IENsb3VkZmxhcmUgV0FSUCB8IDlmZGEwIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "FGJKfh1ngG5uFEX97s8d2zdCcC0",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJwcmFpbWFuLmdhbWUuamFuZGFzcGVlZC5jbG91ZCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImJlZmQwODVhLTkxZjctNDYwOC1iYzQ1LWY0MGMxYWMyZjRiNyIsIm5ldCI6IndzIiwicGF0aCI6IlwvdjJyYXkiLCJwb3J0Ijo5OSwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo5OSBAMTA0LjI4LjIyMi40NiB8IENsb3VkZmxhcmUgV0FSUCB8IDhmYWNlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "EmMIomXHs3mOqtN0f1XUc80ThGI",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -1059,7 +2457,7 @@
             "suffix": "\ud83c\uddf8\ud83c\uddec SG | 104.28.222.46 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "SG",
             "port": 99,
-            "sni": "139.144.119.228",
+            "sni": "praiman.game.jandaspeed.cloud",
             "exit_ip": "104.28.222.46",
             "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
             "f_any": true,
@@ -1074,11 +2472,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "194.233.78.142",
-                    "port": 55600,
+                    "address": "139.144.119.228",
+                    "port": 99,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "befd085a-91f7-4608-bc45-f40c1ac2f4b7",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1094,26 +2492,332 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
+                "path": "\/v2ray",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJwcmFpbWFuLmdhbWUuamFuZGFzcGVlZC5jbG91ZCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiJiZWZkMDg1YS05MWY3LTQ2MDgtYmM0NS1mNDBjMWFjMmY0YjciLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3YycmF5IiwicG9ydCI6OTksInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6OTkgQDEwNC4yOC4yNTQuNDYgfCBDbG91ZGZsYXJlIFdBUlAgfCA2NDUyOCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "i1YZGXMDRIRfYmOchf4Nmg6HnuU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "139.144.119.228",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 104.28.254.46 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "cc": "SG",
+            "port": 99,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "104.28.254.46",
+            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "139.144.119.228",
+                    "port": 99,
+                    "users": [
+                        {
+                            "id": "befd085a-91f7-4608-bc45-f40c1ac2f4b7",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/v2ray",
                 "host": "viber.com",
                 "headers": {
                     "Host": "viber.com"
                 }
             }
         },
-        "##__uri": "socks5:\/\/194.233.78.142:42369#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A42369%20%40194.233.78.142%20%7C%20Contabo%20Asia%20Private%20Limited%20%7C%2072011",
-        "##__key": "q3m1T431EdsXUfqI6f11YAPnA1U",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJwcmFpbWFuLmdhbWUuamFuZGFzcGVlZC5jbG91ZCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2aWJlci5jb20iLCJpZCI6ImJlZmQwODVhLTkxZjctNDYwOC1iYzQ1LWY0MGMxYWMyZjRiNyIsIm5ldCI6IndzIiwicGF0aCI6IlwvdjJyYXkiLCJwb3J0Ijo5OSwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo5OSBAMTA0LjI4LjI1NC40NyB8IENsb3VkZmxhcmUgV0FSUCB8IDBkNjE3Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "YHSNCOFcLIkDagayXL0mYaZSGts",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "194.233.78.142",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.78.142 | Contabo Asia Private Limited",
+            "ip": "139.144.119.228",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 104.28.254.47 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "SG",
-            "port": 42369,
-            "sni": "",
-            "exit_ip": "194.233.78.142",
+            "port": 99,
+            "sni": "viber.com",
+            "exit_ip": "104.28.254.47",
+            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "154.26.131.140",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "3a419158-d69c-493e-9bd1-e253645f9403",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/websocket",
+                "host": "sg1-ctb-ws.xvless.xyz",
+                "headers": {
+                    "Host": "sg1-ctb-ws.xvless.xyz"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/3a419158-d69c-493e-9bd1-e253645f9403@sg1-ctb-ws.xvless.xyz:80?type=ws&path=%2Fwebsocket&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A80%20%40154.26.131.140%20%7C%20Cogent%20Communications%20%2F%20Contabo%20Asia%20Private%20LTD%20%7C%2019024",
+        "##__key": "p9Ys5w4wXx7Aku582gpJz2wviB0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "154.26.131.140",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 154.26.131.140 | Cogent Communications \/ Contabo Asia Private LTD",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg1-ctb-ws.xvless.xyz",
+            "exit_ip": "154.26.131.140",
+            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "3a419158-d69c-493e-9bd1-e253645f9403",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/websocket",
+                "host": "sg1-ctb-ws.xvless.xyz",
+                "headers": {
+                    "Host": "sg1-ctb-ws.xvless.xyz"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/3a419158-d69c-493e-9bd1-e253645f9403@speed.cloudflare.com:80?type=ws&host=sg1-ctb-ws.xvless.xyz&path=%2Fwebsocket&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A80%20%40154.26.131.140%20%7C%20Cogent%20Communications%20%2F%20Contabo%20Asia%20Private%20LTD%20%7C%20b7b52",
+        "##__key": "dhgNCKwvheC1AZ5WgF1YEmCccmM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 154.26.131.140 | Cogent Communications \/ Contabo Asia Private LTD",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg1-ctb-ws.xvless.xyz",
+            "exit_ip": "154.26.131.140",
+            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "a147f1b3-d0d4-4ca8-9ce9-38d3c24d7950",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiJhMTQ3ZjFiMy1kMGQ0LTRjYTgtOWNlOS0zOGQzYzI0ZDc5NTAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6ODAgQDE5NC4yMzMuODEuMTI1IHwgQ29udGFibyBBc2lhIFByaXZhdGUgTGltaXRlZCB8IDA3MDBhIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "tu5GKkFLmY4gKTtfskR9V9qfqUU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiNGIxYmJkNTItMjI4MS00NjlhLWE1NDctYTBiNDZmZWY2NjUzIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjgwIEAxOTQuMjMzLjgxLjEyNSB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCA0YTgzZCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "QeH8HEch3Gt8Gu4PTYcgHS8meU4",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.81.125",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "a68a5907-60d6-4333-9059-e91a86d21147",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/a68a5907-60d6-4333-9059-e91a86d21147@sg-v.sshmax.xyz:80?type=ws&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A80%20%40194.233.81.125%20%7C%20Contabo%20Asia%20Private%20Limited%20%7C%20a332b",
+        "##__key": "AnYx4vm0NWHdd8Of8BnqccBNezI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "194.233.81.125",
             "exit_isp": "Contabo Asia Private Limited"
         }
     },
@@ -1123,11 +2827,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "128.199.220.250",
-                    "port": 55600,
+                    "address": "194.233.81.125",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "ceb8a921-ec72-4804-ae92-cbd309f2f213",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1143,10 +2847,315 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy12LnNzaG1heC54eXoiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiJjZWI4YTkyMS1lYzcyLTQ4MDQtYWU5Mi1jYmQzMDlmMmYyMTMiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6ODAgQDE5NC4yMzMuODEuMTI1IHwgQ29udGFibyBBc2lhIFByaXZhdGUgTGltaXRlZCB8IGQ5NjEwIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "lsj13osuYz2GeTOoW3rTJSD5OmE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.81.125",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.233.95.180",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "034f7e88-561a-4fb9-b917-4ab3343b6755",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess\/",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzaTRjby4wOXZwbi5jb20iLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiMDM0ZjdlODgtNTYxYS00ZmI5LWI5MTctNGFiMzM0M2I2NzU1IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzc1wvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6ODAgQDE5NC4yMzMuOTUuMTgwIHwgQ29udGFibyBBc2lhIFByaXZhdGUgTGltaXRlZCB8IGMxMDBlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "SmNgazXGbj4oElsWKxeN3ZaCsgk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.233.95.180",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.95.180 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "194.233.95.180",
+            "exit_isp": "Contabo Asia Private Limited",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZy12LnNzaG1heC54eXoiLCJpZCI6IjRiMWJiZDUyLTIyODEtNDY5YS1hNTQ3LWEwYjQ2ZmVmNjY1MyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo4MCBAMTk0LjIzMy44MS4xMjUgfCBDb250YWJvIEFzaWEgUHJpdmF0ZSBMaW1pdGVkIHwgNTkwNzMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "99jmkuZxqTJdxQeths38tujwHUw",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "a147f1b3-d0d4-4ca8-9ce9-38d3c24d7950",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "sg-v.sshmax.xyz",
+                "headers": {
+                    "Host": "sg-v.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZy12LnNzaG1heC54eXoiLCJpZCI6ImExNDdmMWIzLWQwZDQtNGNhOC05Y2U5LTM4ZDNjMjRkNzk1MCIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo4MCBAMTk0LjIzMy44MS4xMjUgfCBDb250YWJvIEFzaWEgUHJpdmF0ZSBMaW1pdGVkIHwgYTUyMWIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "F3DGeXBbQVbs8U7ZGCd3q9QbfWM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.81.125 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sg-v.sshmax.xyz",
+            "exit_ip": "194.233.81.125",
+            "exit_isp": "Contabo Asia Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "034f7e88-561a-4fb9-b917-4ab3343b6755",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess\/",
+                "host": "si4co.09vpn.com",
+                "headers": {
+                    "Host": "si4co.09vpn.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzaTRjby4wOXZwbi5jb20iLCJpZCI6IjAzNGY3ZTg4LTU2MWEtNGZiOS1iOTE3LTRhYjMzNDNiNjc1NSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3NcLyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjgwIEAxOTQuMjMzLjk1LjE4MCB8IENvbnRhYm8gQXNpYSBQcml2YXRlIExpbWl0ZWQgfCA3YWJlNyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "NqyFbtbLvvGpacClGu0W6zTZQ2M",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.233.95.180 | Contabo Asia Private Limited",
+            "cc": "SG",
+            "port": 80,
+            "sni": "si4co.09vpn.com",
+            "exit_ip": "194.233.95.180",
+            "exit_isp": "Contabo Asia Private Limited",
+            "f_any": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "188.166.231.248",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "5a142243-ded2-4858-a97b-eb56f0a7765f",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "android.googleapis.com",
+                "headers": {
+                    "Host": "android.googleapis.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/5a142243-ded2-4858-a97b-eb56f0a7765f@188.166.231.248:80?type=ws&host=android.googleapis.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A80%20%40188.166.231.248%20%7C%20DigitalOcean%20%7C%204078f",
+        "##__key": "wA9WLQEhh5X920bXzWJgcExwExQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "188.166.231.248",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 188.166.231.248 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 80,
+            "sni": "android.googleapis.com",
+            "exit_ip": "188.166.231.248",
+            "exit_isp": "DigitalOcean, LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "128.199.220.250",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "054c82f7-9b61-4223-86a4-c231e9fafcf0",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/uudai4g.com",
+                "host": "sg5.uudai4g.com",
+                "headers": {
+                    "Host": "sg5.uudai4g.com"
                 }
             }
         },
@@ -1172,11 +3181,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "157.245.48.238",
-                    "port": 55600,
+                    "address": "146.190.89.218",
+                    "port": 2023,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "45b2d123-3246-4e55-a0d7-506cd14d1c54",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1193,11 +3202,76 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "imo.im",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "imo.im"
                 }
             }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDYuMTkwLjg5LjIxOCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJpbW8uaW0iLCJpZCI6IjQ1YjJkMTIzLTMyNDYtNGU1NS1hMGQ3LTUwNmNkMTRkMWM1NCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6MjAyMywicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czoyMDIzIEAxNDYuMTkwLjg5LjIxOCB8IERpZ2l0YWxPY2VhbiB8IGQ2NTUyIiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "yLmaU4C0TUKgQoWcC2bJDKGEMRQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "146.190.89.218",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 146.190.89.218 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 2023,
+            "sni": "imo.im",
+            "exit_ip": "146.190.89.218",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "157.245.48.238",
+                    "port": 3389,
+                    "users": [
+                        {
+                            "id": "9c050a86-d612-48f1-ec32-e573df08a1b7",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
         },
         "##__uri": "vmess:\/\/eyJhZGQiOiIxNTcuMjQ1LjQ4LjIzOCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiOWMwNTBhODYtZDYxMi00OGYxLWVjMzItZTU3M2RmMDhhMWI3IiwibmV0IjoidGNwIiwicGF0aCI6IlwvIiwicG9ydCI6MzM4OSwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB0Y3A6MzM4OSBAMTU3LjI0NS40OC4yMzggfCBEaWdpdGFsT2NlYW4gfCBkZDc5MCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOjJ9",
         "##__key": "SLuVtYbWHUw7l6iuGvBFIh111mA",
@@ -1221,16 +3295,17 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "146.190.82.168",
-                    "port": 55600,
+                    "address": "104.248.152.19",
+                    "port": 8080,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "20ab431b-073f-4073-be9b-879256eb932d",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -1246,14 +3321,68 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
         },
-        "##__uri": "vless:\/\/be95c09b-779d-4633-9d43-60177cdfcaab@146.190.82.168:11414?type=ws&host=vk.com&path=%2FFREE-By_Tharuwa%20%28%40z_z_z_zz_z%29&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A11414%20%40146.190.82.168%20%7C%20DigitalOcean%20%7C%20e531d",
-        "##__key": "PZJHSYuxXrjxsfilWw5AwcWkWJE",
+        "##__uri": "vless:\/\/20ab431b-073f-4073-be9b-879256eb932d@104.248.152.19:8080?type=ws&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A8080%20%40104.248.152.19%20%7C%20DigitalOcean%20%7C%201679c",
+        "##__key": "xIdVsPU3PEH1Zo5V5yRZ9EJmne8",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.248.152.19",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 104.248.152.19 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 8080,
+            "sni": "",
+            "exit_ip": "104.248.152.19",
+            "exit_isp": "DigitalOcean, LLC",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "146.190.82.168",
+                    "port": 11414,
+                    "users": [
+                        {
+                            "id": "be95c09b-779d-4633-9d43-60177cdfcaab",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/FREE-By_Tharuwa (@z_z_z_zz_z)",
+                "host": "imo.im",
+                "headers": {
+                    "Host": "imo.im"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/be95c09b-779d-4633-9d43-60177cdfcaab@146.190.82.168:11414?type=ws&host=imo.im&path=%2FFREE-By_Tharuwa%20%28%40z_z_z_zz_z%29&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A11414%20%40146.190.82.168%20%7C%20DigitalOcean%20%7C%202ac4c",
+        "##__key": "UWpd894Kg8cejbNta6ARMfdvNYU",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -1263,7 +3392,7 @@
             "suffix": "\ud83c\uddf8\ud83c\uddec SG | 146.190.82.168 | DigitalOcean, LLC",
             "cc": "SG",
             "port": 11414,
-            "sni": "vk.com",
+            "sni": "imo.im",
             "exit_ip": "146.190.82.168",
             "exit_isp": "DigitalOcean, LLC",
             "f_any": true,
@@ -1278,11 +3407,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "146.190.102.243",
-                    "port": 55600,
+                    "address": "137.184.248.66",
+                    "port": 24800,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "d03e5935-b3c4-4dea-8c03-3af578a913ce",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1299,25 +3428,25 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
         },
-        "##__uri": "vless:\/\/d70096b5-3d91-469e-b69f-ed494b896498@146.190.102.243:22783?type=ws&host=media-exp1.licdn.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A22783%20%40146.190.102.243%20%7C%20DigitalOcean%20%7C%2067f92",
-        "##__key": "vni7VyN5FMPYehxNXjSJb1ULltA",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMzcuMTg0LjI0OC42NiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImQwM2U1OTM1LWIzYzQtNGRlYS04YzAzLTNhZjU3OGE5MTNjZSIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6MjQ4MDAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6MjQ4MDAgQDE1Ny4yMzAuMzguMjU1IHwgRGlnaXRhbE9jZWFuIHwgNDE2NjMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "AWzCL1xe4toB4awR76ilQGGv8z0",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "146.190.102.243",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 146.190.102.243 | DigitalOcean, LLC",
+            "ip": "137.184.248.66",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 157.230.38.255 | DigitalOcean, LLC",
             "cc": "SG",
-            "port": 22783,
-            "sni": "media-exp1.licdn.com",
-            "exit_ip": "146.190.102.243",
+            "port": 24800,
+            "sni": "",
+            "exit_ip": "157.230.38.255",
             "exit_isp": "DigitalOcean, LLC",
             "f_any": true,
             "f_tracker": true,
@@ -1327,16 +3456,17 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
                     "address": "159.223.59.116",
-                    "port": 55600,
+                    "port": 25423,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "f0840e62-7d05-436e-c052-f5e875ded543",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -1351,10 +3481,10 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/FREE-not_for_sale(@z_z_z_zz_z)",
+                "host": "imo.im",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "imo.im"
                 }
             }
         },
@@ -1371,24 +3501,22 @@
             "port": 25423,
             "sni": "imo.im",
             "exit_ip": "159.223.59.116",
-            "exit_isp": "DigitalOcean, LLC",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true
+            "exit_isp": "DigitalOcean, LLC"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
                     "address": "178.128.31.223",
-                    "port": 55600,
+                    "port": 32547,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "8f452fb5-274c-48da-96af-7b06444254fe",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -1404,9 +3532,9 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "m.zoom.us",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "m.zoom.us"
                 }
             }
         },
@@ -1432,16 +3560,167 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "146.190.89.218",
-                    "port": 55600,
+                    "address": "137.184.248.66",
+                    "port": 35630,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "a8a47b4e-d6d4-45e9-81bf-361e52ae0274",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "internet.life.com.by",
+                "headers": {
+                    "Host": "internet.life.com.by"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/a8a47b4e-d6d4-45e9-81bf-361e52ae0274@137.184.248.66:35630?type=ws&host=internet.life.com.by&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A35630%20%40157.230.38.255%20%7C%20DigitalOcean%20%7C%200bf89",
+        "##__key": "EXTM6lU5Ncj2ZCFsw7LypDhyQsQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "137.184.248.66",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 157.230.38.255 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 35630,
+            "sni": "internet.life.com.by",
+            "exit_ip": "157.230.38.255",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "137.184.248.66",
+                    "port": 35630,
+                    "users": [
+                        {
+                            "id": "a8a47b4e-d6d4-45e9-81bf-361e52ae0274",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "static-exp1.licdn.com",
+                "headers": {
+                    "Host": "static-exp1.licdn.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/a8a47b4e-d6d4-45e9-81bf-361e52ae0274@137.184.248.66:35630?type=ws&host=static-exp1.licdn.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A35630%20%40157.230.38.255%20%7C%20DigitalOcean%20%7C%201ca95",
+        "##__key": "eufEuwaKKqoicsKWSka6oQWskNI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "137.184.248.66",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 157.230.38.255 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 35630,
+            "sni": "static-exp1.licdn.com",
+            "exit_ip": "157.230.38.255",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "137.184.248.66",
+                    "port": 35630,
+                    "users": [
+                        {
+                            "id": "a8a47b4e-d6d4-45e9-81bf-361e52ae0274",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "imo.im",
+                "headers": {
+                    "Host": "imo.im"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/a8a47b4e-d6d4-45e9-81bf-361e52ae0274@137.184.248.66:35630?type=ws&host=imo.im&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A35630%20%40157.230.38.255%20%7C%20DigitalOcean%20%7C%20960f1",
+        "##__key": "NLtrU08sUtJ6WPkY6Cw5GzcQvcE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "137.184.248.66",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 157.230.38.255 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 35630,
+            "sni": "imo.im",
+            "exit_ip": "157.230.38.255",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "178.128.31.223",
+                    "port": 39714,
+                    "users": [
+                        {
+                            "id": "5f82d673-1f91-40dc-b780-12036b5e555c",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -1463,19 +3742,19 @@
                 }
             }
         },
-        "##__uri": "vless:\/\/f5ed6607-7a2f-4f0b-9522-557d1b25f59e@146.190.89.218:59193?type=ws&host=imo.im&path=%2FFREE-not_for_sale%20%28%40z_z_z_zz_z%29Tharuwa&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A59193%20%40146.190.89.218%20%7C%20DigitalOcean%20%7C%2013d5e",
-        "##__key": "BXNarJlk6GIyBYWNdo3wnTjHA3M",
+        "##__uri": "vless:\/\/5f82d673-1f91-40dc-b780-12036b5e555c@178.128.31.223:39714?type=ws&host=viber.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A39714%20%40178.128.31.223%20%7C%20DigitalOcean%20%7C%20396f9",
+        "##__key": "NfFp5Rtxw9KClSNiSheCttqDtOs",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "146.190.89.218",
-            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 146.190.89.218 | DigitalOcean, LLC",
+            "ip": "178.128.31.223",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 178.128.31.223 | DigitalOcean, LLC",
             "cc": "SG",
-            "port": 59193,
-            "sni": "imo.im",
-            "exit_ip": "146.190.89.218",
+            "port": 39714,
+            "sni": "viber.com",
+            "exit_ip": "178.128.31.223",
             "exit_isp": "DigitalOcean, LLC",
             "f_any": true,
             "f_tracker": true,
@@ -1485,16 +3764,67 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "184.168.121.153",
-                    "port": 55600,
+                    "address": "146.190.82.23",
+                    "port": 40774,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
+                            "id": "eb9b5642-33f4-42a9-b589-fb4ca0e5c8b5",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/locationfinde",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/eb9b5642-33f4-42a9-b589-fb4ca0e5c8b5@146.190.82.23:40774?type=ws&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&path=%2Flocationfinde&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A40774%20%40146.190.82.23%20%7C%20DigitalOcean%20%7C%20469dc",
+        "##__key": "LJ0O3BtbevYhspLX9eV9pWxvlto",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "146.190.82.23",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 146.190.82.23 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 40774,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "146.190.82.23",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "178.128.31.223",
+                    "port": 44402,
+                    "users": [
+                        {
+                            "id": "94448e68-0de5-4814-9e0d-588939ae0546",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -1510,13 +3840,139 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "au.linkedin.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "au.linkedin.com"
                 }
             }
         },
-        "##__uri": "socks5:\/\/184.168.121.153:41134#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A41134%20%40184.168.121.153%20%7C%20GoDaddy.com%2C%20LLC%20%7C%20021a7",
+        "##__uri": "vless:\/\/94448e68-0de5-4814-9e0d-588939ae0546@178.128.31.223:44402?type=ws&host=au.linkedin.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A44402%20%40178.128.31.223%20%7C%20DigitalOcean%20%7C%200c38f",
+        "##__key": "r6y8R8yWDZ8XVcAefuAMkeuFQKU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "178.128.31.223",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 178.128.31.223 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 44402,
+            "sni": "au.linkedin.com",
+            "exit_ip": "178.128.31.223",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "146.190.82.68",
+                    "port": 52107,
+                    "users": [
+                        {
+                            "id": "6f678bca-6231-485d-8bb3-e2cef76e3392",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/isuru",
+                "host": "",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDYuMTkwLjgyLjY4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IiIsImlkIjoiNmY2NzhiY2EtNjIzMS00ODVkLThiYjMtZTJjZWY3NmUzMzkyIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9pc3VydSIsInBvcnQiOjUyMTA3LCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjUyMTA3IEAxNDYuMTkwLjgyLjY4IHwgRGlnaXRhbE9jZWFuIHwgNjM5NmIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "HsG3N92TOge5RE5OdvhIoLOL4ws",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "146.190.82.68",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 146.190.82.68 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 52107,
+            "sni": "",
+            "exit_ip": "146.190.82.68",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "178.128.31.223",
+                    "port": 55326,
+                    "users": [
+                        {
+                            "id": "1a2ff127-4d2c-4267-a6f4-84167bfabb9d",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "android.googleapis.com",
+                "headers": {
+                    "Host": "android.googleapis.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/1a2ff127-4d2c-4267-a6f4-84167bfabb9d@178.128.31.223:55326?type=ws&host=android.googleapis.com&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20ws%3A55326%20%40178.128.31.223%20%7C%20DigitalOcean%20%7C%2068a42",
+        "##__key": "YFCG1VkTdsgeIaKX6mkSKEW1f1Y",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "178.128.31.223",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 178.128.31.223 | DigitalOcean, LLC",
+            "cc": "SG",
+            "port": 55326,
+            "sni": "android.googleapis.com",
+            "exit_ip": "178.128.31.223",
+            "exit_isp": "DigitalOcean, LLC"
+        }
+    },
+    {
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "184.168.121.153",
+                    "ota": false,
+                    "port": 13658
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/184.168.121.153:13658#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A13658%20%40184.168.121.153%20%7C%20GoDaddy.com%2C%20LLC%20%7C%20da2aa",
         "##__key": "vxsXM8hncsV5oCeMeW3P3tXA8ho",
         "##__insecure": false,
         "##__flags": {
@@ -1526,7 +3982,7 @@
             "ip": "184.168.121.153",
             "suffix": "\ud83c\uddf8\ud83c\uddec SG | 184.168.121.153 | GoDaddy.com, LLC",
             "cc": "SG",
-            "port": 41134,
+            "port": 13658,
             "sni": "",
             "exit_ip": "184.168.121.153",
             "exit_isp": "GoDaddy.com, LLC"
@@ -1539,10 +3995,10 @@
             "vnext": [
                 {
                     "address": "213.35.113.150",
-                    "port": 55600,
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "eaf5e01b-f27d-44cf-94ae-87196143eef9",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1559,9 +4015,9 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
@@ -1587,11 +4043,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "194.15.115.199",
-                    "port": 55600,
+                    "address": "194.15.115.194",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1607,12 +4063,90 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/vmess",
+                "host": "",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": ""
                 }
             }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxOTQuMTUuMTE1LjE5NCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjRiMWJiZDUyLTIyODEtNDY5YS1hNTQ3LWEwYjQ2ZmVmNjY1MyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czo4MCBAMTk0LjE1LjExNS4xOTQgfCBIdXJyaWNhbmUgRWxlY3RyaWMgTExDIFwvIEludGVybmF0aW9uYWwgSG9zdGluZyBTb2x1dGlvbnMgfCAwZDFiMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "R1xc0pqjFXNNSlngWJj61gXX5gE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.15.115.194",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.15.115.194 | Hurricane Electric LLC \/ International Hosting Solutions",
+            "cc": "SG",
+            "port": 80,
+            "sni": "",
+            "exit_ip": "194.15.115.194",
+            "exit_isp": "Hurricane Electric LLC \/ International Hosting Solutions"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.15.115.194",
+                    "port": 2082,
+                    "users": [
+                        {
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxOTQuMTUuMTE1LjE5NCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI0YjFiYmQ1Mi0yMjgxLTQ2OWEtYTU0Ny1hMGI0NmZlZjY2NTMiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6MjA4MiwicHMiOiJcdWQ4M2NcdWRkZjhcdWQ4M2NcdWRkZWMgU0cgfCB3czoyMDgyIEAxOTQuMTUuMTE1LjE5NCB8IEh1cnJpY2FuZSBFbGVjdHJpYyBMTEMgXC8gSW50ZXJuYXRpb25hbCBIb3N0aW5nIFNvbHV0aW9ucyB8IDRhZDE5Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "hcQsvsF9VmcVXKyXDcue2YrVRQI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.15.115.194",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.15.115.194 | Hurricane Electric LLC \/ International Hosting Solutions",
+            "cc": "SG",
+            "port": 2082,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "194.15.115.194",
+            "exit_isp": "Hurricane Electric LLC \/ International Hosting Solutions"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "shadowsocks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "194.15.115.199",
+                    "port": 8388,
+                    "password": "3b2ad980-1c93-4045-b9ca-12d479f1cf60",
+                    "method": "chacha20-ietf-poly1305"
+                }
+            ]
         },
         "##__uri": "ss:\/\/chacha20-ietf-poly1305:3b2ad980-1c93-4045-b9ca-12d479f1cf60@sg1.xvless.xyz:8388#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A8388%20%40194.15.115.199%20%7C%20Hurricane%20Electric%20LLC%20%2F%20International%20Hosting%20Solutions%20%7C%202f264",
         "##__key": "GOkG7WGrZJrlHBpGWBTJDVvVO9A",
@@ -1636,11 +4170,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "139.162.6.248",
-                    "port": 55600,
+                    "address": "194.15.115.194",
+                    "port": 8880,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "4b1bbd52-2281-469a-a547-a0b46fef6653",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1656,10 +4190,59 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
+                "path": "\/vmess",
                 "host": "viber.com",
                 "headers": {
                     "Host": "viber.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxOTQuMTUuMTE1LjE5NCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2aWJlci5jb20iLCJpZCI6IjRiMWJiZDUyLTIyODEtNDY5YS1hNTQ3LWEwYjQ2ZmVmNjY1MyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4ODgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjg4ODAgQDE5NC4xNS4xMTUuMTk0IHwgSHVycmljYW5lIEVsZWN0cmljIExMQyBcLyBJbnRlcm5hdGlvbmFsIEhvc3RpbmcgU29sdXRpb25zIHwgNjUzMTQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "lPetKhnfnaGPqBKxQ0iHllS8k68",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.15.115.194",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 194.15.115.194 | Hurricane Electric LLC \/ International Hosting Solutions",
+            "cc": "SG",
+            "port": 8880,
+            "sni": "viber.com",
+            "exit_ip": "194.15.115.194",
+            "exit_isp": "Hurricane Electric LLC \/ International Hosting Solutions"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "139.162.6.248",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "c95357eb-2869-4511-8940-f0dc5e1ec9b1",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/5gsieutocdo.club",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
@@ -1689,11 +4272,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "91.192.81.21",
-                    "port": 55600,
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "d6664518-c8e1-42cf-f2c1-d33dcc01a8a6",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1710,11 +4293,40 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "viber.com",
+                "host": "sgvpn.catnipballs.gay",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "sgvpn.catnipballs.gay"
                 }
             }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzZ3Zwbi5jYXRuaXBiYWxscy5nYXkiLCJpZCI6ImQ2NjY0NTE4LWM4ZTEtNDJjZi1mMmMxLWQzM2RjYzAxYThhNiIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgd3M6ODAgQDEzOS4xNjIuMTguMjI2IHwgTGlub2RlLCBMTEMgfCA4MmI3ZiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "niQGDMOJhxaSxeVlyyGAPlR43ZU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 139.162.18.226 | Linode, LLC",
+            "cc": "SG",
+            "port": 80,
+            "sni": "sgvpn.catnipballs.gay",
+            "exit_ip": "139.162.18.226",
+            "exit_isp": "Linode, LLC"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "shadowsocks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "91.192.81.21",
+                    "port": 8388,
+                    "password": "1q7RNKaIk2wYO8fEPmEX0vWQ7Va+QRTA",
+                    "method": "chacha20-ietf-poly1305"
+                }
+            ]
         },
         "##__uri": "ss:\/\/Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxcTdSTkthSWsyd1lPOGZFUG1FWDB2V1E3VmErUVJUQQ@91.192.81.21:8388#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%7C%20tcp%3A8388%20%4091.192.81.21%20%7C%20Melbikomas%20UAB%20%7C%2066b15",
         "##__key": "9aK0FrngFF1zbFdos4vaweiIdhE",
@@ -1742,11 +4354,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "152.69.211.235",
-                    "port": 55600,
+                    "address": "15.235.152.84",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "fbccfed7-1aeb-416a-a4fd-7af1747f9f3b",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -1762,12 +4374,126 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
+                "path": "\/VPNDATA.xYx",
+                "host": "vk.com",
                 "headers": {
-                    "Host": "viber.com"
+                    "Host": "vk.com"
                 }
             }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy52cG5kYXRhLnZuIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6InZrLmNvbSIsImlkIjoiZmJjY2ZlZDctMWFlYi00MTZhLWE0ZmQtN2FmMTc0N2Y5ZjNiIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9WUE5EQVRBLnhZeCIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjgwIEAxNS4yMzUuMTUyLjg0IHwgT1ZIIFNpbmdhcG9yZSBQVEUuIExURCB8IDQyOTMyIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "t47hemmRBAgAX4MLBomejd1hGok",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "15.235.152.84",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 15.235.152.84 | OVH SAS \/ OVH Singapore PTE. LTD",
+            "cc": "SG",
+            "port": 80,
+            "sni": "vk.com",
+            "exit_ip": "15.235.152.84",
+            "exit_isp": "OVH SAS \/ OVH Singapore PTE. LTD"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "15.235.152.84",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "fbccfed7-1aeb-416a-a4fd-7af1747f9f3b",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/VPNDATA.xYx",
+                "host": "lienquan.garena.vn",
+                "headers": {
+                    "Host": "lienquan.garena.vn"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzZy52cG5kYXRhLnZuIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6ImxpZW5xdWFuLmdhcmVuYS52biIsImlkIjoiZmJjY2ZlZDctMWFlYi00MTZhLWE0ZmQtN2FmMTc0N2Y5ZjNiIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9WUE5EQVRBLnhZeCIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyB8IHdzOjgwIEAxNS4yMzUuMTMxLjkgfCBPVkggU2luZ2Fwb3JlIFBURS4gTFREIFwvIGh0dHZzZXJ2ZXIgfCBlYzA5OCIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
+        "##__key": "zYcv7EvJx1FwZMI74j3U4swzQP0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "15.235.152.84",
+            "suffix": "\ud83c\uddf8\ud83c\uddec SG | 15.235.131.9 | OVH Singapore PTE. LTD \/ httvserver",
+            "cc": "SG",
+            "port": 80,
+            "sni": "lienquan.garena.vn",
+            "exit_ip": "15.235.131.9",
+            "exit_isp": "OVH Singapore PTE. LTD \/ httvserver"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "152.69.211.235",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "d345916f-1673-4a98-f37d-49357c84ce03",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
         },
         "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMjExLjIzNSIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiZDM0NTkxNmYtMTY3My00YTk4LWYzN2QtNDkzNTdjODRjZTAzIiwibmV0IjoidGNwIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjIFNHIHwgdGNwOjgwIEAxNTIuNjkuMjExLjIzNSB8IE9yYWNsZSBDb3Jwb3JhdGlvbiB8IGQ0YTY4Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6Mn0=",
         "##__key": "SODGTFw87KndevKxlIUeqUy1AtQ",

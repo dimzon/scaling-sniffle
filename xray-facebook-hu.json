@@ -6,10 +6,10 @@
             "vnext": [
                 {
                     "address": "18.176.134.145",
-                    "port": 55600,
+                    "port": 30864,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "436502bd-03ca-3d8e-8a84-2e4cd029eaa6",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -17,19 +17,20 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "hu01.tomoony.xyz",
+                "show": true
             }
         },
         "##__uri": "vmess:\/\/eyJhZGQiOiJkaXIwMS5uZXRvcmlnaW5zMnUuc2l0ZSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNDM2NTAyYmQtMDNjYS0zZDhlLThhODQtMmU0Y2QwMjllYWE2IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjMwODY0LCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZmEgSFUgfCB0Y3A6MzA4NjQgQDUuMTgxLjc3LjEyIHwgRy1Db3JlIExhYnMgUy5BLiBcLyBHQ0wgfCA0NWFkOCIsInNjeSI6ImF1dG8iLCJzbmkiOiJodTAxLnRvbW9vbnkueHl6IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",

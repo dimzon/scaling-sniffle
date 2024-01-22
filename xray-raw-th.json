@@ -1,36 +1,14 @@
 [
     {
-        "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "socks",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "122.155.223.165",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "ota": false,
+                    "port": 10203
                 }
             ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
         },
         "##__uri": "socks5:\/\/122.155.223.165:10203#%F0%9F%87%B9%F0%9F%87%AD%20TH%20%7C%20tcp%3A10203%20%40122.155.223.165%20%7C%20CAT%20Telecom%20Public%20Company%20Limited%20%2F%20National%20Telecom%20Public%20Company%20Limited%20%7C%208aac5",
         "##__key": "vBY4eqdX7HKFa4YmrcbAVcG4yfk",
