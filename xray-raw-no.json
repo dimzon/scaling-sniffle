@@ -55,6 +55,56 @@
         "settings": {
             "vnext": [
                 {
+                    "address": "95.164.38.201",
+                    "port": 55600,
+                    "users": [
+                        {
+                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "viber.com",
+                "headers": {
+                    "Host": "viber.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/46f72049-4c32-455c-af5b-d6a6c0039679@95.164.38.201:2083?security=tls&type=ws&sni=no1-vless.sshmax.xyz&allowInsecure=1&host=no1-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%B3%F0%9F%87%B4%20NO%20%7C%20ws%3A2083%20%4095.164.38.201%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20653a1",
+        "##__key": "1WT3uAdwwHKYAYbvPd1uvxnxNnU",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "95.164.38.201",
+            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 95.164.38.201 | Stark Industries Solutions LTD",
+            "cc": "NO",
+            "port": 443,
+            "sni": "no1-vless.sshmax.xyz",
+            "exit_ip": "95.164.38.201",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
                     "address": "95.164.38.223",
                     "port": 55600,
                     "users": [
@@ -82,7 +132,7 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuMzguMjIzIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImNlOWNjZWUxLThjMGUtNGVhNC04ZDkzLTdiODk2ZWM1NGUzMSIsIm5ldCI6ImdycGMiLCJwYXRoIjoiIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmNCBOTyB8IGdycGM6NDQzIEA5NS4xNjQuMzguMjIzIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgY2U5YjEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuMzguMjIzIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImNlOWNjZWUxLThjMGUtNGVhNC04ZDkzLTdiODk2ZWM1NGUzMSIsIm5ldCI6ImdycGMiLCJwYXRoIjoiIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmNCBOTyB8IGdycGM6NDQzIEA5NS4xNjQuMzguMjIzIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgY2U5YjEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imd1biIsInYiOjJ9",
         "##__key": "8OgjFZv5Ymp7pI9j1cIa0G0FwEc",
         "##__insecure": false,
         "##__flags": {
@@ -93,11 +143,13 @@
             "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 95.164.38.223 | Stark Industries Solutions LTD",
             "cc": "NO",
             "port": 443,
-            "sni": "",
+            "sni": "95.164.38.223",
             "exit_ip": "95.164.38.223",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
-            "f_facebook": true
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     }
 ]

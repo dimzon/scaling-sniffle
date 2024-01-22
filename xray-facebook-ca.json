@@ -5,59 +5,6 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "192.53.121.160",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjYS12MnJheS5pcHJhY2V2cG4uY29tIiwiYWlkIjowLCJhbHBuIjoiaDIsaHR0cFwvMS4xIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI5MGM4MzE4YS0wMGI2LTQyNmYtYTM0Ni02MTk4ZDZlZTJjYTQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6ODQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGU4XHVkODNjXHVkZGU2IENBIHwgdGNwOjg0NDMgQDE5Mi41My4xMjEuMTYwIHwgQWthbWFpIFRlY2hub2xvZ2llcywgSW5jLiBcLyBMaW5vZGUsIExMQyB8IDU4YjczIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "xcFHGpzGgxf3tIQbuKEy9Jx2HrA",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "192.53.121.160",
-            "suffix": "\ud83c\udde8\ud83c\udde6 CA | 192.53.121.160 | Akamai Technologies, Inc. \/ Linode, LLC",
-            "cc": "CA",
-            "port": 8443,
-            "sni": "ca-v2ray.ipracevpn.com",
-            "exit_ip": "192.53.121.160",
-            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "172.105.99.68",
                     "port": 55600,
                     "users": [
@@ -154,6 +101,113 @@
             "exit_isp": "Akamai Technologies \/ Linode",
             "f_any": true,
             "f_tracker": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "137.184.170.248",
+                    "port": 55600,
+                    "users": [
+                        {
+                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "viber.com",
+                "headers": {
+                    "Host": "viber.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/1edb0562-1c71-421f-f929-b278eaa243a2@137.184.170.248:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=config-248.aryariemann.site&path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%A8%F0%9F%87%A6%20CA%20%7C%20ws%3A443%20%40137.184.170.248%20%7C%20DigitalOcean%20%7C%203acd6",
+        "##__key": "EovAaAAdnItFI3VKI99KaCGNUow",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "137.184.170.248",
+            "suffix": "\ud83c\udde8\ud83c\udde6 CA | 137.184.170.248 | DigitalOcean, LLC",
+            "cc": "CA",
+            "port": 443,
+            "sni": "config-248.aryariemann.site",
+            "exit_ip": "137.184.170.248",
+            "exit_isp": "DigitalOcean, LLC",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "137.184.166.27",
+                    "port": 55600,
+                    "users": [
+                        {
+                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "viber.com",
+                "headers": {
+                    "Host": "viber.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/e463f6c3-52be-4452-b543-c49a7615f50f@137.184.166.27:8443?security=tls&type=ws&sni=config-27.aryariemann.site&host=config-27.aryariemann.site&path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%A8%F0%9F%87%A6%20CA%20%7C%20ws%3A8443%20%40137.184.166.27%20%7C%20DigitalOcean%20%7C%200df12",
+        "##__key": "fZgEzG0YkkR5qTIZdzDNFdTApt8",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "137.184.166.27",
+            "suffix": "\ud83c\udde8\ud83c\udde6 CA | 137.184.166.27 | DigitalOcean, LLC",
+            "cc": "CA",
+            "port": 8443,
+            "sni": "config-27.aryariemann.site",
+            "exit_ip": "137.184.166.27",
+            "exit_isp": "DigitalOcean, LLC",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
         }
@@ -217,6 +271,59 @@
         "settings": {
             "vnext": [
                 {
+                    "address": "15.235.41.200",
+                    "port": 55600,
+                    "users": [
+                        {
+                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "viber.com",
+                "headers": {
+                    "Host": "viber.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNS4yMzUuNDEuMjAwIiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidmsuY29tIiwiaWQiOiI1OGZlMTU0Mi01MjkwLTQwYWQtODE1YS03NzcwN2E4MWFmZTUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL0lPZWJoTE1obDFDVGJGSGJMOTVteWZSWDIiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlNiBDQSB8IHdzOjQ0MyBAMTUuMjM1LjQxLjIwMCB8IE9WSCBIb3N0aW5nLCBJbmMgfCA4NzZjYyIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "qItVwYWaCFZeGCDXSJ59FiyQh7Y",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "15.235.41.200",
+            "suffix": "\ud83c\udde8\ud83c\udde6 CA | 15.235.41.200 | OVH SAS \/ OVH Hosting, Inc",
+            "cc": "CA",
+            "port": 443,
+            "sni": "vk.com",
+            "exit_ip": "15.235.41.200",
+            "exit_isp": "OVH SAS \/ OVH Hosting, Inc",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
                     "address": "51.79.102.253",
                     "port": 55600,
                     "users": [
@@ -250,12 +357,12 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "51.79.102.253",
             "suffix": "\ud83c\udde8\ud83c\udde6 CA | 51.79.102.253 | OVH SAS \/ OVH Hosting, Inc.",
             "cc": "CA",
             "port": 443,
-            "sni": "vk.com",
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
             "exit_ip": "51.79.102.253",
             "exit_isp": "OVH SAS \/ OVH Hosting, Inc.",
             "f_any": true,
@@ -301,69 +408,16 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "51.79.103.76",
             "suffix": "\ud83c\udde8\ud83c\udde6 CA | 51.79.103.76 | OVH SAS \/ OVH Hosting, Inc.",
             "cc": "CA",
             "port": 443,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "sni": "vk.com",
             "exit_ip": "51.79.103.76",
             "exit_isp": "OVH SAS \/ OVH Hosting, Inc.",
             "f_any": true,
             "f_facebook": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "142.93.152.27",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDIuOTMuMTUyLjI3IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiaW50ZXJuZXQubGlmZS5jb20uYnkiLCJpZCI6IjljMDUwYTg2LWQ2MTItNDhmMS1lYzMyLWU1NzNkZjA4YTFiNyIsIm5ldCI6InRjcCIsInBhdGgiOiJcLyIsInBvcnQiOjMzODksInBzIjoiXHVkODNjXHVkZGU4XHVkODNjXHVkZGU2IENBIHwgdGNwOjMzODkgQDE0Mi45My4xNTIuMjcgfCBEaWdpdGFsT2NlYW4gfCAxYjU1NSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOjJ9",
-        "##__key": "G40asgPOzkbKbftBKZHXkF5I670",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "142.93.152.27",
-            "suffix": "\ud83c\udde8\ud83c\udde6 CA | 142.93.152.27 | DigitalOcean, LLC",
-            "cc": "CA",
-            "port": 3389,
-            "sni": "internet.life.com.by",
-            "exit_ip": "142.93.152.27",
-            "exit_isp": "DigitalOcean, LLC",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
         }
     },
     {
@@ -531,59 +585,6 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "159.203.23.128",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/8aaf7587-2c63-48e3-b1aa-eabcecd0a7d4@159.203.23.128:2053?type=ws&host=zula.ir&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A8%F0%9F%87%A6%20CA%20%7C%20ws%3A2053%20%40159.203.23.128%20%7C%20DigitalOcean%20%2F%20Digital%20Ocean%20%7C%20fd892",
-        "##__key": "JRLa6fl97RNtRFSzeBcEWBgRz60",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "159.203.23.128",
-            "suffix": "\ud83c\udde8\ud83c\udde6 CA | 159.203.23.128 | DigitalOcean, LLC \/ Digital Ocean",
-            "cc": "CA",
-            "port": 2053,
-            "sni": "zula.ir",
-            "exit_ip": "159.203.23.128",
-            "exit_isp": "DigitalOcean, LLC \/ Digital Ocean",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "144.217.179.26",
                     "port": 55600,
                     "users": [
@@ -638,7 +639,7 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "104.31.16.227",
+                    "address": "104.31.16.167",
                     "port": 55600,
                     "users": [
                         {
@@ -672,7 +673,7 @@
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "104.31.16.227",
+            "ip": "104.31.16.167",
             "suffix": "\ud83c\udde8\ud83c\udde6 CA | 144.217.179.26 | OVH SAS \/ OVH Hosting, Inc",
             "cc": "CA",
             "port": 80,
@@ -733,9 +734,7 @@
             "exit_ip": "51.79.28.250",
             "exit_isp": "OVH SAS \/ OVH Hosting, Inc.",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
