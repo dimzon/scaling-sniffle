@@ -6,10 +6,10 @@
             "vnext": [
                 {
                     "address": "95.164.38.223",
-                    "port": 55600,
+                    "port": 443,
                     "users": [
                         {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
+                            "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -17,22 +17,18 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "grpc",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
+            "grpcSettings": {
+                "serviceName": ""
+            },
+            "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuMzguMjIzIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImNlOWNjZWUxLThjMGUtNGVhNC04ZDkzLTdiODk2ZWM1NGUzMSIsIm5ldCI6ImdycGMiLCJwYXRoIjoiIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmNCBOTyB8IGdycGM6NDQzIEA5NS4xNjQuMzguMjIzIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgY2U5YjEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imd1biIsInYiOjJ9",
+        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuMzguMjIzIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJjZTljY2VlMS04YzBlLTRlYTQtOGQ5My03Yjg5NmVjNTRlMzEiLCJuZXQiOiJncnBjIiwicGF0aCI6IiIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2NcdWRkZjNcdWQ4M2NcdWRkZjQgTk8gfCBncnBjOjQ0MyBAOTUuMTY0LjM4LjIyMyB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IGNlOWIxIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJndW4iLCJ2IjoyfQ==",
         "##__key": "8OgjFZv5Ymp7pI9j1cIa0G0FwEc",
         "##__insecure": false,
         "##__flags": {

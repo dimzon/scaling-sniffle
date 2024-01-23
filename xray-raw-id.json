@@ -97,7 +97,7 @@
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 172.232.234.79 | Akamai Technologies, Inc.",
             "cc": "ID",
             "port": 443,
-            "sni": "id-full.privateip.net",
+            "sni": "172.232.234.79",
             "exit_ip": "172.232.234.79",
             "exit_isp": "Akamai Technologies, Inc.",
             "f_any": true,
@@ -271,7 +271,59 @@
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 172.232.234.79 | Akamai Technologies, Inc.",
             "cc": "ID",
             "port": 443,
-            "sni": "",
+            "sni": "id-full.privateip.net",
+            "exit_ip": "172.232.234.79",
+            "exit_isp": "Akamai Technologies, Inc.",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "172.232.234.79",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "22ebcbb9-227f-42ed-ae30-eecb5950d5c3",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "172.232.234.79",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/22ebcbb9-227f-42ed-ae30-eecb5950d5c3@id-full.privateip.net:443?type=tcp&sni=172.232.234.79&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%A9%20ID%20%7C%20tcp%3A443%20%40172.232.234.79%20%7C%20Akamai%20Technologies%2C%20Inc.%20%7C%2075686",
+        "##__key": "Uoco9fnxDQB5eLeqthKbUNaHap4",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "172.232.234.79",
+            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 172.232.234.79 | Akamai Technologies, Inc.",
+            "cc": "ID",
+            "port": 443,
+            "sni": "172.232.234.79",
             "exit_ip": "172.232.234.79",
             "exit_isp": "Akamai Technologies, Inc.",
             "f_any": true,
@@ -515,115 +567,6 @@
     },
     {
         "###engine": "xray",
-        "protocol": "trojan",
-        "settings": {
-            "servers": [
-                {
-                    "address": "43.229.254.96",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "mainssh-Ttyuffg",
-                    "port": 443
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/trojan",
-                "host": "idtws.mainssh.xyz",
-                "headers": {
-                    "Host": "idtws.mainssh.xyz"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "show": true
-            }
-        },
-        "##__uri": "trojan:\/\/mainssh-Ttyuffg@43.229.254.96:443?type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=idtws.mainssh.xyz&path=%2Ftrojan&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%AE%F0%9F%87%A9%20ID%20%7C%20ws%3A443%20%4043.229.254.96%20%7C%20Media%20Antar%20Nusa%20PT.%20%2F%20Nusanet%20%7C%20a6f1a",
-        "##__key": "JC383vtpGGGORPET9E2eJFCX8QM",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "43.229.254.96",
-            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 43.229.254.96 | Media Antar Nusa PT. \/ Nusanet",
-            "cc": "ID",
-            "port": 443,
-            "sni": "idtws.mainssh.xyz",
-            "exit_ip": "43.229.254.96",
-            "exit_isp": "Media Antar Nusa PT. \/ Nusanet",
-            "decdn": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "trojan",
-        "settings": {
-            "servers": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "mainssh-Ttyuffg",
-                    "port": 443
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/trojan",
-                "host": "idtws.mainssh.xyz",
-                "headers": {
-                    "Host": "idtws.mainssh.xyz"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "idtws.mainssh.xyz",
-                "show": true
-            }
-        },
-        "##__uri": "trojan:\/\/mainssh-Ttyuffg@speed.cloudflare.com:443?type=ws&sni=idtws.mainssh.xyz&host=idtws.mainssh.xyz&path=%2Ftrojan&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%A9%20ID%20%7C%20ws%3A443%20%4043.229.254.96%20%7C%20Media%20Antar%20Nusa%20PT.%20%2F%20Nusanet%20%7C%2029b02",
-        "##__key": "OYw3k1QZMLVmyVcDEG1fcJ27MMo",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 43.229.254.96 | Media Antar Nusa PT. \/ Nusanet",
-            "cc": "ID",
-            "port": 443,
-            "sni": "idtws.mainssh.xyz",
-            "exit_ip": "43.229.254.96",
-            "exit_isp": "Media Antar Nusa PT. \/ Nusanet"
-        }
-    },
-    {
-        "###engine": "xray",
         "protocol": "shadowsocks",
         "settings": {
             "servers": [
@@ -656,6 +599,33 @@
         }
     },
     {
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "128.199.196.14",
+                    "ota": false,
+                    "port": 15121
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/128.199.196.14:15121#%F0%9F%87%AE%F0%9F%87%A9%20ID%20%7C%20tcp%3A15121%20%40103.156.128.22%20%7C%20PT%20Skynet%20Lintas%20Nusantara%20%7C%2014b7b",
+        "##__key": "fwQXxQ64FthPRnXPQJlzDTXct2w",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "128.199.196.14",
+            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.156.128.22 | PT Skynet Lintas Nusantara",
+            "cc": "ID",
+            "port": 15121,
+            "sni": "",
+            "exit_ip": "103.156.128.22",
+            "exit_isp": "PT Skynet Lintas Nusantara"
+        }
+    },
+    {
         "###engine": "xray",
         "protocol": "vmess",
         "settings": {
@@ -682,7 +652,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMTc3Ljk0LjEzOCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwMDliYWUwNS04MGJiLTRlMjctZDJjMS1lZmVhNjI5ZTk1YWUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjI4NDMsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGU5IElEIHwgdGNwOjIyODQzIEAxMDMuMTc3Ljk0LjEzOCB8IFBUIFRla25vbG9naSBCYW5nc2EgQ2VyZGFzIHwgYTRkMzciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMTc3Ljk0LjEzOCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMDA5YmFlMDUtODBiYi00ZTI3LWQyYzEtZWZlYTYyOWU5NWFlIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjIyODQzLCJwcyI6Ilx1ZDgzY1x1ZGRlZVx1ZDgzY1x1ZGRlOSBJRCB8IHRjcDoyMjg0MyBAMTAzLjE3Ny45NC4xMzggfCBQVCBUZWtub2xvZ2kgQmFuZ3NhIENlcmRhcyB8IGE0ZDM3Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
         "##__key": "90aGG4aI4BNcS344fZ4Kj3e6048",
         "##__insecure": false,
         "##__flags": {
@@ -693,7 +663,7 @@
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.177.94.138 | PT Teknologi Bangsa Cerdas",
             "cc": "ID",
             "port": 22843,
-            "sni": "",
+            "sni": "103.177.94.138",
             "exit_ip": "103.177.94.138",
             "exit_isp": "PT Teknologi Bangsa Cerdas",
             "f_any": true,

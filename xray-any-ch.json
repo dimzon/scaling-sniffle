@@ -1,6 +1,60 @@
 [
     {
         "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "37.32.9.180",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "796ebbea-5b10-44b0-bb29-755f5a32e8e5",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "sw2.shoplandtr.xyz",
+                "headers": {
+                    "Host": "sw2.shoplandtr.xyz"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/796ebbea-5b10-44b0-bb29-755f5a32e8e5@sw2.shoplandtr.xyz:443?type=ws&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A8%F0%9F%87%AD%20CH%20%7C%20ws%3A443%20%405.182.36.116%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20b4e9f",
+        "##__key": "4g90PxIKW7eUb2TDBYCL5DpQ69w",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "37.32.9.180",
+            "suffix": "\ud83c\udde8\ud83c\udded CH | 5.182.36.116 | Stark Industries Solutions LTD",
+            "cc": "CH",
+            "port": 443,
+            "sni": "sw2.shoplandtr.xyz",
+            "exit_ip": "5.182.36.116",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
         "protocol": "vmess",
         "settings": {
             "vnext": [
@@ -26,7 +80,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI5NC4xMzEuOTkuOCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiODFiMmI2MzAtOGI2YS00MDRmLWI5OTYtYjEyZjEzZGI1Nzg2IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ3MTgyLCJwcyI6Ilx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlZCBDSCB8IHRjcDo0NzE4MiBAOTQuMTMxLjk5LjggfCBTdGFyayBJbmR1c3RyaWVzIFNvbHV0aW9ucyBMVEQgfCA4YWVkMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__uri": "vmess:\/\/eyJhZGQiOiI5NC4xMzEuOTkuOCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI4MWIyYjYzMC04YjZhLTQwNGYtYjk5Ni1iMTJmMTNkYjU3ODYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NDcxODIsInBzIjoiXHVkODNjXHVkZGU4XHVkODNjXHVkZGVkIENIIHwgdGNwOjQ3MTgyIEA5NC4xMzEuOTkuOCB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IDhhZWQwIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
         "##__key": "ElaL9G7pgLiLNI7NRrKBzK4MUOU",
         "##__insecure": false,
         "##__flags": {
@@ -37,10 +91,13 @@
             "suffix": "\ud83c\udde8\ud83c\udded CH | 94.131.99.8 | Stark Industries Solutions LTD",
             "cc": "CH",
             "port": 47182,
-            "sni": "",
+            "sni": "94.131.99.8",
             "exit_ip": "94.131.99.8",
             "exit_isp": "Stark Industries Solutions LTD",
-            "f_any": true
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -81,7 +138,7 @@
             "suffix": "\ud83c\udde8\ud83c\udded CH | 94.131.99.8 | Stark Industries Solutions LTD",
             "cc": "CH",
             "port": 47182,
-            "sni": "",
+            "sni": "94.131.99.8",
             "exit_ip": "94.131.99.8",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
