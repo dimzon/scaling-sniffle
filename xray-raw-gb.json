@@ -1,19 +1,16 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
                     "address": "speed.cloudflare.com",
-                    "port": 2083,
-                    "users": [
-                        {
-                            "id": "43e00e4c-2316-4dc9-8262-cef31886dc56",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "4732adfa16c6450bbef87264e41332db",
+                    "port": 443
                 }
             ]
         },
@@ -27,166 +24,83 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/marly.toptechnonews.com\/nimws",
-                "host": "vless-sub.n7p8ri7j.workers.dev",
+                "path": "6b777a91",
+                "host": "bangladeshipatri.com",
                 "headers": {
-                    "Host": "vless-sub.n7p8ri7j.workers.dev"
+                    "Host": "bangladeshipatri.com"
                 }
             },
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "vless-sub.n7p8ri7j.workers.dev",
+                "serverName": "bangladeshipatri.com",
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/43e00e4c-2316-4dc9-8262-cef31886dc56@speed.cloudflare.com:2083?security=tls&type=ws&sni=vless-sub.n7p8ri7j.workers.dev&host=vless-sub.n7p8ri7j.workers.dev&path=%2Fmarly.toptechnonews.com%2Fnimws&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20ws%3A2083%20%4051.77.108.58%20%7C%20OVH%20Ltd%20%7C%205259e",
-        "##__key": "60YfwkRFl5e77zkBlhREqyhdFv0",
+        "##__uri": "trojan:\/\/4732adfa16c6450bbef87264e41332db@speed.cloudflare.com:443?type=ws&sni=bangladeshipatri.com&host=bangladeshipatri.com&path=6b777a91&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20ws%3A443%20%40172.99.190.180%20%7C%20GTHost%20%7C%20e531d",
+        "##__key": "ghmTGzjxO5ITqiJccEZiY85Jsco",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.67.38",
-            "suffix": "\ud83c\uddec\ud83c\udde7 GB | 51.77.108.58 | OVH SAS \/ OVH Ltd",
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddec\ud83c\udde7 GB | 172.99.190.180 | GTHost",
             "cc": "GB",
-            "port": 2083,
-            "sni": "vless-sub.n7p8ri7j.workers.dev",
-            "exit_ip": "51.77.108.58",
-            "exit_isp": "OVH SAS \/ OVH Ltd",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "port": 443,
+            "sni": "bangladeshipatri.com",
+            "exit_ip": "172.99.190.180",
+            "exit_isp": "GTHost"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "shadowsocks",
+        "protocol": "vless",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "18.168.59.78",
-                    "port": 443,
-                    "password": "W74XFALLLuw6m5IA",
-                    "method": "chacha20-ietf-poly1305"
+                    "address": "95.164.69.148",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "4f1ef8da-c8de-4283-993a-1e9f43fac0d9",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
                 }
             ]
         },
-        "##__uri": "ss:\/\/chacha20-ietf-poly1305:W74XFALLLuw6m5IA@18.168.59.78:443#%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20tcp%3A443%20%4018.132.198.231%20%7C%20Amazon%20Technologies%20Inc.%20%2F%20AWS%20EC2%20%28eu-west-2%29%20%7C%200de0d",
-        "##__key": "eC9ub401I1lQTOSGSISwN6phUf0",
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "uk1-vless.vpnhack.xyz",
+                "headers": {
+                    "Host": "uk1-vless.vpnhack.xyz"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/4f1ef8da-c8de-4283-993a-1e9f43fac0d9@95.164.69.148:80?type=ws&host=uk1-vless.vpnhack.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20ws%3A80%20%4095.164.69.148%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%2046b4b",
+        "##__key": "CoayacwDW3QT1IvxAAdAtfDkIQE",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "18.168.59.78",
-            "suffix": "\ud83c\uddec\ud83c\udde7 GB | 18.132.198.231 | Amazon Technologies Inc. \/ AWS EC2 (eu-west-2)",
+            "ip": "95.164.69.148",
+            "suffix": "\ud83c\uddec\ud83c\udde7 GB | 95.164.69.148 | Stark Industries Solutions LTD",
             "cc": "GB",
-            "port": 443,
-            "sni": "",
-            "exit_ip": "18.132.198.231",
-            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (eu-west-2)"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 8080,
-                    "users": [
-                        {
-                            "id": "20ae1b49-68a6-43a8-fd46-3da471bbe8ee",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/backup",
-                "host": "so68v5.cdn-arvancloud.space",
-                "headers": {
-                    "Host": "so68v5.cdn-arvancloud.space"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/20ae1b49-68a6-43a8-fd46-3da471bbe8ee@speed.cloudflare.com:8080?type=ws&host=so68v5.cdn-arvancloud.space&path=%2Fbackup&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20ws%3A8080%20%4051.68.203.52%20%7C%20OVH%20SAS%20%2F%20Asgarpour%20Shayan%20%7C%20f29c0",
-        "##__key": "gAiCE4Lu1w1sEz3bbXSqF8WXmck",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.67.38",
-            "suffix": "\ud83c\uddec\ud83c\udde7 GB | 51.68.203.52 | OVH SAS \/ Asgarpour Shayan",
-            "cc": "GB",
-            "port": 8080,
-            "sni": "so68v5.cdn-arvancloud.space",
-            "exit_ip": "51.68.203.52",
-            "exit_isp": "OVH SAS \/ Asgarpour Shayan"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 8080,
-                    "users": [
-                        {
-                            "id": "1732c28e-9328-4246-bed6-de522bb6e102",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "faq.khamenei.bio",
-                "headers": {
-                    "Host": "faq.khamenei.bio"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/1732c28e-9328-4246-bed6-de522bb6e102@speed.cloudflare.com:8080?type=ws&host=faq.khamenei.bio&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20ws%3A8080%20%40145.239.202.19%20%7C%20OVH%20Ltd%20%7C%2061cb1",
-        "##__key": "3pIB4raxBFx10j4K1d49dVYEEiY",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.67.38",
-            "suffix": "\ud83c\uddec\ud83c\udde7 GB | 145.239.202.19 | OVH SAS \/ OVH Ltd",
-            "cc": "GB",
-            "port": 8080,
-            "sni": "faq.khamenei.bio",
-            "exit_ip": "145.239.202.19",
-            "exit_isp": "OVH SAS \/ OVH Ltd"
+            "port": 80,
+            "sni": "uk1-vless.vpnhack.xyz",
+            "exit_ip": "95.164.69.148",
+            "exit_isp": "Stark Industries Solutions LTD"
         }
     }
 ]
