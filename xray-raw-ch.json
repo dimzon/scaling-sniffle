@@ -1,17 +1,16 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "vmess",
         "settings": {
             "vnext": [
                 {
-                    "address": "37.32.9.180",
-                    "port": 443,
+                    "address": "94.131.12.203",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "796ebbea-5b10-44b0-bb29-755f5a32e8e5",
-                            "encryption": "none",
-                            "flow": ""
+                            "id": "c10b14cd-90ba-4938-9837-a574ba71762f",
+                            "encryption": "chacha20-poly1305"
                         }
                     ]
                 }
@@ -26,60 +25,27 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "sw2.shoplandtr.xyz",
+                "path": "\/vmess",
+                "host": "ch2-vmess.sshmax.xyz",
                 "headers": {
-                    "Host": "sw2.shoplandtr.xyz"
+                    "Host": "ch2-vmess.sshmax.xyz"
                 }
             }
         },
-        "##__uri": "vless:\/\/796ebbea-5b10-44b0-bb29-755f5a32e8e5@sw2.shoplandtr.xyz:443?type=ws&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A8%F0%9F%87%AD%20CH%20%7C%20ws%3A443%20%405.182.36.116%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20b4e9f",
-        "##__key": "4g90PxIKW7eUb2TDBYCL5DpQ69w",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJjaDItdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImMxMGIxNGNkLTkwYmEtNDkzOC05ODM3LWE1NzRiYTcxNzYyZiIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZThcdWQ4M2NcdWRkZWQgQ0ggfCB3czo4MCBAOTQuMTMxLjEyLjIwMyB8ID8gfCA3NDljNCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "ioxgtvFhbNGVEfqYSInMZ1OVyLk",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "37.32.9.180",
-            "suffix": "\ud83c\udde8\ud83c\udded CH | 5.182.36.116 | Stark Industries Solutions LTD",
+            "ip": "94.131.12.203",
+            "suffix": "\ud83c\udde8\ud83c\udded CH | 94.131.12.203 | ?",
             "cc": "CH",
-            "port": 443,
-            "sni": "sw2.shoplandtr.xyz",
-            "exit_ip": "5.182.36.116",
-            "exit_isp": "Stark Industries Solutions LTD",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "shadowsocks",
-        "settings": {
-            "servers": [
-                {
-                    "address": "94.131.12.245",
-                    "port": 37726,
-                    "password": "AK4J1sRt2v3dLDUVC2P5lj",
-                    "method": "chacha20-ietf-poly1305"
-                }
-            ]
-        },
-        "##__uri": "ss:\/\/chacha20-ietf-poly1305:AK4J1sRt2v3dLDUVC2P5lj@94.131.12.245:37726#%F0%9F%87%A8%F0%9F%87%AD%20CH%20%7C%20tcp%3A37726%20%4094.131.12.245%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%209042d",
-        "##__key": "Nc8XlY5OxAUQeU43mI42wRUw8iA",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "94.131.12.245",
-            "suffix": "\ud83c\udde8\ud83c\udded CH | 94.131.12.245 | Stark Industries Solutions LTD",
-            "cc": "CH",
-            "port": 37726,
-            "sni": "",
-            "exit_ip": "94.131.12.245",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "port": 80,
+            "sni": "ch2-vmess.sshmax.xyz",
+            "exit_ip": "94.131.12.203",
+            "exit_isp": "?"
         }
     },
     {
@@ -169,11 +135,7 @@
             "port": 47182,
             "sni": "94.131.99.8",
             "exit_ip": "94.131.99.8",
-            "exit_isp": "Stark Industries Solutions LTD",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Stark Industries Solutions LTD"
         }
     }
 ]

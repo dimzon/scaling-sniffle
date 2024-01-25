@@ -39,7 +39,7 @@
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzcy5zeG16a2Z5eS5jb20iLCJpZCI6IjM5YjE4MGRhLTkxMGUtNGY0ZS1hMmQ3LWM3NmYzN2Y3NDZmNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvOHVFekI2bjJcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIEhLIHwgd3M6NDQzIEAxMDQuMjguMjQ3LjcwIHwgQ2xvdWRmbGFyZSBXQVJQIHwgNGJmYTUiLCJzY3kiOiJhdXRvIiwic25pIjoic3Muc3htemtmeXkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzcy5zeG16a2Z5eS5jb20iLCJpZCI6IjM5YjE4MGRhLTkxMGUtNGY0ZS1hMmQ3LWM3NmYzN2Y3NDZmNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvOHVFekI2bjJcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIEhLIHwgd3M6NDQzIEAxMDQuMjguMjE1LjY4IHwgQ2xvdWRmbGFyZSBXQVJQIHwgNGJmYTUiLCJzY3kiOiJhdXRvIiwic25pIjoic3Muc3htemtmeXkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
         "##__key": "mOqeQn7aWFryNX3yMjUjv16c0rs",
         "##__insecure": false,
         "##__flags": {
@@ -47,11 +47,11 @@
             "gcore": false,
             "ch": false,
             "ip": "104.16.68.38",
-            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 104.28.247.70 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 104.28.215.68 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "HK",
             "port": 443,
             "sni": "ss.sxmzkfyy.com",
-            "exit_ip": "104.28.247.70",
+            "exit_ip": "104.28.215.68",
             "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
             "f_any": true,
             "f_tracker": true,
@@ -106,6 +106,59 @@
             "sni": "www.baidu.com",
             "exit_ip": "91.149.236.44",
             "exit_isp": "Baxet Group Inc. \/ Adcdata Limited",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/ftuy56ftgyh",
+                "host": "hkv6.178820225.xyz",
+                "headers": {
+                    "Host": "hkv6.178820225.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJoa3Y2LjE3ODgyMDIyNS54eXoiLCJpZCI6IjhmYTI2MWMwLWFlOGQtNGFlZS04ZjhiLTE2MDRiNmY3OGY0YSIsIm5ldCI6IndzIiwicGF0aCI6IlwvZnR1eTU2ZnRneWgiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZjAgSEsgfCB3czo4MCBAMzguMTgxLjc5Ljk0IHwgRW9ucyBEYXRhIENvbW11bmljYXRpb25zIExpbWl0ZWQgfCA2ZmMwNSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "ZlaC6c2hX7IEYvEp4F010bMgQfQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 38.181.79.94 | Eons Data Communications Limited",
+            "cc": "HK",
+            "port": 80,
+            "sni": "hkv6.178820225.xyz",
+            "exit_ip": "38.181.79.94",
+            "exit_isp": "Eons Data Communications Limited",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,

@@ -1,35 +1,635 @@
 [
     {
         "###engine": "xray",
-        "protocol": "shadowsocks",
+        "protocol": "vless",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "64.227.144.190",
-                    "port": 50690,
-                    "password": "Pt8rEXhZboslNIYZjj7iF9",
-                    "method": "chacha20-ietf-poly1305"
+                    "address": "103.110.127.85",
+                    "port": 8443,
+                    "users": [
+                        {
+                            "id": "f2cc5221-acc1-4da5-b4f0-dee53b40ebec",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
                 }
             ]
         },
-        "##__uri": "ss:\/\/chacha20-ietf-poly1305:Pt8rEXhZboslNIYZjj7iF9@64.227.144.190:50690#%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20tcp%3A50690%20%4064.227.144.190%20%7C%20DigitalOcean%20%7C%202a396",
-        "##__key": "dbZ4R9i9GBbmdvfxj6p65PMiJkE",
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/f2cc5221-acc1-4da5-b4f0-dee53b40ebec@cric.yourdisha.in:8443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20tcp%3A8443%20%40103.110.127.85%20%7C%20Cloudminister%20Technologies%20Private%20Limited%20%7C%207f364",
+        "##__key": "GkdYMaJJsaVbIzs71vcNO8Mi0J0",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.110.127.85",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.110.127.85 | Cloudminister Technologies Private Limited",
+            "cc": "IN",
+            "port": 8443,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "103.110.127.85",
+            "exit_isp": "Cloudminister Technologies Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.110.127.85",
+                    "port": 8443,
+                    "users": [
+                        {
+                            "id": "f2cc5221-acc1-4da5-b4f0-dee53b40ebec",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "103.110.127.85",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/f2cc5221-acc1-4da5-b4f0-dee53b40ebec@cric.yourdisha.in:8443?security=tls&type=tcp&sni=103.110.127.85&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20tcp%3A8443%20%40103.110.127.85%20%7C%20Cloudminister%20Technologies%20Private%20Limited%20%7C%206ae30",
+        "##__key": "WNPToIAQtuK6dFyHRIs1xGSeIyQ",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "64.227.144.190",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 64.227.144.190 | DigitalOcean, LLC",
+            "ip": "103.110.127.85",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.110.127.85 | Cloudminister Technologies Private Limited",
             "cc": "IN",
-            "port": 50690,
-            "sni": "",
-            "exit_ip": "64.227.144.190",
-            "exit_isp": "DigitalOcean, LLC",
+            "port": 8443,
+            "sni": "103.110.127.85",
+            "exit_ip": "103.110.127.85",
+            "exit_isp": "Cloudminister Technologies Private Limited",
+            "f_any": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.110.127.85",
+                    "port": 8443,
+                    "users": [
+                        {
+                            "id": "f2cc5221-acc1-4da5-b4f0-dee53b40ebec",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "cric.yourdisha.in",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/f2cc5221-acc1-4da5-b4f0-dee53b40ebec@cric.yourdisha.in:8443?security=tls&type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20tcp%3A8443%20%40103.110.127.85%20%7C%20Cloudminister%20Technologies%20Private%20Limited%20%7C%209332b",
+        "##__key": "DEwtZLsGH3xAw5549DFLE4gcRo0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.110.127.85",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.110.127.85 | Cloudminister Technologies Private Limited",
+            "cc": "IN",
+            "port": 8443,
+            "sni": "cric.yourdisha.in",
+            "exit_ip": "103.110.127.85",
+            "exit_isp": "Cloudminister Technologies Private Limited"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "ee187c79-7594-4a97-96bc-ff717c61a919",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/a",
+                "host": "yindunat.qaz.gay",
+                "headers": {
+                    "Host": "yindunat.qaz.gay"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "yindunat.qaz.gay",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/ee187c79-7594-4a97-96bc-ff717c61a919@speed.cloudflare.com:443?security=tls&type=ws&sni=yindunat.qaz.gay&host=yindunat.qaz.gay&path=%2Fa&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20ws%3A443%20%40144.24.139.190%20%7C%20Oracle%20Cloud%20%28ap-hyderabad-1%29%20%7C%20e08e8",
+        "##__key": "arJWbnaYJNcBwaZZNftbmEoRX6M",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "cc": "IN",
+            "port": 443,
+            "sni": "yindunat.qaz.gay",
+            "exit_ip": "144.24.139.190",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "129.154.228.4",
+                    "port": 4437,
+                    "users": [
+                        {
+                            "id": "0b7cc034-be57-4f71-b206-eb5e0ee2394d",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "vk.com",
+                "headers": {
+                    "Host": "vk.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/0b7cc034-be57-4f71-b206-eb5e0ee2394d@129.154.228.4:4437?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=vk.com&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20ws%3A4437%20%40129.154.228.4%20%7C%20Oracle%20Cloud%20%28ap-mumbai-1%29%20%7C%207d2f2",
+        "##__key": "vTMdL1xeCGWy0CX538qdRWSKYwM",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "129.154.228.4",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 129.154.228.4 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-mumbai-1)",
+            "cc": "IN",
+            "port": 4437,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "129.154.228.4",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-mumbai-1)",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "129.154.228.4",
+                    "port": 4437,
+                    "users": [
+                        {
+                            "id": "0b7cc034-be57-4f71-b206-eb5e0ee2394d",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "eliyagm90",
+                "headers": {
+                    "Host": "eliyagm90"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "eliyagm90",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/0b7cc034-be57-4f71-b206-eb5e0ee2394d@129.154.228.4:4437?security=tls&type=ws&sni=eliyagm90&host=eliyagm90&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20ws%3A4437%20%40129.154.228.4%20%7C%20Oracle%20Cloud%20%28ap-mumbai-1%29%20%7C%2014d73",
+        "##__key": "fradQ9BhtwTvpDAosQMKYR9q13U",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "129.154.228.4",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 129.154.228.4 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-mumbai-1)",
+            "cc": "IN",
+            "port": 4437,
+            "sni": "eliyagm90",
+            "exit_ip": "129.154.228.4",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-mumbai-1)",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "129.154.228.4",
+                    "port": 4437,
+                    "users": [
+                        {
+                            "id": "0b7cc034-be57-4f71-b206-eb5e0ee2394d",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "129.154.228.4",
+                "headers": {
+                    "Host": "129.154.228.4"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "eliyagm90",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/0b7cc034-be57-4f71-b206-eb5e0ee2394d@129.154.228.4:4437?security=tls&type=ws&sni=eliyagm90&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20ws%3A4437%20%40129.154.228.4%20%7C%20Oracle%20Cloud%20%28ap-mumbai-1%29%20%7C%20f2270",
+        "##__key": "kZ4tR03EdtfdFeY7UNio2byjSg4",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "129.154.228.4",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 129.154.228.4 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-mumbai-1)",
+            "cc": "IN",
+            "port": 4437,
+            "sni": "eliyagm90",
+            "exit_ip": "129.154.228.4",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-mumbai-1)",
+            "f_any": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "117.250.3.58",
+                    "ota": false,
+                    "port": 8080
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/117.250.3.58:8080#%F0%9F%87%AE%F0%9F%87%B3%20IN%20%7C%20tcp%3A8080%20%40117.250.3.58%20%7C%20Bharat%20Sanchar%20Nigam%20Ltd%20%2F%20Addl.%20Director%20General%20of%20Police%20%7C%203965a",
+        "##__key": "A3s13Gt9nki1b7m14xj0eYY9yEE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "117.250.3.58",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.250.3.58 | Bharat Sanchar Nigam Ltd \/ Addl. Director General of Police",
+            "cc": "IN",
+            "port": 8080,
+            "sni": "",
+            "exit_ip": "117.250.3.58",
+            "exit_isp": "Bharat Sanchar Nigam Ltd \/ Addl. Director General of Police"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 2052,
+                    "users": [
+                        {
+                            "id": "8b79e86b-4d34-416d-871a-22521df72088",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/?ed=2048",
+                "host": "cuoguoin.qiliqili.store",
+                "headers": {
+                    "Host": "cuoguoin.qiliqili.store"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJjdW9ndW9pbi5xaWxpcWlsaS5zdG9yZSIsImlkIjoiOGI3OWU4NmItNGQzNC00MTZkLTg3MWEtMjI1MjFkZjcyMDg4IiwibmV0Ijoid3MiLCJwYXRoIjoiXC8\/ZWQ9MjA0OCIsInBvcnQiOjIwNTIsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGYzIElOIHwgd3M6MjA1MiBAMTA0LjI4LjE5My4xNzIgfCBDbG91ZGZsYXJlIFdBUlAgfCAzOTgyMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "tgbwm7x71L7oqc3RMmNCmoeGpUk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 104.28.193.172 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "cc": "IN",
+            "port": 2052,
+            "sni": "cuoguoin.qiliqili.store",
+            "exit_ip": "104.28.193.172",
+            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 2052,
+                    "users": [
+                        {
+                            "id": "cc77da0a-ab38-4f58-a656-1fc60a06483f",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/?ed=2048",
+                "host": "cuoguoin.qiliqili.store",
+                "headers": {
+                    "Host": "cuoguoin.qiliqili.store"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJjdW9ndW9pbi5xaWxpcWlsaS5zdG9yZSIsImlkIjoiY2M3N2RhMGEtYWIzOC00ZjU4LWE2NTYtMWZjNjBhMDY0ODNmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC8\/ZWQ9MjA0OCIsInBvcnQiOjIwNTIsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGYzIElOIHwgd3M6MjA1MiBAMTA0LjI4LjIyNS4xNzEgfCBDbG91ZGZsYXJlIFdBUlAgfCBlNjMwNyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "Kg49TuxKDEDmzaaKFfvcFeZuNfo",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 104.28.225.171 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "cc": "IN",
+            "port": 2052,
+            "sni": "cuoguoin.qiliqili.store",
+            "exit_ip": "104.28.225.171",
+            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "129.154.43.26",
+                    "port": 2052,
+                    "users": [
+                        {
+                            "id": "54e78c8e-2c4c-301e-bc5d-bb27409a240a",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/buiaebd",
+                "host": "vk.com",
+                "headers": {
+                    "Host": "vk.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjkuMTU0LjQzLjI2IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6InZrLmNvbSIsImlkIjoiNTRlNzhjOGUtMmM0Yy0zMDFlLWJjNWQtYmIyNzQwOWEyNDBhIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9idWlhZWJkIiwicG9ydCI6MjA1MiwicHMiOiJcdWQ4M2NcdWRkZWVcdWQ4M2NcdWRkZjMgSU4gfCB3czoyMDUyIEAxMjkuMTU0LjQzLjI2IHwgT3JhY2xlIENsb3VkIChhcC1oeWRlcmFiYWQtMSkgfCBjYWRjYSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "smPaqZEjIi71RRbLQ7UGC737elI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "129.154.43.26",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 129.154.43.26 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "cc": "IN",
+            "port": 2052,
+            "sni": "vk.com",
+            "exit_ip": "129.154.43.26",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "f_any": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "152.70.73.149",
+                    "port": 2082,
+                    "users": [
+                        {
+                            "id": "54e78c8e-2c4c-301e-bc5d-bb27409a240a",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/buiaebd",
+                "host": "vk.com",
+                "headers": {
+                    "Host": "vk.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNzAuNzMuMTQ5IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6InZrLmNvbSIsImlkIjoiNTRlNzhjOGUtMmM0Yy0zMDFlLWJjNWQtYmIyNzQwOWEyNDBhIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9idWlhZWJkIiwicG9ydCI6MjA4MiwicHMiOiJcdWQ4M2NcdWRkZWVcdWQ4M2NcdWRkZjMgSU4gfCB3czoyMDgyIEAxNTIuNzAuNzMuMTQ5IHwgT3JhY2xlIENsb3VkIChhcC1oeWRlcmFiYWQtMSkgfCA3YTgwNyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "Xy5uwmHF1yihFLJiKpsLPnvBYQY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "152.70.73.149",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 152.70.73.149 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "cc": "IN",
+            "port": 2082,
+            "sni": "vk.com",
+            "exit_ip": "152.70.73.149",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "f_any": true,
+            "f_facebook": true
         }
     }
 ]

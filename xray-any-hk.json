@@ -39,7 +39,7 @@
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzcy5zeG16a2Z5eS5jb20iLCJpZCI6IjM5YjE4MGRhLTkxMGUtNGY0ZS1hMmQ3LWM3NmYzN2Y3NDZmNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvOHVFekI2bjJcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIEhLIHwgd3M6NDQzIEAxMDQuMjguMjQ3LjcwIHwgQ2xvdWRmbGFyZSBXQVJQIHwgNGJmYTUiLCJzY3kiOiJhdXRvIiwic25pIjoic3Muc3htemtmeXkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJzcy5zeG16a2Z5eS5jb20iLCJpZCI6IjM5YjE4MGRhLTkxMGUtNGY0ZS1hMmQ3LWM3NmYzN2Y3NDZmNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvOHVFekI2bjJcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIEhLIHwgd3M6NDQzIEAxMDQuMjguMjE1LjY4IHwgQ2xvdWRmbGFyZSBXQVJQIHwgNGJmYTUiLCJzY3kiOiJhdXRvIiwic25pIjoic3Muc3htemtmeXkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
         "##__key": "mOqeQn7aWFryNX3yMjUjv16c0rs",
         "##__insecure": false,
         "##__flags": {
@@ -47,16 +47,74 @@
             "gcore": false,
             "ch": false,
             "ip": "104.16.68.38",
-            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 104.28.247.70 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 104.28.215.68 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "HK",
             "port": 443,
             "sni": "ss.sxmzkfyy.com",
-            "exit_ip": "104.28.247.70",
+            "exit_ip": "104.28.215.68",
             "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/ftuy56ftgyh",
+                "host": "hkv6.178820225.xyz",
+                "headers": {
+                    "Host": "hkv6.178820225.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "hkv6.178820225.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJoa3Y2LjE3ODgyMDIyNS54eXoiLCJpZCI6IjhmYTI2MWMwLWFlOGQtNGFlZS04ZjhiLTE2MDRiNmY3OGY0YSIsIm5ldCI6IndzIiwicGF0aCI6IlwvZnR1eTU2ZnRneWgiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCBISyB8IHdzOjQ0MyBAMzguMTgxLjc5Ljk0IHwgRW9ucyBEYXRhIENvbW11bmljYXRpb25zIExpbWl0ZWQgfCBjYTgwMSIsInNjeSI6ImF1dG8iLCJzbmkiOiJoa3Y2LjE3ODgyMDIyNS54eXoiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "LYAGDUhJtGkiG97R51DtBtUV6gE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 38.181.79.94 | Eons Data Communications Limited",
+            "cc": "HK",
+            "port": 80,
+            "sni": "hkv6.178820225.xyz",
+            "exit_ip": "38.181.79.94",
+            "exit_isp": "Eons Data Communications Limited",
+            "f_any": true,
+            "f_tracker": true
         }
     },
     {
@@ -118,11 +176,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "202.64.124.245",
+                    "address": "speed.cloudflare.com",
                     "port": 80,
                     "users": [
                         {
-                            "id": "caa995ed-86a9-4968-a332-9c11e7e13107",
+                            "id": "8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -138,29 +196,98 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/",
-                "host": "hkbn.aresboot.io",
+                "path": "\/ftuy56ftgyh",
+                "host": "hkv6.178820225.xyz",
                 "headers": {
-                    "Host": "hkbn.aresboot.io"
+                    "Host": "hkv6.178820225.xyz"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIyMDIuNjQuMTI0LjI0NSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJoa2JuLmFyZXNib290LmlvIiwiaWQiOiJjYWE5OTVlZC04NmE5LTQ5NjgtYTMzMi05YzExZTdlMTMxMDciLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCBISyB8IHdzOjgwIEAyMDIuNjQuMTI0LjI0NSB8IEhLQk4gRW50ZXJwcmlzZSBTb2x1dGlvbnMgSEsgTGltaXRlZCBcLyBIS0JORVMgfCBmMTM4NyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "dlRD6EpqDZh8clxj9ROKO1nWRTU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJoa3Y2LjE3ODgyMDIyNS54eXoiLCJpZCI6IjhmYTI2MWMwLWFlOGQtNGFlZS04ZjhiLTE2MDRiNmY3OGY0YSIsIm5ldCI6IndzIiwicGF0aCI6IlwvZnR1eTU2ZnRneWgiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZjAgSEsgfCB3czo4MCBAMzguMTgxLjc5Ljk0IHwgRW9ucyBEYXRhIENvbW11bmljYXRpb25zIExpbWl0ZWQgfCA2ZmMwNSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "ZlaC6c2hX7IEYvEp4F010bMgQfQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 38.181.79.94 | Eons Data Communications Limited",
+            "cc": "HK",
+            "port": 80,
+            "sni": "hkv6.178820225.xyz",
+            "exit_ip": "38.181.79.94",
+            "exit_isp": "Eons Data Communications Limited",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.30.76.173",
+                    "port": 30515,
+                    "users": [
+                        {
+                            "id": "d027cd70-ed8b-4cb6-98f3-fc6b974d086c",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "103.30.76.173"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMzAuNzYuMTczIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImQwMjdjZDcwLWVkOGItNGNiNi05OGYzLWZjNmI5NzRkMDg2YyIsIm5ldCI6InRjcCIsInBhdGgiOiJcLyIsInBvcnQiOjMwNTE1LCJwcyI6Ilx1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCBISyB8IHRjcDozMDUxNSBAMTAzLjMwLjc2LjE3MyB8IFB1cmUgSnVuIFRyYWRlIENvIHwgZjAyMDgiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoyfQ==",
+        "##__key": "KXqVnR3bkUcCsXsZkCtt3ilgLfo",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "202.64.124.245",
-            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 202.64.124.245 | HKBN Enterprise Solutions HK Limited \/ HKBNES",
+            "ip": "103.30.76.173",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 103.30.76.173 | Pure Jun Trade Co",
             "cc": "HK",
-            "port": 8880,
-            "sni": "hkbn.aresboot.io",
-            "exit_ip": "202.64.124.245",
-            "exit_isp": "HKBN Enterprise Solutions HK Limited \/ HKBNES",
-            "decdn": true,
-            "f_any": true
+            "port": 30515,
+            "sni": "103.30.76.173",
+            "exit_ip": "103.30.76.173",
+            "exit_isp": "Pure Jun Trade Co",
+            "f_any": true,
+            "f_tracker": true
         }
     },
     {
