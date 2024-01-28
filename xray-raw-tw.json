@@ -1,11 +1,59 @@
 [
     {
         "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "118.167.10.167",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "933e3c9c-701e-45df-978b-ca8f42fb8871",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "16-163-218-240.nhost.00cdn.com",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/933e3c9c-701e-45df-978b-ca8f42fb8871@hinet.lxjc.app:443?type=tcp&sni=16-163-218-240.nhost.00cdn.com&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B9%F0%9F%87%BC%20TW%20%7C%20tcp%3A443%20%40118.167.10.167%20%7C%20Chunghwa%20Telecom%20Co.%2C%20Ltd.%20%7C%20bcc7b",
+        "##__key": "bAbdbmEgAxevuDCY3o18sUOUTKk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "118.167.10.167",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.10.167 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "cc": "TW",
+            "port": 443,
+            "sni": "16-163-218-240.nhost.00cdn.com",
+            "exit_ip": "118.167.10.167",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
+        }
+    },
+    {
+        "###engine": "xray",
         "protocol": "vmess",
         "settings": {
             "vnext": [
                 {
-                    "address": "114.37.197.26",
+                    "address": "114.37.203.206",
                     "port": 80,
                     "users": [
                         {
@@ -32,24 +80,20 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxYjMxNGJiMC0yNGNkLTdkMTUtZWU2MS1mOThjNDM4NTA2OGYubmVvLWF3YWtlbi51ayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ0bXMuZGluZ3RhbGsuY29tIiwiaWQiOiIwODc2NDAzZC01NDY3LTRkOWYtOGQ4NS0yM2Q1MjBlMjJlOTQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHdzOjgwIEAxMTQuMzcuMTk3LjI2IHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDNhZGMyIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxYjMxNGJiMC0yNGNkLTdkMTUtZWU2MS1mOThjNDM4NTA2OGYubmVvLWF3YWtlbi51ayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ0bXMuZGluZ3RhbGsuY29tIiwiaWQiOiIwODc2NDAzZC01NDY3LTRkOWYtOGQ4NS0yM2Q1MjBlMjJlOTQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHdzOjgwIEAxMTQuMzcuMjAzLjIwNiB8IENodW5naHdhIFRlbGVjb20gQ28uLCBMdGQuIHwgM2FkYzIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
         "##__key": "rjXrjL1zYlcaFpx46Yey6PZfB2U",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "114.37.197.26",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.197.26 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "114.37.203.206",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.203.206 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
             "port": 80,
             "sni": "tms.dingtalk.com",
-            "exit_ip": "114.37.197.26",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_ip": "114.37.203.206",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
         }
     },
     {
@@ -58,7 +102,7 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "36.228.246.79",
+                    "address": "36.228.230.223",
                     "port": 80,
                     "users": [
                         {
@@ -85,19 +129,19 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJkZjBmYmZjNi01ODE2LTE4MGMtZTdiNS1mMmYwZTUzMmMxN2MubmVvLWF3YWtlbi51ayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ0bXMuZGluZ3RhbGsuY29tIiwiaWQiOiIwODc2NDAzZC01NDY3LTRkOWYtOGQ4NS0yM2Q1MjBlMjJlOTQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHdzOjgwIEAzNi4yMjguMjQ2Ljc5IHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDRkNmQxIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJkZjBmYmZjNi01ODE2LTE4MGMtZTdiNS1mMmYwZTUzMmMxN2MubmVvLWF3YWtlbi51ayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ0bXMuZGluZ3RhbGsuY29tIiwiaWQiOiIwODc2NDAzZC01NDY3LTRkOWYtOGQ4NS0yM2Q1MjBlMjJlOTQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHdzOjgwIEAzNi4yMjguMjMwLjIyMyB8IENodW5naHdhIFRlbGVjb20gQ28uLCBMdGQuIHwgNGQ2ZDEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
         "##__key": "5PR6IBuEL8GGURvMVUKmQAw2fj0",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "36.228.246.79",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.228.246.79 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "36.228.230.223",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.228.230.223 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
             "port": 80,
             "sni": "tms.dingtalk.com",
-            "exit_ip": "36.228.246.79",
+            "exit_ip": "36.228.230.223",
             "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "f_any": true,
             "f_tracker": true,
@@ -111,7 +155,7 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "36.228.246.79",
+                    "address": "36.228.230.223",
                     "port": 80,
                     "users": [
                         {
@@ -138,20 +182,24 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJkZjBmYmZjNi01ODE2LTE4MGMtZTdiNS1mMmYwZTUzMmMxN2MubmVvLWF3YWtlbi51ayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjA4NzY0MDNkLTU0NjctNGQ5Zi04ZDg1LTIzZDUyMGUyMmU5NCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgd3M6ODAgQDM2LjIyOC4yNDYuNzkgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgODgwYjYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJkZjBmYmZjNi01ODE2LTE4MGMtZTdiNS1mMmYwZTUzMmMxN2MubmVvLWF3YWtlbi51ayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjA4NzY0MDNkLTU0NjctNGQ5Zi04ZDg1LTIzZDUyMGUyMmU5NCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgd3M6ODAgQDM2LjIyOC4yMzAuMjIzIHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gfCA4ODBiNiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
         "##__key": "XFT4VRriNV4vrzrrDvV4v5u528U",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "36.228.246.79",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.228.246.79 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "36.228.230.223",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.228.230.223 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
             "port": 80,
             "sni": "df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk",
-            "exit_ip": "36.228.246.79",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
+            "exit_ip": "36.228.230.223",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -160,11 +208,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "118.167.76.233",
+                    "address": "114.37.139.157",
                     "port": 2024,
                     "users": [
                         {
-                            "id": "05f1e2ad-1d21-449b-9bbb-97a8b4662934",
+                            "id": "04b694b2-7022-4767-801b-6d21611f548b",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -181,516 +229,19 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJiMjMubnRicS5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwNWYxZTJhZC0xZDIxLTQ0OWItOWJiYi05N2E4YjQ2NjI5MzQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAyNCwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6MjAyNCBAMTE4LjE2Ny43Ni4yMzMgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgYjMyMzYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "nLxiVunPT6RQltpIYXks6KwBfEM",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJiMjMubnRicS5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwNGI2OTRiMi03MDIyLTQ3NjctODAxYi02ZDIxNjExZjU0OGIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAyNCwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6MjAyNCBAMTE0LjM3LjEzOS4xNTcgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiB8IDNiZGFiIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "iKvnzj3tyEAUS85nK8KZJydaqPk",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "118.167.76.233",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.76.233 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "114.37.139.157",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.139.157 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
             "port": 2024,
             "sni": "b23.ntbq.dynu.net",
-            "exit_ip": "118.167.76.233",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "118.167.76.233",
-                    "port": 2024,
-                    "users": [
-                        {
-                            "id": "4403b75a-24ca-4d06-af15-6e157a0a7361",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJiMjMubnRicS5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI0NDAzYjc1YS0yNGNhLTRkMDYtYWYxNS02ZTE1N2EwYTczNjEiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAyNCwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6MjAyNCBAMTE4LjE2Ny43Ni4yMzMgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgYzJhOWIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "ptMPdzcAE9YBWtcE2NeOPu3fA8U",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "118.167.76.233",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.76.233 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 2024,
-            "sni": "b23.ntbq.dynu.net",
-            "exit_ip": "118.167.76.233",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "118.167.76.233",
-                    "port": 2024,
-                    "users": [
-                        {
-                            "id": "a209ff8c-d691-496c-8c1f-32d2e995b603",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJiMjMubnRicS5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJhMjA5ZmY4Yy1kNjkxLTQ5NmMtOGMxZi0zMmQyZTk5NWI2MDMiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAyNCwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6MjAyNCBAMTE4LjE2Ny43Ni4yMzMgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgZmYyZDAiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "OoPGvQebOec95XsIeFaN5wUdI70",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "118.167.76.233",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.76.233 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 2024,
-            "sni": "118.167.76.233",
-            "exit_ip": "118.167.76.233",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "114.37.142.251",
-                    "port": 4443,
-                    "users": [
-                        {
-                            "id": "7b039abd-ad30-4ce4-a876-0a97a3ccaf74",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiN2IwMzlhYmQtYWQzMC00Y2U0LWE4NzYtMGE5N2EzY2NhZjc0IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExNC4zNy4xNDIuMjUxIHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDRhMjI2Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "xRnaqtsAPZw5zFejXHLFq6OxK0A",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "114.37.142.251",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.142.251 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 4443,
-            "sni": "114.37.142.251",
-            "exit_ip": "114.37.142.251",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "114.37.142.251",
-                    "port": 4443,
-                    "users": [
-                        {
-                            "id": "4403b75a-24ca-4d06-af15-6e157a0a7361",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNDQwM2I3NWEtMjRjYS00ZDA2LWFmMTUtNmUxNTdhMGE3MzYxIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExNC4zNy4xNDIuMjUxIHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDVkYTFiIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "gNiC92uHnt8vxxT8MfHADT4z2KI",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "114.37.142.251",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.142.251 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 4443,
-            "sni": "nb24.ntbq.dynu.net",
-            "exit_ip": "114.37.142.251",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "114.37.142.251",
-                    "port": 4443,
-                    "users": [
-                        {
-                            "id": "a209ff8c-d691-496c-8c1f-32d2e995b603",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiYTIwOWZmOGMtZDY5MS00OTZjLThjMWYtMzJkMmU5OTViNjAzIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExNC4zNy4xNDIuMjUxIHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDI3ZWQwIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "8WK0qs4Sb1EFsBcyaSCgFMHgiro",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "114.37.142.251",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.142.251 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 4443,
-            "sni": "nb24.ntbq.dynu.net",
-            "exit_ip": "114.37.142.251",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "114.37.142.251",
-                    "port": 4443,
-                    "users": [
-                        {
-                            "id": "05f1e2ad-1d21-449b-9bbb-97a8b4662934",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMDVmMWUyYWQtMWQyMS00NDliLTliYmItOTdhOGI0NjYyOTM0IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExNC4zNy4xNDIuMjUxIHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDE1N2Q0Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "m5XniiFybQZMNzaopLPQLBLZX8E",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "114.37.142.251",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.142.251 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 4443,
-            "sni": "nb24.ntbq.dynu.net",
-            "exit_ip": "114.37.142.251",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "114.37.142.251",
-                    "port": 4443,
-                    "users": [
-                        {
-                            "id": "d9e103fc-741d-459f-9a92-4f59bfb083ef",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiZDllMTAzZmMtNzQxZC00NTlmLTlhOTItNGY1OWJmYjA4M2VmIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExNC4zNy4xNDIuMjUxIHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gXC8gQ2h1bmdod2EgVGVsZWNvbSBDby4gTHRkLiB8IDU4ODM4Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "0aQf0oXa8Yw9QP9YLbdLpySlZ5I",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "114.37.142.251",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.142.251 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 4443,
-            "sni": "nb24.ntbq.dynu.net",
-            "exit_ip": "114.37.142.251",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "36.232.158.210",
-                    "port": 6122,
-                    "users": [
-                        {
-                            "id": "e27ab70e-7444-470c-a0fc-e49ec09ac02d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJlMjdhYjcwZS03NDQ0LTQ3MGMtYTBmYy1lNDllYzA5YWMwMmQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NjEyMiwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6NjEyMiBAMzYuMjMyLjE1OC4yMTAgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgNjBjNWIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "t6pduJLRp9fnQfulnW5wnYxamj4",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "36.232.158.210",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.232.158.210 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 6122,
-            "sni": "36.232.158.210",
-            "exit_ip": "36.232.158.210",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "36.232.158.210",
-                    "port": 6122,
-                    "users": [
-                        {
-                            "id": "4403b75a-24ca-4d06-af15-6e157a0a7361",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI0NDAzYjc1YS0yNGNhLTRkMDYtYWYxNS02ZTE1N2EwYTczNjEiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NjEyMiwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6NjEyMiBAMzYuMjMyLjE1OC4yMTAgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgNTc5ODQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "CGNGcOvY26B8jFXF8PvwPt1jUhI",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "36.232.158.210",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.232.158.210 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 6122,
-            "sni": "c12.twtc.dynu.net",
-            "exit_ip": "36.232.158.210",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "36.232.158.210",
-                    "port": 6122,
-                    "users": [
-                        {
-                            "id": "d9e103fc-741d-459f-9a92-4f59bfb083ef",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJkOWUxMDNmYy03NDFkLTQ1OWYtOWE5Mi00ZjU5YmZiMDgzZWYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NjEyMiwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6NjEyMiBAMzYuMjMyLjE1OC4yMTAgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgZGNkMzEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "8nZPQbU1qTHz5eFrWpDwaVRkVkw",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "36.232.158.210",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.232.158.210 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 6122,
-            "sni": "c12.twtc.dynu.net",
-            "exit_ip": "36.232.158.210",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "36.232.158.210",
-                    "port": 6122,
-                    "users": [
-                        {
-                            "id": "05f1e2ad-1d21-449b-9bbb-97a8b4662934",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwNWYxZTJhZC0xZDIxLTQ0OWItOWJiYi05N2E4YjQ2NjI5MzQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NjEyMiwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6NjEyMiBAMzYuMjMyLjE1OC4yMTAgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgZThkOWUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "VpU86Q2wAChId34623RzzWPEOqY",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "36.232.158.210",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.232.158.210 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 6122,
-            "sni": "c12.twtc.dynu.net",
-            "exit_ip": "36.232.158.210",
+            "exit_ip": "114.37.139.157",
             "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "f_any": true,
             "f_tracker": true,
@@ -703,11 +254,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "36.232.158.210",
-                    "port": 6122,
+                    "address": "114.37.139.157",
+                    "port": 2024,
                     "users": [
                         {
-                            "id": "a209ff8c-d691-496c-8c1f-32d2e995b603",
+                            "id": "88162ed0-5a4d-4d7b-8a5c-ed5b5fa70e0d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -724,21 +275,108 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJhMjA5ZmY4Yy1kNjkxLTQ5NmMtOGMxZi0zMmQyZTk5NWI2MDMiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NjEyMiwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6NjEyMiBAMzYuMjMyLjE1OC4yMTAgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgZTYyOTYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "A99ajofRLxeMtBGcyOgAMqnTirk",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJiMjMubnRicS5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI4ODE2MmVkMC01YTRkLTRkN2ItOGE1Yy1lZDViNWZhNzBlMGQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAyNCwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6MjAyNCBAMTE0LjM3LjEzOS4xNTcgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiB8IDQ0Yjc5Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "HGfkS5hjJHH74rMYx4wbLA7eECQ",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "36.232.158.210",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 36.232.158.210 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "114.37.139.157",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 114.37.139.157 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
-            "port": 6122,
-            "sni": "c12.twtc.dynu.net",
-            "exit_ip": "36.232.158.210",
+            "port": 2024,
+            "sni": "114.37.139.157",
+            "exit_ip": "114.37.139.157",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "118.167.77.5",
+                    "port": 4443,
+                    "users": [
+                        {
+                            "id": "88162ed0-5a4d-4d7b-8a5c-ed5b5fa70e0d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiODgxNjJlZDAtNWE0ZC00ZDdiLThhNWMtZWQ1YjVmYTcwZTBkIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExOC4xNjcuNzcuNSB8IENodW5naHdhIFRlbGVjb20gQ28uLCBMdGQuIHwgNWUzMDYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "dqy3KMtDPPboJwwiwmPvF4lDQqM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "118.167.77.5",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.77.5 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "cc": "TW",
+            "port": 4443,
+            "sni": "nb24.ntbq.dynu.net",
+            "exit_ip": "118.167.77.5",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "118.167.77.5",
+                    "port": 4443,
+                    "users": [
+                        {
+                            "id": "04b694b2-7022-4767-801b-6d21611f548b",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjI0Lm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMDRiNjk0YjItNzAyMi00NzY3LTgwMWItNmQyMTYxMWY1NDhiIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ0NDMsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjQ0NDMgQDExOC4xNjcuNzcuNSB8IENodW5naHdhIFRlbGVjb20gQ28uLCBMdGQuIHwgODE0MGUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "IO8kV8vl1vZ58KFu92ZZ2nJ6YWg",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "118.167.77.5",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.77.5 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "cc": "TW",
+            "port": 4443,
+            "sni": "nb24.ntbq.dynu.net",
+            "exit_ip": "118.167.77.5",
             "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "f_any": true,
+            "f_tracker": true,
             "f_facebook": true
         }
     },
@@ -748,11 +386,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "118.167.69.122",
-                    "port": 12002,
+                    "address": "125.224.144.24",
+                    "port": 6122,
                     "users": [
                         {
-                            "id": "05f1e2ad-1d21-449b-9bbb-97a8b4662934",
+                            "id": "27c6999b-58aa-48b4-b065-786d2badc074",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -769,66 +407,19 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjIyLm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMDVmMWUyYWQtMWQyMS00NDliLTliYmItOTdhOGI0NjYyOTM0IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjEyMDAyLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHRjcDoxMjAwMiBAMTE4LjE2Ny42OS4xMjIgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgMmRlZDMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "dpii109A9HWKFLjBg5PVomkcck8",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMjdjNjk5OWItNThhYS00OGI0LWIwNjUtNzg2ZDJiYWRjMDc0IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjYxMjIsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjYxMjIgQDEyNS4yMjQuMTQ0LjI0IHwgQ2h1bmdod2EgVGVsZWNvbSBDby4sIEx0ZC4gfCA4MTRiNyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "5jqaoGYJoB464Udfg455kiblOFM",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "118.167.69.122",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.69.122 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "125.224.144.24",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 125.224.144.24 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
-            "port": 12002,
-            "sni": "nb22.ntbq.dynu.net",
-            "exit_ip": "118.167.69.122",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "118.167.69.122",
-                    "port": 12002,
-                    "users": [
-                        {
-                            "id": "d9e103fc-741d-459f-9a92-4f59bfb083ef",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjIyLm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiZDllMTAzZmMtNzQxZC00NTlmLTlhOTItNGY1OWJmYjA4M2VmIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjEyMDAyLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHRjcDoxMjAwMiBAMTE4LjE2Ny42OS4xMjIgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgM2EzYWUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "SFWf9HiFkRgnqaMWk41hytcsCCw",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "118.167.69.122",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.69.122 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "cc": "TW",
-            "port": 12002,
-            "sni": "nb22.ntbq.dynu.net",
-            "exit_ip": "118.167.69.122",
+            "port": 6122,
+            "sni": "125.224.144.24",
+            "exit_ip": "125.224.144.24",
             "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
         }
     },
@@ -838,11 +429,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "118.167.69.122",
-                    "port": 12002,
+                    "address": "125.224.144.24",
+                    "port": 6122,
                     "users": [
                         {
-                            "id": "4403b75a-24ca-4d06-af15-6e157a0a7361",
+                            "id": "88162ed0-5a4d-4d7b-8a5c-ed5b5fa70e0d",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -859,24 +450,20 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjIyLm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNDQwM2I3NWEtMjRjYS00ZDA2LWFmMTUtNmUxNTdhMGE3MzYxIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjEyMDAyLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHRjcDoxMjAwMiBAMTE4LjE2Ny42OS4xMjIgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgZWVkODIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "tYXNbx9jLWBYYDeVe7qvrHmL15A",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJjMTIudHd0Yy5keW51Lm5ldCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI4ODE2MmVkMC01YTRkLTRkN2ItOGE1Yy1lZDViNWZhNzBlMGQiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NjEyMiwicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB0Y3A6NjEyMiBAMTI1LjIyNC4xNDQuMjQgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiB8IGM1NmFmIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "92jiFW0e9lRvt5bfZaX0hwS8bKA",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "118.167.69.122",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.69.122 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "125.224.144.24",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 125.224.144.24 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
-            "port": 12002,
-            "sni": "nb22.ntbq.dynu.net",
-            "exit_ip": "118.167.69.122",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "port": 6122,
+            "sni": "c12.twtc.dynu.net",
+            "exit_ip": "125.224.144.24",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
         }
     },
     {
@@ -885,11 +472,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "118.167.69.122",
+                    "address": "118.167.70.229",
                     "port": 12002,
                     "users": [
                         {
-                            "id": "6b2e0602-bc1a-4ec3-88da-4238a6955ddd",
+                            "id": "04b694b2-7022-4767-801b-6d21611f548b",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -906,20 +493,24 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJuYjIyLm50YnEuZHludS5uZXQiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNmIyZTA2MDItYmMxYS00ZWMzLTg4ZGEtNDIzOGE2OTU1ZGRkIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjEyMDAyLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHRjcDoxMjAwMiBAMTE4LjE2Ny42OS4xMjIgfCBDaHVuZ2h3YSBUZWxlY29tIENvLiwgTHRkLiBcLyBDaHVuZ2h3YSBUZWxlY29tIENvLiBMdGQuIHwgZjgxMGMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "sLeNT7RjXIc8HRo4rEttTh0vqM4",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMTguMTY3LjcwLjIyOSIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwNGI2OTRiMi03MDIyLTQ3NjctODAxYi02ZDIxNjExZjU0OGIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MTIwMDIsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGZjIFRXIHwgdGNwOjEyMDAyIEAxMTguMTY3LjcwLjIyOSB8IENodW5naHdhIFRlbGVjb20gQ28uLCBMdGQuIHwgMzNlYTIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "5d31Xgjh5MvWghgwOq2pGFZQVr0",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "118.167.69.122",
-            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.69.122 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "ip": "118.167.70.229",
+            "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 118.167.70.229 | Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
             "cc": "TW",
             "port": 12002,
-            "sni": "nb22.ntbq.dynu.net",
-            "exit_ip": "118.167.69.122",
-            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd."
+            "sni": "118.167.70.229",
+            "exit_ip": "118.167.70.229",
+            "exit_isp": "Chunghwa Telecom Co., Ltd. \/ Chunghwa Telecom Co. Ltd.",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -968,7 +559,11 @@
             "port": 31945,
             "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
             "exit_ip": "103.159.206.35",
-            "exit_isp": "TTNS \/ Taiwan Internet Technology Co., Ltd."
+            "exit_isp": "TTNS \/ Taiwan Internet Technology Co., Ltd.",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -998,14 +593,14 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "internet.life.com.by",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "internet.life.com.by"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjMuNTguMTk3LjcwIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6ImludGVybmV0LmxpZmUuY29tLmJ5IiwiaWQiOiI0Y2EwMTk2Yy0wNWU3LTQ1ZWItOTAzNi02OTJjMjAxZjQ1ZmIiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZmMgVFcgfCB3czo0NDMgQDEyMy41OC4xOTcuNzAgfCBVQ0xPVUQgSU5GT1JNQVRJT04gVEVDSE5PTE9HWSAoSEspIExJTUlURUQgfCBlYzA0YiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "1TPVMxrp7gJF4MbVnEn9pIiky0o",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjMuNTguMTk3LjcwIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6IjRjYTAxOTZjLTA1ZTctNDVlYi05MDM2LTY5MmMyMDFmNDVmYiIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmYyBUVyB8IHdzOjQ0MyBAMTIzLjU4LjE5Ny43MCB8IFVDTE9VRCBJTkZPUk1BVElPTiBURUNITk9MT0dZIChISykgTElNSVRFRCB8IGYyMTY4Iiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "3AOCs26RVbNnUdix0QIuaIw17io",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -1015,9 +610,13 @@
             "suffix": "\ud83c\uddf9\ud83c\uddfc TW | 123.58.197.70 | UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
             "cc": "TW",
             "port": 443,
-            "sni": "internet.life.com.by",
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
             "exit_ip": "123.58.197.70",
-            "exit_isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED"
+            "exit_isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     }
 ]

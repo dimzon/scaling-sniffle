@@ -46,7 +46,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 46.17.44.163 | LLC BAXET",
             "cc": "RU",
             "port": 443,
@@ -57,6 +57,57 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "52.175.23.201",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "4a39dba7-463b-4c8a-a804-758282c11c62",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "ru01.trojanyyds.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/4a39dba7-463b-4c8a-a804-758282c11c62@ru01.trojanyyds.xyz:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B7%F0%9F%87%BA%20RU%20%7C%20tcp%3A443%20%4045.144.179.127%20%7C%20LLC%20Baxet%20%7C%20dbf73",
+        "##__key": "1IV0ecPOIacgNd5dosGOo9gqHts",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "52.175.23.201",
+            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 45.144.179.127 | LLC Baxet",
+            "cc": "RU",
+            "port": 443,
+            "sni": "ru01.trojanyyds.xyz",
+            "exit_ip": "45.144.179.127",
+            "exit_isp": "LLC Baxet",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true
         }
     }
 ]

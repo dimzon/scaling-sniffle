@@ -1,24 +1,21 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "18.203.219.239",
-                    "port": 22222,
-                    "users": [
-                        {
-                            "id": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
+                    "address": "34.243.124.205",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "telegram-id-directvpn",
+                    "port": 22222
                 }
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
             "security": "tls",
             "tcpSettings": {
                 "header": {
@@ -26,33 +23,79 @@
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/telegram-channel-vlessconfig-ws",
-                "host": "telegram-channel-vlessconfig.sohala.uk",
-                "headers": {
-                    "Host": "telegram-channel-vlessconfig.sohala.uk"
-                }
-            },
+            "wsSettings": null,
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "telegram-channel-vlessconfig.sohala.uk",
+                "serverName": "trojan.miwan.co.uk",
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/05519058-d2ac-4f28-9e4a-2b2a1386749e@18.203.219.239:22222?security=tls&type=ws&sni=telegram-channel-vlessconfig.sohala.uk&host=telegram-channel-vlessconfig.sohala.uk&path=%2Ftelegram-channel-vlessconfig-ws&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%AA%20IE%20%7C%20ws%3A22222%20%4018.203.219.239%20%7C%20Amazon%20Technologies%20Inc.%20%2F%20AWS%20EC2%20%28eu-west-1%29%20%7C%20301d4",
-        "##__key": "MHxFc1k9nRc3vt3pcHBIw0uqoFg",
+        "##__uri": "trojan:\/\/telegram-id-directvpn@34.243.124.205:22222?type=tcp&sni=trojan.miwan.co.uk&alpn=http%2F1.1&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%AA%20IE%20%7C%20tcp%3A22222%20%4034.243.124.205%20%7C%20%3F%20%7C%20cf139",
+        "##__key": "g4JJLhPWIQvEJEWvVikAfSznzAI",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "18.203.219.239",
-            "suffix": "\ud83c\uddee\ud83c\uddea IE | 18.203.219.239 | Amazon Technologies Inc. \/ AWS EC2 (eu-west-1)",
+            "ip": "34.243.124.205",
+            "suffix": "\ud83c\uddee\ud83c\uddea IE | 34.243.124.205 | ?",
             "cc": "IE",
             "port": 22222,
-            "sni": "telegram-channel-vlessconfig.sohala.uk",
-            "exit_ip": "18.203.219.239",
+            "sni": "trojan.miwan.co.uk",
+            "exit_ip": "34.243.124.205",
+            "exit_isp": "?",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "52.18.138.201",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "telegram-id-privatevpns",
+                    "port": 22222
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "trojan.miwan.co.uk",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/telegram-id-privatevpns@52.18.138.201:22222?type=tcp&sni=trojan.miwan.co.uk&alpn=http%2F1.1&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%AA%20IE%20%7C%20tcp%3A22222%20%4052.18.138.201%20%7C%20AWS%20EC2%20%28eu-west-1%29%20%7C%204fa6d",
+        "##__key": "YxMTE2NmH2pk5JIE3rN6DRsQpNY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "52.18.138.201",
+            "suffix": "\ud83c\uddee\ud83c\uddea IE | 52.18.138.201 | Amazon Technologies Inc. \/ AWS EC2 (eu-west-1)",
+            "cc": "IE",
+            "port": 22222,
+            "sni": "trojan.miwan.co.uk",
+            "exit_ip": "52.18.138.201",
             "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (eu-west-1)",
             "f_any": true,
             "f_tracker": true,

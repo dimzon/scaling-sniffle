@@ -55,56 +55,6 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "193.104.57.136",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "892e4ff3-f8bb-42ac-9bd5-e103f235fc78",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null,
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "193.104.57.136",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJydTAxLjMzMzIxMC54eXoiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiODkyZTRmZjMtZjhiYi00MmFjLTliZDUtZTEwM2YyMzVmYzc4IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjdcdWQ4M2NcdWRkZmEgUlUgfCB0Y3A6ODAgQDE5My4xMDQuNTcuMTM2IHwgSlNDIE1lZGlhc29mdCBla3NwZXJ0IFwvIE1UIEZJTkFOQ0UgTExDIHwgZWI2ODMiLCJzY3kiOiJhdXRvIiwic25pIjoiMTkzLjEwNC41Ny4xMzYiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "aDwRaGAfyWfvqREDf06b9vGGBVE",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "193.104.57.136",
-            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 193.104.57.136 | JSC Mediasoft ekspert \/ MT FINANCE LLC",
-            "cc": "RU",
-            "port": 80,
-            "sni": "193.104.57.136",
-            "exit_ip": "193.104.57.136",
-            "exit_isp": "JSC Mediasoft ekspert \/ MT FINANCE LLC"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "speed.cloudflare.com",
                     "port": 443,
                     "users": [
@@ -146,7 +96,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 46.17.44.163 | LLC BAXET",
             "cc": "RU",
             "port": 443,
@@ -157,6 +107,57 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "52.175.23.201",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "4a39dba7-463b-4c8a-a804-758282c11c62",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "ru01.trojanyyds.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/4a39dba7-463b-4c8a-a804-758282c11c62@ru01.trojanyyds.xyz:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B7%F0%9F%87%BA%20RU%20%7C%20tcp%3A443%20%4045.144.179.127%20%7C%20LLC%20Baxet%20%7C%20dbf73",
+        "##__key": "1IV0ecPOIacgNd5dosGOo9gqHts",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "52.175.23.201",
+            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 45.144.179.127 | LLC Baxet",
+            "cc": "RU",
+            "port": 443,
+            "sni": "ru01.trojanyyds.xyz",
+            "exit_ip": "45.144.179.127",
+            "exit_isp": "LLC Baxet",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true
         }
     },
     {
@@ -275,133 +276,6 @@
     },
     {
         "###engine": "xray",
-        "protocol": "socks",
-        "settings": {
-            "servers": [
-                {
-                    "address": "188.191.164.55",
-                    "ota": false,
-                    "port": 4890
-                }
-            ]
-        },
-        "##__uri": "socks5:\/\/188.191.164.55:4890#%F0%9F%87%B7%F0%9F%87%BA%20RU%20%7C%20tcp%3A4890%20%40188.191.164.55%20%7C%20Intelsc%20Ltd.%20%7C%207813a",
-        "##__key": "ea9cyA5deVVSkHv5vWKvZJpPt98",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "188.191.164.55",
-            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 188.191.164.55 | Intelsc Ltd.",
-            "cc": "RU",
-            "port": 4890,
-            "sni": "",
-            "exit_ip": "188.191.164.55",
-            "exit_isp": "Intelsc Ltd."
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "45.144.2.113",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "9b170ad4-3211-4f0f-8bc9-80d356b67662",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "er3.889611.com",
-                "headers": {
-                    "Host": "er3.889611.com"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI0NS4xNDQuMi4xMTMiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiZXIzLjg4OTYxMS5jb20iLCJpZCI6IjliMTcwYWQ0LTMyMTEtNGYwZi04YmM5LTgwZDM1NmI2NzY2MiIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY3XHVkODNjXHVkZGZhIFJVIHwgd3M6ODAgQDQ1LjE0NC4yLjExMyB8IExMQyBCYXhldCB8IDVhZTU2Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "Kn0i7VIB74qU6Of8QtZ9lIhAEJI",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "45.144.2.113",
-            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 45.144.2.113 | LLC Baxet",
-            "cc": "RU",
-            "port": 80,
-            "sni": "er3.889611.com",
-            "exit_ip": "45.144.2.113",
-            "exit_isp": "LLC Baxet",
-            "decdn": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "9b170ad4-3211-4f0f-8bc9-80d356b67662",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "er3.889611.com",
-                "headers": {
-                    "Host": "er3.889611.com"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJlcjMuODg5NjExLmNvbSIsImlkIjoiOWIxNzBhZDQtMzIxMS00ZjBmLThiYzktODBkMzU2YjY3NjYyIiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjdcdWQ4M2NcdWRkZmEgUlUgfCB3czo4MCBANDUuMTQ0LjIuMTEzIHwgTExDIEJheGV0IHwgNzhhOTEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "cAGTRrSUKN3X7E9grtnFeMymnUg",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 45.144.2.113 | LLC Baxet",
-            "cc": "RU",
-            "port": 80,
-            "sni": "er3.889611.com",
-            "exit_ip": "45.144.2.113",
-            "exit_isp": "LLC Baxet"
-        }
-    },
-    {
-        "###engine": "xray",
         "protocol": "vless",
         "settings": {
             "vnext": [
@@ -461,7 +335,7 @@
                     "port": 80,
                     "users": [
                         {
-                            "id": "fddb3781-7e15-4731-a933-94db110b4bbc",
+                            "id": "5bdae49d-0f67-41c1-b331-5b2564965420",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -478,14 +352,14 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/vmess",
-                "host": "vk.com",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "vk.com"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMTEzLjY4LjIzMyIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2ay5jb20iLCJpZCI6ImZkZGIzNzgxLTdlMTUtNDczMS1hOTMzLTk0ZGIxMTBiNGJiYyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjdcdWQ4M2NcdWRkZmEgUlUgfCB3czo4MCBAMTAzLjExMy42OC4yMzMgfCBTdGFyayBJbmR1c3RyaWVzIFNvbHV0aW9ucyBMVEQgfCA2YjA2ZiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "lQO6gKY18As0qd9aBIbDlI6u0zU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMTEzLjY4LjIzMyIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI1YmRhZTQ5ZC0wZjY3LTQxYzEtYjMzMS01YjI1NjQ5NjU0MjAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGY3XHVkODNjXHVkZGZhIFJVIHwgd3M6ODAgQDEwMy4xMTMuNjguMjMzIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgNmFiOTQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "GlVl7T7b114P2X0hiehHIJeXbd0",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -495,106 +369,7 @@
             "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 103.113.68.233 | Stark Industries Solutions LTD",
             "cc": "RU",
             "port": 80,
-            "sni": "vk.com",
-            "exit_ip": "103.113.68.233",
-            "exit_isp": "Stark Industries Solutions LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "103.113.68.233",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "c358b7f3-05b1-4999-ac57-9fc4cd09068e",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/vless",
-                "host": "103.113.68.233",
-                "headers": {
-                    "Host": "103.113.68.233"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/c358b7f3-05b1-4999-ac57-9fc4cd09068e@103.113.68.233:80?type=ws&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B7%F0%9F%87%BA%20RU%20%7C%20ws%3A80%20%40103.113.68.233%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%2043c12",
-        "##__key": "uL5i5bQdkEuhAKeIizWLS7eB1tU",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "103.113.68.233",
-            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 103.113.68.233 | Stark Industries Solutions LTD",
-            "cc": "RU",
-            "port": 80,
-            "sni": "103.113.68.233",
-            "exit_ip": "103.113.68.233",
-            "exit_isp": "Stark Industries Solutions LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "103.113.68.233",
-                    "port": 8080,
-                    "users": [
-                        {
-                            "id": "fddb3781-7e15-4731-a933-94db110b4bbc",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/vmess",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMTEzLjY4LjIzMyIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ2aWJlci5jb20iLCJpZCI6ImZkZGIzNzgxLTdlMTUtNDczMS1hOTMzLTk0ZGIxMTBiNGJiYyIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MDgwLCJwcyI6Ilx1ZDgzY1x1ZGRmN1x1ZDgzY1x1ZGRmYSBSVSB8IHdzOjgwODAgQDEwMy4xMTMuNjguMjMzIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgYWEwN2YiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "VWUcRkY9RCS5Ub66MBcoELvlAtI",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "103.113.68.233",
-            "suffix": "\ud83c\uddf7\ud83c\uddfa RU | 103.113.68.233 | Stark Industries Solutions LTD",
-            "cc": "RU",
-            "port": 8080,
-            "sni": "viber.com",
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
             "exit_ip": "103.113.68.233",
             "exit_isp": "Stark Industries Solutions LTD"
         }

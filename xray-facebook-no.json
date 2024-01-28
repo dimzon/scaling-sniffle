@@ -1,51 +1,70 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
-                    "address": "95.164.38.223",
+                    "address": "95.164.84.87",
                     "port": 443,
                     "users": [
                         {
-                            "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
-                            "encryption": "chacha20-poly1305"
+                            "id": "a8f1f548-2d45-4ba2-8ec0-082aefebff9f",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
             ]
         },
         "streamSettings": {
-            "network": "grpc",
+            "network": "tcp",
             "tcpSettings": {
                 "header": {
-                    "type": "none"
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "ponisha.ir"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
                 }
             },
-            "grpcSettings": {
-                "serviceName": ""
-            },
+            "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuMzguMjIzIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImNlOWNjZWUxLThjMGUtNGVhNC04ZDkzLTdiODk2ZWM1NGUzMSIsIm5ldCI6ImdycGMiLCJwYXRoIjoiIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmNCBOTyB8IGdycGM6NDQzIEA5NS4xNjQuMzguMjIzIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgY2U5YjEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "8OgjFZv5Ymp7pI9j1cIa0G0FwEc",
+        "##__uri": "vless:\/\/a8f1f548-2d45-4ba2-8ec0-082aefebff9f@95.164.84.87:443?type=tcp&headerType=http&host=ponisha.ir&fp=chrome#%F0%9F%87%B3%F0%9F%87%B4%20NO%20%7C%20tcp%3A443%20%4095.164.84.87%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20072f7",
+        "##__key": "yp1X9pYH7Llh3aN1Mg8MCteY9po",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "95.164.38.223",
-            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 95.164.38.223 | Stark Industries Solutions LTD",
+            "ip": "95.164.84.87",
+            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 95.164.84.87 | Stark Industries Solutions LTD",
             "cc": "NO",
             "port": 443,
-            "sni": "95.164.38.223",
-            "exit_ip": "95.164.38.223",
+            "sni": "ponisha.ir",
+            "exit_ip": "95.164.84.87",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     }
 ]

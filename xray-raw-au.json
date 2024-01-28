@@ -1,6 +1,58 @@
 [
     {
         "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "172.105.174.37",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "0db1da23-a106-4afd-b0ae-2a4ffca1a895",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/0db1da23-a106-4afd-b0ae-2a4ffca1a895@au2-full.privateip.net:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20018de",
+        "##__key": "LBWMhwfLqcCDKxabmcDKe2nGAyY",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "172.105.174.37",
+            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
+            "cc": "AU",
+            "port": 443,
+            "sni": "172.105.174.37",
+            "exit_ip": "172.105.174.37",
+            "exit_isp": "Akamai Technologies \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
         "protocol": "vless",
         "settings": {
             "vnext": [
@@ -9,7 +61,7 @@
                     "port": 443,
                     "users": [
                         {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
                             "encryption": "none",
                             "flow": "xtls-rprx-vision"
                         }
@@ -34,8 +86,8 @@
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/fe57f868-a813-40ee-9e4b-dc09de638b0e@au2-full.privateip.net:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&flow=xtls-rprx-vision&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%2082ee3",
-        "##__key": "ccgo19jAWu4YNRC1U2nNmmyZyUk",
+        "##__uri": "vless:\/\/7207eacd-b398-41d8-b15f-005e2c534cea@au2-full.privateip.net:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&flow=xtls-rprx-vision&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%203f7bb",
+        "##__key": "KNV07HrZR8wYrefUwyuSUad9Joo",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
@@ -56,21 +108,23 @@
     },
     {
         "###engine": "xray",
-        "protocol": "trojan",
+        "protocol": "vmess",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
                     "address": "172.105.174.37",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "b3687606-8476-43b7-931b-6355fe9504bd",
-                    "port": 443
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
                 }
             ]
         },
         "streamSettings": {
-            "network": "tcp",
+            "network": "ws",
             "security": "tls",
             "tcpSettings": {
                 "header": {
@@ -78,7 +132,13 @@
                 }
             },
             "grpcSettings": null,
-            "wsSettings": null,
+            "wsSettings": {
+                "path": "\/RACEVPN",
+                "host": "au2-full.privateip.net",
+                "headers": {
+                    "Host": "au2-full.privateip.net"
+                }
+            },
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
@@ -86,8 +146,8 @@
                 "show": true
             }
         },
-        "##__uri": "trojan:\/\/b3687606-8476-43b7-931b-6355fe9504bd@au2-full.privateip.net:443?type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20dff32",
-        "##__key": "BK6Rb7elNCBQdbvA0U02d2VbSys",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJhdTItZnVsbC5wcml2YXRlaXAubmV0IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiI3MjA3ZWFjZC1iMzk4LTQxZDgtYjE1Zi0wMDVlMmM1MzRjZWEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1JBQ0VWUE4iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjQ0MyBAMTcyLjEwNS4xNzQuMzcgfCBBa2FtYWkgVGVjaG5vbG9naWVzIFwvIExpbm9kZSB8IDQzZjQ2Iiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "pYNANShmW7WRGHPQEqTv6vh6jWc",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
@@ -116,7 +176,7 @@
                     "port": 443,
                     "users": [
                         {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
                             "encryption": "none",
                             "flow": ""
                         }
@@ -147,8 +207,8 @@
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/fe57f868-a813-40ee-9e4b-dc09de638b0e@au2-full.privateip.net:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20ws%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%2028696",
-        "##__key": "HxsuleRymMvSFDqz4dGr2HuKXnQ",
+        "##__uri": "vless:\/\/7207eacd-b398-41d8-b15f-005e2c534cea@au2-full.privateip.net:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20ws%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20e460c",
+        "##__key": "IFMp76Ewf9dorXg6cw6tt71s3kQ",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
@@ -169,67 +229,6 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "172.105.174.37",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/RACEVPN",
-                "host": "au2-full.privateip.net",
-                "headers": {
-                    "Host": "au2-full.privateip.net"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdTItZnVsbC5wcml2YXRlaXAubmV0IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiJmZTU3Zjg2OC1hODEzLTQwZWUtOWU0Yi1kYzA5ZGU2MzhiMGUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1JBQ0VWUE4iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjQ0MyBAMTcyLjEwNS4xNzQuMzcgfCBBa2FtYWkgVGVjaG5vbG9naWVzIFwvIExpbm9kZSB8IGUxNGFiIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "zasXCvIxe4ezVqeAixkApOcahWk",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "172.105.174.37",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au2-full.privateip.net",
-            "exit_ip": "172.105.174.37",
-            "exit_isp": "Akamai Technologies \/ Linode",
-            "decdn": true,
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
         "protocol": "trojan",
         "settings": {
             "servers": [
@@ -238,59 +237,7 @@
                     "#flow": "",
                     "#method": "chacha20-poly1305",
                     "#ota": false,
-                    "password": "b3687606-8476-43b7-931b-6355fe9504bd",
-                    "port": 443
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null,
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "172.105.174.37",
-                "show": true
-            }
-        },
-        "##__uri": "trojan:\/\/b3687606-8476-43b7-931b-6355fe9504bd@au2-full.privateip.net:443?type=tcp&sni=172.105.174.37&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20519c6",
-        "##__key": "sKkt3fmvB35ft7XgTbk1WdbtJk8",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "172.105.174.37",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
-            "cc": "AU",
-            "port": 443,
-            "sni": "172.105.174.37",
-            "exit_ip": "172.105.174.37",
-            "exit_isp": "Akamai Technologies \/ Linode",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "trojan",
-        "settings": {
-            "servers": [
-                {
-                    "address": "172.105.174.37",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "b3687606-8476-43b7-931b-6355fe9504bd",
+                    "password": "0db1da23-a106-4afd-b0ae-2a4ffca1a895",
                     "port": 443
                 }
             ]
@@ -312,8 +259,8 @@
                 "show": true
             }
         },
-        "##__uri": "trojan:\/\/b3687606-8476-43b7-931b-6355fe9504bd@au2-full.privateip.net:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20670f7",
-        "##__key": "aVmVrfmpHhhMpGi8J8xZQM0aGRc",
+        "##__uri": "trojan:\/\/0db1da23-a106-4afd-b0ae-2a4ffca1a895@au2-full.privateip.net:443?type=tcp&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%2017e63",
+        "##__key": "mX2zmjJx9NVmHzcXG6BDcviSXcc",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -334,6 +281,58 @@
     },
     {
         "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "172.105.174.37",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "0db1da23-a106-4afd-b0ae-2a4ffca1a895",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "172.105.174.37",
+                "show": true
+            }
+        },
+        "##__uri": "trojan:\/\/0db1da23-a106-4afd-b0ae-2a4ffca1a895@au2-full.privateip.net:443?type=tcp&sni=172.105.174.37&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%2032df7",
+        "##__key": "Wu4XLieo01RifFu5LHRLJwIUJLw",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "172.105.174.37",
+            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
+            "cc": "AU",
+            "port": 443,
+            "sni": "172.105.174.37",
+            "exit_ip": "172.105.174.37",
+            "exit_isp": "Akamai Technologies \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
         "protocol": "vless",
         "settings": {
             "vnext": [
@@ -342,7 +341,7 @@
                     "port": 443,
                     "users": [
                         {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
                             "encryption": "none",
                             "flow": "xtls-rprx-vision"
                         }
@@ -367,8 +366,8 @@
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/fe57f868-a813-40ee-9e4b-dc09de638b0e@au2-full.privateip.net:443?security=tls&type=tcp&flow=xtls-rprx-vision&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20f58c0",
-        "##__key": "cutwVch5idHZwPW9AcELLWvnx8I",
+        "##__uri": "vless:\/\/7207eacd-b398-41d8-b15f-005e2c534cea@au2-full.privateip.net:443?security=tls&type=tcp&flow=xtls-rprx-vision&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20a78e9",
+        "##__key": "3pog8u8ckKEGo8MW89z29PYCXB4",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -393,71 +392,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "172.105.174.37",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/RACEVPN",
-                "host": "172.105.174.37",
-                "headers": {
-                    "Host": "172.105.174.37"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "172.105.174.37",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdTItZnVsbC5wcml2YXRlaXAubmV0IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IjE3Mi4xMDUuMTc0LjM3IiwiaWQiOiJmZTU3Zjg2OC1hODEzLTQwZWUtOWU0Yi1kYzA5ZGU2MzhiMGUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1JBQ0VWUE4iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjQ0MyBAMTcyLjEwNS4xNzQuMzcgfCBBa2FtYWkgVGVjaG5vbG9naWVzIFwvIExpbm9kZSB8IGViY2ZiIiwic2N5IjoiYXV0byIsInNuaSI6IjE3Mi4xMDUuMTc0LjM3IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "SNyx2JKJD3W1J4y3DoGrC3XRmB8",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "172.105.174.37",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
-            "cc": "AU",
-            "port": 443,
-            "sni": "172.105.174.37",
-            "exit_ip": "172.105.174.37",
-            "exit_isp": "Akamai Technologies \/ Linode",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "speed.cloudflare.com",
                     "port": 443,
                     "users": [
                         {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -487,14 +426,14 @@
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJhdTItZnVsbC5wcml2YXRlaXAubmV0IiwiaWQiOiJmZTU3Zjg2OC1hODEzLTQwZWUtOWU0Yi1kYzA5ZGU2MzhiMGUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1JBQ0VWUE4iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjQ0MyBAMTcyLjEwNS4xNzQuMzcgfCBBa2FtYWkgVGVjaG5vbG9naWVzIFwvIExpbm9kZSB8IDc4MTViIiwic2N5IjoiYXV0byIsInNuaSI6ImF1Mi1mdWxsLnByaXZhdGVpcC5uZXQiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "iTj3JxxM0vBrvbOiMliMsukrBmo",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJhdTItZnVsbC5wcml2YXRlaXAubmV0IiwiaWQiOiI3MjA3ZWFjZC1iMzk4LTQxZDgtYjE1Zi0wMDVlMmM1MzRjZWEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1JBQ0VWUE4iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjQ0MyBAMTcyLjEwNS4xNzQuMzcgfCBBa2FtYWkgVGVjaG5vbG9naWVzIFwvIExpbm9kZSB8IDRkZDBmIiwic2N5IjoiYXV0byIsInNuaSI6ImF1Mi1mdWxsLnByaXZhdGVpcC5uZXQiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "y6shqK6P4uyAvoTPfcTH2pTzRFk",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
             "cc": "AU",
             "port": 443,
@@ -517,7 +456,7 @@
                     "port": 443,
                     "users": [
                         {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
                             "encryption": "none",
                             "flow": ""
                         }
@@ -548,14 +487,14 @@
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/fe57f868-a813-40ee-9e4b-dc09de638b0e@speed.cloudflare.com:443?security=tls&type=ws&sni=au2-full.privateip.net&host=au2-full.privateip.net&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20ws%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%208358d",
-        "##__key": "GFY4MoGRvWRxIEOINTbT8TSG9fc",
+        "##__uri": "vless:\/\/7207eacd-b398-41d8-b15f-005e2c534cea@speed.cloudflare.com:443?security=tls&type=ws&sni=au2-full.privateip.net&host=au2-full.privateip.net&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20ws%3A443%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20a908b",
+        "##__key": "VkR0PToI9dtTz7AUOmQYGX484J8",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde6\ud83c\uddfa AU | 172.105.174.37 | Akamai Technologies \/ Linode",
             "cc": "AU",
             "port": 443,
@@ -578,7 +517,7 @@
                     "port": 2003,
                     "users": [
                         {
-                            "id": "fe57f868-a813-40ee-9e4b-dc09de638b0e",
+                            "id": "7207eacd-b398-41d8-b15f-005e2c534cea",
                             "encryption": "none",
                             "flow": ""
                         }
@@ -605,8 +544,8 @@
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/fe57f868-a813-40ee-9e4b-dc09de638b0e@au2-full.privateip.net:2003?security=tls&type=grpc&serviceName=GRPC&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20grpc%3A2003%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%207fabf",
-        "##__key": "2a9ZKrwm2934zGNXgkjLibFQnBQ",
+        "##__uri": "vless:\/\/7207eacd-b398-41d8-b15f-005e2c534cea@au2-full.privateip.net:2003?security=tls&type=grpc&serviceName=GRPC&mode=gun&fp=chrome#%F0%9F%94%92%20%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20grpc%3A2003%20%40172.105.174.37%20%7C%20Akamai%20Technologies%20%2F%20Linode%20%7C%20395b4",
+        "##__key": "RoF55V4zhTfZv6c4nSMVkC7K9ok",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -623,801 +562,6 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "a19f357b-c836-4cf6-9e43-72390e6a00df",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImExOWYzNTdiLWM4MzYtNGNmNi05ZTQzLTcyMzkwZTZhMDBkZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvdGFrZXNoaS53aWtpIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo0NDMgQDE1NC4yNi4xNTcuMjQ0IHwgQ29nZW50IENvbW11bmljYXRpb25zIFwvIENvbnRhYm8gQXNpYSBQcml2YXRlIExURCB8IGM4YWQyIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "1AKeeQ5LQiJkBJIdX1nWYb549Ds",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD",
-            "decdn": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "803b8c6b-192e-4500-a919-485566f8e058",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6IjgwM2I4YzZiLTE5MmUtNDUwMC1hOTE5LTQ4NTU2NmY4ZTA1OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvdGFrZXNoaS53aWtpIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo0NDMgQDE1NC4yNi4xNTcuMjQ0IHwgQ29nZW50IENvbW11bmljYXRpb25zIFwvIENvbnRhYm8gQXNpYSBQcml2YXRlIExURCB8IGRmODhmIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "a49YtPOn7bvKBQlv9OIuA7ppfSk",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "b6ede839-a472-4b75-9961-1b5a82c38a6a",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFsbG93SW5zZWN1cmUiOiIxIiwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImI2ZWRlODM5LWE0NzItNGI3NS05OTYxLTFiNWE4MmMzOGE2YSIsIm5ldCI6IndzIiwicGF0aCI6IlwvdGFrZXNoaS53aWtpIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo0NDMgQDE1NC4yNi4xNTcuMjQ0IHwgQ29nZW50IENvbW11bmljYXRpb25zIFwvIENvbnRhYm8gQXNpYSBQcml2YXRlIExURCB8IGZmMWNkIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "gkne3m2dcYUmELLta59d7GVdxW0",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "803b8c6b-192e-4500-a919-485566f8e058",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "dl.kgvn.garenanow.com",
-                "headers": {
-                    "Host": "dl.kgvn.garenanow.com"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "dl.kgvn.garenanow.com",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiZGwua2d2bi5nYXJlbmFub3cuY29tIiwiaWQiOiI4MDNiOGM2Yi0xOTJlLTQ1MDAtYTkxOS00ODU1NjZmOGUwNTgiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Rha2VzaGkud2lraSIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGU2XHVkODNjXHVkZGZhIEFVIHwgd3M6NDQzIEAxNTQuMjYuMTU3LjI0NCB8IENvZ2VudCBDb21tdW5pY2F0aW9ucyBcLyBDb250YWJvIEFzaWEgUHJpdmF0ZSBMVEQgfCBhYTNkMiIsInNjeSI6ImF1dG8iLCJzbmkiOiJkbC5rZ3ZuLmdhcmVuYW5vdy5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "aKtsMsNYjVkwqspQL7m4jaAv2aM",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "dl.kgvn.garenanow.com",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "803b8c6b-192e-4500-a919-485566f8e058",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "au.takeshi.wiki",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiI4MDNiOGM2Yi0xOTJlLTQ1MDAtYTkxOS00ODU1NjZmOGUwNTgiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Rha2VzaGkud2lraSIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGU2XHVkODNjXHVkZGZhIEFVIHwgd3M6NDQzIEAxNTQuMjYuMTU3LjI0NCB8IENvZ2VudCBDb21tdW5pY2F0aW9ucyBcLyBDb250YWJvIEFzaWEgUHJpdmF0ZSBMVEQgfCBmY2ZhNSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "SM8U6tdC14EnPC89lZmzG1oduXM",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "b6ede839-a472-4b75-9961-1b5a82c38a6a",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "au.takeshi.wiki",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJhdS50YWtlc2hpLndpa2kiLCJpZCI6ImI2ZWRlODM5LWE0NzItNGI3NS05OTYxLTFiNWE4MmMzOGE2YSIsIm5ldCI6IndzIiwicGF0aCI6IlwvdGFrZXNoaS53aWtpIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo0NDMgQDE1NC4yNi4xNTcuMjQ0IHwgQ29nZW50IENvbW11bmljYXRpb25zIFwvIENvbnRhYm8gQXNpYSBQcml2YXRlIExURCB8IDhhNDEyIiwic2N5IjoiYXV0byIsInNuaSI6ImF1LnRha2VzaGkud2lraSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "JpCUI0H2w7uWGhB0s6xmICmP51o",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "803b8c6b-192e-4500-a919-485566f8e058",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "au.takeshi.wiki",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJhdS50YWtlc2hpLndpa2kiLCJpZCI6IjgwM2I4YzZiLTE5MmUtNDUwMC1hOTE5LTQ4NTU2NmY4ZTA1OCIsIm5ldCI6IndzIiwicGF0aCI6IlwvdGFrZXNoaS53aWtpIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo0NDMgQDE1NC4yNi4xNTcuMjQ0IHwgQ29nZW50IENvbW11bmljYXRpb25zIFwvIENvbnRhYm8gQXNpYSBQcml2YXRlIExURCB8IDhkNTI4Iiwic2N5IjoiYXV0byIsInNuaSI6ImF1LnRha2VzaGkud2lraSIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "flG2fbGAiHUVwXTMFEmjY2pxkI4",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "a19f357b-c836-4cf6-9e43-72390e6a00df",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "au.takeshi.wiki",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJhdS50YWtlc2hpLndpa2kiLCJpZCI6ImExOWYzNTdiLWM4MzYtNGNmNi05ZTQzLTcyMzkwZTZhMDBkZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvdGFrZXNoaS53aWtpIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo0NDMgQDE1NC4yNi4xNTcuMjQ0IHwgQ29nZW50IENvbW11bmljYXRpb25zIFwvIENvbnRhYm8gQXNpYSBQcml2YXRlIExURCB8IGFjNzI4Iiwic2N5IjoiYXV0byIsInNuaSI6ImF1LnRha2VzaGkud2lraSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "Gs4QbnYSQydvk2wotr4OdeDs3qQ",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 443,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "a19f357b-c836-4cf6-9e43-72390e6a00df",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiYTE5ZjM1N2ItYzgzNi00Y2Y2LTllNDMtNzIzOTBlNmEwMGRmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC90YWtlc2hpLndpa2kiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo4MCBAMTU0LjI2LjE1Ny4yNDQgfCBDb2dlbnQgQ29tbXVuaWNhdGlvbnMgXC8gQ29udGFibyBBc2lhIFByaXZhdGUgTFREIHwgMzJkNDUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "Dy4ae5z7eLjrmElannITZFRo8zw",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 80,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "803b8c6b-192e-4500-a919-485566f8e058",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiODAzYjhjNmItMTkyZS00NTAwLWE5MTktNDg1NTY2ZjhlMDU4IiwibmV0Ijoid3MiLCJwYXRoIjoiXC90YWtlc2hpLndpa2kiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo4MCBAMTU0LjI2LjE1Ny4yNDQgfCBDb2dlbnQgQ29tbXVuaWNhdGlvbnMgXC8gQ29udGFibyBBc2lhIFByaXZhdGUgTFREIHwgMjc0ZTIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "L09M6Ul6nv7tGGPjGFyb7OObDlA",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 80,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "877aa2a8-5854-4cb2-9aba-4a1413a6b2de",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiI4NzdhYTJhOC01ODU0LTRjYjItOWFiYS00YTE0MTNhNmIyZGUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Rha2VzaGkud2lraSIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjgwIEAxNTQuMjYuMTU3LjI0NCB8IENvZ2VudCBDb21tdW5pY2F0aW9ucyBcLyBDb250YWJvIEFzaWEgUHJpdmF0ZSBMVEQgfCBiYzlhMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "HhtSNqeapNnVlF7ROZibkCwkCsM",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 80,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "b6ede839-a472-4b75-9961-1b5a82c38a6a",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "au.takeshi.wiki",
-                "headers": {
-                    "Host": "au.takeshi.wiki"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiJiNmVkZTgzOS1hNDcyLTRiNzUtOTk2MS0xYjVhODJjMzhhNmEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Rha2VzaGkud2lraSIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjgwIEAxNTQuMjYuMTU3LjI0NCB8IENvZ2VudCBDb21tdW5pY2F0aW9ucyBcLyBDb250YWJvIEFzaWEgUHJpdmF0ZSBMVEQgfCBlNThiMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
-        "##__key": "FGNu4vO9X1JPuP1TAl19GJvaCA0",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 80,
-            "sni": "au.takeshi.wiki",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "154.26.157.244",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "59517e0b-ae1c-41d3-9c44-c44cea6f7546",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/takeshi.wiki",
-                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJhdS50YWtlc2hpLndpa2kiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiNTk1MTdlMGItYWUxYy00MWQzLTljNDQtYzQ0Y2VhNmY3NTQ2IiwibmV0Ijoid3MiLCJwYXRoIjoiXC90YWtlc2hpLndpa2kiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB3czo4MCBAMTU0LjI2LjE1Ny4yNDQgfCBDb2dlbnQgQ29tbXVuaWNhdGlvbnMgXC8gQ29udGFibyBBc2lhIFByaXZhdGUgTFREIHwgZmE1YmIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "liJFD69nQywyqpGJybcz1xB4v50",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "154.26.157.244",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 154.26.157.244 | Cogent Communications \/ Contabo Asia Private LTD",
-            "cc": "AU",
-            "port": 80,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-            "exit_ip": "154.26.157.244",
-            "exit_isp": "Cogent Communications \/ Contabo Asia Private LTD"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "170.64.177.143",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "2953d6b5-3915-40f7-aa0e-5274cbf3cb20",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER",
-                "host": "sydney.xn--78-pv2cvta065cac9302fea377a148g.shop",
-                "headers": {
-                    "Host": "sydney.xn--78-pv2cvta065cac9302fea377a148g.shop"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/2953d6b5-3915-40f7-aa0e-5274cbf3cb20@170.64.177.143:80?type=ws&host=sydney.xn--78-pv2cvta065cac9302fea377a148g.shop&path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20ws%3A80%20%40170.64.177.143%20%7C%20DigitalOcean%20%7C%20205c3",
-        "##__key": "R9Q3lBixi4lwOOXiVwmdKgQcCqc",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "170.64.177.143",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 170.64.177.143 | DigitalOcean, LLC",
-            "cc": "AU",
-            "port": 80,
-            "sni": "sydney.xn--78-pv2cvta065cac9302fea377a148g.shop",
-            "exit_ip": "170.64.177.143",
-            "exit_isp": "DigitalOcean, LLC",
-            "decdn": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "2953d6b5-3915-40f7-aa0e-5274cbf3cb20",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER-Telegram:@NUFiLTER",
-                "host": "sydney.xn--78-pv2cvta065cac9302fea377a148g.shop",
-                "headers": {
-                    "Host": "sydney.xn--78-pv2cvta065cac9302fea377a148g.shop"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/2953d6b5-3915-40f7-aa0e-5274cbf3cb20@speed.cloudflare.com:80?type=ws&host=sydney.xn--78-pv2cvta065cac9302fea377a148g.shop&path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20ws%3A80%20%40170.64.177.143%20%7C%20DigitalOcean%20%7C%20257ab",
-        "##__key": "mgpth41qsl634In9G1fQCY1kdOE",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 170.64.177.143 | DigitalOcean, LLC",
-            "cc": "AU",
-            "port": 80,
-            "sni": "sydney.xn--78-pv2cvta065cac9302fea377a148g.shop",
-            "exit_ip": "170.64.177.143",
-            "exit_isp": "DigitalOcean, LLC"
         }
     },
     {
@@ -1469,7 +613,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzAuNjQuMjIwLjEzMSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6IjljMDUwYTg2LWQ2MTItNDhmMS1lYzMyLWU1NzNkZjA4YTFiNyIsIm5ldCI6InRjcCIsInBhdGgiOiJcLyIsInBvcnQiOjMzODksInBzIjoiXHVkODNjXHVkZGU2XHVkODNjXHVkZGZhIEFVIHwgdGNwOjMzODkgQDE3MC42NC4yMjAuMTMxIHwgRGlnaXRhbE9jZWFuIHwgMWJlMWUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzAuNjQuMjIwLjEzMSIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiOWMwNTBhODYtZDYxMi00OGYxLWVjMzItZTU3M2RmMDhhMWI3IiwibmV0IjoidGNwIiwicGF0aCI6IlwvIiwicG9ydCI6MzM4OSwicHMiOiJcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgQVUgfCB0Y3A6MzM4OSBAMTcwLjY0LjIyMC4xMzEgfCBEaWdpdGFsT2NlYW4gfCAxYmUxZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOjJ9",
         "##__key": "D5jE2LGjnRPFvSEwou8xi28k7iI",
         "##__insecure": false,
         "##__flags": {
@@ -1640,14 +784,14 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/aiufbwuge",
-                "host": "vk.com",
+                "host": "internet.life.com.by",
                 "headers": {
-                    "Host": "vk.com"
+                    "Host": "internet.life.com.by"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTguMTc5LjIyLjM5IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6InZrLmNvbSIsImlkIjoiNTRlNzhjOGUtMmM0Yy0zMDFlLWJjNWQtYmIyNzQwOWEyNDBhIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9haXVmYnd1Z2UiLCJwb3J0IjoyMDUyLCJwcyI6Ilx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmYSBBVSB8IHdzOjIwNTIgQDE1OC4xNzkuMjIuMzkgfCBPcmFjbGUgQ2xvdWQgKGFwLW1lbGJvdXJuZS0xKSB8IDA4ZjdiIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
-        "##__key": "SOXVMfNOVFW7NiAQ26iQ6lsHRwU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTguMTc5LjIyLjM5IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6ImludGVybmV0LmxpZmUuY29tLmJ5IiwiaWQiOiI1NGU3OGM4ZS0yYzRjLTMwMWUtYmM1ZC1iYjI3NDA5YTI0MGEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2FpdWZid3VnZSIsInBvcnQiOjIwNTIsInBzIjoiXHVkODNjXHVkZGU2XHVkODNjXHVkZGZhIEFVIHwgd3M6MjA1MiBAMTU4LjE3OS4yMi4zOSB8IE9yYWNsZSBDbG91ZCAoYXAtbWVsYm91cm5lLTEpIHwgYzI3Y2IiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "cuhJefvWuepKrhgiVO5jkawBenY",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -1657,39 +801,9 @@
             "suffix": "\ud83c\udde6\ud83c\uddfa AU | 158.179.22.39 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-melbourne-1)",
             "cc": "AU",
             "port": 2052,
-            "sni": "vk.com",
+            "sni": "internet.life.com.by",
             "exit_ip": "158.179.22.39",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-melbourne-1)",
-            "f_any": true,
-            "f_facebook": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "socks",
-        "settings": {
-            "servers": [
-                {
-                    "address": "203.96.177.211",
-                    "ota": false,
-                    "port": 60376
-                }
-            ]
-        },
-        "##__uri": "socks5:\/\/203.96.177.211:60376#%F0%9F%87%A6%F0%9F%87%BA%20AU%20%7C%20tcp%3A60376%20%40203.96.177.211%20%7C%20Shock%20Hosting%20LLC%20%7C%202eb66",
-        "##__key": "vp5nOunrxF1FV8r2L9J1AlR5L6c",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "203.96.177.211",
-            "suffix": "\ud83c\udde6\ud83c\uddfa AU | 203.96.177.211 | Shock Hosting LLC",
-            "cc": "AU",
-            "port": 60376,
-            "sni": "",
-            "exit_ip": "203.96.177.211",
-            "exit_isp": "Shock Hosting LLC"
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-melbourne-1)"
         }
     }
 ]
