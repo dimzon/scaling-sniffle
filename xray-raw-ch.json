@@ -5,55 +5,6 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "94.131.12.203",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "c10b14cd-90ba-4938-9837-a574ba71762f",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/vmess",
-                "host": "ch2-vmess.sshmax.xyz",
-                "headers": {
-                    "Host": "ch2-vmess.sshmax.xyz"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjaDItdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIiLCJpZCI6ImMxMGIxNGNkLTkwYmEtNDkzOC05ODM3LWE1NzRiYTcxNzYyZiIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZThcdWQ4M2NcdWRkZWQgQ0ggfCB3czo4MCBAOTQuMTMxLjEyLjIwMyB8ID8gfCA3NDljNCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "ioxgtvFhbNGVEfqYSInMZ1OVyLk",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "94.131.12.203",
-            "suffix": "\ud83c\udde8\ud83c\udded CH | 94.131.12.203 | ?",
-            "cc": "CH",
-            "port": 80,
-            "sni": "ch2-vmess.sshmax.xyz",
-            "exit_ip": "94.131.12.203",
-            "exit_isp": "?"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "94.131.99.8",
                     "port": 47182,
                     "users": [
@@ -135,7 +86,11 @@
             "port": 47182,
             "sni": "94.131.99.8",
             "exit_ip": "94.131.99.8",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     }
 ]

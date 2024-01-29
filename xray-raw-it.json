@@ -44,11 +44,7 @@
             "port": 443,
             "sni": "172.232.217.155",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -99,11 +95,7 @@
             "port": 443,
             "sni": "it-full.privateip.net",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -160,10 +152,7 @@
             "sni": "it-full.privateip.net",
             "exit_ip": "172.232.217.155",
             "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "decdn": true
         }
     },
     {
@@ -220,11 +209,7 @@
             "port": 443,
             "sni": "it-full.privateip.net",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -272,11 +257,7 @@
             "port": 443,
             "sni": "it-full.privateip.net",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -324,11 +305,7 @@
             "port": 443,
             "sni": "172.232.217.155",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -433,17 +410,13 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.67.38",
+            "ip": "104.16.68.38",
             "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 172.232.217.155 | Akamai Technologies, Inc.",
             "cc": "IT",
             "port": 443,
             "sni": "it-full.privateip.net",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -494,7 +467,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.67.38",
+            "ip": "104.16.68.38",
             "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 172.232.217.155 | Akamai Technologies, Inc.",
             "cc": "IT",
             "port": 443,
@@ -505,6 +478,59 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "172.232.217.155",
+                    "port": 2003,
+                    "users": [
+                        {
+                            "id": "02ead92f-dcfe-4fd0-93fb-f72481e0eb13",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "GRPC"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/02ead92f-dcfe-4fd0-93fb-f72481e0eb13@it-full.privateip.net:2003?security=tls&type=grpc&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&serviceName=GRPC&allowInsecure=1&mode=gun&fp=chrome#%F0%9F%92%A5%20%F0%9F%87%AE%F0%9F%87%B9%20IT%20%7C%20grpc%3A2003%20%40172.232.217.155%20%7C%20Akamai%20Technologies%2C%20Inc.%20%7C%200c5a0",
+        "##__key": "ozuqNXUddpqi1dbTBKYl8MzxSd8",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "172.232.217.155",
+            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 172.232.217.155 | Akamai Technologies, Inc.",
+            "cc": "IT",
+            "port": 2003,
+            "sni": "it-full.privateip.net",
+            "exit_ip": "172.232.217.155",
+            "exit_isp": "Akamai Technologies, Inc."
         }
     },
     {
@@ -557,11 +583,35 @@
             "port": 2003,
             "sni": "it-full.privateip.net",
             "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Akamai Technologies, Inc."
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "212.83.143.60",
+                    "ota": false,
+                    "port": 58447
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/212.83.143.60:58447#%F0%9F%87%AE%F0%9F%87%B9%20IT%20%7C%20tcp%3A58447%20%4080.19.200.2%20%7C%20INTERBUSINESS%20%2F%20OSWH%20Srl%20%7C%20dc9a7",
+        "##__key": "ksZl84NqJ8PA6Nl2sCibdX917NQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "212.83.143.60",
+            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 80.19.200.2 | INTERBUSINESS \/ OSWH Srl",
+            "cc": "IT",
+            "port": 58447,
+            "sni": "",
+            "exit_ip": "80.19.200.2",
+            "exit_isp": "INTERBUSINESS \/ OSWH Srl"
         }
     },
     {
