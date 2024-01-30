@@ -1,72 +1,51 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "socks",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "172.232.217.155",
-                    "port": 443,
+                    "address": "188.74.183.10",
+                    "ota": false,
+                    "port": 8279,
                     "users": [
                         {
-                            "id": "02ead92f-dcfe-4fd0-93fb-f72481e0eb13",
-                            "encryption": "none",
-                            "flow": "xtls-rprx-vision"
+                            "user": "xppmoxru",
+                            "pass": "ramtp7018bac"
                         }
                     ]
                 }
             ]
         },
-        "streamSettings": {
-            "network": "tcp",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null,
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "it-full.privateip.net",
-                "show": true
-            }
-        },
-        "##__uri": "vless:\/\/02ead92f-dcfe-4fd0-93fb-f72481e0eb13@it-full.privateip.net:443?security=tls&type=tcp&flow=xtls-rprx-vision&fp=chrome#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B9%20IT%20%7C%20tcp%3A443%20%40172.232.217.155%20%7C%20Akamai%20Technologies%2C%20Inc.%20%7C%20a75f8",
-        "##__key": "ZsQ6cQ9UIdd1DfblwTiTh00VZJc",
+        "##__uri": "socks5:\/\/xppmoxru:ramtp7018bac@188.74.183.10:8279#%F0%9F%87%AE%F0%9F%87%B9%20IT%20%7C%20tcp%3A8279%20%40188.74.183.10%20%7C%20SC%20Aside%20MCD%20SRL%20%7C%2099300",
+        "##__key": "WmPdv24KuyvSG9Yn3acDG1zGxEQ",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "172.232.217.155",
-            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 172.232.217.155 | Akamai Technologies, Inc.",
+            "ip": "188.74.183.10",
+            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 188.74.183.10 | SC Aside MCD SRL",
             "cc": "IT",
-            "port": 443,
-            "sni": "it-full.privateip.net",
-            "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "port": 8279,
+            "sni": "",
+            "exit_ip": "188.74.183.10",
+            "exit_isp": "SC Aside MCD SRL",
+            "f_any": true
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "vmess",
         "settings": {
             "vnext": [
                 {
-                    "address": "speed.cloudflare.com",
-                    "port": 443,
+                    "address": "95.164.46.154",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "02ead92f-dcfe-4fd0-93fb-f72481e0eb13",
-                            "encryption": "none",
-                            "flow": ""
+                            "id": "d22ecfe8-797b-4761-ad09-64c991f887c2",
+                            "encryption": "chacha20-poly1305"
                         }
                     ]
                 }
@@ -74,7 +53,6 @@
         },
         "streamSettings": {
             "network": "ws",
-            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -82,37 +60,28 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/VLESS",
-                "host": "it-full.privateip.net",
+                "path": "\/vmess",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "it-full.privateip.net"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "it-full.privateip.net",
-                "show": true
             }
         },
-        "##__uri": "vless:\/\/02ead92f-dcfe-4fd0-93fb-f72481e0eb13@speed.cloudflare.com:443?security=tls&type=ws&sni=it-full.privateip.net&host=it-full.privateip.net&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%AE%F0%9F%87%B9%20IT%20%7C%20ws%3A443%20%40172.232.217.155%20%7C%20Akamai%20Technologies%2C%20Inc.%20%7C%20b3423",
-        "##__key": "tPhk9wPe9oYEJE2FRDTxol61L94",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJpdDEueHYycmF5Lm5ldCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiJkMjJlY2ZlOC03OTdiLTQ3NjEtYWQwOS02NGM5OTFmODg3YzIiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGY5IElUIHwgd3M6ODAgQDk1LjE2NC40Ni4xNTQgfCBTdGFyayBJbmR1c3RyaWVzIFNvbHV0aW9ucyBMVEQgfCBiMzY0OSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "C9L4NYWokA0cDSDUJIYU2MU3m20",
         "##__insecure": false,
         "##__flags": {
-            "cf": true,
+            "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 172.232.217.155 | Akamai Technologies, Inc.",
+            "ch": true,
+            "ip": "95.164.46.154",
+            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 95.164.46.154 | Stark Industries Solutions LTD",
             "cc": "IT",
-            "port": 443,
-            "sni": "it-full.privateip.net",
-            "exit_ip": "172.232.217.155",
-            "exit_isp": "Akamai Technologies, Inc.",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "port": 80,
+            "sni": "95.164.46.154",
+            "exit_ip": "95.164.46.154",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     }
 ]

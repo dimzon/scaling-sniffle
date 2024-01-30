@@ -5,11 +5,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "176.120.74.36",
+                    "address": "94.131.117.159",
                     "port": 443,
                     "users": [
                         {
-                            "id": "f89c20c8-f818-4887-aa2e-36825a499549",
+                            "id": "92da030f-e7be-40dd-b18a-dc830327c0c7",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -27,9 +27,9 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/vmess",
-                "host": "vk.com",
+                "host": "es1-vmess.sshmax.xyz",
                 "headers": {
-                    "Host": "vk.com"
+                    "Host": "es1-vmess.sshmax.xyz"
                 }
             },
             "tlsSettings": {
@@ -39,19 +39,77 @@
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjM2IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidmsuY29tIiwiaWQiOiJmODljMjBjOC1mODE4LTQ4ODctYWEyZS0zNjgyNWE0OTk1NDkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZWFcdWQ4M2NcdWRkZjggRVMgfCB3czo0NDMgQDE3Ni4xMjAuNzQuMzYgfCBTdGFyayBJbmR1c3RyaWVzIFNvbHV0aW9ucyBMVEQgfCBjYjVkNSIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "4ymNVXPaLpbh8bQnAvcct16GgVU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJlczEtdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6MCwiYWxsb3dJbnNlY3VyZSI6IjEiLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IiIsImlkIjoiOTJkYTAzMGYtZTdiZS00MGRkLWIxOGEtZGM4MzAzMjdjMGM3IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6NDQzIEA5NC4xMzEuMTE3LjE1OSB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IGM0ZWM2Iiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "0QeH17uJdZ2szYnskbpRcFGKgHw",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": true,
-            "ip": "176.120.74.36",
-            "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 176.120.74.36 | Stark Industries Solutions LTD",
+            "ip": "94.131.117.159",
+            "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 94.131.117.159 | Stark Industries Solutions LTD",
             "cc": "ES",
-            "port": 443,
-            "sni": "vk.com",
-            "exit_ip": "176.120.74.36",
+            "port": 80,
+            "sni": "es1-vmess.sshmax.xyz",
+            "exit_ip": "94.131.117.159",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "decdn": true,
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "92da030f-e7be-40dd-b18a-dc830327c0c7",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "es1-vmess.sshmax.xyz",
+                "headers": {
+                    "Host": "es1-vmess.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "es1-vmess.sshmax.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJlczEtdm1lc3Muc3NobWF4Lnh5eiIsImlkIjoiOTJkYTAzMGYtZTdiZS00MGRkLWIxOGEtZGM4MzAzMjdjMGM3IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTIgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6NDQzIEA5NC4xMzEuMTE3LjE1OSB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IDNjYjc1Iiwic2N5IjoiYXV0byIsInNuaSI6ImVzMS12bWVzcy5zc2htYXgueHl6IiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "7rzb88kucZXpLLIOJ2kF3DqP4yM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 94.131.117.159 | Stark Industries Solutions LTD",
+            "cc": "ES",
+            "port": 80,
+            "sni": "es1-vmess.sshmax.xyz",
+            "exit_ip": "94.131.117.159",
             "exit_isp": "Stark Industries Solutions LTD"
         }
     },
@@ -91,11 +149,68 @@
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
+                "serverName": "telegram.org",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjM2IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidGVsZWdyYW0ub3JnIiwiaWQiOiJmODljMjBjOC1mODE4LTQ4ODctYWEyZS0zNjgyNWE0OTk1NDkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6MjA1MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6MjA1MyBAMTc2LjEyMC43NC4zNiB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IDVkZjkzIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6InRlbGVncmFtLm9yZyIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "n4Zn47QHxH3mjnRmD2F9uyzcNFs",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "176.120.74.36",
+            "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 176.120.74.36 | Stark Industries Solutions LTD",
+            "cc": "ES",
+            "port": 2053,
+            "sni": "telegram.org",
+            "exit_ip": "176.120.74.36",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "176.120.74.36",
+                    "port": 2087,
+                    "users": [
+                        {
+                            "id": "f89c20c8-f818-4887-aa2e-36825a499549",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "telegram.org",
+                "headers": {
+                    "Host": "telegram.org"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
                 "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjM2IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidGVsZWdyYW0ub3JnIiwiaWQiOiJmODljMjBjOC1mODE4LTQ4ODctYWEyZS0zNjgyNWE0OTk1NDkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6MjA1MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6MjA1MyBAMTc2LjEyMC43NC4zNiB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IDgxZmMwIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjM2IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidGVsZWdyYW0ub3JnIiwiaWQiOiJmODljMjBjOC1mODE4LTQ4ODctYWEyZS0zNjgyNWE0OTk1NDkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6MjA4NywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6MjA4NyBAMTc2LjEyMC43NC4zNiB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IGE0NThlIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
         "##__key": "14XGpz2aFYZuVBB5gUKorHIqqJw",
         "##__insecure": true,
         "##__flags": {
@@ -105,10 +220,11 @@
             "ip": "176.120.74.36",
             "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 176.120.74.36 | Stark Industries Solutions LTD",
             "cc": "ES",
-            "port": 2053,
+            "port": 2087,
             "sni": "telegram.org",
             "exit_ip": "176.120.74.36",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -147,24 +263,25 @@
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "vk.com",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjM2IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidmsuY29tIiwiaWQiOiJmODljMjBjOC1mODE4LTQ4ODctYWEyZS0zNjgyNWE0OTk1NDkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODQ0MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6ODQ0MyBAMTc2LjEyMC43NC4zNiB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IGE2MWM5Iiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6InZrLmNvbSIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "Mp8qZ5Kg7Ipe1Z2MOD8plZ0XCMI",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjM2IiwiYWlkIjowLCJhbGxvd0luc2VjdXJlIjoiMSIsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoidmsuY29tIiwiaWQiOiJmODljMjBjOC1mODE4LTQ4ODctYWEyZS0zNjgyNWE0OTk1NDkiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODQ0MywicHMiOiJcdWQ4M2RcdWRjYTUgXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6ODQ0MyBAMTc2LjEyMC43NC4zNiB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IDVlZWY1Iiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "4ymNVXPaLpbh8bQnAvcct16GgVU",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "176.120.74.36",
             "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 176.120.74.36 | Stark Industries Solutions LTD",
             "cc": "ES",
             "port": 8443,
             "sni": "vk.com",
             "exit_ip": "176.120.74.36",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -198,7 +315,8 @@
             "port": 7492,
             "sni": "",
             "exit_ip": "185.199.229.156",
-            "exit_isp": "Cafe Tecnologia LLC"
+            "exit_isp": "Cafe Tecnologia LLC",
+            "f_any": true
         }
     },
     {
@@ -241,7 +359,11 @@
             "port": 50104,
             "sni": "38.180.33.136",
             "exit_ip": "38.180.33.136",
-            "exit_isp": "M247 Europe SRL \/ 3NT SOLUTIONS LLP"
+            "exit_isp": "M247 Europe SRL \/ 3NT SOLUTIONS LLP",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -290,7 +412,8 @@
             "port": 80,
             "sni": "94.131.117.159",
             "exit_ip": "94.131.117.159",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -326,8 +449,58 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJlczEtdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI0MGYwMjE3Zi02MjRiLTQzMzMtYmM1OS00Mjk0NzdkNThkMzAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6ODAgQDk0LjEzMS4xMTcuMTU5IHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgNTg0MjgiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJlczEtdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI0MGYwMjE3Zi02MjRiLTQzMzMtYmM1OS00Mjk0NzdkNThkMzAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6ODAgQDk0LjEzMS4xMTcuMTU5IHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgNTg0MjgiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
         "##__key": "msfytuQfLBM2npFRtW367h1jxiE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "94.131.117.159",
+            "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 94.131.117.159 | Stark Industries Solutions LTD",
+            "cc": "ES",
+            "port": 80,
+            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "exit_ip": "94.131.117.159",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "94.131.117.159",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "92da030f-e7be-40dd-b18a-dc830327c0c7",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJlczEtdm1lc3Muc3NobWF4Lnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI5MmRhMDMwZi1lN2JlLTQwZGQtYjE4YS1kYzgzMDMyN2MwYzciLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6ODAgQDk0LjEzMS4xMTcuMTU5IHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgZTFiMjIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "7oKlXLdVud7xywu6s2ANKt42YZk",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -337,9 +510,61 @@
             "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 94.131.117.159 | Stark Industries Solutions LTD",
             "cc": "ES",
             "port": 80,
-            "sni": "94.131.117.159",
+            "sni": "es1-vmess.sshmax.xyz",
             "exit_ip": "94.131.117.159",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "decdn": true,
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "92da030f-e7be-40dd-b18a-dc830327c0c7",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "es1-vmess.sshmax.xyz",
+                "headers": {
+                    "Host": "es1-vmess.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJlczEtdm1lc3Muc3NobWF4Lnh5eiIsImlkIjoiOTJkYTAzMGYtZTdiZS00MGRkLWIxOGEtZGM4MzAzMjdjMGM3IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlYVx1ZDgzY1x1ZGRmOCBFUyB8IHdzOjgwIEA5NC4xMzEuMTE3LjE1OSB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IGFjODU0Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "NXy9ve79OpDc56K6j7k51f4jiYU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 94.131.117.159 | Stark Industries Solutions LTD",
+            "cc": "ES",
+            "port": 80,
+            "sni": "es1-vmess.sshmax.xyz",
+            "exit_ip": "94.131.117.159",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -368,15 +593,15 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "",
+                "path": "\/",
                 "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
                     "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjE0MiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI3NTY5NWY1YS1iNmFmLTQ0ZjQtOTk4My1hZTI1MGI1M2ZmOWMiLCJuZXQiOiJ3cyIsInBhdGgiOiIiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNjXHVkZGVhXHVkODNjXHVkZGY4IEVTIHwgd3M6NDQzIEAxNzYuMTIwLjc0LjE0MiB8IFN0YXJrIEluZHVzdHJpZXMgU29sdXRpb25zIExURCB8IDM0ZGQzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "QgvXzb3mUnBo4XMM1a8sx3ih49w",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNzYuMTIwLjc0LjE0MiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI3NTY5NWY1YS1iNmFmLTQ0ZjQtOTk4My1hZTI1MGI1M2ZmOWMiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2NcdWRkZWFcdWQ4M2NcdWRkZjggRVMgfCB3czo0NDMgQDE3Ni4xMjAuNzQuMTQyIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgNWIzM2QiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "1Sei89PSw7hW7FfHIpanzN7BGHs",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -386,7 +611,7 @@
             "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 176.120.74.142 | Stark Industries Solutions LTD",
             "cc": "ES",
             "port": 443,
-            "sni": "176.120.74.142",
+            "sni": "internet.life.com.by",
             "exit_ip": "176.120.74.142",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
@@ -439,9 +664,10 @@
             "suffix": "\ud83c\uddea\ud83c\uddf8 ES | 176.120.74.36 | Stark Industries Solutions LTD",
             "cc": "ES",
             "port": 2052,
-            "sni": "vk.com",
+            "sni": "telegram.org",
             "exit_ip": "176.120.74.36",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     }
 ]

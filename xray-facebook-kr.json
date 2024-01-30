@@ -49,7 +49,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 2086,
+            "port": 2052,
             "sni": "chunc.cxzntq.tech",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -109,7 +109,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 2052,
+            "port": 8443,
             "sni": "chunc.cxzntq.tech",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -117,6 +117,74 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "45.154.14.201",
+                    "port": 28514,
+                    "users": [
+                        {
+                            "id": "c119b176-7240-43f7-b26f-9b67d54e2b95",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiI0NS4xNTQuMTQuMjAxIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiYzExOWIxNzYtNzI0MC00M2Y3LWIyNmYtOWI2N2Q1NGUyYjk1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjI4NTE0LCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBLUiB8IHRjcDoyODUxNCBANDUuMTU0LjE0LjIwMSB8IE1PQUNLLkNvLkxURCBcLyBJY2lkYyBMaW1pdGVkIHwgYzM3MGEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoyfQ==",
+        "##__key": "dMHBLx4NAwBIu8wSahAe8t8GNjY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "45.154.14.201",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.154.14.201 | MOACK.Co.LTD \/ Icidc Limited",
+            "cc": "KR",
+            "port": 28514,
+            "sni": "45.154.14.201",
+            "exit_ip": "45.154.14.201",
+            "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true
         }
     },
     {
@@ -231,7 +299,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 2052,
+            "port": 8443,
             "sni": "chunc.cxzntq.tech",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -284,7 +352,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 2086,
+            "port": 2052,
             "sni": "chunc.cxzntq.tech",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -321,7 +389,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNzAuMzkuOSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiZTAyNTRkZGEtZGM4Yy00NmIwLThkZjgtMDdjNDUzYWFhZmQ3IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjI2MDIyLCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBLUiB8IHRjcDoyNjAyMiBAMTUyLjcwLjM5LjkgfCBPcmFjbGUgQ2xvdWQgKGFwLXNlb3VsLTEpIHwgMDkzNjUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNzAuMzkuOSIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJlMDI1NGRkYS1kYzhjLTQ2YjAtOGRmOC0wN2M0NTNhYWFmZDciLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjYwMjIsInBzIjoiXHVkODNjXHVkZGYwXHVkODNjXHVkZGY3IEtSIHwgdGNwOjI2MDIyIEAxNTIuNzAuMzkuOSB8IE9yYWNsZSBDbG91ZCAoYXAtc2VvdWwtMSkgfCAwOTM2NSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
         "##__key": "xd8FVW18aqXY2HwWIFmU3eU5qqU",
         "##__insecure": false,
         "##__flags": {
