@@ -1,11 +1,68 @@
 [
     {
         "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "dbf67e8f-eca2-4a01-9c87-c8cfea490a51",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "jp04.hajimihajimihajimi.online",
+                "headers": {
+                    "Host": "jp04.hajimihajimihajimi.online"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "jp04.hajimihajimihajimi.online",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJqcDA0LmhhamltaWhhamltaWhhamltaS5vbmxpbmUiLCJpZCI6ImRiZjY3ZThmLWVjYTItNGEwMS05Yzg3LWM4Y2ZlYTQ5MGE1MSIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo0NDMgQDEzLjIzMS4xNTIuMTY4IHwgQVdTIEVDMiAoYXAtbm9ydGhlYXN0LTEpIHwgNjBmOTciLCJzY3kiOiJhdXRvIiwic25pIjoianAwNC5oYWppbWloYWppbWloYWppbWkub25saW5lIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "Xef5ItreNdyf93KRYacziKaG8KQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 13.231.152.168 | Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
+            "cc": "JP",
+            "port": 80,
+            "sni": "jp04.hajimihajimihajimi.online",
+            "exit_ip": "13.231.152.168",
+            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
         "protocol": "trojan",
         "settings": {
             "servers": [
                 {
-                    "address": "23.99.119.53",
+                    "address": "74.226.189.44",
                     "#flow": "",
                     "#method": "chacha20-poly1305",
                     "#ota": false,
@@ -37,15 +94,16 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "23.99.119.53",
+            "ch": true,
+            "ip": "74.226.189.44",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 38.207.136.53 | Cogent Communications \/ Nearoute Limited",
             "cc": "JP",
             "port": 443,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "sni": "viber.com",
             "exit_ip": "38.207.136.53",
             "exit_isp": "Cogent Communications \/ Nearoute Limited",
-            "f_any": true
+            "f_any": true,
+            "f_facebook": true
         }
     },
     {
@@ -151,7 +209,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 178.157.94.133 | Datacamp Limited \/ Digital Virtualisation Solutions",
             "cc": "JP",
             "port": 443,
@@ -218,6 +276,7 @@
             "sni": "ming2.kiwireich.com",
             "exit_ip": "152.69.192.50",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "decdn": true,
             "f_any": true
         }
     },
@@ -249,30 +308,30 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/ming2.kiwireich.com\/ray",
-                "host": "hamrah.thenewone.site",
+                "host": "freevpn878.hamidimorteza680.workers.dev",
                 "headers": {
-                    "Host": "hamrah.thenewone.site"
+                    "Host": "freevpn878.hamidimorteza680.workers.dev"
                 }
             },
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "hamrah.thenewone.site",
+                "serverName": "freevpn878.hamidimorteza680.workers.dev",
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJoYW1yYWgudGhlbmV3b25lLnNpdGUiLCJpZCI6IjE4ZTVmNDBmLWJkYTYtNGMxNS05MzM0LWU4N2NkYTYwNDdhZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvbWluZzIua2l3aXJlaWNoLmNvbVwvcmF5IiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo0NDMgQDE1Mi42OS4xOTIuNTAgfCBPcmFjbGUgQ2xvdWQgKGFwLW9zYWthLTEpIHwgOGRjYTMiLCJzY3kiOiJhdXRvIiwic25pIjoiaGFtcmFoLnRoZW5ld29uZS5zaXRlIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "qQFNDYNeDO5MKrrSYLNAMxPGDno",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVldnBuODc4LmhhbWlkaW1vcnRlemE2ODAud29ya2Vycy5kZXYiLCJpZCI6IjE4ZTVmNDBmLWJkYTYtNGMxNS05MzM0LWU4N2NkYTYwNDdhZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvbWluZzIua2l3aXJlaWNoLmNvbVwvcmF5IiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo0NDMgQDE1Mi42OS4xOTIuNTAgfCBPcmFjbGUgQ2xvdWQgKGFwLW9zYWthLTEpIHwgMWI1MmYiLCJzY3kiOiJhdXRvIiwic25pIjoiZnJlZXZwbjg3OC5oYW1pZGltb3J0ZXphNjgwLndvcmtlcnMuZGV2IiwidGxzIjoidGxzIiwidHlwZSI6InZtZXNzIiwidiI6Mn0=",
+        "##__key": "j8WL9KWOiPKslTDunFn8h8NgFRI",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
-            "port": 2087,
-            "sni": "hamrah.thenewone.site",
+            "port": 2053,
+            "sni": "freevpn878.hamidimorteza680.workers.dev",
             "exit_ip": "152.69.192.50",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "f_any": true
@@ -325,125 +384,11 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
-            "port": 2087,
+            "port": 2083,
             "sni": "rayanconf.rayanandishmand.workers.dev",
-            "exit_ip": "152.69.192.50",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
-            "f_any": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "18e5f40f-bda6-4c15-9334-e87cda6047af",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/ming2.kiwireich.com\/ray",
-                "host": "gentle-sound-9d5b.lecebor8209704.workers.dev",
-                "headers": {
-                    "Host": "gentle-sound-9d5b.lecebor8209704.workers.dev"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "gentle-sound-9d5b.lecebor8209704.workers.dev",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJnZW50bGUtc291bmQtOWQ1Yi5sZWNlYm9yODIwOTcwNC53b3JrZXJzLmRldiIsImlkIjoiMThlNWY0MGYtYmRhNi00YzE1LTkzMzQtZTg3Y2RhNjA0N2FmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9taW5nMi5raXdpcmVpY2guY29tXC9yYXkiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjQ0MyBAMTUyLjY5LjE5Mi41MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCA4NjM2OSIsInNjeSI6ImF1dG8iLCJzbmkiOiJnZW50bGUtc291bmQtOWQ1Yi5sZWNlYm9yODIwOTcwNC53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "z4dpTmmxGeGVbpsiRDyRzQu1gmg",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
-            "cc": "JP",
-            "port": 443,
-            "sni": "gentle-sound-9d5b.lecebor8209704.workers.dev",
-            "exit_ip": "152.69.192.50",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
-            "f_any": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "18e5f40f-bda6-4c15-9334-e87cda6047af",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/ming2.kiwireich.com\/ray",
-                "host": "free.fnet00.workers.dev",
-                "headers": {
-                    "Host": "free.fnet00.workers.dev"
-                }
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "free.fnet00.workers.dev",
-                "show": true
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVlLmZuZXQwMC53b3JrZXJzLmRldiIsImlkIjoiMThlNWY0MGYtYmRhNi00YzE1LTkzMzQtZTg3Y2RhNjA0N2FmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9taW5nMi5raXdpcmVpY2guY29tXC9yYXkiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyIFx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjQ0MyBAMTUyLjY5LjE5Mi41MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCBkMDQ1MyIsInNjeSI6ImF1dG8iLCJzbmkiOiJmcmVlLmZuZXQwMC53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "jk6zd1zu2vrwMpWlCdHYOoKSeWM",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
-            "cc": "JP",
-            "port": 443,
-            "sni": "free.fnet00.workers.dev",
             "exit_ip": "152.69.192.50",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "f_any": true
@@ -512,6 +457,63 @@
         "settings": {
             "vnext": [
                 {
+                    "address": "69.165.77.198",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "19827243-fae1-42ae-a494-0153dbf07ded",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/baseOn",
+                "host": "m1.wenpblog.buzz",
+                "headers": {
+                    "Host": "m1.wenpblog.buzz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "m1.wenpblog.buzz",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiI2OS4xNjUuNzcuMTk4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6Im0xLndlbnBibG9nLmJ1enoiLCJpZCI6IjE5ODI3MjQzLWZhZTEtNDJhZS1hNDk0LTAxNTNkYmYwN2RlZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvYmFzZU9uIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo0NDMgQDY5LjE2NS43Ny4xOTggfCBaZW5sYXllciBJbmMgfCA4OGZhZiIsInNjeSI6ImF1dG8iLCJzbmkiOiJtMS53ZW5wYmxvZy5idXp6IiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "cp4AyDg8hom5sKEGNIfNfvzAaWM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "69.165.77.198",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 69.165.77.198 | Zenlayer Inc",
+            "cc": "JP",
+            "port": 443,
+            "sni": "m1.wenpblog.buzz",
+            "exit_ip": "69.165.77.198",
+            "exit_isp": "Zenlayer Inc",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
                     "address": "speed.cloudflare.com",
                     "port": 443,
                     "users": [
@@ -553,7 +555,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 69.165.77.198 | Zenlayer Inc",
             "cc": "JP",
             "port": 443,
@@ -797,11 +799,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "38.207.152.135",
+                    "address": "speed.cloudflare.com",
                     "port": 80,
                     "users": [
                         {
-                            "id": "657140e4-fb53-4404-80b7-fcbac652671f",
+                            "id": "dbf67e8f-eca2-4a01-9c87-c8cfea490a51",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -817,31 +819,28 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/video\/ibCT6z55",
-                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "path": "\/",
+                "host": "jp04.hajimihajimihajimi.online",
                 "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                    "Host": "jp04.hajimihajimihajimi.online"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIzOC4yMDcuMTUyLjEzNSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI2NTcxNDBlNC1mYjUzLTQ0MDQtODBiNy1mY2JhYzY1MjY3MWYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZpZGVvXC9pYkNUNno1NSIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCB8IHdzOjgwIEAzOC4yMDcuMTUyLjEzNSB8IEVvbnMgRGF0YSBDb21tdW5pY2F0aW9ucyBMaW1pdGVkIHwgYjg2N2UiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjB9",
-        "##__key": "ygQB8CP9SMVf28vq9Mx04Fg0CMU",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJqcDA0LmhhamltaWhhamltaWhhamltaS5vbmxpbmUiLCJpZCI6ImRiZjY3ZThmLWVjYTItNGEwMS05Yzg3LWM4Y2ZlYTQ5MGE1MSIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgd3M6ODAgQDEzLjIzMS4xNTIuMTY4IHwgQVdTIEVDMiAoYXAtbm9ydGhlYXN0LTEpIHwgOGMxYjciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "mlK5r8Mt6dOl05kEXXQdHjIluIE",
         "##__insecure": false,
         "##__flags": {
-            "cf": false,
+            "cf": true,
             "gcore": false,
-            "ch": true,
-            "ip": "38.207.152.135",
-            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 38.207.152.135 | Eons Data Communications Limited",
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 13.231.152.168 | Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
             "cc": "JP",
             "port": 80,
-            "sni": "agzbjszujp4.yofnhkfc.xyz",
-            "exit_ip": "38.207.152.135",
-            "exit_isp": "Eons Data Communications Limited",
-            "decdn": true,
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true
+            "sni": "jp04.hajimihajimihajimi.online",
+            "exit_ip": "13.231.152.168",
+            "exit_isp": "Amazon Technologies Inc. \/ AWS EC2 (ap-northeast-1)",
+            "f_any": true
         }
     },
     {
@@ -891,10 +890,7 @@
             "sni": "telegram.org",
             "exit_ip": "183.181.36.194",
             "exit_isp": "FreeBit Co., Ltd. \/ Dream Train Internet",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_any": true
         }
     },
     {
@@ -993,24 +989,74 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/ming2.kiwireich.com\/ray",
-                "host": "freevpn878.hamidimorteza680.workers.dev",
+                "host": "gentle-sound-9d5b.lecebor8209704.workers.dev",
                 "headers": {
-                    "Host": "freevpn878.hamidimorteza680.workers.dev"
+                    "Host": "gentle-sound-9d5b.lecebor8209704.workers.dev"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVldnBuODc4LmhhbWlkaW1vcnRlemE2ODAud29ya2Vycy5kZXYiLCJpZCI6IjE4ZTVmNDBmLWJkYTYtNGMxNS05MzM0LWU4N2NkYTYwNDdhZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvbWluZzIua2l3aXJlaWNoLmNvbVwvcmF5IiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgd3M6ODAgQDE1Mi42OS4xOTIuNTAgfCBPcmFjbGUgQ2xvdWQgKGFwLW9zYWthLTEpIHwgOGJkMDkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6InZtZXNzIiwidiI6Mn0=",
-        "##__key": "BjOV1wr9TP5CpjjcB8rk33JOr7c",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJnZW50bGUtc291bmQtOWQ1Yi5sZWNlYm9yODIwOTcwNC53b3JrZXJzLmRldiIsImlkIjoiMThlNWY0MGYtYmRhNi00YzE1LTkzMzQtZTg3Y2RhNjA0N2FmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9taW5nMi5raXdpcmVpY2guY29tXC9yYXkiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo4MCBAMTUyLjY5LjE5Mi41MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCAzMjc1ZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "XeMeoasBr7Vsct9j3MBuaOCsskg",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
-            "port": 2053,
-            "sni": "freevpn878.hamidimorteza680.workers.dev",
+            "port": 8443,
+            "sni": "gentle-sound-9d5b.lecebor8209704.workers.dev",
+            "exit_ip": "152.69.192.50",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "18e5f40f-bda6-4c15-9334-e87cda6047af",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/ming2.kiwireich.com:443\/ray",
+                "host": "rayanconf.rayanandishmand.workers.dev",
+                "headers": {
+                    "Host": "rayanconf.rayanandishmand.workers.dev"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJyYXlhbmNvbmYucmF5YW5hbmRpc2htYW5kLndvcmtlcnMuZGV2IiwiaWQiOiIxOGU1ZjQwZi1iZGE2LTRjMTUtOTMzNC1lODdjZGE2MDQ3YWYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL21pbmcyLmtpd2lyZWljaC5jb206NDQzXC9yYXkiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo4MCBAMTUyLjY5LjE5Mi41MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCBhZjczZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "O9tZb6bvSB8KqTZ7dpRPIKlImrM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "cc": "JP",
+            "port": 2083,
+            "sni": "rayanconf.rayanandishmand.workers.dev",
             "exit_ip": "152.69.192.50",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "f_any": true
@@ -1043,27 +1089,127 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/ming2.kiwireich.com\/ray",
-                "host": "gentle-sound-9d5b.lecebor8209704.workers.dev",
+                "host": "free.fnet00.workers.dev",
                 "headers": {
-                    "Host": "gentle-sound-9d5b.lecebor8209704.workers.dev"
+                    "Host": "free.fnet00.workers.dev"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJnZW50bGUtc291bmQtOWQ1Yi5sZWNlYm9yODIwOTcwNC53b3JrZXJzLmRldiIsImlkIjoiMThlNWY0MGYtYmRhNi00YzE1LTkzMzQtZTg3Y2RhNjA0N2FmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9taW5nMi5raXdpcmVpY2guY29tXC9yYXkiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo4MCBAMTUyLjY5LjE5Mi41MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCAzMjc1ZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "XeMeoasBr7Vsct9j3MBuaOCsskg",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJmcmVlLmZuZXQwMC53b3JrZXJzLmRldiIsImlkIjoiMThlNWY0MGYtYmRhNi00YzE1LTkzMzQtZTg3Y2RhNjA0N2FmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9taW5nMi5raXdpcmVpY2guY29tXC9yYXkiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czo4MCBAMTUyLjY5LjE5Mi41MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCBkMDc2MyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "t6HAZQg3hQhonqZWUU6rmm7WYnU",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.192.50 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "cc": "JP",
-            "port": 2053,
-            "sni": "gentle-sound-9d5b.lecebor8209704.workers.dev",
+            "port": 443,
+            "sni": "free.fnet00.workers.dev",
             "exit_ip": "152.69.192.50",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
             "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "152.69.197.60",
+                    "port": 1069,
+                    "users": [
+                        {
+                            "id": "ac8e26fe-8150-4b60-ae64-82fc77eba2cf",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMTk3LjYwIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJhYzhlMjZmZS04MTUwLTRiNjAtYWU2NC04MmZjNzdlYmEyY2YiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MTA2OSwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB0Y3A6MTA2OSBAMTUyLjY5LjE5Ny42MCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCBjYWEzZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "5mJqVmgQTm1zPr0hEEQVp5zPYTE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "152.69.197.60",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.197.60 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "cc": "JP",
+            "port": 1069,
+            "sni": "152.69.197.60",
+            "exit_ip": "152.69.197.60",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "152.69.197.74",
+                    "port": 12345,
+                    "users": [
+                        {
+                            "id": "b8a6bf58-485a-4046-b386-b3661bf65eff",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/bb",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjkuMTk3Ljc0IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6ImI4YTZiZjU4LTQ4NWEtNDA0Ni1iMzg2LWIzNjYxYmY2NWVmZiIsIm5ldCI6IndzIiwicGF0aCI6IlwvYmIiLCJwb3J0IjoxMjM0NSwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB3czoxMjM0NSBAMTUyLjY5LjE5Ny43NCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCA2Y2I0OSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "Ah5iKw5HlveDfPlhLvQa0ZMPDfQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "152.69.197.74",
+            "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 152.69.197.74 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "cc": "JP",
+            "port": 12345,
+            "sni": "ytb-awkj",
+            "exit_ip": "152.69.197.74",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-osaka-1)",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -1093,7 +1239,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxMzguMi40NC4yMTEiLCJhaWQiOjY0LCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI1OTNiODUyNS0wYzQ4LTRiMGYtZDlhZi0yZDczYTkxNDg5NzMiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAwODEsInBzIjoiXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgdGNwOjIwMDgxIEAxMzguMi40NC4yMTEgfCBPcmFjbGUgQ2xvdWQgKGFwLW9zYWthLTEpIHwgMTU5ZDYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMzguMi40NC4yMTEiLCJhaWQiOjY0LCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI1OTNiODUyNS0wYzQ4LTRiMGYtZDlhZi0yZDczYTkxNDg5NzMiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjAwODEsInBzIjoiXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgdGNwOjIwMDgxIEAxMzguMi40NC4yMTEgfCBPcmFjbGUgQ2xvdWQgKGFwLW9zYWthLTEpIHwgMTU5ZDYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
         "##__key": "l0enWrRB6RddLAEKGl1gJoA7sR8",
         "##__insecure": false,
         "##__flags": {
@@ -1124,7 +1270,7 @@
                     "users": [
                         {
                             "id": "94c5ef37-4d82-49f9-c624-f01259374a17",
-                            "encryption": "aes-128-gcm"
+                            "encryption": "chacha20-poly1305"
                         }
                     ]
                 }
@@ -1140,8 +1286,8 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDAuODMuNjMuMzgiLCJhaWQiOjY0LCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6Ijk0YzVlZjM3LTRkODItNDlmOS1jNjI0LWYwMTI1OTM3NGExNyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoyNDQ0NSwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjUgSlAgfCB0Y3A6MjQ0NDUgQDE0MC44My42My4zOCB8IE9yYWNsZSBDbG91ZCAoYXAtb3Nha2EtMSkgfCAwNzBjMCIsInNjeSI6ImFlcy0xMjgtZ2NtIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
-        "##__key": "HdRXKoMqqKOxrug16apUnNx9j1s",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDAuODMuNjMuMzgiLCJhaWQiOjY0LCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI5NGM1ZWYzNy00ZDgyLTQ5ZjktYzYyNC1mMDEyNTkzNzRhMTciLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjQ0NDUsInBzIjoiXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIHwgdGNwOjI0NDQ1IEAxNDAuODMuNjMuMzggfCBPcmFjbGUgQ2xvdWQgKGFwLW9zYWthLTEpIHwgZjM5MWQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "BGqamuSDFSuS0IeJWQyi3ad4uJk",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -1204,7 +1350,7 @@
             "suffix": "\ud83c\uddef\ud83c\uddf5 JP | 69.165.77.198 | Zenlayer Inc",
             "cc": "JP",
             "port": 443,
-            "sni": "vk.com",
+            "sni": "m1.wenpblog.buzz",
             "exit_ip": "69.165.77.198",
             "exit_isp": "Zenlayer Inc",
             "f_any": true

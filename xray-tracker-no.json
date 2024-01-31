@@ -6,7 +6,7 @@
             "vnext": [
                 {
                     "address": "speed.cloudflare.com",
-                    "port": 8080,
+                    "port": 2083,
                     "users": [
                         {
                             "id": "e2443e49-e0ce-4628-808f-76469b53cf66",
@@ -19,6 +19,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -31,21 +32,27 @@
                 "headers": {
                     "Host": "net3.ntr.biz.id"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "net3.ntr.biz.id",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/e2443e49-e0ce-4628-808f-76469b53cf66@speed.cloudflare.com:8080?type=ws&host=net3.ntr.biz.id&path=%2F%3Fed%3D2048&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B3%F0%9F%87%B4%20NO%20%7C%20ws%3A8080%20%40104.28.156.47%20%7C%20Cloudflare%20WARP%20%7C%2050be9",
-        "##__key": "XJpJecNMJq9OZOREu28mUmzgSnQ",
+        "##__uri": "vless:\/\/e2443e49-e0ce-4628-808f-76469b53cf66@speed.cloudflare.com:2083?security=tls&type=ws&sni=net3.ntr.biz.id&host=net3.ntr.biz.id&path=%2F%3Fed%3D2048&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B3%F0%9F%87%B4%20NO%20%7C%20ws%3A2083%20%40104.28.156.48%20%7C%20Cloudflare%20WARP%20%7C%201e6e1",
+        "##__key": "fjiql2l67pMs56Vqwhe84fcRnLI",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 104.28.156.47 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 104.28.156.48 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "NO",
-            "port": 2083,
+            "port": 2087,
             "sni": "net3.ntr.biz.id",
-            "exit_ip": "104.28.156.47",
+            "exit_ip": "104.28.156.48",
             "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
             "f_any": true,
             "f_tracker": true

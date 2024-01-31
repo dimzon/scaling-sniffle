@@ -166,10 +166,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 104.28.247.12 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "LU",
-            "port": 2096,
+            "port": 2083,
             "sni": "freevpn878.hamidimorteza680.workers.dev",
             "exit_ip": "104.28.247.12",
             "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
@@ -225,12 +225,12 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "107.189.4.92",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 443,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "sni": "vk.com",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
             "f_any": true,
@@ -347,7 +347,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 2087,
@@ -407,10 +407,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
-            "port": 2083,
+            "port": 2053,
             "sni": "square-snowflake-486a.beshir-beisel.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
@@ -467,7 +467,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 2083,
@@ -527,11 +527,71 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 2053,
             "sni": "curly-glade-71dd.hite-nomade.workers.dev",
+            "exit_ip": "107.189.4.92",
+            "exit_isp": "FranTech Solutions \/ BuyVM",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "5f726fe3-d82e-4da5-a711-8af0cbb2b682",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top\/azumase.ren",
+                "host": "mysan2.jaquay22.workers.dev",
+                "headers": {
+                    "Host": "mysan2.jaquay22.workers.dev"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "mysan2.jaquay22.workers.dev",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJteXNhbjIuamFxdWF5MjIud29ya2Vycy5kZXYiLCJpZCI6IjVmNzI2ZmUzLWQ4MmUtNGRhNS1hNzExLThhZjBjYmIyYjY4MiIsIm5ldCI6IndzIiwicGF0aCI6IlwvNTZjNWQyYjEtNTc1Zi00NzE4LWFkMzctNGNiMWZiMGQ0NGRjLmFzb3VsLWF2YS50b3BcL2F6dW1hc2UucmVuIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjFcdWQ4M2NcdWRkZmEgTFUgfCB3czo0NDMgQDEwNy4xODkuNC45MiB8IEZyYW5UZWNoIFNvbHV0aW9ucyBcLyBCdXlWTSB8IDYyNjg1Iiwic2N5IjoiYXV0byIsInNuaSI6Im15c2FuMi5qYXF1YXkyMi53b3JrZXJzLmRldiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "oorMezId5HZAwO4gORNeVRGmJ6U",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
+            "cc": "LU",
+            "port": 2087,
+            "sni": "mysan2.jaquay22.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
             "f_any": true,
@@ -587,10 +647,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
-            "port": 2083,
+            "port": 8443,
             "sni": "misty-dew-e2f1.turkeys-radford.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
@@ -647,10 +707,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
-            "port": 443,
+            "port": 2053,
             "sni": "freevpn878.hamidimorteza680.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
@@ -707,7 +767,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 443,
@@ -760,10 +820,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 104.28.247.12 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "LU",
-            "port": 2096,
+            "port": 2083,
             "sni": "freevpn878.hamidimorteza680.workers.dev",
             "exit_ip": "104.28.247.12",
             "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
@@ -813,7 +873,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 2053,
@@ -866,10 +926,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
-            "port": 2083,
+            "port": 2053,
             "sni": "square-snowflake-486a.beshir-beisel.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
@@ -919,7 +979,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 2083,
@@ -972,11 +1032,64 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
-            "port": 2083,
+            "port": 8443,
             "sni": "misty-dew-e2f1.turkeys-radford.workers.dev",
+            "exit_ip": "107.189.4.92",
+            "exit_isp": "FranTech Solutions \/ BuyVM",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "5f726fe3-d82e-4da5-a711-8af0cbb2b682",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top\/azumase.ren",
+                "host": "mysan2.jaquay22.workers.dev",
+                "headers": {
+                    "Host": "mysan2.jaquay22.workers.dev"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJteXNhbjIuamFxdWF5MjIud29ya2Vycy5kZXYiLCJpZCI6IjVmNzI2ZmUzLWQ4MmUtNGRhNS1hNzExLThhZjBjYmIyYjY4MiIsIm5ldCI6IndzIiwicGF0aCI6IlwvNTZjNWQyYjEtNTc1Zi00NzE4LWFkMzctNGNiMWZiMGQ0NGRjLmFzb3VsLWF2YS50b3BcL2F6dW1hc2UucmVuIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGYxXHVkODNjXHVkZGZhIExVIHwgd3M6ODAgQDEwNy4xODkuNC45MiB8IEZyYW5UZWNoIFNvbHV0aW9ucyBcLyBCdXlWTSB8IDczZTAxIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__key": "s75Sspp23R2CTD9IzcyfOnMwDiA",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
+            "cc": "LU",
+            "port": 2087,
+            "sni": "mysan2.jaquay22.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
             "f_any": true,
@@ -1025,10 +1138,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
-            "port": 443,
+            "port": 2053,
             "sni": "freevpn878.hamidimorteza680.workers.dev",
             "exit_ip": "107.189.4.92",
             "exit_isp": "FranTech Solutions \/ BuyVM",
@@ -1078,7 +1191,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf1\ud83c\uddfa LU | 107.189.4.92 | FranTech Solutions \/ BuyVM",
             "cc": "LU",
             "port": 2087,

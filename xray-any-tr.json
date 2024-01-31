@@ -56,7 +56,8 @@
             "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "decdn": true,
             "f_any": true,
-            "f_tracker": true
+            "f_tracker": true,
+            "f_facebook": true
         }
     },
     {
@@ -107,12 +108,73 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.145 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "cc": "TR",
             "port": 443,
             "sni": "xn-----vsduq2atl8k5acxb76p.freedns.site",
             "exit_ip": "84.32.230.145",
+            "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "faf314fb-c088-4eb1-9ad5-88dc479c8ee0",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/skso",
+                "host": "jazz-cw-illustrations-float.trycloudflare.com",
+                "headers": {
+                    "Host": "jazz-cw-illustrations-float.trycloudflare.com"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "jazz-cw-illustrations-float.trycloudflare.com",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/faf314fb-c088-4eb1-9ad5-88dc479c8ee0@speed.cloudflare.com:443?security=tls&type=ws&sni=jazz-cw-illustrations-float.trycloudflare.com&host=jazz-cw-illustrations-float.trycloudflare.com&path=%2Fskso&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20ws%3A443%20%4084.32.230.252%20%7C%20Mailbox%20Internet%20Hizmetleri%20Ltd.%20Sti.%20%2F%20Ipxo%20%7C%20dfd2c",
+        "##__key": "WbTqqt2q92JQI2PRbrdkLNeXc8s",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.252 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
+            "cc": "TR",
+            "port": 443,
+            "sni": "jazz-cw-illustrations-float.trycloudflare.com",
+            "exit_ip": "84.32.230.252",
             "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "f_any": true,
             "f_tracker": true,
@@ -222,7 +284,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.81 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "cc": "TR",
             "port": 2087,
@@ -336,7 +398,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.145 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "cc": "TR",
             "port": 8443,
@@ -377,9 +439,9 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/admin",
-                "host": "tr01.h.csznet.eu.org",
+                "host": "154.53.164.100",
                 "headers": {
-                    "Host": "tr01.h.csznet.eu.org"
+                    "Host": "154.53.164.100"
                 }
             },
             "tlsSettings": {
@@ -389,8 +451,8 @@
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJ0cjAxLmguY3N6bmV0LmV1Lm9yZyIsImFpZCI6MCwiYWxsb3dJbnNlY3VyZSI6IjEiLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IiIsImlkIjoiOGJiMTA0MTgtMTQwMS00MTlkLTkxNjEtODQ4NDQ0NmU0MzcwIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9hZG1pbiIsInBvcnQiOjQwNjYwLCJwcyI6Ilx1ZDgzZFx1ZGNhNSBcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZjcgVFIgfCB3czo0MDY2MCBAMTU0LjUzLjE2NC4xMDAgfCBNYWlsYm94IEludGVybmV0IEhpem1ldGxlcmkgTHRkLiBTdGkuIFwvIEt1emV5IFZlcmkgTWVya2V6aSBBbm9uaW0gU2lya2V0aSB8IDA0NTViIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "3VSgk9P1cIB5oxQ5GItnEpaUYEo",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ0cjAxLmguY3N6bmV0LmV1Lm9yZyIsImFpZCI6MCwiYWxsb3dJbnNlY3VyZSI6IjEiLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IjE1NC41My4xNjQuMTAwIiwiaWQiOiI4YmIxMDQxOC0xNDAxLTQxOWQtOTE2MS04NDg0NDQ2ZTQzNzAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2FkbWluIiwicG9ydCI6NDA2NjAsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmNyBUUiB8IHdzOjQwNjYwIEAxNTQuNTMuMTY0LjEwMCB8IE1haWxib3ggSW50ZXJuZXQgSGl6bWV0bGVyaSBMdGQuIFN0aS4gXC8gS3V6ZXkgVmVyaSBNZXJrZXppIEFub25pbSBTaXJrZXRpIHwgNDdhMTIiLCJzY3kiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "w4FDIkiTj1J8xRCxnKGzuldnHK0",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
@@ -400,13 +462,310 @@
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 154.53.164.100 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
             "cc": "TR",
             "port": 40660,
-            "sni": "tr01.h.csznet.eu.org",
+            "sni": "154.53.164.100",
             "exit_ip": "154.53.164.100",
             "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "154.53.164.100",
+                    "port": 40660,
+                    "users": [
+                        {
+                            "id": "0740dd92-3fc1-4918-a3cb-b5f35e4a9308",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/admin",
+                "host": "154.53.164.100",
+                "headers": {
+                    "Host": "154.53.164.100"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ0cjAxLmguY3N6bmV0LmV1Lm9yZyIsImFpZCI6MCwiYWxsb3dJbnNlY3VyZSI6IjEiLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IjE1NC41My4xNjQuMTAwIiwiaWQiOiIwNzQwZGQ5Mi0zZmMxLTQ5MTgtYTNjYi1iNWYzNWU0YTkzMDgiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2FkbWluIiwicG9ydCI6NDA2NjAsInBzIjoiXHVkODNkXHVkY2E1IFx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmNyBUUiB8IHdzOjQwNjYwIEAxNTQuNTMuMTY0LjEwMCB8IE1haWxib3ggSW50ZXJuZXQgSGl6bWV0bGVyaSBMdGQuIFN0aS4gXC8gS3V6ZXkgVmVyaSBNZXJrZXppIEFub25pbSBTaXJrZXRpIHwgZTg4YmQiLCJzY3kiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "Tsq7kV0YDKpupqWYbkEh4DFnUM4",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "154.53.164.100",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 154.53.164.100 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
+            "cc": "TR",
+            "port": 40660,
+            "sni": "154.53.164.100",
+            "exit_ip": "154.53.164.100",
+            "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "154.53.164.100",
+                    "port": 40660,
+                    "users": [
+                        {
+                            "id": "0740dd92-3fc1-4918-a3cb-b5f35e4a9308",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/admin",
+                "host": "154.53.164.100",
+                "headers": {
+                    "Host": "154.53.164.100"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "154.53.164.100",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ0cjAxLmguY3N6bmV0LmV1Lm9yZyIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIxNTQuNTMuMTY0LjEwMCIsImlkIjoiMDc0MGRkOTItM2ZjMS00OTE4LWEzY2ItYjVmMzVlNGE5MzA4IiwibmV0Ijoid3MiLCJwYXRoIjoiXC9hZG1pbiIsInBvcnQiOjQwNjYwLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZjcgVFIgfCB3czo0MDY2MCBAMTU0LjUzLjE2NC4xMDAgfCBNYWlsYm94IEludGVybmV0IEhpem1ldGxlcmkgTHRkLiBTdGkuIFwvIEt1emV5IFZlcmkgTWVya2V6aSBBbm9uaW0gU2lya2V0aSB8IGRkNmI5Iiwic2N5IjoiYXV0byIsInNuaSI6IjE1NC41My4xNjQuMTAwIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "bDmTbeibs9z4YUkVSblbEOTRnnc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "154.53.164.100",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 154.53.164.100 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
+            "cc": "TR",
+            "port": 40660,
+            "sni": "154.53.164.100",
+            "exit_ip": "154.53.164.100",
+            "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "154.53.164.100",
+                    "port": 40660,
+                    "users": [
+                        {
+                            "id": "8bb10418-1401-419d-9161-8484446e4370",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/admin",
+                "host": "154.53.164.100",
+                "headers": {
+                    "Host": "154.53.164.100"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "154.53.164.100",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJ0cjAxLmguY3N6bmV0LmV1Lm9yZyIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiIxNTQuNTMuMTY0LjEwMCIsImlkIjoiOGJiMTA0MTgtMTQwMS00MTlkLTkxNjEtODQ4NDQ0NmU0MzcwIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9hZG1pbiIsInBvcnQiOjQwNjYwLCJwcyI6Ilx1ZDgzZFx1ZGQxMiBcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZjcgVFIgfCB3czo0MDY2MCBAMTU0LjUzLjE2NC4xMDAgfCBNYWlsYm94IEludGVybmV0IEhpem1ldGxlcmkgTHRkLiBTdGkuIFwvIEt1emV5IFZlcmkgTWVya2V6aSBBbm9uaW0gU2lya2V0aSB8IGZjYzk5Iiwic2N5IjoiYXV0byIsInNuaSI6IjE1NC41My4xNjQuMTAwIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "IRIRJrv5x2LPsop1apScpY7j3kk",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "154.53.164.100",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 154.53.164.100 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
+            "cc": "TR",
+            "port": 40660,
+            "sni": "154.53.164.100",
+            "exit_ip": "154.53.164.100",
+            "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Kuzey Veri Merkezi Anonim Sirketi",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "95.164.34.105",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "4af5bf61-11bc-4757-babd-936cd289e949",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "tr2-vless.sshmax.xyz",
+                "headers": {
+                    "Host": "tr2-vless.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/4af5bf61-11bc-4757-babd-936cd289e949@95.164.34.105:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=tr2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%20%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20ws%3A443%20%4095.164.34.105%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20d7f9d",
+        "##__key": "6V9Q1dvEivkQ716qOm383hKUaFw",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "95.164.34.105",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 95.164.34.105 | Stark Industries Solutions LTD",
+            "cc": "TR",
+            "port": 443,
+            "sni": "tr2-vless.sshmax.xyz",
+            "exit_ip": "95.164.34.105",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "decdn": true,
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "4af5bf61-11bc-4757-babd-936cd289e949",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "tr2-vless.sshmax.xyz",
+                "headers": {
+                    "Host": "tr2-vless.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "tr2-vless.sshmax.xyz",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/4af5bf61-11bc-4757-babd-936cd289e949@speed.cloudflare.com:443?security=tls&type=ws&sni=tr2-vless.sshmax.xyz&host=tr2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%20%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20ws%3A443%20%4095.164.34.105%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%204bd87",
+        "##__key": "Ddl8LujIFuRD5HF3ywrNxr2IOZI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 95.164.34.105 | Stark Industries Solutions LTD",
+            "cc": "TR",
+            "port": 443,
+            "sni": "tr2-vless.sshmax.xyz",
+            "exit_ip": "95.164.34.105",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -456,12 +815,12 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "46.31.78.185",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 46.31.78.185 | Sunucun Bilgi Iletisim Teknolojileri VE Ticaret Limited Sirketi",
             "cc": "TR",
             "port": 443,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "sni": "vk.com",
             "exit_ip": "46.31.78.185",
             "exit_isp": "Sunucun Bilgi Iletisim Teknolojileri VE Ticaret Limited Sirketi",
             "f_any": true,
@@ -580,7 +939,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 46.31.78.185 | Sunucun Bilgi Iletisim Teknolojileri VE Ticaret Limited Sirketi",
             "cc": "TR",
             "port": 443,
@@ -701,7 +1060,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 78.135.88.62 | Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti.",
             "cc": "TR",
             "port": 80,
@@ -778,64 +1137,6 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "91.217.119.47",
-                    "port": 8443,
-                    "users": [
-                        {
-                            "id": "2867f8d1-d09a-420a-e274-e824e4ece4ed",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "grpc",
-            "security": "tls",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": {
-                "serviceName": "@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020@game_file2020"
-            },
-            "wsSettings": null,
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "mk.se-se.info",
-                "show": true
-            }
-        },
-        "##__uri": "vless:\/\/2867f8d1-d09a-420a-e274-e824e4ece4ed@91.217.119.47:8443?security=tls&type=grpc&sni=mk.se-se.info&alpn=h2%2Chttp%2F1.1&serviceName=%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020%40game_file2020&mode=gun&fp=chrome#%F0%9F%94%92%20%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20grpc%3A8443%20%4091.217.119.47%20%7C%20Teknosos%20Bilisim%20Hizmetleri%20VE%20Tic.%20Ltd.%20Sti.%20%7C%20e7d13",
-        "##__key": "aRzY0UKhnsog3Qaf6s0NYhI3uDs",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "91.217.119.47",
-            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 91.217.119.47 | Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti.",
-            "cc": "TR",
-            "port": 8443,
-            "sni": "mk.se-se.info",
-            "exit_ip": "91.217.119.47",
-            "exit_isp": "Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti.",
-            "decdn": true,
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
                     "address": "speed.cloudflare.com",
                     "port": 8443,
                     "users": [
@@ -874,7 +1175,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 91.217.119.47 | Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti.",
             "cc": "TR",
             "port": 8443,
@@ -1121,7 +1422,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.145 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "cc": "TR",
             "port": 80,
@@ -1175,7 +1476,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.145 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
             "cc": "TR",
             "port": 80,
@@ -1186,6 +1487,180 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "faf314fb-c088-4eb1-9ad5-88dc479c8ee0",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/skso",
+                "host": "jazz-cw-illustrations-float.trycloudflare.com",
+                "headers": {
+                    "Host": "jazz-cw-illustrations-float.trycloudflare.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/faf314fb-c088-4eb1-9ad5-88dc479c8ee0@speed.cloudflare.com:80?type=ws&host=jazz-cw-illustrations-float.trycloudflare.com&path=%2Fskso&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20ws%3A80%20%4084.32.230.252%20%7C%20Mailbox%20Internet%20Hizmetleri%20Ltd.%20Sti.%20%2F%20Ipxo%20%7C%20c9784",
+        "##__key": "HDFZ709ZfO8gSI8rO7Pjn8GPOGc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.252 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
+            "cc": "TR",
+            "port": 443,
+            "sni": "jazz-cw-illustrations-float.trycloudflare.com",
+            "exit_ip": "84.32.230.252",
+            "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "84.32.230.67",
+                    "port": 21172,
+                    "users": [
+                        {
+                            "id": "127e469a-6838-45fe-92fc-c3e5dbe54d1c",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vless:\/\/127e469a-6838-45fe-92fc-c3e5dbe54d1c@ekhtelal.rmm83mir.online:21172?type=tcp&headerType=http&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&fp=chrome#%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20tcp%3A21172%20%4084.32.230.67%20%7C%20Mailbox%20Internet%20Hizmetleri%20Ltd.%20Sti.%20%2F%20Ipxo%20%7C%203161d",
+        "##__key": "iJvE9m9sbmjEjmI3AQVzMrGlmA0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "84.32.230.67",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 84.32.230.67 | Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
+            "cc": "TR",
+            "port": 21172,
+            "sni": "fast.com",
+            "exit_ip": "84.32.230.67",
+            "exit_isp": "Mailbox Internet Hizmetleri Ltd. Sti. \/ Ipxo",
+            "f_any": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "95.164.34.105",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "4af5bf61-11bc-4757-babd-936cd289e949",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/4af5bf61-11bc-4757-babd-936cd289e949@95.164.34.105:80?type=ws&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20ws%3A80%20%4095.164.34.105%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20a6686",
+        "##__key": "QTjE6X6OA8N6V8FikR6GW4jCgcY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "95.164.34.105",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 95.164.34.105 | Stark Industries Solutions LTD",
+            "cc": "TR",
+            "port": 443,
+            "sni": "tr2-vless.sshmax.xyz",
+            "exit_ip": "95.164.34.105",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "decdn": true,
+            "f_any": true
         }
     },
     {
@@ -1221,7 +1696,7 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxOTMuNDYuNTYuMjEwIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6ImQ4NDllZjQ5LTUxY2ItNDY0MC1iOGE3LTYyNDBmY2M3NzBhMiIsIm5ldCI6IndzIiwicGF0aCI6IlwvcmFjZXZwbiIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmNyBUUiB8IHdzOjgwIEAxOTMuNDYuNTYuMjEwIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgNjE2MDIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxOTMuNDYuNTYuMjEwIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6ImQ4NDllZjQ5LTUxY2ItNDY0MC1iOGE3LTYyNDBmY2M3NzBhMiIsIm5ldCI6IndzIiwicGF0aCI6IlwvcmFjZXZwbiIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmNyBUUiB8IHdzOjgwIEAxOTMuNDYuNTYuMjEwIHwgU3RhcmsgSW5kdXN0cmllcyBTb2x1dGlvbnMgTFREIHwgNjE2MDIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
         "##__key": "xpyE3K4fp880w30NkJQfMirgLDA",
         "##__insecure": false,
         "##__flags": {
@@ -1232,13 +1707,11 @@
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 193.46.56.210 | Stark Industries Solutions LTD",
             "cc": "TR",
             "port": 80,
-            "sni": "vk.com",
+            "sni": "193.46.56.210",
             "exit_ip": "193.46.56.210",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_tracker": true
         }
     },
     {
@@ -1287,6 +1760,57 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 8080,
+                    "users": [
+                        {
+                            "id": "4af5bf61-11bc-4757-babd-936cd289e949",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "tr2-vless.sshmax.xyz",
+                "headers": {
+                    "Host": "tr2-vless.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/4af5bf61-11bc-4757-babd-936cd289e949@speed.cloudflare.com:8080?type=ws&host=tr2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B9%F0%9F%87%B7%20TR%20%7C%20ws%3A8080%20%4095.164.34.105%20%7C%20Stark%20Industries%20Solutions%20LTD%20%7C%20804b9",
+        "##__key": "m0M2GDB3hLpY8HQ0aiXTTwOeBkI",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 95.164.34.105 | Stark Industries Solutions LTD",
+            "cc": "TR",
+            "port": 443,
+            "sni": "tr2-vless.sshmax.xyz",
+            "exit_ip": "95.164.34.105",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -1385,7 +1909,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf9\ud83c\uddf7 TR | 78.135.88.62 | Teknosos Bilisim Hizmetleri VE Tic. Ltd. Sti.",
             "cc": "TR",
             "port": 80,
