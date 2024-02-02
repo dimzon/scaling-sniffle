@@ -17,7 +17,7 @@
                 }
             ]
         },
-        "##__uri": "socks5:\/\/xppmoxru:ramtp7018bac@188.74.183.10:8279#%F0%9F%87%AE%F0%9F%87%B9%20IT%20%7C%20tcp%3A8279%20%40188.74.183.10%20%7C%20SC%20Aside%20MCD%20SRL%20%7C%2099300",
+        "##__uri": "socks5:\/\/xppmoxru:ramtp7018bac@188.74.183.10:8279#%F0%9F%87%AE%F0%9F%87%B9%20%E2%97%88%20IT%20188.74.183.10%20%E2%97%88%20tcp%3A8279%20%E2%97%88%20SC%20Aside%20MCD%20SRL%20%E2%97%88%20d21b0",
         "##__key": "WmPdv24KuyvSG9Yn3acDG1zGxEQ",
         "##__insecure": false,
         "##__flags": {
@@ -29,6 +29,7 @@
             "cc": "IT",
             "port": 8279,
             "sni": "",
+            "warp": "off",
             "exit_ip": "188.74.183.10",
             "exit_isp": "SC Aside MCD SRL",
             "f_any": true
@@ -44,7 +45,7 @@
                     "port": 80,
                     "users": [
                         {
-                            "id": "d22ecfe8-797b-4761-ad09-64c991f887c2",
+                            "id": "431fda16-e0f8-4884-b4fd-965f03f86471",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -67,8 +68,8 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJpdDEueHYycmF5Lm5ldCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiJkMjJlY2ZlOC03OTdiLTQ3NjEtYWQwOS02NGM5OTFmODg3YzIiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGY5IElUIHwgd3M6ODAgQDk1LjE2NC40Ni4xNTQgfCBTdGFyayBJbmR1c3RyaWVzIFNvbHV0aW9ucyBMVEQgfCBiMzY0OSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "C9L4NYWokA0cDSDUJIYU2MU3m20",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJpdDEueHYycmF5Lm5ldCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI0MzFmZGExNi1lMGY4LTQ4ODQtYjRmZC05NjVmMDNmODY0NzEiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGY5IFx1MjVjOCBJVCA5NS4xNjQuNDYuMTU0IFx1MjVjOCB3czo4MCBcdTI1YzggU3RhcmsgSW5kdXN0cmllcyBcdTI1YzggNWRhNjYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "0YgXNylIlXF4eE16TtdklqwZiN4",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
@@ -79,6 +80,58 @@
             "cc": "IT",
             "port": 80,
             "sni": "95.164.46.154",
+            "warp": "off",
+            "exit_ip": "95.164.46.154",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "95.164.46.154",
+                    "port": 8080,
+                    "users": [
+                        {
+                            "id": "431fda16-e0f8-4884-b4fd-965f03f86471",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "internet.life.com.by",
+                "headers": {
+                    "Host": "internet.life.com.by"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJpdDEueHYycmF5Lm5ldCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJpbnRlcm5ldC5saWZlLmNvbS5ieSIsImlkIjoiNDMxZmRhMTYtZTBmOC00ODg0LWI0ZmQtOTY1ZjAzZjg2NDcxIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjgwODAsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGY5IFx1MjVjOCBJVCA5NS4xNjQuNDYuMTU0IFx1MjVjOCB3czo4MDgwIFx1MjVjOCBTdGFyayBJbmR1c3RyaWVzIFx1MjVjOCBjZWI5NSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "mC9t3yEpazvWSROA4hCNR4MSIYo",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "95.164.46.154",
+            "suffix": "\ud83c\uddee\ud83c\uddf9 IT | 95.164.46.154 | Stark Industries Solutions LTD",
+            "cc": "IT",
+            "port": 8080,
+            "sni": "internet.life.com.by",
+            "warp": "off",
             "exit_ip": "95.164.46.154",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true

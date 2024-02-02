@@ -5,53 +5,6 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "188.244.117.31",
-                    "port": 28320,
-                    "users": [
-                        {
-                            "id": "236fa6e3-683b-4c3f-a07c-56061ee393c2",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxODguMjQ0LjExNy4zMSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMjM2ZmE2ZTMtNjgzYi00YzNmLWEwN2MtNTYwNjFlZTM5M2MyIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjI4MzIwLCJwcyI6Ilx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlZCBDSCB8IHRjcDoyODMyMCBAMTg4LjI0NC4xMTcuMzEgfCBIb3N0SGF0Y2gsIExMQyBcLyBQcmlub2RlIEFCIHwgNzAwYjQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "hzkDWYC0scoxFKW5sIAK8uXKiww",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "188.244.117.31",
-            "suffix": "\ud83c\udde8\ud83c\udded CH | 188.244.117.31 | HostHatch, LLC \/ Prinode AB",
-            "cc": "CH",
-            "port": 28320,
-            "sni": "188.244.117.31",
-            "exit_ip": "188.244.117.31",
-            "exit_isp": "HostHatch, LLC \/ Prinode AB",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
                     "address": "94.131.99.8",
                     "port": 47182,
                     "users": [
@@ -73,7 +26,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI5NC4xMzEuOTkuOCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiODFiMmI2MzAtOGI2YS00MDRmLWI5OTYtYjEyZjEzZGI1Nzg2IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjQ3MTgyLCJwcyI6Ilx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlZCBDSCB8IHRjcDo0NzE4MiBAOTQuMTMxLjk5LjggfCBTdGFyayBJbmR1c3RyaWVzIFNvbHV0aW9ucyBMVEQgfCA4YWVkMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__uri": "vmess:\/\/eyJhZGQiOiI5NC4xMzEuOTkuOCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI4MWIyYjYzMC04YjZhLTQwNGYtYjk5Ni1iMTJmMTNkYjU3ODYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NDcxODIsInBzIjoiXHVkODNjXHVkZGU4XHVkODNjXHVkZGVkIFx1MjVjOCBDSCA5NC4xMzEuOTkuOCBcdTI1YzggdGNwOjQ3MTgyIFx1MjVjOCBTdGFyayBJbmR1c3RyaWVzIFx1MjVjOCA4YWVkMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
         "##__key": "ElaL9G7pgLiLNI7NRrKBzK4MUOU",
         "##__insecure": false,
         "##__flags": {
@@ -85,6 +38,55 @@
             "cc": "CH",
             "port": 47182,
             "sni": "94.131.99.8",
+            "warp": "off",
+            "exit_ip": "94.131.99.8",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "94.131.99.8",
+                    "port": 47182,
+                    "users": [
+                        {
+                            "id": "81b2b630-8b6a-404f-b996-b12f13db5786",
+                            "encryption": "aes-128-gcm"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiI5NC4xMzEuOTkuOCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI4MWIyYjYzMC04YjZhLTQwNGYtYjk5Ni1iMTJmMTNkYjU3ODYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6NDcxODIsInBzIjoiXHVkODNjXHVkZGU4XHVkODNjXHVkZGVkIFx1MjVjOCBDSCA5NC4xMzEuOTkuOCBcdTI1YzggdGNwOjQ3MTgyIFx1MjVjOCBTdGFyayBJbmR1c3RyaWVzIFx1MjVjOCA2Mjc5YiIsInNjeSI6ImFlcy0xMjgtZ2NtIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "ekm2HUdYbOVbsfxu1jFNeyTnapE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "94.131.99.8",
+            "suffix": "\ud83c\udde8\ud83c\udded CH | 94.131.99.8 | Stark Industries Solutions LTD",
+            "cc": "CH",
+            "port": 47182,
+            "sni": "94.131.99.8",
+            "warp": "off",
             "exit_ip": "94.131.99.8",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
