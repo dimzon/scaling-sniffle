@@ -44,8 +44,7 @@
             "ip": "103.110.127.85",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.110.127.85 | Cloudminister Technologies Private Limited",
             "cc": "IN",
-            "port": 8443,
-            "sni": "viber.com",
+            "mark": "cric.yourdisha.in\n8443\n1",
             "warp": "off",
             "exit_ip": "103.110.127.85",
             "exit_isp": "Cloudminister Technologies Private Limited",
@@ -98,8 +97,7 @@
             "ip": "103.110.127.85",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.110.127.85 | Cloudminister Technologies Private Limited",
             "cc": "IN",
-            "port": 8443,
-            "sni": "103.110.127.85",
+            "mark": "103.110.127.85\n8443\n1",
             "warp": "off",
             "exit_ip": "103.110.127.85",
             "exit_isp": "Cloudminister Technologies Private Limited",
@@ -149,15 +147,12 @@
             "ip": "64.227.153.43",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 64.227.153.43 | DigitalOcean, LLC",
             "cc": "IN",
-            "port": 443,
-            "sni": "android.googleapis.com",
+            "mark": "64.227.153.43\n443\n1",
             "warp": "off",
             "exit_ip": "64.227.153.43",
             "exit_isp": "DigitalOcean, LLC",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
@@ -202,15 +197,12 @@
             "ip": "64.227.153.43",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 64.227.153.43 | DigitalOcean, LLC",
             "cc": "IN",
-            "port": 443,
-            "sni": "m.instagram.com",
+            "mark": "m.instagram.com\n443\n1",
             "warp": "off",
             "exit_ip": "64.227.153.43",
             "exit_isp": "DigitalOcean, LLC",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
@@ -264,15 +256,90 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "cc": "IN",
-            "port": 80,
-            "sni": "yindunat.qaz.gay",
+            "mark": "yindunat.qaz.gay\n2052\n",
             "warp": "off",
             "exit_ip": "144.24.139.190",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "45.132.75.19",
+                    "ota": false,
+                    "port": 13675
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/45.132.75.19:13675#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.221.239.110%20%E2%97%88%20tcp%3A13675%20%E2%97%88%20%3F%20%E2%97%88%204cde4",
+        "##__key": "athsopzMRj5BKea37UVMMzVYhig",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.132.75.19",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.221.239.110 | ?",
+            "cc": "IN",
+            "mark": "\n13675\n",
+            "warp": "off",
+            "exit_ip": "117.221.239.110",
+            "exit_isp": "?"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.195.114.19",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "25dfe540-f320-4c54-b7a1-4501fd4c9cc8",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vpnmeooai",
+                "host": "dl.aw.freefiremobile.com",
+                "headers": {
+                    "Host": "dl.aw.freefiremobile.com"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/25dfe540-f320-4c54-b7a1-4501fd4c9cc8@india01.meoovpn.net:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20194.195.114.19%20%E2%97%88%20ws%3A80%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%20338ea",
+        "##__key": "QiZAxVU5kQYpRthFYdfVQcCnvBM",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.195.114.19",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.114.19 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "IN",
+            "mark": "dl.aw.freefiremobile.com\n80\n",
+            "warp": "off",
+            "exit_ip": "194.195.114.19",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
@@ -319,15 +386,12 @@
             "ip": "194.195.114.19",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.114.19 | Akamai Technologies, Inc. \/ Linode",
             "cc": "IN",
-            "port": 443,
-            "sni": "m.tiktok.com",
+            "mark": "m.tiktok.com\n443\n",
             "warp": "off",
             "exit_ip": "194.195.114.19",
             "exit_isp": "Akamai Technologies, Inc. \/ Linode",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
@@ -336,130 +400,83 @@
         "settings": {
             "servers": [
                 {
-                    "address": "185.244.36.240",
+                    "address": "45.91.93.166",
                     "ota": false,
-                    "port": 33406
+                    "port": 10943
                 }
             ]
         },
-        "##__uri": "socks5:\/\/185.244.36.240:33406#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%2059.99.154.229%20%E2%97%88%20tcp%3A33406%20%E2%97%88%20BSNL%20Internet%20%E2%97%88%2004c1a",
-        "##__key": "m1rpiA4QQfUmahxhe9Os5flaOL4",
+        "##__uri": "socks5:\/\/45.91.93.166:10943#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.193.183.206%20%E2%97%88%20tcp%3A10943%20%E2%97%88%20BSNL%20Internet%20%E2%97%88%20b886e",
+        "##__key": "s7nhxMEGQE64yf0NkmjLHmeSw44",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "185.244.36.240",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 59.99.154.229 | BSNL Internet",
+            "ip": "45.91.93.166",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.193.183.206 | BSNL Internet",
             "cc": "IN",
-            "port": 33406,
-            "sni": "",
+            "mark": "\n10943\n",
             "warp": "off",
-            "exit_ip": "59.99.154.229",
+            "exit_ip": "117.193.183.206",
             "exit_isp": "BSNL Internet"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "socks",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "speed.cloudflare.com",
-                    "port": 2082,
-                    "users": [
-                        {
-                            "id": "f7ff8a73-0891-4777-be6f-841c18968fb8",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
+                    "address": "45.91.92.45",
+                    "ota": false,
+                    "port": 25297
                 }
             ]
         },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/?ed=2048",
-                "host": "yd.pmcloud.top",
-                "headers": {
-                    "Host": "yd.pmcloud.top"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/f7ff8a73-0891-4777-be6f-841c18968fb8@speed.cloudflare.com:2082?type=ws&host=yd.pmcloud.top&path=%2F%3Fed%3D2048&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20104.28.252.174%20%E2%97%88%20ws%3A2082%20%E2%97%88%20warp%20%E2%97%88%20ff9d5",
-        "##__key": "Lh3neXJxfd3xISyqQGyShE3axF0",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 104.28.252.174 | Cloudflare, Inc. \/ Cloudflare WARP",
-            "cc": "IN",
-            "port": 2082,
-            "sni": "yd.pmcloud.top",
-            "warp": "on",
-            "exit_ip": "104.28.252.174",
-            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "144.24.139.190",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "ee187c79-7594-4a97-96bc-ff717c61a919",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/a",
-                "host": "yindunat.qaz.gay",
-                "headers": {
-                    "Host": "yindunat.qaz.gay"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/ee187c79-7594-4a97-96bc-ff717c61a919@144.24.139.190:80?type=ws&host=yindunat.qaz.gay&path=%2Fa&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20144.24.139.190%20%E2%97%88%20ws%3A80%20%E2%97%88%20Oracle%20Cloud%20%28ap-hyderabad-1%29%20%E2%97%88%20eaea6",
-        "##__key": "dJ8Qsez7eye5udHHubolbPEz83c",
+        "##__uri": "socks5:\/\/45.91.92.45:25297#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.192.178.160%20%E2%97%88%20tcp%3A25297%20%E2%97%88%20BSNL%20Internet%20%2F%20NIB%20%E2%97%88%208ab33",
+        "##__key": "hnikbje54PGZc4aqopflI94Df1E",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "144.24.139.190",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "ip": "45.91.92.45",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.192.178.160 | BSNL Internet \/ NIB",
             "cc": "IN",
-            "port": 80,
-            "sni": "yindunat.qaz.gay",
+            "mark": "\n25297\n",
             "warp": "off",
-            "exit_ip": "144.24.139.190",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
-            "decdn": true
+            "exit_ip": "117.192.178.160",
+            "exit_isp": "BSNL Internet \/ NIB"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "117.250.3.58",
+                    "ota": false,
+                    "port": 8080
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/117.250.3.58:8080#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.250.3.58%20%E2%97%88%20tcp%3A8080%20%E2%97%88%20Bharat%20Sanchar%20Nigam%20Ltd%20%2F%20Addl.%20Director%20General%20of%20Police%20%E2%97%88%207e4b0",
+        "##__key": "A3s13Gt9nki1b7m14xj0eYY9yEE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "117.250.3.58",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.250.3.58 | Bharat Sanchar Nigam Ltd \/ Addl. Director General of Police",
+            "cc": "IN",
+            "mark": "\n8080\n",
+            "warp": "off",
+            "exit_ip": "117.250.3.58",
+            "exit_isp": "Bharat Sanchar Nigam Ltd \/ Addl. Director General of Police",
+            "f_any": true
         }
     },
     {
@@ -506,13 +523,10 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "cc": "IN",
-            "port": 80,
-            "sni": "yindunat.qaz.gay",
+            "mark": "yindunat.qaz.gay\n2052\n",
             "warp": "off",
             "exit_ip": "144.24.139.190",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
-            "f_any": true,
-            "f_facebook": true
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)"
         }
     },
     {
@@ -555,48 +569,80 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "144.24.139.190",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "cc": "IN",
-            "port": 28852,
-            "sni": "144.24.139.190",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n28852\n",
             "warp": "off",
             "exit_ip": "144.24.139.190",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "socks",
+        "protocol": "vless",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "45.91.92.45",
-                    "ota": false,
-                    "port": 35336
+                    "address": "139.84.177.3",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "express_v2ray",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
                 }
             ]
         },
-        "##__uri": "socks5:\/\/45.91.92.45:35336#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20103.8.149.34%20%E2%97%88%20tcp%3A35336%20%E2%97%88%20Tata%20Teleservices%20%28Maharashtra%29%20Ltd%20%2F%20Ttml%20ILL%20%E2%97%88%206336f",
-        "##__key": "hnikbje54PGZc4aqopflI94Df1E",
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vless:\/\/express_v2ray@xn--s-no6ao5q37myjqt0l8gcutnfok3w4b.imgcloud.site:443?type=tcp&headerType=http&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&fp=chrome#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20139.84.177.3%20%E2%97%88%20tcp%3A443%20%E2%97%88%20The%20Constant%20Company%20%E2%97%88%2044aaf",
+        "##__key": "Vf9PozchXmIBiht05cOXlyShRwU",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "45.91.92.45",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.8.149.34 | Tata Teleservices (Maharashtra) Ltd \/ Ttml ILL",
+            "ch": true,
+            "ip": "139.84.177.3",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 139.84.177.3 | The Constant Company, LLC",
             "cc": "IN",
-            "port": 35336,
-            "sni": "",
+            "mark": "shaparak.ir\n443\n",
             "warp": "off",
-            "exit_ip": "103.8.149.34",
-            "exit_isp": "Tata Teleservices (Maharashtra) Ltd \/ Ttml ILL"
+            "exit_ip": "139.84.177.3",
+            "exit_isp": "The Constant Company, LLC"
         }
     }
 ]

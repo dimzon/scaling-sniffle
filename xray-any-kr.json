@@ -49,8 +49,7 @@
             "ip": "45.94.68.68",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.94.68.68 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "port": 443,
-            "sni": "kr01.host.csznet.eu.org",
+            "mark": "kr01.host.csznet.eu.org\n443\n1",
             "warp": "off",
             "exit_ip": "45.94.68.68",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
@@ -107,8 +106,7 @@
             "ip": "45.94.68.68",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.94.68.68 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "port": 443,
-            "sni": "kr01.host.csznet.eu.org",
+            "mark": "kr01.host.csznet.eu.org\n443\n1",
             "warp": "off",
             "exit_ip": "45.94.68.68",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
@@ -165,8 +163,7 @@
             "ip": "45.94.68.68",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.94.68.68 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "port": 443,
-            "sni": "kr01.host.csznet.eu.org",
+            "mark": "kr01.host.csznet.eu.org\n443\n1",
             "warp": "off",
             "exit_ip": "45.94.68.68",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
@@ -223,8 +220,7 @@
             "ip": "45.94.68.68",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.94.68.68 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "port": 443,
-            "sni": "kr01.host.csznet.eu.org",
+            "mark": "kr01.host.csznet.eu.org\n443\n1",
             "warp": "off",
             "exit_ip": "45.94.68.68",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
@@ -281,8 +277,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 8443,
-            "sni": "chunc.cxzntq.tech",
+            "mark": "chunc.cxzntq.tech\n2095\n",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -342,8 +337,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 443,
-            "sni": "chunc.cxzntq.tech",
+            "mark": "chunc.cxzntq.tech\n443\n1",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -403,8 +397,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 80,
-            "sni": "chunc.cxzntq.tech",
+            "mark": "chunc.cxzntq.tech\n8443\n1",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -412,73 +405,6 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "45.154.14.165",
-                    "port": 13593,
-                    "users": [
-                        {
-                            "id": "0764e6b0-3241-4962-a483-956bcc3612a5",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "http",
-                    "request": {
-                        "version": "1.1",
-                        "method": "GET",
-                        "path": [
-                            "\/"
-                        ],
-                        "headers": {
-                            "Host": [
-                                "45.154.14.165"
-                            ],
-                            "User-Agent": [
-                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
-                            ],
-                            "Accept-Encoding": [
-                                "gzip, deflate"
-                            ],
-                            "Connection": [
-                                "keep-alive"
-                            ],
-                            "Pragma": "no-cache"
-                        }
-                    }
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI0NS4xNTQuMTQuMTY1IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwNzY0ZTZiMC0zMjQxLTQ5NjItYTQ4My05NTZiY2MzNjEyYTUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiXC8iLCJwb3J0IjoxMzU5MywicHMiOiJcdWQ4M2NcdWRkZjBcdWQ4M2NcdWRkZjcgXHUyNWM4IEtSIDQ1LjE1NC4xNC4xNjUgXHUyNWM4IHRjcDoxMzU5MyBcdTI1YzggTU9BQ0suQ28uTFREIFwvIEljaWRjIExpbWl0ZWQgXHUyNWM4IDkxMmZkIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6Mn0=",
-        "##__key": "s0S6Qd5PvcHTxIiNC82lP3Rv3JQ",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "45.154.14.165",
-            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.154.14.165 | MOACK.Co.LTD \/ Icidc Limited",
-            "cc": "KR",
-            "port": 13593,
-            "sni": "45.154.14.165",
-            "warp": "off",
-            "exit_ip": "45.154.14.165",
-            "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
-            "f_any": true
         }
     },
     {
@@ -540,14 +466,14 @@
             "ip": "45.154.14.201",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.154.14.201 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "port": 28514,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n28514\n",
             "warp": "off",
             "exit_ip": "45.154.14.201",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
             "f_any": true,
             "f_tracker": true,
-            "f_facebook": true
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -605,12 +531,11 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "45.154.14.209",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.154.14.209 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "port": 48852,
-            "sni": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+            "mark": "45.154.14.209\n48852\n",
             "warp": "off",
             "exit_ip": "45.154.14.209",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
@@ -663,8 +588,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 80,
-            "sni": "chunc.cxzntq.tech",
+            "mark": "chunc.cxzntq.tech\n443\n1",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -717,8 +641,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 8443,
-            "sni": "chunc.cxzntq.tech",
+            "mark": "chunc.cxzntq.tech\n2095\n",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -771,15 +694,13 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 80,
-            "sni": "chunc.cxzntq.tech",
+            "mark": "chunc.cxzntq.tech\n8443\n1",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "f_any": true,
             "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
@@ -788,11 +709,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "152.67.218.38",
-                    "port": 443,
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4",
+                            "id": "113a74cc-f13b-48ec-bbb2-2bbab77a2f35",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -809,26 +730,25 @@
             "grpcSettings": null,
             "wsSettings": {
                 "path": "\/",
-                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "host": "kr1.ljyyds.top",
                 "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                    "Host": "kr1.ljyyds.top"
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxNTIuNjcuMjE4LjM4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6ImI1ZTk0ODBhLWI3YWEtNDBhNC1mOWE3LTUyOTliNWUzNjNiNCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBcdTI1YzggS1IgMTUyLjY3LjIxOC4zOCBcdTI1Yzggd3M6NDQzIFx1MjVjOCBPcmFjbGUgQ2xvdWQgKGFwLWNodW5jaGVvbi0xKSBcdTI1YzggZGYwMjciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
-        "##__key": "vVMqOC9UIBDeQbnDXmgkWJt6buI",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJrcjEubGp5eWRzLnRvcCIsImlkIjoiMTEzYTc0Y2MtZjEzYi00OGVjLWJiYjItMmJiYWI3N2EyZjM1IiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjBcdWQ4M2NcdWRkZjcgXHUyNWM4IEtSIDE0NC4yNC44NS40MCBcdTI1Yzggd3M6ODAgXHUyNWM4IE9yYWNsZSBDbG91ZCAoYXAtY2h1bmNoZW9uLTEpIFx1MjVjOCBhNTZlNiIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
+        "##__key": "AyqoBqvjXcywBMMsAAXF2oPHkJw",
         "##__insecure": false,
         "##__flags": {
-            "cf": false,
+            "cf": true,
             "gcore": false,
-            "ch": true,
-            "ip": "152.67.218.38",
-            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 152.67.218.38 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 144.24.85.40 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 443,
-            "sni": "vk.com",
+            "mark": "kr1.ljyyds.top\n80\n",
             "warp": "off",
-            "exit_ip": "152.67.218.38",
+            "exit_ip": "144.24.85.40",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "f_any": true,
             "f_tracker": true,
@@ -842,7 +762,7 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "129.154.50.232",
+                    "address": "144.24.93.29",
                     "port": 20326,
                     "users": [
                         {
@@ -869,20 +789,69 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJjaHVuY2hlb25hcm0ueXV3YW4ubGluayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiIzYjMzOGMxMy1mOTc1LTRlODUtYjFiNS02ZmYyZmIwZjE0YjMiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjIwMzI2LCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBcdTI1YzggS1IgMTI5LjE1NC41MC4yMzIgXHUyNWM4IHdzOjIwMzI2IFx1MjVjOCBPcmFjbGUgQ2xvdWQgKGFwLWNodW5jaGVvbi0xKSBcdTI1YzggY2IyZjkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJjaHVuY2hlb25hcm0ueXV3YW4ubGluayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiIzYjMzOGMxMy1mOTc1LTRlODUtYjFiNS02ZmYyZmIwZjE0YjMiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjIwMzI2LCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBcdTI1YzggS1IgMTQ0LjI0LjkzLjI5IFx1MjVjOCB3czoyMDMyNiBcdTI1YzggT3JhY2xlIENsb3VkIChhcC1jaHVuY2hlb24tMSkgXHUyNWM4IGNiMmY5Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
         "##__key": "tbxczOWIstFgoQbUG7HE4Jx3bCY",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": true,
-            "ip": "129.154.50.232",
-            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.50.232 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
+            "ip": "144.24.93.29",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 144.24.93.29 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "port": 20326,
-            "sni": "chuncheonarm.yuwan.link",
+            "mark": "129.154.50.232\n20326\n",
             "warp": "off",
-            "exit_ip": "129.154.50.232",
+            "exit_ip": "144.24.93.29",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "144.24.93.29",
+                    "port": 20326,
+                    "users": [
+                        {
+                            "id": "3b338c13-f975-4e85-b1b5-6ff2fb0f14b3",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "youku.com",
+                "headers": {
+                    "Host": "youku.com"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJjaHVuY2hlb25hcm0ueXV3YW4ubGluayIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ5b3VrdS5jb20iLCJpZCI6IjNiMzM4YzEzLWY5NzUtNGU4NS1iMWI1LTZmZjJmYjBmMTRiMyIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6MjAzMjYsInBzIjoiXHVkODNjXHVkZGYwXHVkODNjXHVkZGY3IFx1MjVjOCBLUiAxNTguMTgwLjkzLjU3IFx1MjVjOCB3czoyMDMyNiBcdTI1YzggT3JhY2xlIENsb3VkIChhcC1jaHVuY2hlb24tMSkgXHUyNWM4IDE4NTlmIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "otLjqAq2H9psLuXv4crxMfebcjQ",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "144.24.93.29",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 158.180.93.57 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
+            "cc": "KR",
+            "mark": "youku.com\n20326\n",
+            "warp": "off",
+            "exit_ip": "158.180.93.57",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "f_any": true
         }
@@ -924,8 +893,7 @@
             "ip": "152.70.39.9",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 152.70.39.9 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
             "cc": "KR",
-            "port": 26022,
-            "sni": "152.70.39.9",
+            "mark": "152.70.39.9\n26022\n",
             "warp": "off",
             "exit_ip": "152.70.39.9",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
@@ -933,6 +901,35 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "43.155.169.227",
+                    "ota": false,
+                    "port": 15673
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/43.155.169.227:15673#%F0%9F%87%B0%F0%9F%87%B7%20%E2%97%88%20KR%2043.155.169.227%20%E2%97%88%20tcp%3A15673%20%E2%97%88%20Shenzhen%20Tencent%20Computer%20Systems%20Company%20Limited%20%2F%20Tencent%20Cloud%20Computing%20%E2%97%88%20542a1",
+        "##__key": "6wSMbntArM7mIMrrtRTQ46sKDHY",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "43.155.169.227",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 43.155.169.227 | Shenzhen Tencent Computer Systems Company Limited \/ Tencent Cloud Computing",
+            "cc": "KR",
+            "mark": "\n15673\n",
+            "warp": "off",
+            "exit_ip": "43.155.169.227",
+            "exit_isp": "Shenzhen Tencent Computer Systems Company Limited \/ Tencent Cloud Computing",
+            "f_any": true
         }
     }
 ]
