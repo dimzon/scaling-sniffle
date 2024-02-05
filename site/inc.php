@@ -64,6 +64,13 @@ class SubProcessor
     {
         $suffix = rtrim(@"{$_GET['suffix']}");
         $prefix = ltrim(@"{$_GET['prefix']}");
+        $singbox_title = trim(@"{$_GET['singbox-title']}");
+        if($singbox_title==='') $singbox_title='Sing box subs';
+        $singbox_template = trim(@"{$_GET['singbox-template']}");
+        if($singbox_template==='') $singbox_template='default';
+        $singbox_dns = trim(@"{$_GET['singbox-dns']}");
+        if($singbox_dns==='') $singbox_dns='tcp://1.1.1.1';
+
 
         $cfhost = self::arrayValue('cf-server');
         if (false === $cfhost)
@@ -73,7 +80,9 @@ class SubProcessor
             $gchost = ['gcore.com'];
 
         $resultLines = [];
-        $b64 = self::boolFlag('b64');
+        $fmt=trim(@"{$_GET['fmt']}");
+        if(self::boolFlag('b64')) $fmt="b64";
+
 
         $fp = trim(@"{$_GET['fp']}");
         if ($fp === '') $fp = 'chrome';
@@ -130,14 +139,16 @@ class SubProcessor
 
         $fport = self::stringFilter('port', '/[^0-9]+/');
 
+        $template='';
+        if($fmt==='singbox') $template='sb-';
 
         if (false === $full)
-            $template="proxy-db-{$tag}.lst";
+            $template="{$template}proxy-db-{$tag}.lst";
         else
-            $template='proxy-db.lst';
+            $template="{$template}proxy-db.lst";
 
 
-        $template = "https://raw.githubusercontent.com/dimzon/scaling-sniffle/main/{$template}.gz";
+        $template = "{$template}.gz";
         $lines = self::fcache($template);
         if (is_array($lines)) {
             foreach ($lines as $line) {
@@ -200,15 +211,18 @@ class SubProcessor
                     continue;
 //                var_dump(9);
 
+
                 if ($tmp->k === 'cf') {
-                    $h = self::randomItem($cfhost, "{$tmp->sni}|{$tmp->u}");
+                    $hashKey=isset($tmp->u)?$tmp->u:serialize($tmp->oo);
+                    $h = self::randomItem($cfhost, "{$tmp->sni}|{$hashKey}");
                     if (0 === stripos($h, 'rand:'))
-                        $h = self::randomCfHost("{$tmp->sni}|{$tmp->u}|{$h}");
+                        $h = self::randomCfHost("{$tmp->sni}|{$hashKey}|{$h}");
                     $tmp->host = $h;
                 } elseif ($tmp->k === 'gcore') {
-                    $h = self::randomItem($gchost, "{$tmp->sni}|{$tmp->u}");
+                    $hashKey=isset($tmp->u)?$tmp->u:serialize($tmp->oo);
+                    $h = self::randomItem($gchost, "{$tmp->sni}|{$hashKey}");
                     if (0 === stripos($h, 'rand:'))
-                        $h = self::randomGcHost("{$tmp->sni}|{$tmp->u}|{$h}");
+                        $h = self::randomGcHost("{$tmp->sni}|{$hashKey}|{$h}");
                     $tmp->host = $h;
                 } elseif ($ipfy) {
                     $tmp->host = self::hostByName($tmp->host);
@@ -230,29 +244,52 @@ class SubProcessor
                     $title=trim("{$temp_string}{$title}");
                 }
 
-                if ($tmp->type === 'vmess') {
+                if($fmt==='singbox'){
+                    $tmp->u = json_encode($tmp->oo, JSON_INVALID_UTF8_IGNORE);
                     $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
                     $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
                     $tmp->u = str_replace(json_encode('{FP}'), json_encode($fp), $tmp->u);
                     $key = md5($tmp->u);
-                    $tmp->u = str_replace(json_encode('{TITLE}'), json_encode($title), $tmp->u);
-                    $tmp->u = sprintf("vmess://%s", base64_encode($tmp->u));
+                    $o_temp=json_decode($tmp->u);
+                    $o_temp->tag=$title;
+                    $resultLines[$key] = $o_temp;
+                    unset($o_temp);
                 } else {
-                    $tmp->u = str_replace('{HOST}', $tmp->host, $tmp->u);
-                    $tmp->u = str_replace('{SNI}', rawurlencode(@"{$tmp->sni}"), $tmp->u);
-                    $tmp->u = str_replace('{FP}', rawurlencode($fp), $tmp->u);
-                    $key = md5($tmp->u);
-                    $tmp->u = str_replace('{TITLE}', rawurlencode($title), $tmp->u);
+                    if ($tmp->type === 'vmess') {
+                        $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
+                        $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
+                        $tmp->u = str_replace(json_encode('{FP}'), json_encode($fp), $tmp->u);
+                        $key = md5($tmp->u);
+                        $tmp->u = str_replace(json_encode('{TITLE}'), json_encode($title), $tmp->u);
+                        $tmp->u = sprintf("vmess://%s", base64_encode($tmp->u));
+                    } else {
+                        $tmp->u = str_replace('{HOST}', $tmp->host, $tmp->u);
+                        $tmp->u = str_replace('{SNI}', rawurlencode(@"{$tmp->sni}"), $tmp->u);
+                        $tmp->u = str_replace('{FP}', rawurlencode($fp), $tmp->u);
+                        $key = md5($tmp->u);
+                        $tmp->u = str_replace('{TITLE}', rawurlencode($title), $tmp->u);
+                    }
+                    $resultLines[$key] = $tmp->u;
                 }
-
-                $resultLines[$key] = $tmp->u;
             }
         }
-        if ($b64) {
-            echo base64_encode(implode("\n", array_values($resultLines)));
-        } else {
-            foreach ($resultLines as $key => $line)
-                echo "{$line}\n";
+        switch ($fmt){
+            case 'b64':
+                echo base64_encode(implode("\n", array_values($resultLines)));
+                break;
+            case 'singbox':
+                $conf=self::createSingBoxProfile($resultLines, $singbox_template, $singbox_dns);
+                $singbox_interval=6;
+                $singbox_title=base64_encode($singbox_title);
+                echo "//profile-title: base64:{$singbox_title}\n";
+                echo "//profile-update-interval: {$singbox_interval}\n";
+                echo "\n";
+                echo json_encode($conf, JSON_PRETTY_PRINT+JSON_INVALID_UTF8_IGNORE);
+                break;
+            case 'default':
+                foreach ($resultLines as $key => $line)
+                    echo "{$line}\n";
+                break;
         }
     }
 
@@ -263,6 +300,25 @@ class SubProcessor
         $sni1=preg_replace('/^(.*\.)?([\w\-]+\.\w+)$/m','$2',$sni);
         self::$_shortenSni[$sni]=$sni1;
         return $sni1;
+    }
+
+    private static function createSingBoxProfile(&$proxies, $templateName='default', $dns='tcp://1.1.1.1'){
+        $templateName=preg_replace('/[^\w\-]/','',$templateName);
+        $template=self::fcache("singbox-template-{$templateName}.json");
+        if($template===false) return (object)[];
+        $conf=json_decode(implode("\n", $template));
+        $template=json_encode($conf);
+        $template=str_replace(json_encode("{DNS}"),json_encode($dns),$template);
+        $conf=json_decode($template);
+        $acceptors=array_filter($conf->outbounds, function ($i){
+            return false!=stripos(';selector;urltest;',@";{$i->type};");
+        });
+        foreach ($proxies as $proxy){
+            foreach ($acceptors as $acceptor)
+                $acceptor->outbounds[]=$proxy->tag;
+            $conf->outbounds[]=$proxy;
+        }
+        return $conf;
     }
 
     private static function arrayValue($name)
@@ -306,7 +362,14 @@ class SubProcessor
 
     private static function fcache($url)
     {
-        return gzfile($url);
+        $prefix='https://raw.githubusercontent.com/dimzon/scaling-sniffle/main/';
+        // use local files for debug
+        if(PHP_OS_FAMILY==='Windows') $prefix=dirname(__DIR__).DIRECTORY_SEPARATOR.'subs'.DIRECTORY_SEPARATOR;
+
+        if(substr($url,-3)==='.gz')
+            return @gzfile("{$prefix}{$url}");
+        else
+            return @file("{$prefix}{$url}");
 //        $name= __DIR__ . DIRECTORY_SEPARATOR . md5($url);
 //        if(!file_exists($name)){
 //            $fp=fopen($name,"w");
@@ -337,7 +400,7 @@ class SubProcessor
     {
         static $ips;
         if (!is_array($ips)) {
-            $f = self::fcache('https://raw.githubusercontent.com/dimzon/scaling-sniffle/main/cf-ip.json.gz');
+            $f = self::fcache('cf-ip.json.gz');
             $ips = json_decode(implode("\n", $f));
         }
         return self::randomItem($ips, $str);
@@ -347,7 +410,7 @@ class SubProcessor
     {
         static $ips;
         if (!is_array($ips)) {
-            $f = self::fcache('https://raw.githubusercontent.com/dimzon/scaling-sniffle/main/gcore-ip.json.gz');
+            $f = self::fcache('gcore-ip.json.gz');
             $ips = json_decode(implode("\n", $f));
         }
         return self::randomItem($ips, $str);
