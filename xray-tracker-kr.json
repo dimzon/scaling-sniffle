@@ -46,7 +46,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
             "mark": "chunc.cxzntq.tech\n2095\n",
@@ -55,8 +55,7 @@
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "f_any": true,
             "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_facebook": true
         }
     },
     {
@@ -106,10 +105,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "mark": "chunc.cxzntq.tech\n443\n1",
+            "mark": "chunc.cxzntq.tech\n2052\n",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -166,10 +165,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "mark": "chunc.cxzntq.tech\n8443\n1",
+            "mark": "chunc.cxzntq.tech\n8880\n",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -185,11 +184,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "45.154.14.201",
-                    "port": 28514,
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "c119b176-7240-43f7-b26f-9b67d54e2b95",
+                            "id": "113a74cc-f13b-48ec-bbb2-2bbab77a2f35",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -197,51 +196,42 @@
             ]
         },
         "streamSettings": {
-            "network": "tcp",
+            "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
-                    "type": "http",
-                    "request": {
-                        "version": "1.1",
-                        "method": "GET",
-                        "path": [
-                            "\/"
-                        ],
-                        "headers": {
-                            "Host": [
-                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-                            ],
-                            "User-Agent": [
-                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
-                            ],
-                            "Accept-Encoding": [
-                                "gzip, deflate"
-                            ],
-                            "Connection": [
-                                "keep-alive"
-                            ],
-                            "Pragma": "no-cache"
-                        }
-                    }
+                    "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": null
+            "wsSettings": {
+                "path": "\/",
+                "host": "kr1.ljyyds.top",
+                "headers": {
+                    "Host": "kr1.ljyyds.top"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "kr1.ljyyds.top",
+                "show": true
+            }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI0NS4xNTQuMTQuMjAxIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiYzExOWIxNzYtNzI0MC00M2Y3LWIyNmYtOWI2N2Q1NGUyYjk1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjI4NTE0LCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBcdTI1YzggS1IgNDUuMTU0LjE0LjIwMSBcdTI1YzggdGNwOjI4NTE0IFx1MjVjOCBNT0FDSy5Dby5MVEQgXC8gSWNpZGMgTGltaXRlZCBcdTI1YzggYzM3MGEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoyfQ==",
-        "##__key": "dMHBLx4NAwBIu8wSahAe8t8GNjY",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJrcjEubGp5eWRzLnRvcCIsImlkIjoiMTEzYTc0Y2MtZjEzYi00OGVjLWJiYjItMmJiYWI3N2EyZjM1IiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyXHVkODNjXHVkZGYwXHVkODNjXHVkZGY3IFx1MjVjOCBLUiAxNTIuNjcuMjIxLjIxOSBcdTI1Yzggd3M6NDQzIFx1MjVjOCBPcmFjbGUgQ2xvdWQgKGFwLWNodW5jaGVvbi0xKSBcdTI1YzggMzc3ZDYiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoia3IxLmxqeXlkcy50b3AiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6MH0=",
+        "##__key": "dnJjnTmtCkTjvDDc4r1vV34tZUA",
         "##__insecure": false,
         "##__flags": {
-            "cf": false,
+            "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "45.154.14.201",
-            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.154.14.201 | MOACK.Co.LTD \/ Icidc Limited",
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 152.67.221.219 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n28514\n",
+            "mark": "kr1.ljyyds.top\n2086\n",
             "warp": "off",
-            "exit_ip": "45.154.14.201",
-            "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
+            "exit_ip": "152.67.221.219",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
@@ -303,11 +293,11 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "45.154.14.209",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 45.154.14.209 | MOACK.Co.LTD \/ Icidc Limited",
             "cc": "KR",
-            "mark": "45.154.14.209\n48852\n",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n48852\n",
             "warp": "off",
             "exit_ip": "45.154.14.209",
             "exit_isp": "MOACK.Co.LTD \/ Icidc Limited",
@@ -357,10 +347,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "mark": "chunc.cxzntq.tech\n443\n1",
+            "mark": "chunc.cxzntq.tech\n2052\n",
             "warp": "off",
             "exit_ip": "129.154.57.174",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
@@ -410,7 +400,7 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
             "mark": "chunc.cxzntq.tech\n2095\n",
@@ -430,59 +420,7 @@
             "vnext": [
                 {
                     "address": "speed.cloudflare.com",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "c169844a-1530-450a-a7df-0736475bd68b",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/lonan",
-                "host": "chunc.cxzntq.tech",
-                "headers": {
-                    "Host": "chunc.cxzntq.tech"
-                }
-            }
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJjaHVuYy5jeHpudHEudGVjaCIsImlkIjoiYzE2OTg0NGEtMTUzMC00NTBhLWE3ZGYtMDczNjQ3NWJkNjhiIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9sb25hbiIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBcdTI1YzggS1IgMTI5LjE1NC41Ny4xNzQgXHUyNWM4IHdzOjgwIFx1MjVjOCBPcmFjbGUgQ2xvdWQgKGFwLWNodW5jaGVvbi0xKSBcdTI1YzggZDQ3NjQiLCJzY3kiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjB9",
-        "##__key": "cJbz1UdFO0a1S9vooOq49hi69cY",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 129.154.57.174 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
-            "cc": "KR",
-            "mark": "chunc.cxzntq.tech\n8443\n1",
-            "warp": "off",
-            "exit_ip": "129.154.57.174",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 80,
+                    "port": 2052,
                     "users": [
                         {
                             "id": "113a74cc-f13b-48ec-bbb2-2bbab77a2f35",
@@ -508,20 +446,177 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJrcjEubGp5eWRzLnRvcCIsImlkIjoiMTEzYTc0Y2MtZjEzYi00OGVjLWJiYjItMmJiYWI3N2EyZjM1IiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZjBcdWQ4M2NcdWRkZjcgXHUyNWM4IEtSIDE0NC4yNC44NS40MCBcdTI1Yzggd3M6ODAgXHUyNWM4IE9yYWNsZSBDbG91ZCAoYXAtY2h1bmNoZW9uLTEpIFx1MjVjOCBhNTZlNiIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJrcjEubGp5eWRzLnRvcCIsImlkIjoiMTEzYTc0Y2MtZjEzYi00OGVjLWJiYjItMmJiYWI3N2EyZjM1IiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0IjoyMDUyLCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBcdTI1YzggS1IgMTUyLjY3LjIyMS4yMTkgXHUyNWM4IHdzOjIwNTIgXHUyNWM4IE9yYWNsZSBDbG91ZCAoYXAtY2h1bmNoZW9uLTEpIFx1MjVjOCBiNWZmZSIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
         "##__key": "AyqoBqvjXcywBMMsAAXF2oPHkJw",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 144.24.85.40 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 152.67.221.219 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
             "cc": "KR",
-            "mark": "kr1.ljyyds.top\n80\n",
+            "mark": "kr1.ljyyds.top\n2086\n",
             "warp": "off",
-            "exit_ip": "144.24.85.40",
+            "exit_ip": "152.67.221.219",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-chuncheon-1)",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "146.56.184.51",
+                    "port": 8080,
+                    "users": [
+                        {
+                            "id": "82e926b9-8462-4e7a-ac13-c7251871fb8d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNDYuNTYuMTg0LjUxIiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6IjgyZTkyNmI5LTg0NjItNGU3YS1hYzEzLWM3MjUxODcxZmI4ZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwicG9ydCI6ODA4MCwicHMiOiJcdWQ4M2NcdWRkZjBcdWQ4M2NcdWRkZjcgXHUyNWM4IEtSIDE0Ni41Ni4xODQuNTEgXHUyNWM4IHdzOjgwODAgXHUyNWM4IE9yYWNsZSBDbG91ZCAoYXAtc2VvdWwtMSkgXHUyNWM4IGJkMmI3Iiwic2N5IjoiYXV0byIsInNlY3VyaXR5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjowfQ==",
+        "##__key": "fLJBzXDZUnoKhm9HMqEdW2qn238",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "146.56.184.51",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 146.56.184.51 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
+            "cc": "KR",
+            "mark": "kr-01.gujuji.top\n8080\n",
+            "warp": "off",
+            "exit_ip": "146.56.184.51",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "193.122.97.209",
+                    "port": 8080,
+                    "users": [
+                        {
+                            "id": "3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/?ed=2048",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJhbWQuNzIwMjA4Lnh5eiIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiIzZmRmOWQ0OC01NzhhLTQyZGMtOWZkZC0wZGZjZWZhM2QwYzUiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLz9lZD0yMDQ4IiwicG9ydCI6ODA4MCwicHMiOiJcdWQ4M2NcdWRkZjBcdWQ4M2NcdWRkZjcgXHUyNWM4IEtSIDE5My4xMjIuOTcuMjA5IFx1MjVjOCB3czo4MDgwIFx1MjVjOCBPcmFjbGUgQ2xvdWQgKGFwLXNlb3VsLTEpIFx1MjVjOCA0NTVmMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "BLh6uohFyuY94VkApn5h0UOeHHo",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "193.122.97.209",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 193.122.97.209 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
+            "cc": "KR",
+            "mark": "amd.720208.xyz\n8080\n",
+            "warp": "off",
+            "exit_ip": "193.122.97.209",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
+            "f_any": true,
+            "f_tracker": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 8080,
+                    "users": [
+                        {
+                            "id": "82e926b9-8462-4e7a-ac13-c7251871fb8d",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/",
+                "host": "kr-01.gujuji.top",
+                "headers": {
+                    "Host": "kr-01.gujuji.top"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJrci0wMS5ndWp1amkudG9wIiwiaWQiOiI4MmU5MjZiOS04NDYyLTRlN2EtYWMxMy1jNzI1MTg3MWZiOGQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOjgwODAsInBzIjoiXHVkODNjXHVkZGYwXHVkODNjXHVkZGY3IFx1MjVjOCBLUiAxNDYuNTYuMTg0LjUxIFx1MjVjOCB3czo4MDgwIFx1MjVjOCBPcmFjbGUgQ2xvdWQgKGFwLXNlb3VsLTEpIFx1MjVjOCBkODljZCIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
+        "##__key": "66Rl7TB5o4FgIDKqi7BfGC4Am6E",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddf0\ud83c\uddf7 KR | 146.56.184.51 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
+            "cc": "KR",
+            "mark": "kr-01.gujuji.top\n8080\n",
+            "warp": "off",
+            "exit_ip": "146.56.184.51",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-seoul-1)",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,

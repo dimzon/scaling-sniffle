@@ -50,7 +50,7 @@
             "ip": "95.164.62.230",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.230 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be2-vless.sshmax.xyz\n80\n",
+            "mark": "be2-vless.sshmax.xyz\n2082\n",
             "warp": "off",
             "exit_ip": "95.164.62.230",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -109,7 +109,7 @@
             "ip": "95.164.62.231",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2087\n1",
+            "mark": "be1-vless.sshmax.xyz\n2083\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -168,7 +168,7 @@
             "ip": "95.164.62.231",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2086\n",
+            "mark": "be1-vless.sshmax.xyz\n2083\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -338,10 +338,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.230 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be2-vless.sshmax.xyz\n80\n",
+            "mark": "be2-vless.sshmax.xyz\n2082\n",
             "warp": "off",
             "exit_ip": "95.164.62.230",
             "exit_isp": "Stark Industries Solutions LTD"
@@ -394,10 +394,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vmess.sshmax.xyz\n2082\n",
+            "mark": "be1-vmess.sshmax.xyz\n2053\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -452,13 +452,14 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2086\n",
+            "mark": "be1-vless.sshmax.xyz\n443\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
-            "exit_isp": "Stark Industries Solutions LTD"
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
         }
     },
     {
@@ -509,12 +510,62 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2053\n1",
+            "mark": "be1-vless.sshmax.xyz\n2083\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
+            "exit_isp": "Stark Industries Solutions LTD",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "95.164.62.128",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "3c0b861a-80d4-4f19-ba82-308fde59a870",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuNjIuMTI4IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6IjNjMGI4NjFhLTgwZDQtNGYxOS1iYTgyLTMwOGZkZTU5YTg3MCIsIm5ldCI6IndzIiwicGF0aCI6Ilwvdm1lc3MiLCJwb3J0Ijo4MCwicHMiOiJcdWQ4M2NcdWRkZTdcdWQ4M2NcdWRkZWEgXHUyNWM4IEJFIDk1LjE2NC42Mi4xMjggXHUyNWM4IHdzOjgwIFx1MjVjOCBTdGFyayBJbmR1c3RyaWVzIFx1MjVjOCBkNmY2ZCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "sib3Zvm61uBTgT6tsC26P1wXyjE",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "95.164.62.128",
+            "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.128 | Stark Industries Solutions LTD",
+            "cc": "BE",
+            "mark": "vk.com\n80\n",
+            "warp": "off",
+            "exit_ip": "95.164.62.128",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true
         }
@@ -563,7 +614,7 @@
             "ip": "95.164.62.230",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.230 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be2-vless.sshmax.xyz\n80\n",
+            "mark": "be2-vless.sshmax.xyz\n2082\n",
             "warp": "off",
             "exit_ip": "95.164.62.230",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -615,7 +666,7 @@
             "ip": "95.164.62.231",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2086\n",
+            "mark": "be1-vless.sshmax.xyz\n2083\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -662,11 +713,11 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "95.164.62.231",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vmess.sshmax.xyz\n443\n1",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n443\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -717,11 +768,10 @@
             "ip": "95.164.62.231",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2087\n1",
+            "mark": "be1-vless.sshmax.xyz\n80\n",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
-            "decdn": true,
             "f_any": true
         }
     },
@@ -766,14 +816,13 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.230 | Stark Industries Solutions LTD",
             "cc": "BE",
             "mark": "be2-vless.sshmax.xyz\n80\n",
             "warp": "off",
             "exit_ip": "95.164.62.230",
-            "exit_isp": "Stark Industries Solutions LTD",
-            "f_any": true
+            "exit_isp": "Stark Industries Solutions LTD"
         }
     },
     {
@@ -817,10 +866,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n80\n",
+            "mark": "be1-vless.sshmax.xyz\n2083\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -833,11 +882,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "95.164.62.231",
+                    "address": "95.164.62.230",
                     "port": 8080,
                     "users": [
                         {
-                            "id": "319a243b-5860-4a9a-af7d-a10d197130ea",
+                            "id": "d33f60de-4e8b-49b4-89d6-1ea95ce55393",
                             "encryption": "none",
                             "flow": ""
                         }
@@ -861,19 +910,19 @@
                 }
             }
         },
-        "##__uri": "vless:\/\/319a243b-5860-4a9a-af7d-a10d197130ea@be1-vmess.sshmax.xyz:8080?type=ws&host=vk.com&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A7%F0%9F%87%AA%20%E2%97%88%20BE%2095.164.62.231%20%E2%97%88%20ws%3A8080%20%E2%97%88%20Stark%20Industries%20%E2%97%88%207a888",
-        "##__key": "IbK40bXDOhl2B9n3H9hz2J2UKaU",
+        "##__uri": "vless:\/\/d33f60de-4e8b-49b4-89d6-1ea95ce55393@95.164.62.230:8080?type=ws&host=vk.com&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A7%F0%9F%87%AA%20%E2%97%88%20BE%2095.164.62.230%20%E2%97%88%20ws%3A8080%20%E2%97%88%20Stark%20Industries%20%E2%97%88%20b1290",
+        "##__key": "t3hDwaCV55iKoO00ZkK5aEhUNYQ",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "95.164.62.231",
-            "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
+            "ip": "95.164.62.230",
+            "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.230 | Stark Industries Solutions LTD",
             "cc": "BE",
             "mark": "vk.com\n8080\n",
             "warp": "off",
-            "exit_ip": "95.164.62.231",
+            "exit_ip": "95.164.62.230",
             "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true
         }
@@ -918,10 +967,10 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vmess.sshmax.xyz\n2082\n",
+            "mark": "be1-vmess.sshmax.xyz\n2053\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
             "exit_isp": "Stark Industries Solutions LTD",
@@ -969,14 +1018,13 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\udde7\ud83c\uddea BE | 95.164.62.231 | Stark Industries Solutions LTD",
             "cc": "BE",
-            "mark": "be1-vless.sshmax.xyz\n2087\n1",
+            "mark": "be1-vless.sshmax.xyz\n2083\n1",
             "warp": "off",
             "exit_ip": "95.164.62.231",
-            "exit_isp": "Stark Industries Solutions LTD",
-            "f_any": true
+            "exit_isp": "Stark Industries Solutions LTD"
         }
     }
 ]

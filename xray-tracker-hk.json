@@ -42,7 +42,7 @@
             "ip": "47.76.35.246",
             "suffix": "\ud83c\udded\ud83c\uddf0 HK | 47.76.35.246 | Alibaba (US) Technology Co., Ltd. \/ Alibaba.com LLC",
             "cc": "HK",
-            "mark": "47.76.35.246\n24101\n",
+            "mark": "viber.com\n24101\n",
             "warp": "off",
             "exit_ip": "47.76.35.246",
             "exit_isp": "Alibaba (US) Technology Co., Ltd. \/ Alibaba.com LLC",
@@ -217,11 +217,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "35.185.165.99",
-                    "port": 8443,
+                    "address": "185.244.208.61",
+                    "port": 3389,
                     "users": [
                         {
-                            "id": "57c3bfd6-09d1-4954-9b67-3a7580adc14f",
+                            "id": "9c050a86-d612-48f1-ec32-e573df08a1b7",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -229,35 +229,51 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
             "tcpSettings": {
                 "header": {
-                    "type": "none"
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/ebffd932-3fb9-460e-dc98-700b592bfb9c",
-                "host": "wapv62g.gorun.tech",
-                "headers": {
-                    "Host": "wapv62g.gorun.tech"
-                }
-            }
+            "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIzNS4xODUuMTY1Ljk5IiwiYWlkIjowLCJhbHBuIjoiIiwiZnAiOiJmaXJlZm94IiwiaG9zdCI6IndhcHY2MmcuZ29ydW4udGVjaCIsImlkIjoiNTdjM2JmZDYtMDlkMS00OTU0LTliNjctM2E3NTgwYWRjMTRmIiwibmV0Ijoid3MiLCJwYXRoIjoiXC9lYmZmZDkzMi0zZmI5LTQ2MGUtZGM5OC03MDBiNTkyYmZiOWMiLCJwb3J0Ijo4NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRlZFx1ZDgzY1x1ZGRmMCBcdTI1YzggSEsgMTA0LjI4LjI0Ny42OSBcdTI1Yzggd3M6ODQ0MyBcdTI1Yzggd2FycFBsdXMgXHUyNWM4IGY0YTRiIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
-        "##__key": "zRZDtSWM5aytQ9qAs0AXqpJ77Ns",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxODUuMjQ0LjIwOC42MSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6IjljMDUwYTg2LWQ2MTItNDhmMS1lYzMyLWU1NzNkZjA4YTFiNyIsIm5ldCI6InRjcCIsInBhdGgiOiJcLyIsInBvcnQiOjMzODksInBzIjoiXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIFx1MjVjOCBISyAxODUuMjQ0LjIwOC42MSBcdTI1YzggdGNwOjMzODkgXHUyNWM4IEctQ29yZSBMYWJzIFMuQS4gXC8gR0NMIFx1MjVjOCAzMGIwZCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOjJ9",
+        "##__key": "miuHTZ3Uuj16UUppxSTO3Y5FPJk",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "35.185.165.99",
-            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 104.28.247.69 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "ip": "185.244.208.61",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 185.244.208.61 | G-Core Labs S.A. \/ GCL",
             "cc": "HK",
-            "mark": "wapv62g.gorun.tech\n8443\n",
-            "warp": "plus",
-            "exit_ip": "104.28.247.69",
-            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n3389\n",
+            "warp": "off",
+            "exit_ip": "185.244.208.61",
+            "exit_isp": "G-Core Labs S.A. \/ GCL",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
@@ -339,11 +355,11 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "23.99.120.52",
-                    "port": 10510,
+                    "address": "194.156.98.179",
+                    "port": 80,
                     "users": [
                         {
-                            "id": "619d8b66-469f-4dce-fc71-b74f05810212",
+                            "id": "0855b410-0e96-4d0a-9b6e-80830edec462",
                             "encryption": "chacha20-poly1305"
                         }
                     ]
@@ -351,35 +367,29 @@
             ]
         },
         "streamSettings": {
-            "network": "ws",
+            "network": "tcp",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
             "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-                }
-            }
+            "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIyMy45OS4xMjAuNTIiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsImlkIjoiNjE5ZDhiNjYtNDY5Zi00ZGNlLWZjNzEtYjc0ZjA1ODEwMjEyIiwibmV0Ijoid3MiLCJwYXRoIjoiXC8iLCJwb3J0IjoxMDUxMCwicHMiOiJcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZjAgXHUyNWM4IEhLIDIzLjk5LjEyMC41MiBcdTI1Yzggd3M6MTA1MTAgXHUyNWM4IE1pY3Jvc29mdCBBenVyZSBDbG91ZCAoZWFzdGFzaWEpIFx1MjVjOCAzMGM0YyIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
-        "##__key": "xgx7rj8DbIjR3fwrwda6eJmkK98",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxOTQuMTU2Ljk4LjE3OSIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwODU1YjQxMC0wZTk2LTRkMGEtOWI2ZS04MDgzMGVkZWM0NjIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIFx1MjVjOCBISyAxOTQuMTU2Ljk4LjE3OSBcdTI1YzggdGNwOjgwIFx1MjVjOCBTdGFyayBJbmR1c3RyaWVzIFx1MjVjOCAyYWM1NCIsInNjeSI6ImF1dG8iLCJzZWN1cml0eSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6MH0=",
+        "##__key": "WgkAgYJbOB0eMzyRRTlu7sdEFV8",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
-            "ip": "23.99.120.52",
-            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 23.99.120.52 | Microsoft Corporation \/ Microsoft Azure Cloud (eastasia)",
+            "ch": false,
+            "ip": "194.156.98.179",
+            "suffix": "\ud83c\udded\ud83c\uddf0 HK | 194.156.98.179 | Stark Industries Solutions LTD",
             "cc": "HK",
-            "mark": "23.99.120.52\n10510\n",
+            "mark": "194.156.98.179\n80\n",
             "warp": "off",
-            "exit_ip": "23.99.120.52",
-            "exit_isp": "Microsoft Corporation \/ Microsoft Azure Cloud (eastasia)",
+            "exit_ip": "194.156.98.179",
+            "exit_isp": "Stark Industries Solutions LTD",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,

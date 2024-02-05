@@ -5,13 +5,41 @@
         "settings": {
             "servers": [
                 {
-                    "address": "45.132.75.19",
+                    "address": "45.91.93.166",
                     "ota": false,
-                    "port": 20291
+                    "port": 22378
                 }
             ]
         },
-        "##__uri": "socks5:\/\/45.132.75.19:20291#%F0%9F%87%A7%F0%9F%87%B7%20%E2%97%88%20BR%20179.104.103.2%20%E2%97%88%20tcp%3A20291%20%E2%97%88%20%3F%20%E2%97%88%201fc4c",
+        "##__uri": "socks5:\/\/45.91.93.166:22378#%F0%9F%87%A7%F0%9F%87%B7%20%E2%97%88%20BR%20191.54.120.252%20%E2%97%88%20tcp%3A22378%20%E2%97%88%20%3F%20%E2%97%88%2064548",
+        "##__key": "s7nhxMEGQE64yf0NkmjLHmeSw44",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "45.91.93.166",
+            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 191.54.120.252 | ?",
+            "cc": "BR",
+            "mark": "\n22378\n",
+            "warp": "off",
+            "exit_ip": "191.54.120.252",
+            "exit_isp": "?"
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "socks",
+        "settings": {
+            "servers": [
+                {
+                    "address": "45.132.75.19",
+                    "ota": false,
+                    "port": 25260
+                }
+            ]
+        },
+        "##__uri": "socks5:\/\/45.132.75.19:25260#%F0%9F%87%A7%F0%9F%87%B7%20%E2%97%88%20BR%20189.112.49.32%20%E2%97%88%20tcp%3A25260%20%E2%97%88%20ALGAR%20TELECOM%20S%2FA%20%2F%20Zapnetworks%20Ltda%20%E2%97%88%206e303",
         "##__key": "athsopzMRj5BKea37UVMMzVYhig",
         "##__insecure": false,
         "##__flags": {
@@ -19,28 +47,26 @@
             "gcore": false,
             "ch": false,
             "ip": "45.132.75.19",
-            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 179.104.103.2 | ?",
+            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 189.112.49.32 | ALGAR TELECOM S\/A \/ Zapnetworks Ltda",
             "cc": "BR",
-            "port": 20291,
-            "sni": "",
+            "mark": "\n25260\n",
             "warp": "off",
-            "exit_ip": "179.104.103.2",
-            "exit_isp": "?"
+            "exit_ip": "189.112.49.32",
+            "exit_isp": "ALGAR TELECOM S\/A \/ Zapnetworks Ltda"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "vmess",
         "settings": {
             "vnext": [
                 {
-                    "address": "150.230.69.68",
-                    "port": 54953,
+                    "address": "129.148.30.215",
+                    "port": 2052,
                     "users": [
                         {
-                            "id": "081f175a-c72e-4ac9-b179-b8d60b98967c",
-                            "encryption": "none",
-                            "flow": ""
+                            "id": "e7663aaf-bf76-3b8d-8cd5-29791ec136f6",
+                            "encryption": "aes-128-gcm"
                         }
                     ]
                 }
@@ -55,57 +81,77 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/a",
-                "host": "br-saopaolo-oracle-aa9b76.ip1.shop",
+                "path": "\/uasfbbc",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "br-saopaolo-oracle-aa9b76.ip1.shop"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vless:\/\/081f175a-c72e-4ac9-b179-b8d60b98967c@br-saopaolo-oracle-aa9b76.ip1.shop:54953?type=ws&path=%2Fa&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A7%F0%9F%87%B7%20%E2%97%88%20BR%20146.235.41.130%20%E2%97%88%20ws%3A54953%20%E2%97%88%20Oracle%20Cloud%20%28sa-saopaulo-1%29%20%E2%97%88%206109f",
-        "##__key": "tXKOs31JjxOXzrGc2E0Z9uvpaLo",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjkuMTQ4LjMwLjIxNSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiJlNzY2M2FhZi1iZjc2LTNiOGQtOGNkNS0yOTc5MWVjMTM2ZjYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Vhc2ZiYmMiLCJwb3J0IjoyMDUyLCJwcyI6Ilx1ZDgzY1x1ZGRlN1x1ZDgzY1x1ZGRmNyBcdTI1YzggQlIgMTI5LjE0OC4zMC4yMTUgXHUyNWM4IHdzOjIwNTIgXHUyNWM4IE9yYWNsZSBDbG91ZCAoc2Etc2FvcGF1bG8tMSkgXHUyNWM4IDExZWYxIiwic2N5IjoiYWVzLTEyOC1nY20iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "4URBSbHndbEGoBvOA6kbDGWjd7c",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "150.230.69.68",
-            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 146.235.41.130 | Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
+            "ch": true,
+            "ip": "129.148.30.215",
+            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 129.148.30.215 | Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
             "cc": "BR",
-            "port": 54953,
-            "sni": "br-saopaolo-oracle-aa9b76.ip1.shop",
+            "mark": "baxc.5489265.xyz\n2052\n",
             "warp": "off",
-            "exit_ip": "146.235.41.130",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)"
+            "exit_ip": "129.148.30.215",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
+            "decdn": true
         }
     },
     {
         "###engine": "xray",
-        "protocol": "socks",
+        "protocol": "vmess",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "45.91.93.166",
-                    "ota": false,
-                    "port": 33956
+                    "address": "speed.cloudflare.com",
+                    "port": 2052,
+                    "users": [
+                        {
+                            "id": "e7663aaf-bf76-3b8d-8cd5-29791ec136f6",
+                            "encryption": "aes-128-gcm"
+                        }
+                    ]
                 }
             ]
         },
-        "##__uri": "socks5:\/\/45.91.93.166:33956#%F0%9F%87%A7%F0%9F%87%B7%20%E2%97%88%20BR%20177.198.46.119%20%E2%97%88%20tcp%3A33956%20%E2%97%88%20Vivo%20%2F%20TELEF%EF%BF%BDNICA%20BRASIL%20S.A%20%E2%97%88%20a1a0a",
-        "##__key": "s7nhxMEGQE64yf0NkmjLHmeSw44",
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/uasfbbc",
+                "host": "baxc.5489265.xyz",
+                "headers": {
+                    "Host": "baxc.5489265.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJiYXhjLjU0ODkyNjUueHl6IiwiaWQiOiJlNzY2M2FhZi1iZjc2LTNiOGQtOGNkNS0yOTc5MWVjMTM2ZjYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Vhc2ZiYmMiLCJwb3J0IjoyMDUyLCJwcyI6Ilx1ZDgzY1x1ZGRlN1x1ZDgzY1x1ZGRmNyBcdTI1YzggQlIgMTI5LjE0OC4zMC4yMTUgXHUyNWM4IHdzOjIwNTIgXHUyNWM4IE9yYWNsZSBDbG91ZCAoc2Etc2FvcGF1bG8tMSkgXHUyNWM4IGU2YTkwIiwic2N5IjoiYWVzLTEyOC1nY20iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "CSBrcUb382KPMFoXpTkAF6YYgbc",
         "##__insecure": false,
         "##__flags": {
-            "cf": false,
+            "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "45.91.93.166",
-            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 177.198.46.119 | Vivo \/ TELEF\ufffdNICA BRASIL S.A",
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 129.148.30.215 | Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
             "cc": "BR",
-            "port": 33956,
-            "sni": "",
+            "mark": "baxc.5489265.xyz\n2052\n",
             "warp": "off",
-            "exit_ip": "177.198.46.119",
-            "exit_isp": "Vivo \/ TELEF\ufffdNICA BRASIL S.A"
+            "exit_ip": "129.148.30.215",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)"
         }
     }
 ]

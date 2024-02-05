@@ -44,12 +44,10 @@
             "ip": "103.110.127.85",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 103.110.127.85 | Cloudminister Technologies Private Limited",
             "cc": "IN",
-            "mark": "cric.yourdisha.in\n8443\n1",
+            "mark": "103.110.127.85\n8443\n1",
             "warp": "off",
             "exit_ip": "103.110.127.85",
-            "exit_isp": "Cloudminister Technologies Private Limited",
-            "f_any": true,
-            "f_facebook": true
+            "exit_isp": "Cloudminister Technologies Private Limited"
         }
     },
     {
@@ -147,59 +145,116 @@
             "ip": "64.227.153.43",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 64.227.153.43 | DigitalOcean, LLC",
             "cc": "IN",
-            "mark": "64.227.153.43\n443\n1",
+            "mark": "m.zoom.us\n443\n1",
             "warp": "off",
             "exit_ip": "64.227.153.43",
-            "exit_isp": "DigitalOcean, LLC",
-            "f_any": true,
-            "f_facebook": true
+            "exit_isp": "DigitalOcean, LLC"
         }
     },
     {
         "###engine": "xray",
-        "protocol": "trojan",
+        "protocol": "vless",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "64.227.153.43",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "jrKkWeksAL",
-                    "port": 443
+                    "address": "128.199.18.158",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "Venom-Servers",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
                 }
             ]
         },
         "streamSettings": {
-            "network": "tcp",
+            "network": "grpc",
             "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
                 }
             },
-            "grpcSettings": null,
+            "grpcSettings": {
+                "serviceName": "Venom_Servers"
+            },
             "wsSettings": null,
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "m.instagram.com",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "show": true
             }
         },
-        "##__uri": "trojan:\/\/jrKkWeksAL@64.227.153.43:443?type=tcp&sni=m.instagram.com&fp=chrome#%F0%9F%94%92%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%2064.227.153.43%20%E2%97%88%20tcp%3A443%20%E2%97%88%20DigitalOcean%20%E2%97%88%20ab06a",
-        "##__key": "7YbYpqkr38HR8RlLZUrSxXJvTOE",
-        "##__insecure": false,
+        "##__uri": "vless:\/\/Venom-Servers@128.199.18.158:443?security=tls&type=grpc&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&alpn=h2%2Chttp%2F1.1&serviceName=Venom_Servers&allowInsecure=1&fp=chrome#%F0%9F%92%A5%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20128.199.18.158%20%E2%97%88%20grpc%3A443%20%E2%97%88%20DigitalOcean%20%E2%97%88%20377fa",
+        "##__key": "oGq2JXQQ8K4BxVZ9d6by6I8voEQ",
+        "##__insecure": true,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "64.227.153.43",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 64.227.153.43 | DigitalOcean, LLC",
+            "ch": true,
+            "ip": "128.199.18.158",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 128.199.18.158 | DigitalOcean, LLC",
             "cc": "IN",
-            "mark": "m.instagram.com\n443\n1",
+            "mark": "venom1.chvrsi.ir\n443\n1",
             "warp": "off",
-            "exit_ip": "64.227.153.43",
+            "exit_ip": "128.199.18.158",
+            "exit_isp": "DigitalOcean, LLC",
+            "decdn": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "Venom-Servers",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "Venom_Servers"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "venom1.chvrsi.ir",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/Venom-Servers@speed.cloudflare.com:443?security=tls&type=grpc&sni=venom1.chvrsi.ir&alpn=h2%2Chttp%2F1.1&serviceName=Venom_Servers&fp=chrome#%F0%9F%94%92%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20128.199.18.158%20%E2%97%88%20grpc%3A443%20%E2%97%88%20DigitalOcean%20%E2%97%88%2005de7",
+        "##__key": "UQutp3g9b8QZXxWlyxK1xJgz9i0",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 128.199.18.158 | DigitalOcean, LLC",
+            "cc": "IN",
+            "mark": "venom1.chvrsi.ir\n443\n1",
+            "warp": "off",
+            "exit_ip": "128.199.18.158",
             "exit_isp": "DigitalOcean, LLC",
             "f_any": true,
             "f_facebook": true
@@ -253,41 +308,13 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "cc": "IN",
-            "mark": "yindunat.qaz.gay\n2052\n",
+            "mark": "yindunat.qaz.gay\n2082\n",
             "warp": "off",
             "exit_ip": "144.24.139.190",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "socks",
-        "settings": {
-            "servers": [
-                {
-                    "address": "45.132.75.19",
-                    "ota": false,
-                    "port": 13675
-                }
-            ]
-        },
-        "##__uri": "socks5:\/\/45.132.75.19:13675#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.221.239.110%20%E2%97%88%20tcp%3A13675%20%E2%97%88%20%3F%20%E2%97%88%204cde4",
-        "##__key": "athsopzMRj5BKea37UVMMzVYhig",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "45.132.75.19",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.221.239.110 | ?",
-            "cc": "IN",
-            "mark": "\n13675\n",
-            "warp": "off",
-            "exit_ip": "117.221.239.110",
-            "exit_isp": "?"
         }
     },
     {
@@ -339,7 +366,9 @@
             "exit_ip": "194.195.114.19",
             "exit_isp": "Akamai Technologies, Inc. \/ Linode",
             "f_any": true,
-            "f_facebook": true
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -391,63 +420,9 @@
             "exit_ip": "194.195.114.19",
             "exit_isp": "Akamai Technologies, Inc. \/ Linode",
             "f_any": true,
-            "f_facebook": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "socks",
-        "settings": {
-            "servers": [
-                {
-                    "address": "45.91.93.166",
-                    "ota": false,
-                    "port": 10943
-                }
-            ]
-        },
-        "##__uri": "socks5:\/\/45.91.93.166:10943#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.193.183.206%20%E2%97%88%20tcp%3A10943%20%E2%97%88%20BSNL%20Internet%20%E2%97%88%20b886e",
-        "##__key": "s7nhxMEGQE64yf0NkmjLHmeSw44",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "45.91.93.166",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.193.183.206 | BSNL Internet",
-            "cc": "IN",
-            "mark": "\n10943\n",
-            "warp": "off",
-            "exit_ip": "117.193.183.206",
-            "exit_isp": "BSNL Internet"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "socks",
-        "settings": {
-            "servers": [
-                {
-                    "address": "45.91.92.45",
-                    "ota": false,
-                    "port": 25297
-                }
-            ]
-        },
-        "##__uri": "socks5:\/\/45.91.92.45:25297#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20117.192.178.160%20%E2%97%88%20tcp%3A25297%20%E2%97%88%20BSNL%20Internet%20%2F%20NIB%20%E2%97%88%208ab33",
-        "##__key": "hnikbje54PGZc4aqopflI94Df1E",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "45.91.92.45",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 117.192.178.160 | BSNL Internet \/ NIB",
-            "cc": "IN",
-            "mark": "\n25297\n",
-            "warp": "off",
-            "exit_ip": "117.192.178.160",
-            "exit_isp": "BSNL Internet \/ NIB"
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -520,13 +495,15 @@
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.68.38",
+            "ip": "104.16.67.38",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "cc": "IN",
-            "mark": "yindunat.qaz.gay\n2052\n",
+            "mark": "yindunat.qaz.gay\n2082\n",
             "warp": "off",
             "exit_ip": "144.24.139.190",
-            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)"
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "f_any": true,
+            "f_facebook": true
         }
     },
     {
@@ -569,80 +546,14 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "144.24.139.190",
             "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
             "cc": "IN",
-            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n28852\n",
+            "mark": "144.24.139.190\n28852\n",
             "warp": "off",
             "exit_ip": "144.24.139.190",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)"
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "139.84.177.3",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "express_v2ray",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "http",
-                    "request": {
-                        "version": "1.1",
-                        "method": "GET",
-                        "path": [
-                            "\/"
-                        ],
-                        "headers": {
-                            "Host": [
-                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-                            ],
-                            "User-Agent": [
-                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
-                            ],
-                            "Accept-Encoding": [
-                                "gzip, deflate"
-                            ],
-                            "Connection": [
-                                "keep-alive"
-                            ],
-                            "Pragma": "no-cache"
-                        }
-                    }
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": null
-        },
-        "##__uri": "vless:\/\/express_v2ray@xn--s-no6ao5q37myjqt0l8gcutnfok3w4b.imgcloud.site:443?type=tcp&headerType=http&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&fp=chrome#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20139.84.177.3%20%E2%97%88%20tcp%3A443%20%E2%97%88%20The%20Constant%20Company%20%E2%97%88%2044aaf",
-        "##__key": "Vf9PozchXmIBiht05cOXlyShRwU",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "139.84.177.3",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 139.84.177.3 | The Constant Company, LLC",
-            "cc": "IN",
-            "mark": "shaparak.ir\n443\n",
-            "warp": "off",
-            "exit_ip": "139.84.177.3",
-            "exit_isp": "The Constant Company, LLC"
         }
     }
 ]
