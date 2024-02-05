@@ -317,7 +317,7 @@ class SubProcessor
         $template=str_replace(json_encode("{DNS}"),json_encode($dns),$template);
         $conf=json_decode($template);
         $acceptors=array_filter($conf->outbounds, function ($i){
-            return false!=stripos(';selector;urltest;',@";{$i->type};");
+            return false!==stripos(';selector;urltest;',@";{$i->type};");
         });
         foreach ($proxies as $proxy){
             foreach ($acceptors as $acceptor)
