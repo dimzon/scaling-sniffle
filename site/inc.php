@@ -149,7 +149,9 @@ class SubProcessor
 
 
         $template = "{$template}.gz";
+//        var_dump($template);
         $lines = self::fcache($template);
+//        var_dump($lines);
         if (is_array($lines)) {
             foreach ($lines as $line) {
                 $line = trim($line);
@@ -273,6 +275,9 @@ class SubProcessor
                 }
             }
         }
+
+//        var_dump($fmt);
+
         switch ($fmt){
             case 'b64':
                 echo base64_encode(implode("\n", array_values($resultLines)));
@@ -286,6 +291,7 @@ class SubProcessor
                 echo "\n";
                 echo json_encode($conf, JSON_PRETTY_PRINT+JSON_INVALID_UTF8_IGNORE);
                 break;
+            case '':
             case 'default':
                 foreach ($resultLines as $key => $line)
                     echo "{$line}\n";
