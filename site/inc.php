@@ -140,7 +140,17 @@ class SubProcessor
         $fport = self::stringFilter('port', '/[^0-9]+/');
 
         $template='';
-        if($fmt==='singbox') $template='sb-';
+        switch ($fmt){
+            case 'singbox':
+                $template='sb-';
+                break;
+            case 'ss':
+                $template='ss-';
+                break;
+            default:
+                $template='';
+                break;
+        }
 
         if (false === $full)
             $template="{$template}proxy-db-{$tag}.lst";
@@ -256,6 +266,16 @@ class SubProcessor
                     $o_temp->tag=$title;
                     $resultLines[$key] = $o_temp;
                     unset($o_temp);
+                } elseif ($fmt==='ss'){
+                    $tmp->u = json_encode($tmp->ss, JSON_INVALID_UTF8_IGNORE);
+                    $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
+                    $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
+                    $tmp->u = str_replace(json_encode('{FP}'), json_encode($fp), $tmp->u);
+                    $key = md5($tmp->u);
+                    $tmp->u = str_replace(json_encode('{TITLE}'), json_encode($title), $tmp->u);
+                    $o_temp=json_decode($tmp->u);
+                    $resultLines[$key] = $o_temp;
+                    unset($o_temp);
                 } else {
                     if ($tmp->type === 'vmess') {
                         $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
@@ -288,8 +308,14 @@ class SubProcessor
                 $singbox_title=base64_encode($singbox_title);
                 echo "//profile-title: base64:{$singbox_title}\n";
                 echo "//profile-update-interval: {$singbox_interval}\n";
+                echo "//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n";
+                echo "//support-url: https://t.me/dimzon541\n";
+                echo "//profile-web-page-url: https://github.com/dimzon/scaling-sniffle\n";
                 echo "\n";
                 echo json_encode($conf, JSON_PRETTY_PRINT+JSON_INVALID_UTF8_IGNORE);
+                break;
+            case 'ss':
+                echo json_encode(array_values($resultLines), JSON_PRETTY_PRINT+JSON_INVALID_UTF8_IGNORE);
                 break;
             case '':
             case 'default':
