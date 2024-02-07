@@ -1,17 +1,16 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "vmess",
         "settings": {
             "vnext": [
                 {
-                    "address": "168.138.149.167",
-                    "port": 54953,
+                    "address": "129.148.30.215",
+                    "port": 2052,
                     "users": [
                         {
-                            "id": "081f175a-c72e-4ac9-b179-b8d60b98967c",
-                            "encryption": "none",
-                            "flow": ""
+                            "id": "e7663aaf-bf76-3b8d-8cd5-29791ec136f6",
+                            "encryption": "aes-128-gcm"
                         }
                     ]
                 }
@@ -26,26 +25,80 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/a",
-                "host": "br-saopaolo-oracle-aa9b76.ip1.shop",
+                "path": "\/uasfbbc",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "br-saopaolo-oracle-aa9b76.ip1.shop"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vless:\/\/081f175a-c72e-4ac9-b179-b8d60b98967c@br-saopaolo-oracle-aa9b76.ip1.shop:54953?type=ws&path=%2Fa&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%A7%F0%9F%87%B7%20BR%20%7C%20ws%3A54953%20%40168.138.149.167%20%7C%20Oracle%20Cloud%20%28sa-saopaulo-1%29%20%7C%206109f",
-        "##__key": "tXKOs31JjxOXzrGc2E0Z9uvpaLo",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMjkuMTQ4LjMwLjIxNSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiJlNzY2M2FhZi1iZjc2LTNiOGQtOGNkNS0yOTc5MWVjMTM2ZjYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Vhc2ZiYmMiLCJwb3J0IjoyMDUyLCJwcyI6Ilx1ZDgzY1x1ZGRlN1x1ZDgzY1x1ZGRmNyBcdTI1YzggQlIgMTI5LjE0OC4zMC4yMTUgXHUyNWM4IHdzOjIwNTIgXHUyNWM4IE9yYWNsZSBDbG91ZCAoc2Etc2FvcGF1bG8tMSkgXHUyNWM4IDExZWYxIiwic2N5IjoiYWVzLTEyOC1nY20iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "4URBSbHndbEGoBvOA6kbDGWjd7c",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "168.138.149.167",
-            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 168.138.149.167 | Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
+            "ch": true,
+            "ip": "129.148.30.215",
+            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 129.148.30.215 | Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
             "cc": "BR",
-            "port": 54953,
-            "sni": "br-saopaolo-oracle-aa9b76.ip1.shop",
-            "exit_ip": "168.138.149.167",
+            "mark": "baxc.5489265.xyz\n2052\n",
+            "warp": "off",
+            "exit_ip": "129.148.30.215",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 2052,
+                    "users": [
+                        {
+                            "id": "e7663aaf-bf76-3b8d-8cd5-29791ec136f6",
+                            "encryption": "aes-128-gcm"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/uasfbbc",
+                "host": "baxc.5489265.xyz",
+                "headers": {
+                    "Host": "baxc.5489265.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJiYXhjLjU0ODkyNjUueHl6IiwiaWQiOiJlNzY2M2FhZi1iZjc2LTNiOGQtOGNkNS0yOTc5MWVjMTM2ZjYiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3Vhc2ZiYmMiLCJwb3J0IjoyMDUyLCJwcyI6Ilx1ZDgzY1x1ZGRlN1x1ZDgzY1x1ZGRmNyBcdTI1YzggQlIgMTI5LjE0OC4zMC4yMTUgXHUyNWM4IHdzOjIwNTIgXHUyNWM4IE9yYWNsZSBDbG91ZCAoc2Etc2FvcGF1bG8tMSkgXHUyNWM4IGU2YTkwIiwic2N5IjoiYWVzLTEyOC1nY20iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "CSBrcUb382KPMFoXpTkAF6YYgbc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\udde7\ud83c\uddf7 BR | 129.148.30.215 | Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
+            "cc": "BR",
+            "mark": "baxc.5489265.xyz\n2052\n",
+            "warp": "off",
+            "exit_ip": "129.148.30.215",
             "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (sa-saopaulo-1)",
             "f_any": true,
             "f_tracker": true,
