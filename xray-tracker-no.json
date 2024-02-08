@@ -1,58 +1,6 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "speed.cloudflare.com",
-                    "port": 80,
-                    "users": [
-                        {
-                            "id": "e2443e49-e0ce-4628-808f-76469b53cf66",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/?ed=2048",
-                "host": "net3.ntr.biz.id",
-                "headers": {
-                    "Host": "net3.ntr.biz.id"
-                }
-            }
-        },
-        "##__uri": "vless:\/\/e2443e49-e0ce-4628-808f-76469b53cf66@speed.cloudflare.com:80?type=ws&host=net3.ntr.biz.id&path=%2F%3Fed%3D2048&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%B3%F0%9F%87%B4%20%E2%97%88%20NO%20104.28.156.45%20%E2%97%88%20ws%3A80%20%E2%97%88%20Cloudflare%20WARP%20%E2%97%88%2068ae5",
-        "##__key": "XJpJecNMJq9OZOREu28mUmzgSnQ",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": true,
-            "gcore": false,
-            "ch": false,
-            "ip": "104.16.68.38",
-            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 104.28.156.45 | Cloudflare, Inc. \/ Cloudflare WARP",
-            "cc": "NO",
-            "mark": "net3.ntr.biz.id\n2083\n1",
-            "warp": "off",
-            "exit_ip": "104.28.156.45",
-            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
-            "f_any": true,
-            "f_tracker": true
-        }
-    },
-    {
-        "###engine": "xray",
         "protocol": "vmess",
         "settings": {
             "vnext": [
@@ -78,7 +26,7 @@
             "grpcSettings": null,
             "wsSettings": null
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiIxODUuMTc1LjU2LjEyNCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiODJmYWQzMDMtOGMyZS00ZjY1LWE5YmQtY2M1OTkyYWMxMTAyIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOjIxMjEwLCJwcyI6Ilx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmNCBcdTI1YzggTk8gMTg1LjE3NS41Ni4xMjQgXHUyNWM4IHRjcDoyMTIxMCBcdTI1YzggSG9zdEhhdGNoIFx1MjVjOCAzMzJlZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxODUuMTc1LjU2LjEyNCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI4MmZhZDMwMy04YzJlLTRmNjUtYTliZC1jYzU5OTJhYzExMDIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6MjEyMTAsInBzIjoiXHVkODNjXHVkZGYzXHVkODNjXHVkZGY0IFx1MjVjOCBOTyAxODUuMTc1LjU2LjEyNCBcdTI1YzggdGNwOjIxMjEwIFx1MjVjOCBIb3N0SGF0Y2ggXHUyNWM4IDMzMmVlIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
         "##__key": "QDzkBXxE42VzsMMuLyz8smzSBIs",
         "##__insecure": false,
         "##__flags": {
@@ -93,58 +41,7 @@
             "exit_ip": "185.175.56.124",
             "exit_isp": "HostHatch LLC",
             "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "vmess",
-        "settings": {
-            "vnext": [
-                {
-                    "address": "95.164.38.223",
-                    "port": 443,
-                    "users": [
-                        {
-                            "id": "ce9ccee1-8c0e-4ea4-8d93-7b896ec54e31",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "grpc",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": {
-                "serviceName": ""
-            },
-            "wsSettings": null
-        },
-        "##__uri": "vmess:\/\/eyJhZGQiOiI5NS4xNjQuMzguMjIzIiwiYWlkIjowLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6ImNlOWNjZWUxLThjMGUtNGVhNC04ZDkzLTdiODk2ZWM1NGUzMSIsIm5ldCI6ImdycGMiLCJwYXRoIjoiIiwicG9ydCI6NDQzLCJwcyI6Ilx1ZDgzY1x1ZGRmM1x1ZDgzY1x1ZGRmNCBcdTI1YzggTk8gOTUuMTY0LjM4LjIyMyBcdTI1YzggZ3JwYzo0NDMgXHUyNWM4IFN0YXJrIEluZHVzdHJpZXMgXHUyNWM4IGNlOWIxIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJndW4iLCJ2IjoyfQ==",
-        "##__key": "8OgjFZv5Ymp7pI9j1cIa0G0FwEc",
-        "##__insecure": false,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": false,
-            "ip": "95.164.38.223",
-            "suffix": "\ud83c\uddf3\ud83c\uddf4 NO | 95.164.38.223 | Stark Industries Solutions LTD",
-            "cc": "NO",
-            "mark": "95.164.38.223\n443\n",
-            "warp": "off",
-            "exit_ip": "95.164.38.223",
-            "exit_isp": "Stark Industries Solutions LTD",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
+            "f_tracker": true
         }
     }
 ]

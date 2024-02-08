@@ -5,11 +5,126 @@
         "settings": {
             "vnext": [
                 {
-                    "address": "194.195.114.19",
-                    "port": 80,
+                    "address": "194.195.117.22",
+                    "port": 443,
                     "users": [
                         {
-                            "id": "25dfe540-f320-4c54-b7a1-4501fd4c9cc8",
+                            "id": "5d7c2894-f657-4a58-8b3d-14836128a1dd",
+                            "encryption": "none",
+                            "flow": "xtls-rprx-vision"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/5d7c2894-f657-4a58-8b3d-14836128a1dd@in-full.privateip.net:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&flow=xtls-rprx-vision&fp=chrome#%F0%9F%92%A5%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20194.195.117.22%20%E2%97%88%20tcp%3A443%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%20e6d53",
+        "##__key": "tKWQszvjcCzi8XrcWv1cKX8ock4",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "194.195.117.22",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.117.22 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "IN",
+            "mark": "in-full.privateip.net\n443\n1",
+            "warp": "off",
+            "exit_ip": "194.195.117.22",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.195.117.22",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "5d7c2894-f657-4a58-8b3d-14836128a1dd",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/RACEVPN",
+                "host": "in-full.privateip.net",
+                "headers": {
+                    "Host": "in-full.privateip.net"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "in-full.privateip.net",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJpbi1mdWxsLnByaXZhdGVpcC5uZXQiLCJhaWQiOjAsImFscG4iOiIiLCJmcCI6ImZpcmVmb3giLCJob3N0IjoiIiwiaWQiOiI1ZDdjMjg5NC1mNjU3LTRhNTgtOGIzZC0xNDgzNjEyOGExZGQiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL1JBQ0VWUE4iLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNkXHVkZDEyXHVkODNjXHVkZGVlXHVkODNjXHVkZGYzIFx1MjVjOCBJTiAxOTQuMTk1LjExNy4yMiBcdTI1Yzggd3M6NDQzIFx1MjVjOCBBa2FtYWkgVGVjaG5vbG9naWVzLCBJbmMuIFwvIExpbm9kZSBcdTI1YzggMjdlNDIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoyfQ==",
+        "##__key": "WbPFM7g9DqvjYWpZjC0ipVBpyzs",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.195.117.22",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.117.22 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "IN",
+            "mark": "in-full.privateip.net\n443\n1",
+            "warp": "off",
+            "exit_ip": "194.195.117.22",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.195.117.22",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "5d7c2894-f657-4a58-8b3d-14836128a1dd",
                             "encryption": "none",
                             "flow": ""
                         }
@@ -19,6 +134,7 @@
         },
         "streamSettings": {
             "network": "ws",
+            "security": "tls",
             "tcpSettings": {
                 "header": {
                     "type": "none"
@@ -26,27 +142,266 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/vpnmeooai",
-                "host": "dl.aw.freefiremobile.com",
+                "path": "\/VLESS",
+                "host": "in-full.privateip.net",
                 "headers": {
-                    "Host": "dl.aw.freefiremobile.com"
+                    "Host": "in-full.privateip.net"
                 }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "in-full.privateip.net",
+                "show": true
             }
         },
-        "##__uri": "vless:\/\/25dfe540-f320-4c54-b7a1-4501fd4c9cc8@india01.meoovpn.net:80?type=ws&host=dl.aw.freefiremobile.com&path=%2Fvpnmeooai&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20194.195.114.19%20%E2%97%88%20ws%3A80%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%20338ea",
-        "##__key": "QiZAxVU5kQYpRthFYdfVQcCnvBM",
+        "##__uri": "vless:\/\/5d7c2894-f657-4a58-8b3d-14836128a1dd@in-full.privateip.net:443?security=tls&type=ws&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20194.195.117.22%20%E2%97%88%20ws%3A443%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%2079c47",
+        "##__key": "TlOWHmnohaHWBAyq1q4AjNkRV50",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "194.195.114.19",
-            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.114.19 | Akamai Technologies, Inc. \/ Linode",
+            "ip": "194.195.117.22",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.117.22 | Akamai Technologies, Inc. \/ Linode",
             "cc": "IN",
-            "mark": "dl.aw.freefiremobile.com\n80\n",
+            "mark": "in-full.privateip.net\n443\n1",
             "warp": "off",
-            "exit_ip": "194.195.114.19",
+            "exit_ip": "194.195.117.22",
             "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "5d7c2894-f657-4a58-8b3d-14836128a1dd",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/VLESS",
+                "host": "in-full.privateip.net",
+                "headers": {
+                    "Host": "in-full.privateip.net"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "in-full.privateip.net",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/5d7c2894-f657-4a58-8b3d-14836128a1dd@speed.cloudflare.com:443?security=tls&type=ws&sni=in-full.privateip.net&host=in-full.privateip.net&path=%2FVLESS&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20194.195.117.22%20%E2%97%88%20ws%3A443%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%20932da",
+        "##__key": "gFS8Rd9tEhJDDnXB9qogC7wmAwo",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.117.22 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "IN",
+            "mark": "in-full.privateip.net\n443\n1",
+            "warp": "off",
+            "exit_ip": "194.195.117.22",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "5d7c2894-f657-4a58-8b3d-14836128a1dd",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/RACEVPN",
+                "host": "in-full.privateip.net",
+                "headers": {
+                    "Host": "in-full.privateip.net"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "in-full.privateip.net",
+                "show": true
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJpbi1mdWxsLnByaXZhdGVpcC5uZXQiLCJpZCI6IjVkN2MyODk0LWY2NTctNGE1OC04YjNkLTE0ODM2MTI4YTFkZCIsIm5ldCI6IndzIiwicGF0aCI6IlwvUkFDRVZQTiIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTJcdWQ4M2NcdWRkZWVcdWQ4M2NcdWRkZjMgXHUyNWM4IElOIDE5NC4xOTUuMTE3LjIyIFx1MjVjOCB3czo0NDMgXHUyNWM4IEFrYW1haSBUZWNobm9sb2dpZXMsIEluYy4gXC8gTGlub2RlIFx1MjVjOCA2Mzc2NCIsInNjeSI6ImF1dG8iLCJzbmkiOiJpbi1mdWxsLnByaXZhdGVpcC5uZXQiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOjJ9",
+        "##__key": "Y3j7oCtp6piMvSbVGqh4PDzVMgw",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.117.22 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "IN",
+            "mark": "in-full.privateip.net\n443\n1",
+            "warp": "off",
+            "exit_ip": "194.195.117.22",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "194.195.117.22",
+                    "port": 2003,
+                    "users": [
+                        {
+                            "id": "5d7c2894-f657-4a58-8b3d-14836128a1dd",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "grpc",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": {
+                "serviceName": "GRPC"
+            },
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "in-full.privateip.net",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/5d7c2894-f657-4a58-8b3d-14836128a1dd@in-full.privateip.net:2003?security=tls&type=grpc&serviceName=GRPC&mode=gun&fp=chrome#%F0%9F%94%92%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20194.195.117.22%20%E2%97%88%20grpc%3A2003%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%2020632",
+        "##__key": "g305etRXQT9Q8F8uorCCV11cqio",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "194.195.117.22",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 194.195.117.22 | Akamai Technologies, Inc. \/ Linode",
+            "cc": "IN",
+            "mark": "in-full.privateip.net\n2003\n1",
+            "warp": "off",
+            "exit_ip": "194.195.117.22",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "192.46.208.47",
+                    "port": 443,
+                    "users": [
+                        {
+                            "id": "968a2198-51f1-4e9f-b73c-b28b32330a5b",
+                            "encryption": "none",
+                            "flow": "xtls-rprx-vision"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null,
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/968a2198-51f1-4e9f-b73c-b28b32330a5b@in-freevmess.privateip.net:443?security=tls&type=tcp&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&flow=xtls-rprx-vision&fp=chrome#%F0%9F%92%A5%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20192.46.208.47%20%E2%97%88%20tcp%3A443%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%2F%20Linode%20%E2%97%88%20c7b26",
+        "##__key": "iymNhtJzkJHvLJDKhXYV3ZmTKsM",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "192.46.208.47",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 192.46.208.47 | Akamai Technologies, Inc. \/ Linode, LLC",
+            "cc": "IN",
+            "mark": "in-freevmess.privateip.net\n443\n1",
+            "warp": "off",
+            "exit_ip": "192.46.208.47",
+            "exit_isp": "Akamai Technologies, Inc. \/ Linode, LLC",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
@@ -105,6 +460,58 @@
             "f_tracker": true,
             "f_facebook": true,
             "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "ee187c79-7594-4a97-96bc-ff717c61a919",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/a",
+                "host": "yindunat.qaz.gay",
+                "headers": {
+                    "Host": "yindunat.qaz.gay"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/ee187c79-7594-4a97-96bc-ff717c61a919@speed.cloudflare.com:80?type=ws&host=yindunat.qaz.gay&path=%2Fa&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%B3%20%E2%97%88%20IN%20144.24.139.190%20%E2%97%88%20ws%3A80%20%E2%97%88%20Oracle%20Cloud%20%28ap-hyderabad-1%29%20%E2%97%88%20242c3",
+        "##__key": "Yb9dUEOhEfUf3y0PPuH6WkUDsio",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.67.38",
+            "suffix": "\ud83c\uddee\ud83c\uddf3 IN | 144.24.139.190 | Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "cc": "IN",
+            "mark": "yindunat.qaz.gay\n80\n",
+            "warp": "off",
+            "exit_ip": "144.24.139.190",
+            "exit_isp": "Oracle Corporation \/ Oracle Cloud Infrastructure (ap-hyderabad-1)",
+            "f_any": true,
+            "f_tracker": true
         }
     }
 ]
