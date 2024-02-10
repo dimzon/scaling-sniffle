@@ -1,6 +1,75 @@
 [
     {
         "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "185.249.135.38",
+                    "port": 3389,
+                    "users": [
+                        {
+                            "id": "9c050a86-d612-48f1-ec32-e573df08a1b7",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "http",
+                    "request": {
+                        "version": "1.1",
+                        "method": "GET",
+                        "path": [
+                            "\/"
+                        ],
+                        "headers": {
+                            "Host": [
+                                "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                            ],
+                            "User-Agent": [
+                                "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/109.0.0.0 Safari\/537.36"
+                            ],
+                            "Accept-Encoding": [
+                                "gzip, deflate"
+                            ],
+                            "Connection": [
+                                "keep-alive"
+                            ],
+                            "Pragma": "no-cache"
+                        }
+                    }
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": null
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxODUuMjQ5LjEzNS4zOCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IndybWVsbXd4bGYuZ2t0ZXZscnF6bndxcW96eS5mYWJwZnM2Nmdpem1ub2poY3ZxeHdsLmt5dHJjZnpxbGE4N2d2Z3ZzNmM3a2pucnVidWguY2MiLCJpZCI6IjljMDUwYTg2LWQ2MTItNDhmMS1lYzMyLWU1NzNkZjA4YTFiNyIsIm5ldCI6InRjcCIsInBhdGgiOiJcLyIsInBvcnQiOjMzODksInBzIjoiXHVkODNjXHVkZGU2XHVkODNjXHVkZGVhIFx1MjVjOCBBRSAxODUuMjQ5LjEzNS4zOCBcdTI1YzggdGNwOjMzODkgXHUyNWM4IEctQ29yZSBMYWJzIFMuQS4gXC8gR0NMIFx1MjVjOCBiMjZkMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOjJ9",
+        "##__key": "y3HUpigyMHgEau1OVGExoQToHAU",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "185.249.135.38",
+            "suffix": "\ud83c\udde6\ud83c\uddea AE | 185.249.135.38 | G-Core Labs S.A. \/ GCL",
+            "cc": "AE",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n3389\n",
+            "warp": "off",
+            "exit_ip": "185.249.135.38",
+            "exit_isp": "G-Core Labs S.A. \/ GCL",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
         "protocol": "socks",
         "settings": {
             "servers": [

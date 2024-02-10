@@ -1,51 +1,30 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "socks",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "178.172.217.15",
-                    "port": 55600,
-                    "users": [
-                        {
-                            "id": "e30f8588-2555-48b8-c354-c8e63f57232d",
-                            "encryption": "chacha20-poly1305"
-                        }
-                    ]
+                    "address": "88.99.138.21",
+                    "ota": false,
+                    "port": 5020
                 }
             ]
         },
-        "streamSettings": {
-            "network": "ws",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
-            "grpcSettings": null,
-            "wsSettings": {
-                "path": "\/",
-                "host": "viber.com",
-                "headers": {
-                    "Host": "viber.com"
-                }
-            }
-        },
-        "##__uri": "ss:\/\/chacha20-ietf-poly1305:1VqCnfyNdV1OpszOTUi4mfPhElgzFXKFx2HheOkEZ3zIIVhS@178.172.217.15:51348#%F0%9F%87%A7%F0%9F%87%BE%20BY%20%7C%20tcp%3A51348%20%40178.172.217.15%20%7C%20DataHata%20Ltd%20%2F%20Hosty%20%7C%20ef904",
-        "##__key": "75EaxVbKucFXkjl0agioTaOdHxM",
+        "##__uri": "socks5:\/\/88.99.138.21:5020#%F0%9F%87%A7%F0%9F%87%BE%20%E2%97%88%20BY%20178.168.130.245%20%E2%97%88%20tcp%3A5020%20%E2%97%88%20Mobile%20TeleSystems%20JLLC%20%2F%20Mtsby%20%E2%97%88%20c6771",
+        "##__key": "o3lyVopYcvouXUIBidSbxayleBU",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "178.172.217.15",
-            "suffix": "\ud83c\udde7\ud83c\uddfe BY | 178.172.217.15 | DataHata Ltd \/ Hosty",
+            "ip": "88.99.138.21",
+            "suffix": "\ud83c\udde7\ud83c\uddfe BY | 178.168.130.245 | Mobile TeleSystems JLLC \/ Mtsby",
             "cc": "BY",
-            "port": 51348,
-            "sni": "",
-            "exit_ip": "178.172.217.15",
-            "exit_isp": "DataHata Ltd \/ Hosty"
+            "mark": "\n5020\n",
+            "warp": "off",
+            "exit_ip": "178.168.130.245",
+            "exit_isp": "Mobile TeleSystems JLLC \/ Mtsby"
         }
     }
 ]

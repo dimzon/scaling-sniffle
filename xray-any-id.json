@@ -37,11 +37,11 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": false,
+            "ch": true,
             "ip": "103.173.75.62",
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.173.75.62 | PT Herza Digital Indonesia \/ Herza.ID",
             "cc": "ID",
-            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n443\n1",
+            "mark": "103.173.75.62\n443\n1",
             "warp": "off",
             "exit_ip": "103.173.75.62",
             "exit_isp": "PT Herza Digital Indonesia \/ Herza.ID",
@@ -98,7 +98,9 @@
             "exit_ip": "103.173.75.62",
             "exit_isp": "PT Herza Digital Indonesia \/ Herza.ID",
             "f_any": true,
-            "f_tracker": true
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
         }
     },
     {
@@ -148,11 +150,11 @@
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "103.187.106.5",
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.5 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id1-vless.sshmax.xyz\n443\n1",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n443\n1",
             "warp": "off",
             "exit_ip": "103.187.106.5",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
@@ -254,21 +256,21 @@
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "serverName": "id2-vless.sshmax.xyz",
                 "show": true
             }
         },
-        "##__uri": "vless:\/\/ea7df644-1bdc-4b4d-a063-5b4b907d5264@103.187.106.36:443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=id2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%F0%9F%87%AE%F0%9F%87%A9%20%E2%97%88%20ID%20103.187.106.36%20%E2%97%88%20ws%3A443%20%E2%97%88%20PT%20Linkgo%20Metro%20Teknologi%20%2F%20CV.%20INDONETMEDIA%20CORPORATION%20%E2%97%88%20d4d71",
-        "##__key": "56uoGHSdeZUOh812aYYOmRWpFtg",
+        "##__uri": "vless:\/\/ea7df644-1bdc-4b4d-a063-5b4b907d5264@103.187.106.36:443?security=tls&type=ws&sni=id2-vless.sshmax.xyz&allowInsecure=1&host=id2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%F0%9F%87%AE%F0%9F%87%A9%20%E2%97%88%20ID%20103.187.106.36%20%E2%97%88%20ws%3A443%20%E2%97%88%20PT%20Linkgo%20Metro%20Teknologi%20%2F%20CV.%20INDONETMEDIA%20CORPORATION%20%E2%97%88%2081969",
+        "##__key": "YnHfSpzlu7C5bUywKBtSncvXO6M",
         "##__insecure": true,
         "##__flags": {
             "cf": false,
             "gcore": false,
-            "ch": true,
+            "ch": false,
             "ip": "103.187.106.36",
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.36 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id2-vless.sshmax.xyz\n8080\n",
+            "mark": "id2-vless.sshmax.xyz\n8880\n",
             "warp": "off",
             "exit_ip": "103.187.106.36",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
@@ -326,7 +328,7 @@
             "ip": "103.187.106.48",
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.48 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id3.xv2ray.net\n80\n",
+            "mark": "id3.xv2ray.net\n2082\n",
             "warp": "off",
             "exit_ip": "103.187.106.48",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
@@ -336,7 +338,7 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vmess",
+        "protocol": "vless",
         "settings": {
             "vnext": [
                 {
@@ -344,8 +346,9 @@
                     "port": 443,
                     "users": [
                         {
-                            "id": "90e43155-0726-4192-bf27-d9352e7c2300",
-                            "encryption": "chacha20-poly1305"
+                            "id": "ea7df644-1bdc-4b4d-a063-5b4b907d5264",
+                            "encryption": "none",
+                            "flow": ""
                         }
                     ]
                 }
@@ -361,32 +364,142 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/vmess",
-                "host": "id3.xv2ray.net",
+                "path": "\/vless",
+                "host": "id2-vless.sshmax.xyz",
                 "headers": {
-                    "Host": "id3.xv2ray.net"
+                    "Host": "id2-vless.sshmax.xyz"
                 }
             },
             "tlsSettings": {
                 "allowInsecure": true,
                 "fingerprint": "chrome",
-                "serverName": "id3.xv2ray.net",
+                "serverName": "id2-vless.sshmax.xyz",
                 "show": true
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJpZDMueHYycmF5Lm5ldCIsImlkIjoiOTBlNDMxNTUtMDcyNi00MTkyLWJmMjctZDkzNTJlN2MyMzAwIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjQ0MywicHMiOiJcdWQ4M2RcdWRkMTJcdWQ4M2NcdWRkZWVcdWQ4M2NcdWRkZTkgXHUyNWM4IElEIDEwMy4xODcuMTA2LjQ4IFx1MjVjOCB3czo0NDMgXHUyNWM4IFBUIExpbmtnbyBNZXRybyBUZWtub2xvZ2kgXC8gQ1YuIElORE9ORVRNRURJQSBDT1JQT1JBVElPTiBcdTI1YzggMjEyNTYiLCJzY3kiOiJhdXRvIiwic25pIjoiaWQzLnh2MnJheS5uZXQiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6Mn0=",
-        "##__key": "wVFq5g85L6hksNiPOvCoiOnf8Qo",
+        "##__uri": "vless:\/\/ea7df644-1bdc-4b4d-a063-5b4b907d5264@speed.cloudflare.com:443?security=tls&type=ws&sni=id2-vless.sshmax.xyz&host=id2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%94%92%F0%9F%87%AE%F0%9F%87%A9%20%E2%97%88%20ID%20103.187.106.36%20%E2%97%88%20ws%3A443%20%E2%97%88%20PT%20Linkgo%20Metro%20Teknologi%20%2F%20CV.%20INDONETMEDIA%20CORPORATION%20%E2%97%88%20658a8",
+        "##__key": "fvaS6T5EG4KTdHtPdUgYJeBDI34",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.67.38",
-            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.48 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "ip": "104.16.68.38",
+            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.36 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id3.xv2ray.net\n80\n",
+            "mark": "id2-vless.sshmax.xyz\n8880\n",
             "warp": "off",
-            "exit_ip": "103.187.106.48",
+            "exit_ip": "103.187.106.36",
+            "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.187.106.36",
+                    "port": 8443,
+                    "users": [
+                        {
+                            "id": "ea7df644-1bdc-4b4d-a063-5b4b907d5264",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "security": "tls",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "id2-vless.sshmax.xyz",
+                "headers": {
+                    "Host": "id2-vless.sshmax.xyz"
+                }
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true
+            }
+        },
+        "##__uri": "vless:\/\/ea7df644-1bdc-4b4d-a063-5b4b907d5264@103.187.106.36:8443?security=tls&type=ws&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&host=id2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%92%A5%F0%9F%87%AE%F0%9F%87%A9%20%E2%97%88%20ID%20103.187.106.36%20%E2%97%88%20ws%3A8443%20%E2%97%88%20PT%20Linkgo%20Metro%20Teknologi%20%2F%20CV.%20INDONETMEDIA%20CORPORATION%20%E2%97%88%20236b0",
+        "##__key": "56uoGHSdeZUOh812aYYOmRWpFtg",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "103.187.106.36",
+            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.36 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "cc": "ID",
+            "mark": "id2-vless.sshmax.xyz\n8880\n",
+            "warp": "off",
+            "exit_ip": "103.187.106.36",
+            "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "decdn": true,
+            "f_any": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vless",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "103.187.106.5",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "2c4ea20a-818c-42fa-b415-5b43e254782c",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vless",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "headers": {
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                }
+            }
+        },
+        "##__uri": "vless:\/\/2c4ea20a-818c-42fa-b415-5b43e254782c@103.187.106.5:80?type=ws&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%A9%20%E2%97%88%20ID%20103.187.106.5%20%E2%97%88%20ws%3A80%20%E2%97%88%20PT%20Linkgo%20Metro%20Teknologi%20%2F%20CV.%20INDONETMEDIA%20CORPORATION%20%E2%97%88%209f0c9",
+        "##__key": "rWok6GhOF7tDxiDVFJaHD31Nh88",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": false,
+            "ip": "103.187.106.5",
+            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.5 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "cc": "ID",
+            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n443\n1",
+            "warp": "off",
+            "exit_ip": "103.187.106.5",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "f_any": true
         }
@@ -435,7 +548,7 @@
             "ip": "103.187.106.36",
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.36 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id2-vless.sshmax.xyz\n8080\n",
+            "mark": "id2-vless.sshmax.xyz\n8880\n",
             "warp": "off",
             "exit_ip": "103.187.106.36",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
@@ -445,17 +558,16 @@
     },
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "vmess",
         "settings": {
             "vnext": [
                 {
-                    "address": "speed.cloudflare.com",
+                    "address": "103.187.106.48",
                     "port": 80,
                     "users": [
                         {
-                            "id": "ea7df644-1bdc-4b4d-a063-5b4b907d5264",
-                            "encryption": "none",
-                            "flow": ""
+                            "id": "90e43155-0726-4192-bf27-d9352e7c2300",
+                            "encryption": "chacha20-poly1305"
                         }
                     ]
                 }
@@ -470,27 +582,28 @@
             },
             "grpcSettings": null,
             "wsSettings": {
-                "path": "\/vless",
-                "host": "id2-vless.sshmax.xyz",
+                "path": "\/vmess",
+                "host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
                 "headers": {
-                    "Host": "id2-vless.sshmax.xyz"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             }
         },
-        "##__uri": "vless:\/\/ea7df644-1bdc-4b4d-a063-5b4b907d5264@speed.cloudflare.com:80?type=ws&host=id2-vless.sshmax.xyz&path=%2Fvless&ed=2048&eh=Sec-Websocket-Protocol&fp=firefox#%F0%9F%87%AE%F0%9F%87%A9%20%E2%97%88%20ID%20103.187.106.36%20%E2%97%88%20ws%3A80%20%E2%97%88%20PT%20Linkgo%20Metro%20Teknologi%20%2F%20CV.%20INDONETMEDIA%20CORPORATION%20%E2%97%88%20f4171",
-        "##__key": "CrHKz49VTABhQ4BgmJpLa4AsYYI",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxMDMuMTg3LjEwNi40OCIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwiaWQiOiI5MGU0MzE1NS0wNzI2LTQxOTItYmYyNy1kOTM1MmU3YzIzMDAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL3ZtZXNzIiwicG9ydCI6ODAsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGU5IFx1MjVjOCBJRCAxMDMuMTg3LjEwNi40OCBcdTI1Yzggd3M6ODAgXHUyNWM4IFBUIExpbmtnbyBNZXRybyBUZWtub2xvZ2kgXC8gQ1YuIElORE9ORVRNRURJQSBDT1JQT1JBVElPTiBcdTI1YzggYzA4NWMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOjJ9",
+        "##__key": "YhFNpLgunIr0E120hypaWVAUAzQ",
         "##__insecure": false,
         "##__flags": {
-            "cf": true,
+            "cf": false,
             "gcore": false,
-            "ch": false,
-            "ip": "104.16.67.38",
-            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.36 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "ch": true,
+            "ip": "103.187.106.48",
+            "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.48 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id2-vless.sshmax.xyz\n80\n",
+            "mark": "id3.xv2ray.net\n2082\n",
             "warp": "off",
-            "exit_ip": "103.187.106.36",
+            "exit_ip": "103.187.106.48",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
+            "decdn": true,
             "f_any": true
         }
     },
@@ -501,7 +614,7 @@
             "vnext": [
                 {
                     "address": "speed.cloudflare.com",
-                    "port": 80,
+                    "port": 8080,
                     "users": [
                         {
                             "id": "90e43155-0726-4192-bf27-d9352e7c2300",
@@ -527,17 +640,17 @@
                 }
             }
         },
-        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJpZDMueHYycmF5Lm5ldCIsImlkIjoiOTBlNDMxNTUtMDcyNi00MTkyLWJmMjctZDkzNTJlN2MyMzAwIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlZVx1ZDgzY1x1ZGRlOSBcdTI1YzggSUQgMTAzLjE4Ny4xMDYuNDggXHUyNWM4IHdzOjgwIFx1MjVjOCBQVCBMaW5rZ28gTWV0cm8gVGVrbm9sb2dpIFwvIENWLiBJTkRPTkVUTUVESUEgQ09SUE9SQVRJT04gXHUyNWM4IGJhMmQwIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoyfQ==",
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJpZDMueHYycmF5Lm5ldCIsImlkIjoiOTBlNDMxNTUtMDcyNi00MTkyLWJmMjctZDkzNTJlN2MyMzAwIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjgwODAsInBzIjoiXHVkODNjXHVkZGVlXHVkODNjXHVkZGU5IFx1MjVjOCBJRCAxMDMuMTg3LjEwNi40OCBcdTI1Yzggd3M6ODA4MCBcdTI1YzggUFQgTGlua2dvIE1ldHJvIFRla25vbG9naSBcLyBDVi4gSU5ET05FVE1FRElBIENPUlBPUkFUSU9OIFx1MjVjOCAxYmI0NCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
         "##__key": "O5OHbIs3DQqzHiBi0QDJSGs132k",
         "##__insecure": false,
         "##__flags": {
             "cf": true,
             "gcore": false,
             "ch": false,
-            "ip": "104.16.67.38",
+            "ip": "104.16.68.38",
             "suffix": "\ud83c\uddee\ud83c\udde9 ID | 103.187.106.48 | PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
             "cc": "ID",
-            "mark": "id3.xv2ray.net\n80\n",
+            "mark": "id3.xv2ray.net\n2082\n",
             "warp": "off",
             "exit_ip": "103.187.106.48",
             "exit_isp": "PT Linkgo Metro Teknologi \/ CV. INDONETMEDIA CORPORATION",
