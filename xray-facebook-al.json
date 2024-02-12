@@ -49,7 +49,7 @@
             "ip": "103.167.235.136",
             "suffix": "\ud83c\udde6\ud83c\uddf1 AL | 103.167.235.136 | Keminet DataCenter \/ AlbHost SH.P.K",
             "cc": "AL",
-            "mark": "al1-vmess.sshmax.xyz\n80\n",
+            "mark": "al1-vmess.sshmax.xyz\n2086\n",
             "warp": "off",
             "exit_ip": "103.167.235.136",
             "exit_isp": "Keminet DataCenter \/ AlbHost SH.P.K",
@@ -110,7 +110,7 @@
             "ip": "104.16.68.38",
             "suffix": "\ud83c\udde6\ud83c\uddf1 AL | 103.167.235.136 | Keminet DataCenter \/ AlbHost SH.P.K",
             "cc": "AL",
-            "mark": "al1-vmess.sshmax.xyz\n80\n",
+            "mark": "al1-vmess.sshmax.xyz\n2086\n",
             "warp": "off",
             "exit_ip": "103.167.235.136",
             "exit_isp": "Keminet DataCenter \/ AlbHost SH.P.K",
@@ -161,6 +161,60 @@
             "gcore": false,
             "ch": true,
             "ip": "103.167.235.136",
+            "suffix": "\ud83c\udde6\ud83c\uddf1 AL | 103.167.235.136 | Keminet DataCenter \/ AlbHost SH.P.K",
+            "cc": "AL",
+            "mark": "al1-vmess.sshmax.xyz\n2086\n",
+            "warp": "off",
+            "exit_ip": "103.167.235.136",
+            "exit_isp": "Keminet DataCenter \/ AlbHost SH.P.K",
+            "decdn": true,
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "vmess",
+        "settings": {
+            "vnext": [
+                {
+                    "address": "speed.cloudflare.com",
+                    "port": 80,
+                    "users": [
+                        {
+                            "id": "a3da7a01-e744-4975-ae44-45c32840e1b3",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "ws",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
+                }
+            },
+            "grpcSettings": null,
+            "wsSettings": {
+                "path": "\/vmess",
+                "host": "al1-vmess.sshmax.xyz",
+                "headers": {
+                    "Host": "al1-vmess.sshmax.xyz"
+                }
+            }
+        },
+        "##__uri": "vmess:\/\/eyJhZGQiOiJzcGVlZC5jbG91ZGZsYXJlLmNvbSIsImFpZCI6MCwiYWxwbiI6IiIsImZwIjoiZmlyZWZveCIsImhvc3QiOiJhbDEtdm1lc3Muc3NobWF4Lnh5eiIsImlkIjoiYTNkYTdhMDEtZTc0NC00OTc1LWFlNDQtNDVjMzI4NDBlMWIzIiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzcyIsInBvcnQiOjgwLCJwcyI6Ilx1ZDgzY1x1ZGRlNlx1ZDgzY1x1ZGRmMSBcdTI1YzggQUwgMTAzLjE2Ny4yMzUuMTM2IFx1MjVjOCB3czo4MCBcdTI1YzggS2VtaW5ldCBEYXRhQ2VudGVyIFwvIEFsYkhvc3QgU0guUC5LIFx1MjVjOCA1ZWFlMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=",
+        "##__key": "dHSR6oX0iCRt3F4YJcHibAwTrCc",
+        "##__insecure": false,
+        "##__flags": {
+            "cf": true,
+            "gcore": false,
+            "ch": false,
+            "ip": "104.16.68.38",
             "suffix": "\ud83c\udde6\ud83c\uddf1 AL | 103.167.235.136 | Keminet DataCenter \/ AlbHost SH.P.K",
             "cc": "AL",
             "mark": "al1-vmess.sshmax.xyz\n80\n",
