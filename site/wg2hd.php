@@ -215,7 +215,10 @@ class Wg2Hidify{
         return @"{$this->_a['ipify']}"!='';
     }
     public function source(){
-        return trim(@"{$this->_a['source']}");
+        $str=trim(@"{$this->_a['source']}");
+        $str=preg_replace('/^\s+/m',"",$str);
+        $this->_a['source']=$str;
+        return $str;
     }
     public function json(){
         if($this->source()==='') return '';
