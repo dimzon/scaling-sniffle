@@ -11,17 +11,170 @@ define('TROJAN', 'trojan://');
 
 class SubProcessor
 {
-    private static function fillSni($i, &$tmp){
+    private $_shortenSni = [];
+    private $suffix;
+    private $prefix;
+    private $singbox_title;
+    private $singbox_template;
+    private $singbox_dns;
+    private $cfhost;
+    private $gchost;
+    private $format;
+    private $fingerprint;
+    private $ipfy;
+    private $mangle;
+    private $database;
+    private $cdnfilter;
+    private $fsni;
+    private $sni;
+    private $resultLines;
+    private $fvision;
+    private $finsecure;
+    private $fgeo;
+    private $exfgeo;
+    private $fkind;
+    private $fsec;
+    private $fnet;
+    private $fwarp;
+    private $fport;
+    private int $limit;
+    private $dnsCache=[];
+
+    public function __construct()
+    {
+        $this->limit=intval(@"0{$_GET['limit']}",10);
+        $this->suffix = rtrim(@"{$_GET['suffix']}");
+        $this->prefix = ltrim(@"{$_GET['prefix']}");
+        $this->singbox_title = trim(@"{$_GET['singbox-title']}");
+        if ($this->singbox_title === '') $this->singbox_title = 'Sing box subs';
+        $this->singbox_template = trim(@"{$_GET['singbox-template']}");
+        if ($this->singbox_template === '') $this->singbox_template = 'default';
+        $this->singbox_dns = trim(@"{$_GET['singbox-dns']}");
+        if ($this->singbox_dns === '') $this->singbox_dns = 'tcp://1.1.1.1';
+        $this->cfhost = self::arrayValue('cf-server');
+        if (false === $this->cfhost)
+            $this->cfhost = ['speed.cloudflare.com'];
+        $this->gchost = self::arrayValue('gc-server');
+        if (false === $this->gchost)
+            $this->gchost = ['gcore.com'];
+        $this->format = trim(@"{$_GET['fmt']}");
+        if (self::boolFlag('b64')) $this->format = "b64";
+        $this->fingerprint = trim(@"{$_GET['fp']}");
+        if ($this->fingerprint === '') $this->fingerprint = 'chrome';
+        $this->ipfy = self::boolFlag('ipfy');
+        $this->mangle = @"{$_GET['mangle']}";
+
+        $tag = strtolower(trim(@"{$_GET['tag']}"));
+        if ('' === $tag) $tag = 'freedom';
+        if (self::boolFlag('full'))
+            $tag = 'full';
+
+        $this->database = '';
+        switch ($this->format) {
+            case 'singbox':
+                $this->database = 'sb-';
+                break;
+            case 'ss':
+                $this->database = 'ss-';
+                break;
+            default:
+                $this->database = '';
+                break;
+        }
+
+        if ($tag !== 'full')
+            $this->database = "{$this->database}proxy-db-{$tag}.lst";
+        else
+            $this->database = "{$this->database}proxy-db.lst";
+
+
+        $this->database = "$this->database.gz";
+
+
+        $this->cdnfilter = self::stringFilter('cdn', '/[^A-Z]+/i');
+
+        $this->fsni = self::arrayValue('sni');
+        $this->sni = '';
+        if (is_array($this->fsni)) {
+            $tmp = [];
+            foreach ($this->fsni as $i) self::fillSni($i, $tmp);
+            $this->fsni = $tmp;
+            unset($tmp);
+            unset($i);
+
+            $this->sni = @"{$this->fsni[0]}";
+            $this->fsni = array_map(function ($x) {
+                return preg_quote($x);
+            }, $this->fsni);
+            $this->fsni = '/^(?:.*\.)?(?:' . implode('|', $this->fsni) . ')$/mi';
+        }
+        if ($this->sni === '') $this->sni = 'vkvd127.mycdn.me';
+        $this->fvision = self::boolFlag3('vision');
+        $this->finsecure = self::boolFlag3('insecure');
+
+        $this->fgeo = self::stringFilter('country', '/[^A-Z]+/i');
+        $this->exfgeo = self::stringFilter('excludeCountry', '/[^A-Z]+/i');
+
+        $this->fkind = self::stringFilter('kind', '/[^a-z0-9_]+/');
+        if (false !== $this->fkind && false !== stripos($this->fkind, ';ss;'))
+            $this->fkind = "{$this->fkind};ss2022;ss_legacy;";
+
+        $this->fsec = self::stringFilter('security', '/[^a-z]+/');
+        if (false !== $this->fsec && false !== stripos($this->fsec, ';tls;'))
+            $this->fsec = "{$this->fsec}reality;";
+
+        $this->fwarp = self::stringFilter('warp', '/[^a-z]+/');
+        if (false !== $this->fwarp && false !== stripos($this->fwarp, ';on;'))
+            $this->fsec = "{$this->fwarp}plus;";
+
+        $this->fnet = self::stringFilter('network', '/[^a-z2]+/');
+
+        $this->fport = self::stringFilter('port', '/[^0-9]+/');
+
+        $this->resultLines = [];
+
+    }
+
+    private static function arrayValue($name)
+    {
+        $tmp = trim(@"{$_GET[$name]}");
+        $tmp = explode(';', $tmp);
+        $tmp = array_map('trim', $tmp);
+        $tmp = array_filter($tmp, function ($i) {
+            return $i !== '';
+        });
+        $tmp = array_values($tmp);
+        if (count($tmp) === 0) $tmp = false;
+        return $tmp;
+    }
+
+    private static function boolFlag($name)
+    {
+        $cf = trim(@"{$_GET[$name]}");
+        $cf = false !== stripos(';1;y;yes;true;on;t;', ";{$cf};");
+        return $cf;
+    }
+
+    private static function stringFilter($name, $regex)
+    {
+        $lst = trim(preg_replace($regex, ';', @"{$_GET[$name]}"), ';');
+        return $lst === ''
+            ? false
+            : strtolower(";{$lst};");
+    }
+
+    private static function fillSni($i, &$tmp)
+    {
         switch (strtolower($i)) {
             case 'mts-sn':
-                self::fillSni('mts-ok',$tmp);
+                self::fillSni('mts-ok', $tmp);
                 break;
             case 'mts-im':
-                self::fillSni('mts-viber',$tmp);
-                self::fillSni('mts-telegram',$tmp);
-                self::fillSni('mts-skype',$tmp);
-                self::fillSni('mts-whatsapp',$tmp);
-                self::fillSni('mts-snapchat',$tmp);
+                self::fillSni('mts-viber', $tmp);
+                self::fillSni('mts-telegram', $tmp);
+                self::fillSni('mts-skype', $tmp);
+                self::fillSni('mts-whatsapp', $tmp);
+                self::fillSni('mts-snapchat', $tmp);
                 break;
             case 'mts':
                 self::fillSni('mts-im', $tmp);
@@ -60,107 +213,35 @@ class SubProcessor
         }
     }
 
+    private static function boolFlag3($name)
+    {
+        $cf = trim(@"{$_GET[$name]}");
+        if (false !== stripos(';1;y;yes;true;on;t;', ";{$cf};")) return true;
+        if (false !== stripos(';0;n;no;false;off;f;', ";{$cf};")) return false;
+        return null;
+    }
+
     public static function execute()
     {
-        $suffix = rtrim(@"{$_GET['suffix']}");
-        $prefix = ltrim(@"{$_GET['prefix']}");
-        $singbox_title = trim(@"{$_GET['singbox-title']}");
-        if($singbox_title==='') $singbox_title='Sing box subs';
-        $singbox_template = trim(@"{$_GET['singbox-template']}");
-        if($singbox_template==='') $singbox_template='default';
-        $singbox_dns = trim(@"{$_GET['singbox-dns']}");
-        if($singbox_dns==='') $singbox_dns='tcp://1.1.1.1';
+        $sp = new SubProcessor();
+        $sp->createSub();
+    }
+
+    public function createSub()
+    {
+        $count=0;
 
 
-        $cfhost = self::arrayValue('cf-server');
-        if (false === $cfhost)
-            $cfhost = ['speed.cloudflare.com'];
-        $gchost = self::arrayValue('gc-server');
-        if (false === $gchost)
-            $gchost = ['gcore.com'];
-
-        $resultLines = [];
-        $fmt=trim(@"{$_GET['fmt']}");
-        if(self::boolFlag('b64')) $fmt="b64";
+        if (false !== $this->cfhost && $this->ipfy === true)
+            foreach ($this->cfhost as &$item)
+                $item = $this->hostByName($item);
+        if (false !== $this->gchost && $this->ipfy === true)
+            foreach ($this->gchost as &$item)
+                $item = $this->hostByName($item);
 
 
-        $fp = trim(@"{$_GET['fp']}");
-        if ($fp === '') $fp = 'chrome';
-        $fsni = self::arrayValue('sni');
-        $sni = '';
-        if (is_array($fsni)) {
-            $tmp=[];
-            foreach ($fsni as $i) self::fillSni($i,$tmp);
-            $fsni=$tmp;
-            unset($tmp);
-            unset($i);
-
-            $sni = @"{$fsni[0]}";
-            $fsni = array_map(function ($x) {
-                return preg_quote($x);
-            }, $fsni);
-            $fsni = '/^(?:.*\.)?(?:' . implode('|', $fsni) . ')$/mi';
-        }
-        if ($sni === '') $sni = 'vkvd127.mycdn.me';
-
-
-        $mangle = @"{$_GET['mangle']}";
-
-        $full = self::boolFlag('full');
-
-        $cdnfilter = [];
-        if (self::boolFlag('cf')) $cdnfilter['cf'] = true;
-        if (self::boolFlag('gc')) $cdnfilter['gcore'] = true;
-
-
-        $tag = strtolower(trim(@"{$_GET['tag']}"));
-        if ('' === $tag) $tag = 'freedom';
-//        $tag = "f_{$tag}";
-
-        $ipfy = self::boolFlag('ipfy');
-
-        $fvision = self::boolFlag('vision');
-
-        if (false !== $cfhost && $ipfy === true)
-            foreach ($cfhost as &$item)
-                $item = self::hostByName($item);
-
-        $fgeo = self::stringFilter('country', '/[^A-Z]+/i');
-
-        $fkind = self::stringFilter('kind', '/[^a-z0-9_]+/');
-        if (false !== $fkind && false !== stripos($fkind, ';ss;'))
-            $fkind = "{$fkind}shadowsocks;ss2022;ss_legacy;";
-
-        $fsec = self::stringFilter('security', '/[^a-z]+/');
-        if (false !== $fsec && false !== stripos($fsec, ';tls;'))
-            $fsec = "{$fsec}reality;";
-
-        $fnet = self::stringFilter('network', '/[^a-z2]+/');
-
-        $fport = self::stringFilter('port', '/[^0-9]+/');
-
-        $template='';
-        switch ($fmt){
-            case 'singbox':
-                $template='sb-';
-                break;
-            case 'ss':
-                $template='ss-';
-                break;
-            default:
-                $template='';
-                break;
-        }
-
-        if (false === $full)
-            $template="{$template}proxy-db-{$tag}.lst";
-        else
-            $template="{$template}proxy-db.lst";
-
-
-        $template = "{$template}.gz";
 //        var_dump($template);
-        $lines = self::fcache($template);
+        $lines = self::fcache($this->database);
 //        var_dump($lines);
         if (is_array($lines)) {
             foreach ($lines as $line) {
@@ -170,52 +251,58 @@ class SubProcessor
                 $tmp = json_decode($line);
                 if (!is_object($tmp)) continue;
 
-                if ($fvision === true && (!isset($tmp->vision) || $tmp->vision == false))
+                if (false == self::checkFlag3($this->fvision, isset($tmp->vision) && $tmp->vision === true))
                     continue;
-//                var_dump(1);
-
-                if (count($cdnfilter)!==0)
-                    if (!isset($cdnfilter[$tmp->k]))
+                if (false == self::checkFlag3($this->finsecure, isset($tmp->insecure) && $tmp->insecure === true))
+                    continue;
+                switch ($tmp->k) {
+                    case "cf":
+                    case "gcore":
+                        $cdnname = $tmp->k;
+                        break;
+                    default:
+                        $cdnname = 'none';
+                        break;
+                }
+                if (false !== $this->cdnfilter)
+                    if (false === stripos($this->cdnfilter, ";{$cdnname};"))
                         continue;
-//                var_dump(2);
 
-//                if (false === $full)
-//                    if (!isset($tmp->{$tag}) || $tmp->{$tag} !== true)
-//                        continue;
-//                var_dump(3);
-
-                if (false !== $fkind)
-                    if (false === stripos($fkind, ";{$tmp->type};"))
+                if (false !== $this->fkind)
+                    if (false === stripos($this->fkind, ";{$tmp->type};"))
                         continue;
-//                var_dump(4);
 
-                if (false !== $fgeo)
-                    if (false === stripos($fgeo, ";{$tmp->cc};"))
+                if(!isset($tmp->warp)) $tmp->warp='off';
+                if (false !== $this->fwarp)
+                    if (false === stripos($this->fwarp, ";{$tmp->warp};"))
                         continue;
-//                var_dump(5);
 
-                if (false !== $fnet)
-                    if (false === stripos($fnet, ";{$tmp->net};"))
+                if (false !== $this->fgeo)
+                    if (false === stripos($this->fgeo, ";{$tmp->cc};"))
                         continue;
-//                var_dump(6);
-
-                if (false !== $fport)
-                    if (false === strpos($fport, ";{$tmp->port};"))
+                if (false !== $this->exfgeo)
+                    if (false !== stripos($this->exfgeo, ";{$tmp->cc};"))
                         continue;
-//                var_dump(7);
 
-                if (false !== $fsec)
-                    if (false === stripos($fsec, ";{$tmp->sec};"))
+                if (false !== $this->fnet)
+                    if (false === stripos($this->fnet, ";{$tmp->net};"))
                         continue;
-//                var_dump(8);
+
+                if (false !== $this->fport)
+                    if (false === strpos($this->fport, ";{$tmp->port};"))
+                        continue;
+
+                if(!isset($tmp->fsec)) $tmp->fsec='none';
+                if (false !== $this->fsec)
+                    if (false === stripos($this->fsec, ";{$tmp->sec};"))
+                        continue;
 
 
-
-                $sniOk = $fsni === false;
+                $sniOk = $this->fsni === false;
                 if ($tmp->k === 'sni') {
                     $sniOk = true;
-                    $tmp->sni = $sni;
-                } elseif ($fsni !== false && preg_match($fsni, @"{$tmp->sni}"))
+                    $tmp->sni = $this->sni;
+                } elseif ($this->fsni !== false && preg_match($this->fsni, @"{$tmp->sni}"))
                     $sniOk = true;
 
 
@@ -225,180 +312,120 @@ class SubProcessor
 
 
                 if ($tmp->k === 'cf') {
-                    $hashKey=isset($tmp->u)?$tmp->u:serialize($tmp->oo);
-                    $h = self::randomItem($cfhost, "{$tmp->sni}|{$hashKey}");
+                    $hashKey = isset($tmp->u) ? $tmp->u : serialize($tmp->oo);
+                    $h = self::randomItem($this->cfhost, "{$tmp->sni}|{$hashKey}");
                     if (0 === stripos($h, 'rand:'))
                         $h = self::randomCfHost("{$tmp->sni}|{$hashKey}|{$h}");
                     $tmp->host = $h;
                 } elseif ($tmp->k === 'gcore') {
-                    $hashKey=isset($tmp->u)?$tmp->u:serialize($tmp->oo);
-                    $h = self::randomItem($gchost, "{$tmp->sni}|{$hashKey}");
+                    $hashKey = isset($tmp->u) ? $tmp->u : serialize($tmp->oo);
+                    $h = self::randomItem($this->gchost, "{$tmp->sni}|{$hashKey}");
                     if (0 === stripos($h, 'rand:'))
                         $h = self::randomGcHost("{$tmp->sni}|{$hashKey}|{$h}");
                     $tmp->host = $h;
-                } elseif ($ipfy) {
-                    $tmp->host = self::hostByName($tmp->host);
+                } elseif ($this->ipfy) {
+                    if (isset($tmp->ip))
+                        $tmp->host = $tmp->ip;
+                    else
+                        $tmp->host = $this->hostByName($tmp->host);
                 }
 
-                if ($fsni === false && strlen($mangle) !== 0 && @"{$tmp->sni}" !== '') {
-                    $tmp->sni = self::mangle(@"{$tmp->sni}", $mangle);
+                if ($this->fsni === false && strlen($this->mangle) !== 0 && @"{$tmp->sni}" !== '') {
+                    $tmp->sni = self::mangle(@"{$tmp->sni}", $this->mangle);
                 }
 
-                $title=$tmp->t;
-                if($suffix!==''){
-                    $temp_string=$suffix;
-                    $temp_string=str_replace('{SNI}', self::shortenSni("{$tmp->sni}"), $temp_string);
-                    $title=trim("{$title}{$temp_string}");
+                $title = $tmp->t;
+                if ($this->suffix !== '') {
+                    $temp_string = $this->suffix;
+                    $temp_string = str_replace('{SNI}', $this->shortenSni("{$tmp->sni}"), $temp_string);
+                    $title = trim("{$title}{$temp_string}");
                 }
-                if($prefix!==''){
-                    $temp_string=$prefix;
-                    $temp_string=str_replace('{SNI}', self::shortenSni("{$tmp->sni}"), $temp_string);
-                    $title=trim("{$temp_string}{$title}");
+                if ($this->prefix !== '') {
+                    $temp_string = $this->prefix;
+                    $temp_string = str_replace('{SNI}', $this->shortenSni("{$tmp->sni}"), $temp_string);
+                    $title = trim("{$temp_string}{$title}");
                 }
+                $tmp->title=$title;
 
-                if($fmt==='singbox'){
+                if ($this->format === 'singbox') {
                     $tmp->u = json_encode($tmp->oo, JSON_INVALID_UTF8_IGNORE);
-                    $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
-                    $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
-                    $tmp->u = str_replace(json_encode('{FP}'), json_encode($fp), $tmp->u);
-                    $key = md5($tmp->u);
-                    $o_temp=json_decode($tmp->u);
-                    $o_temp->tag=$title;
-                    $resultLines[$key] = $o_temp;
+                    $key = $this->substituteJsonMacros($tmp);
+                    $o_temp = json_decode($tmp->u);
+                    $o_temp->tag = $title;
+                    $this->resultLines[$key] = $o_temp;
                     unset($o_temp);
-                } elseif ($fmt==='ss'){
+                } elseif ($this->format === 'ss') {
                     $tmp->u = json_encode($tmp->ss, JSON_INVALID_UTF8_IGNORE);
-                    $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
-                    $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
-                    $tmp->u = str_replace(json_encode('{FP}'), json_encode($fp), $tmp->u);
-                    $key = md5($tmp->u);
-                    $tmp->u = str_replace(json_encode('{TITLE}'), json_encode($title), $tmp->u);
-                    $o_temp=json_decode($tmp->u);
-                    $resultLines[$key] = $o_temp;
+                    $key = $this->substituteJsonMacros($tmp);
+                    $o_temp = json_decode($tmp->u);
+                    $this->resultLines[$key] = $o_temp;
                     unset($o_temp);
                 } else {
                     if ($tmp->type === 'vmess') {
-                        $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
-                        $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
-                        $tmp->u = str_replace(json_encode('{FP}'), json_encode($fp), $tmp->u);
-                        $key = md5($tmp->u);
-                        $tmp->u = str_replace(json_encode('{TITLE}'), json_encode($title), $tmp->u);
+                        $key = $this->substituteJsonMacros($tmp);
                         $tmp->u = sprintf("vmess://%s", base64_encode($tmp->u));
                     } else {
                         $tmp->u = str_replace('{HOST}', $tmp->host, $tmp->u);
                         $tmp->u = str_replace('{SNI}', rawurlencode(@"{$tmp->sni}"), $tmp->u);
-                        $tmp->u = str_replace('{FP}', rawurlencode($fp), $tmp->u);
+                        $tmp->u = str_replace('{FP}', rawurlencode($this->fingerprint), $tmp->u);
                         $key = md5($tmp->u);
                         $tmp->u = str_replace('{TITLE}', rawurlencode($title), $tmp->u);
                     }
-                    $resultLines[$key] = $tmp->u;
+                    $this->resultLines[$key] = $tmp->u;
                 }
+                $count++;
+                if($this->limit>0 && $count>=$this->limit)
+                    break;
             }
         }
 
 //        var_dump($fmt);
 
-        switch ($fmt){
+        switch ($this->format) {
             case 'b64':
-                echo base64_encode(implode("\n", array_values($resultLines)));
+                echo base64_encode(implode("\n", array_values($this->resultLines)));
                 break;
             case 'singbox':
-                $conf=self::createSingBoxProfile($resultLines, $singbox_template, $singbox_dns);
-                $singbox_interval=6;
-                $singbox_title=base64_encode($singbox_title);
-                echo "//profile-title: base64:{$singbox_title}\n";
+                $conf = self::createSingBoxProfile($this->resultLines, $this->singbox_template, $this->singbox_dns);
+                $singbox_interval = 6;
+                $this->singbox_title = base64_encode($this->singbox_title);
+                echo "//profile-title: base64:$this->singbox_title\n";
                 echo "//profile-update-interval: {$singbox_interval}\n";
                 echo "//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n";
                 echo "//support-url: https://t.me/dimzon541\n";
                 echo "//profile-web-page-url: https://github.com/dimzon/scaling-sniffle\n";
                 echo "\n";
-                echo json_encode($conf, JSON_PRETTY_PRINT+JSON_INVALID_UTF8_IGNORE);
+                echo json_encode($conf, JSON_PRETTY_PRINT + JSON_INVALID_UTF8_IGNORE);
                 break;
             case 'ss':
-                echo json_encode(array_values($resultLines), JSON_PRETTY_PRINT+JSON_INVALID_UTF8_IGNORE);
+                echo json_encode(array_values($this->resultLines), JSON_PRETTY_PRINT + JSON_INVALID_UTF8_IGNORE);
                 break;
             case '':
             case 'default':
-                foreach ($resultLines as $key => $line)
+                foreach ($this->resultLines as $key => $line)
                     echo "{$line}\n";
                 break;
         }
     }
 
-    private static $_shortenSni;
-    private static function shortenSni($sni){
-        if(!is_array(self::$_shortenSni)) self::$_shortenSni=[];
-        if(isset(self::$_shortenSni[$sni])) return self::$_shortenSni[$sni];
-        $sni1=preg_replace('/^(.*\.)?([\w\-]+\.\w+)$/m','$2',$sni);
-        self::$_shortenSni[$sni]=$sni1;
-        return $sni1;
-    }
-
-    private static function createSingBoxProfile(&$proxies, $templateName='default', $dns='tcp://1.1.1.1'){
-        $templateName=preg_replace('/[^\w\-]/','',$templateName);
-        $template=self::fcache("singbox-template-{$templateName}.json");
-        if($template===false) return (object)[];
-        $conf=json_decode(implode("\n", $template));
-        $template=json_encode($conf);
-        $template=str_replace(json_encode("{DNS}"),json_encode($dns),$template);
-        $conf=json_decode($template);
-        $acceptors=array_filter($conf->outbounds, function ($i){
-            return false!==stripos(';selector;urltest;',@";{$i->type};");
-        });
-        foreach ($proxies as $proxy){
-            foreach ($acceptors as $acceptor)
-                $acceptor->outbounds[]=$proxy->tag;
-            $conf->outbounds[]=$proxy;
-        }
-        return $conf;
-    }
-
-    private static function arrayValue($name)
+    private function hostByName($str)
     {
-        $tmp = trim(@"{$_GET[$name]}");
-        $tmp = explode(';', $tmp);
-        $tmp = array_map('trim', $tmp);
-        $tmp = array_filter($tmp, function ($i) {
-            return $i !== '';
-        });
-        $tmp = array_values($tmp);
-        if (count($tmp) === 0) $tmp = false;
-        return $tmp;
-    }
-
-    private static function boolFlag($name)
-    {
-        $cf = trim(@"{$_GET[$name]}");
-        $cf = false !== stripos(';1;y;yes;true;on;t;', ";{$cf};");
-        return $cf;
-    }
-
-    private static function hostByName($str)
-    {
-        static $ca;
-        if (!is_array($ca)) $ca = [];
-        $v = @$ca[$str];
+        static $dnsCache;
+        if (!is_array($dnsCache)) $dnsCache = [];
+        $v = @$this->dnsCache[$str];
         if (is_string($v)) return $v;
         $v = gethostbyname($str);
-        $ca[$str] = $v;
+        $this->dnsCache[$str] = $v;
         return $v;
-    }
-
-    private static function stringFilter($name, $regex)
-    {
-        $lst = trim(preg_replace($regex, ';', @"{$_GET[$name]}"), ';');
-        return $lst === ''
-            ? false
-            : strtolower(";{$lst};");
     }
 
     private static function fcache($url)
     {
-        $prefix='https://raw.githubusercontent.com/dimzon/scaling-sniffle/main/';
+        $prefix = 'https://raw.githubusercontent.com/dimzon/scaling-sniffle/main/';
         // use local files for debug
-        if(PHP_OS_FAMILY==='Windows') $prefix=dirname(__DIR__).DIRECTORY_SEPARATOR.'subs'.DIRECTORY_SEPARATOR;
+        if (PHP_OS_FAMILY === 'Windows') $prefix = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'subs' . DIRECTORY_SEPARATOR;
 
-        if(substr($url,-3)==='.gz')
+        if (substr($url, -3) === '.gz')
             return @gzfile("{$prefix}{$url}");
         else
             return @file("{$prefix}{$url}");
@@ -419,6 +446,12 @@ class SubProcessor
 //        }
 //        fclose($fp);
 //        return $lines;
+    }
+
+    private static function checkFlag3($flag, $value)
+    {
+        if (is_null($flag)) return true;
+        return $flag === $value;
     }
 
     private static function randomItem(&$items, $seed)
@@ -458,24 +491,43 @@ class SubProcessor
         return implode('', $str);
     }
 
-//    private static function listFilter($name, $map)
-//    {
-//        $lst = trim(@"{$_GET[$name]}");
-//        if ($lst === '') return false;
-//
-//        $lst = array_map($map, array_filter(preg_split('/[^A-Z]+/', $lst), function ($i) {
-//            return $i !== '';
-//        }));
-//        if (0 == count($lst))
-//            return false;
-//        return $lst;
-//    }
-//
-//    private static function downloadFile($url, $fp)
-//    {
-//        $data = gzdecode(file_get_contents($url));
-//        fwrite($fp, $data);
-//    }
+    private function shortenSni($sni)
+    {
+        if (isset($this->_shortenSni[$sni])) return $this->_shortenSni[$sni];
+        $sni1 = preg_replace('/^(.*\.)?([\w\-]+\.\w+)$/m', '$2', $sni);
+        $this->_shortenSni[$sni] = $sni1;
+        return $sni1;
+    }
+
+    private function substituteJsonMacros($tmp): string
+    {
+        $tmp->u = str_replace(json_encode('{HOST}'), json_encode($tmp->host), $tmp->u);
+        $tmp->u = str_replace(json_encode('{SNI}'), json_encode(@"{$tmp->sni}"), $tmp->u);
+        $tmp->u = str_replace(json_encode('{FP}'), json_encode($this->fingerprint), $tmp->u);
+        $key = md5($tmp->u);
+        $tmp->u = str_replace(json_encode('{TITLE}'), json_encode($tmp->title), $tmp->u);
+        return $key;
+    }
+
+    private static function createSingBoxProfile(&$proxies, $templateName = 'default', $dns = 'tcp://1.1.1.1')
+    {
+        $templateName = preg_replace('/[^\w\-]/', '', $templateName);
+        $template = self::fcache("singbox-template-{$templateName}.json");
+        if ($template === false) return (object)[];
+        $conf = json_decode(implode("\n", $template));
+        $template = json_encode($conf);
+        $template = str_replace(json_encode("{DNS}"), json_encode($dns), $template);
+        $conf = json_decode($template);
+        $acceptors = array_filter($conf->outbounds, function ($i) {
+            return false !== stripos(';selector;urltest;', @";{$i->type};");
+        });
+        foreach ($proxies as $proxy) {
+            foreach ($acceptors as $acceptor)
+                $acceptor->outbounds[] = $proxy->tag;
+            $conf->outbounds[] = $proxy;
+        }
+        return $conf;
+    }
 }
 
 
