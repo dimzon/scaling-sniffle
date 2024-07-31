@@ -1,52 +1,110 @@
 [
     {
         "###engine": "xray",
-        "protocol": "vless",
+        "protocol": "trojan",
         "settings": {
-            "vnext": [
+            "servers": [
                 {
-                    "address": "172.233.59.172",
-                    "port": 25839,
-                    "users": [
-                        {
-                            "id": "42918365-0040-461f-b7ae-be60f67c6fa3",
-                            "encryption": "none",
-                            "flow": ""
-                        }
-                    ]
+                    "address": "46.30.47.23",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "z3SbEnN0kc",
+                    "port": 443
                 }
             ]
         },
         "streamSettings": {
-            "network": "kcp",
-            "tcpSettings": {
-                "header": {
-                    "type": "none"
-                }
-            },
+            "network": "h2",
+            "security": "tls",
             "grpcSettings": null,
             "wsSettings": null,
-            "kcpSettings": {
-                "header": {
-                    "type": "none"
-                },
-                "seed": "TylVxSqWqm"
+            "httpSettings": {
+                "path": "\/index.html",
+                "host": [
+                    "split.xuunn.info"
+                ]
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "show": true,
+                "alpn": [
+                    "h2"
+                ]
             }
         },
-        "##__uri": "vless:\/\/42918365-0040-461f-b7ae-be60f67c6fa3@172.233.59.172:25839?type=kcp&seed=TylVxSqWqm&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20NL%20172.233.59.172%20%E2%97%88%20kcp%3A25839%20%E2%97%88%20Akamai%20Technologies%2C%20Inc.%20%E2%97%88%20962dc",
-        "##__key": "jtQE5kBrEDkPxzMijxF6iMR9oys",
+        "##__uri": "trojan:\/\/z3SbEnN0kc@split.xuunn.info:443?type=http&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&path=%2Findex.html&fp=chrome#%F0%9F%92%B0%F0%9F%92%A5%F0%9F%87%B3%F0%9F%87%B1%20NL%20warpPlus%20%E2%97%88%20http%3A443%20%E2%97%88%202075b",
+        "##__key": "wh1IzTR0RzGQsuP9MDaK5qFB9Bw",
+        "##__insecure": true,
+        "##__flags": {
+            "cf": false,
+            "gcore": false,
+            "ch": true,
+            "ip": "46.30.47.23",
+            "suffix": "\ud83c\uddf3\ud83c\uddf1 NL | 104.28.251.137 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "cc": "NL",
+            "mark": "split.xuunn.info\n443\n1",
+            "warp": "plus",
+            "exit_ip": "104.28.251.137",
+            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "f_any": true,
+            "f_tracker": true,
+            "f_facebook": true,
+            "f_freedom": true
+        }
+    },
+    {
+        "###engine": "xray",
+        "protocol": "trojan",
+        "settings": {
+            "servers": [
+                {
+                    "address": "46.30.47.23",
+                    "#flow": "",
+                    "#method": "chacha20-poly1305",
+                    "#ota": false,
+                    "password": "z3SbEnN0kc",
+                    "port": 443
+                }
+            ]
+        },
+        "streamSettings": {
+            "network": "h2",
+            "security": "tls",
+            "grpcSettings": null,
+            "wsSettings": null,
+            "httpSettings": {
+                "path": "\/index.html",
+                "host": [
+                    "split.xuunn.info"
+                ]
+            },
+            "tlsSettings": {
+                "allowInsecure": true,
+                "fingerprint": "chrome",
+                "serverName": "split.xuunn.info",
+                "show": true,
+                "alpn": [
+                    "h2"
+                ]
+            }
+        },
+        "##__uri": "trojan:\/\/z3SbEnN0kc@split.xuunn.info:443?type=http&path=%2Findex.html&fp=chrome#%F0%9F%94%92%F0%9F%87%B3%F0%9F%87%B1%20NL%20warpPlus%20%E2%97%88%20http%3A443%20%E2%97%88%205d13d",
+        "##__key": "eKooPkqm7ktNBafeShwQscxkwJQ",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "172.233.59.172",
-            "suffix": "\ud83c\uddf3\ud83c\uddf1 NL | 172.233.59.172 | Akamai Technologies, Inc.",
+            "ip": "46.30.47.23",
+            "suffix": "\ud83c\uddf3\ud83c\uddf1 NL | 104.28.251.137 | Cloudflare, Inc. \/ Cloudflare WARP",
             "cc": "NL",
-            "mark": "172.233.59.172\n25839\n",
-            "warp": "off",
-            "exit_ip": "172.233.59.172",
-            "exit_isp": "Akamai Technologies, Inc.",
+            "mark": "split.xuunn.info\n443\n1",
+            "warp": "plus",
+            "exit_ip": "104.28.251.137",
+            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
