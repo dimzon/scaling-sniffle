@@ -1,110 +1,51 @@
 [
     {
         "###engine": "xray",
-        "protocol": "trojan",
+        "protocol": "vmess",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "46.30.47.23",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "z3SbEnN0kc",
-                    "port": 443
+                    "address": "163.5.182.93",
+                    "port": 35987,
+                    "users": [
+                        {
+                            "id": "20bf85b4-4703-47d1-fd8e-0fd3e158d8ff",
+                            "encryption": "chacha20-poly1305"
+                        }
+                    ]
                 }
             ]
         },
         "streamSettings": {
-            "network": "h2",
-            "security": "tls",
-            "grpcSettings": null,
-            "wsSettings": null,
-            "httpSettings": {
-                "path": "\/index.html",
-                "host": [
-                    "split.xuunn.info"
-                ]
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-                "show": true,
-                "alpn": [
-                    "h2"
-                ]
-            }
-        },
-        "##__uri": "trojan:\/\/z3SbEnN0kc@split.xuunn.info:443?type=http&sni=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&allowInsecure=1&path=%2Findex.html&fp=chrome#%F0%9F%92%B0%F0%9F%92%A5%F0%9F%87%B3%F0%9F%87%B1%20NL%20warpPlus%20%E2%97%88%20http%3A443%20%E2%97%88%202075b",
-        "##__key": "wh1IzTR0RzGQsuP9MDaK5qFB9Bw",
-        "##__insecure": true,
-        "##__flags": {
-            "cf": false,
-            "gcore": false,
-            "ch": true,
-            "ip": "46.30.47.23",
-            "suffix": "\ud83c\uddf3\ud83c\uddf1 NL | 104.28.251.137 | Cloudflare, Inc. \/ Cloudflare WARP",
-            "cc": "NL",
-            "mark": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc\n443\n1",
-            "warp": "plus",
-            "exit_ip": "104.28.251.137",
-            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
-            "f_any": true,
-            "f_tracker": true,
-            "f_facebook": true,
-            "f_freedom": true
-        }
-    },
-    {
-        "###engine": "xray",
-        "protocol": "trojan",
-        "settings": {
-            "servers": [
-                {
-                    "address": "46.30.47.23",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "z3SbEnN0kc",
-                    "port": 443
+            "network": "kcp",
+            "tcpSettings": {
+                "header": {
+                    "type": "none"
                 }
-            ]
-        },
-        "streamSettings": {
-            "network": "h2",
-            "security": "tls",
+            },
             "grpcSettings": null,
             "wsSettings": null,
-            "httpSettings": {
-                "path": "\/index.html",
-                "host": [
-                    "split.xuunn.info"
-                ]
-            },
-            "tlsSettings": {
-                "allowInsecure": true,
-                "fingerprint": "chrome",
-                "serverName": "split.xuunn.info",
-                "show": true,
-                "alpn": [
-                    "h2"
-                ]
+            "kcpSettings": {
+                "header": {
+                    "type": "none"
+                },
+                "seed": "kHr6dyFvBo"
             }
         },
-        "##__uri": "trojan:\/\/z3SbEnN0kc@split.xuunn.info:443?type=http&path=%2Findex.html&fp=chrome#%F0%9F%94%92%F0%9F%87%B3%F0%9F%87%B1%20NL%20warpPlus%20%E2%97%88%20http%3A443%20%E2%97%88%205d13d",
-        "##__key": "eKooPkqm7ktNBafeShwQscxkwJQ",
+        "##__uri": "vmess:\/\/eyJhZGQiOiIxNjMuNS4xODIuOTMiLCJhaWQiOjAsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMjBiZjg1YjQtNDcwMy00N2QxLWZkOGUtMGZkM2UxNThkOGZmIiwibmV0Ijoia2NwIiwicGF0aCI6ImtIcjZkeUZ2Qm8iLCJwb3J0IjozNTk4NywicHMiOiJcdWQ4M2NcdWRkZjNcdWQ4M2NcdWRkZjEgTkwgMTYzLjUuMTgyLjkzIFx1MjVjOCBrY3A6MzU5ODcgXHUyNWM4IE5Gb3JjZSBFbnRlcnRhaW5tZW50IEIuVi4gXC8gSW9uaXMgR3JvdXAgLSBJb25pcyBTY2hvb2xzIG9mIFRlY2hub2xvZ3kgYW5kIE1hbmFnZW1lbnQgXHUyNWM4IGE3NDRmIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6Mn0=",
+        "##__key": "VaUGBMaKCLNcjabNc5GsI4rCSuY",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "46.30.47.23",
-            "suffix": "\ud83c\uddf3\ud83c\uddf1 NL | 104.28.251.138 | Cloudflare, Inc. \/ Cloudflare WARP",
+            "ip": "163.5.182.93",
+            "suffix": "\ud83c\uddf3\ud83c\uddf1 NL | 163.5.182.93 | NForce Entertainment B.V. \/ Ionis Group - Ionis Schools of Technology and Management",
             "cc": "NL",
-            "mark": "split.xuunn.info\n443\n1",
-            "warp": "plus",
-            "exit_ip": "104.28.251.138",
-            "exit_isp": "Cloudflare, Inc. \/ Cloudflare WARP",
+            "mark": "163.5.182.93\n35987\n",
+            "warp": "off",
+            "exit_ip": "163.5.182.93",
+            "exit_isp": "NForce Entertainment B.V. \/ Ionis Group - Ionis Schools of Technology and Management",
             "f_any": true,
             "f_tracker": true,
             "f_facebook": true,
