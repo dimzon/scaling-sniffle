@@ -1,16 +1,19 @@
 [
     {
         "###engine": "xray",
-        "protocol": "trojan",
+        "protocol": "vless",
         "settings": {
-            "servers": [
+            "vnext": [
                 {
-                    "address": "95.181.226.162",
-                    "#flow": "",
-                    "#method": "chacha20-poly1305",
-                    "#ota": false,
-                    "password": "dH5phyuPXH",
-                    "port": 443
+                    "address": "149.202.153.4",
+                    "port": 2087,
+                    "users": [
+                        {
+                            "id": "9136b27f-e5ca-4745-9dfb-6636e57c7245",
+                            "encryption": "none",
+                            "flow": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -25,24 +28,24 @@
             "wsSettings": null,
             "kcpSettings": {
                 "header": {
-                    "type": "dtls"
+                    "type": "none"
                 },
-                "seed": "R3O8BlrnSx"
+                "seed": "Dg28jJdm1b"
             }
         },
-        "##__uri": "trojan:\/\/dH5phyuPXH@95.181.226.162:443?security=none&type=kcp&headerType=dtls&seed=R3O8BlrnSx&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20FR%20152.228.218.51%20%E2%97%88%20kcp%3A443%20%E2%97%88%20OVH%20%E2%97%88%20904a7",
-        "##__key": "Nml0s6x67aXam2RpfyyrNz3cAh4",
+        "##__uri": "vless:\/\/9136b27f-e5ca-4745-9dfb-6636e57c7245@fre.alireza.com.tr:2087?type=kcp&seed=Dg28jJdm1b&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20FR%20149.202.153.4%20%E2%97%88%20kcp%3A2087%20%E2%97%88%20OVH%20%E2%97%88%20dd8a5",
+        "##__key": "1r30u9Ny7TDCbtMvNEsVLf99LI4",
         "##__insecure": false,
         "##__flags": {
             "cf": false,
             "gcore": false,
             "ch": false,
-            "ip": "95.181.226.162",
-            "suffix": "\ud83c\uddeb\ud83c\uddf7 FR | 152.228.218.51 | OVH SAS",
+            "ip": "149.202.153.4",
+            "suffix": "\ud83c\uddeb\ud83c\uddf7 FR | 149.202.153.4 | OVH SAS",
             "cc": "FR",
-            "mark": "95.181.226.162\n443\n",
+            "mark": "fre.alireza.com.tr\n2087\n",
             "warp": "off",
-            "exit_ip": "152.228.218.51",
+            "exit_ip": "149.202.153.4",
             "exit_isp": "OVH SAS"
         }
     }
